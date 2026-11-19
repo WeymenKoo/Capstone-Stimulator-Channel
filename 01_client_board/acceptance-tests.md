@@ -1,5 +1,8 @@
 # Acceptance tests: client STIM board (and Rev 1), sim ↔ bench
 
+> **Status 2026-11-15:** client board failed B0 (`tests/B0-bringup/`); its bench columns stay empty unless it is repaired
+> (`../PLAN.md` §3). Rev 1 runs the same rows after its December bring-up (`../02_rev1_channel/README.md`).
+
 Schematics: `tests/<ID>-…/` (see `tests/README.md`). Model: `model/client-board-model.asc`.
 
 Each row is one simulation with one bench measurement that uses the same stimulus and reads the same quantity.

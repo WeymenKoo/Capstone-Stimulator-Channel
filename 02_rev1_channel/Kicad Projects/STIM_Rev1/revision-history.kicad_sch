@@ -30,7 +30,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "JetBrains Mono")
 				(size 1.905 1.905)
 				(thickness 0.254)
 				(bold yes)
@@ -53,7 +53,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "JetBrains Mono")
 				(size 1.905 1.905)
 				(thickness 0.254)
 				(bold yes)
@@ -62,7 +62,7 @@
 		)
 		(uuid "3ed2e9e5-7cb4-4817-8aef-061b3f324478")
 	)
-	(text_box "- Cut the board to the analog path for bench bring-up: HV input, clamp, buffer, Howland pump, limiter, PhotoMOS, TVS, read-back.\n\n- Removed the trips, latch, power-on reset, rail monitors, enable logic and parking switch (kept in simulation for Rev 2).\n\n- Changed rail shunts RSP/RSN to 10 Ohm for current measurement.\n\n- Changed FPGA connector J3 to DAC_CMD, ENABLE, I_RETURN_ADC, V_ELEC_ADC, VMID_REF and grounds; no power.\n\n- Added the read-back stage (OPA4192) for the FPGA ADC.\n\n- Added bench bias jumpers JP1/JP2, current-loop header JP3, 29 test loops and M3 mounting holes."
+	(text_box "- Cut the board to the analog path for bench bring-up: HV input, clamp, buffer, Howland pump, limiter, PhotoMOS, TVS, read-back.\n\n- Removed the trips, latch, power-on reset, rail monitors, enable logic and parking switch (kept in simulation for Rev 2).\n\n- Changed rail shunts RSP/RSN to 10 Ohm for current measurement.\n\n- Changed FPGA connector J3 to DAC_CMD, ENABLE, I_RETURN_ADC, V_ELEC_ADC, VMID_REF and grounds; no power.\n\n- Added the read-back stage (OPA4192) for the FPGA ADC.\n\n- Added bench bias jumpers JP2/JP3, current-loop header JP3, 29 test loops and M3 mounting holes."
 		(exclude_from_sim no)
 		(at 88.9 40.64 0)
 		(size 58.42 111.76)
@@ -76,8 +76,8 @@
 		)
 		(effects
 			(font
-				(face "Arial")
-				(size 1.905 1.905)
+				(face "JetBrains Mono")
+				(size 1.7 1.7)
 				(color 0 0 0 1)
 			)
 			(justify left top)
@@ -98,7 +98,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "JetBrains Mono")
 				(size 1.905 1.905)
 				(thickness 0.254)
 				(bold yes)
@@ -107,9 +107,9 @@
 		)
 		(uuid "4fa348ff-b354-4db6-b5dd-c30df8be4c7b")
 	)
-	(text_box "[2] Doc - Revision History"
+	(text_box "[12] Doc - Revision History"
 		(exclude_from_sim no)
-		(at 17.08 16.51 0)
+		(at 17.08 20.32 0)
 		(size 262.84 10.16)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -121,20 +121,21 @@
 		)
 		(effects
 			(font
-				(face "Times New Roman")
+				(face "JetBrains Mono")
 				(size 7 7)
 				(thickness 1.4)
 				(bold yes)
+				(italic yes)
 				(color 162 22 34 1)
 			)
 			(justify top)
 		)
 		(uuid "4ff28714-be77-520b-a992-b81471c22299")
 	)
-	(text_box "- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________\n\n- _________________________________"
+	(text_box "- Added on-board converters behind digital isolators: AD5761R DAC [6], two ADS8689 ADCs [10], +5 V / +3V3 LDOs [4]; the analog J3 pins are gone.\n\n- Applied the pre-order review of 2026-11-15: G = 1 buffer, 7V5 clamp, D8, U14 output park, VMID 2.55 V, D1 / D2.\n\n- Re-cut and renumbered the pages from the cover; board ground ISO_GND, FPGA ground GND; bar rail symbols; net-class colours.\n\n- Input is the 3S pack (VBAT 9.0-12.6 V) on J2, on the FPGA-side GND; U1 RECOM RS3-1212D straddles the barrier; U4 / U5 and the LED string from +12V.\n\n- J3 / J4 2x13 on the Red Pitaya E1 pin-out, pin order set by the board placement; one SPI bus with three chip selects; FAULT_N now on J3.\n\n- HV jumpers JP2 / JP3 / JP4 / JP5 / JP6 on 5.08 mm pitch; DRC rules rewritten for JLCPCB and IEC 60664-1 / IPC-2221B.\n\n- BoM consolidated with LCSC / DigiKey stock (Manufacturing/Assembly).\n\n- Schematic text in JetBrains Mono, italic titles, notes as bullet points.\n\n- Re-annotated per sheet (designators on this page are the current ones); J2 = J5 = WAGO 2606-1102; JP4-JP6 removed, R25 0 Ohm link bridges the unfitted limiter."
 		(exclude_from_sim no)
 		(at 220.98 40.64 0)
-		(size 58.42 111.76)
+		(size 58.42 118.11)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width -0.0001)
@@ -145,15 +146,15 @@
 		)
 		(effects
 			(font
-				(face "Arial")
-				(size 1.905 1.905)
+				(face "JetBrains Mono")
+				(size 1.7 1.7)
 				(color 0 0 0 1)
 			)
 			(justify left top)
 		)
 		(uuid "59c1f4a5-74b8-47ad-b32f-fb27ae35f91c")
 	)
-	(text_box "DD-MMM-YYYY - Next Revision\nVersion: ______"
+	(text_box "18-NOV-2026 - Isolated Converters\nVersion: 2.1.0-dev Preliminary"
 		(exclude_from_sim no)
 		(at 218.44 31.75 0)
 		(size 57.15 7.62)
@@ -167,7 +168,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "JetBrains Mono")
 				(size 1.905 1.905)
 				(thickness 0.254)
 				(bold yes)
@@ -190,15 +191,15 @@
 		)
 		(effects
 			(font
-				(face "Arial")
-				(size 1.905 1.905)
+				(face "JetBrains Mono")
+				(size 1.7 1.7)
 				(color 0 0 0 1)
 			)
 			(justify left top)
 		)
 		(uuid "ad6691dd-2a78-4ce5-872d-4ceee09011c1")
 	)
-	(text_box "- Reduced the low-voltage input to one +12 V (J2, 2-pin screw terminal); U32 isolated DC-DC makes +/-12 V on board.\n\n- Removed +5 V; LM4040 bias R50 now from +9 V (5.1k).\n\n- Changed U1 and U3 from OPA171 to OPA192: output accuracy passes without the zero calibration.\n\n- Added red LEDs: PWR (D8), HV LIVE (D7) and OUT EN (D6, in the PhotoMOS LED string; RLED1 now 750 Ohm).\n\n- Fixed the AQY214S symbol (its pins were hidden).\n\n- Resized passives: 0603 by default; 0805/1206/2512 only where voltage, power or precision needs it; one part per value.\n\n- Wired the top sheet; ERC clean; page numbers now follow the sheet titles.\n\n- Formatted after the FoC Motor Controller and AMULET: cover index, block frames with captions, this page. PCB text in JetBrains Mono; 3D model for every part."
+	(text_box "- Reduced the low-voltage input to one +12 V (J2, 2-pin screw terminal); U1 isolated DC-DC makes +/-12 V on board.\n\n- Removed +5 V; LM4040 bias R30 now from +9 V (5.1k).\n\n- Changed U11 and U9 from OPA171 to OPA192: output accuracy passes without the zero calibration.\n\n- Added red LEDs: PWR (D3), HV LIVE (D7) and OUT EN (D9, in the PhotoMOS LED string; RLED1 now 750 Ohm).\n\n- Fixed the AQY214S symbol (its pins were hidden).\n\n- Resized passives: 0603 by default; 0805/1206/2512 only where voltage, power or precision needs it; one part per value.\n\n- Wired the top sheet; ERC clean; page numbers now follow the sheet titles.\n\n- Formatted after the FoC Motor Controller and AMULET: cover index, block frames with captions, this page. PCB text in JetBrains Mono; 3D model for every part."
 		(exclude_from_sim no)
 		(at 154.94 40.64 0)
 		(size 58.42 111.76)
@@ -212,8 +213,8 @@
 		)
 		(effects
 			(font
-				(face "Arial")
-				(size 1.905 1.905)
+				(face "JetBrains Mono")
+				(size 1.7 1.7)
 				(color 0 0 0 1)
 			)
 			(justify left top)

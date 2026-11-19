@@ -11,10 +11,9 @@
 		(uuid "0a381748-ee7d-4f48-acbf-ca233b91d8a3")
 		(effects
 			(font
-				(face "JetBrains Mono")
+				(face "JetBrains Mono ExtraBold")
 				(size 1 1)
 				(thickness 0.15)
-				(bold yes)
 			)
 		)
 	)
@@ -24,7 +23,7 @@
 		(uuid "7727a218-ca3c-4269-b949-ab7350514012")
 		(effects
 			(font
-				(face "JetBrains Mono")
+				(face "JetBrains Mono ExtraBold")
 				(size 1 1)
 				(thickness 0.15)
 			)
@@ -38,7 +37,7 @@
 		(uuid "d61ff70c-6cb5-4bfe-a7ba-80a9b4f8ebff")
 		(effects
 			(font
-				(face "JetBrains Mono")
+				(face "JetBrains Mono ExtraBold")
 				(size 1.27 1.27)
 				(thickness 0.15)
 			)
@@ -52,7 +51,7 @@
 		(uuid "e440d96a-0b86-4e8e-b962-b9d6fbf86957")
 		(effects
 			(font
-				(face "JetBrains Mono")
+				(face "JetBrains Mono ExtraBold")
 				(size 1.27 1.27)
 				(thickness 0.15)
 			)
@@ -236,7 +235,7 @@
 		(uuid "6b4772bd-2bf0-456f-9d1a-4560655c2165")
 		(effects
 			(font
-				(face "JetBrains Mono")
+				(face "JetBrains Mono ExtraBold")
 				(size 1 1)
 				(thickness 0.15)
 			)

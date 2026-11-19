@@ -1,0 +1,159 @@
+(footprint "TerminalBlock_WAGO_2606-1102_1x02_P7.50mm_Horizontal"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "WAGO 2606-1102 PCB terminal block, push-in CAGE CLAMP, lever per pole, 2 poles, 7.5 mm pitch, wire entry 0 deg (toward -y), two solder pins per pole 12.5 mm apart, holes 2.0 (+0.1) mm; body 17.85 x 21 x 24 mm, levers overhang the entry face by 3.3 mm [DS WAGO 2606-1102, version 06.11.2026]. Pin 1 on the left seen from the wire side. 630 V IEC 60664-1 PD2, 300 V UL (base part; 600 V for /0x0-xxx); fine-stranded 0.2-10 mm2 without ferrule, strip 11-13 mm. https://www.wago.com/2606-1102")
+	(tags "terminal block push-in lever WAGO 2606 7.5mm HV")
+	(property "Reference" "REF**"
+		(at -2.025 -11.2 0)
+		(layer "F.SilkS")
+		(uuid "d9ed0834-1cb7-4df5-af3a-0cb732d46a9c")
+		(effects
+			(font
+				(face "JetBrains Mono ExtraBold")
+				(size 1.0 1.0)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TerminalBlock_WAGO_2606-1102_1x02_P7.50mm_Horizontal"
+		(at -2.025 16.2 0)
+		(layer "F.Fab")
+		(uuid "d510a02b-8e91-4490-8e9c-90db24a90402")
+		(effects
+			(font
+				(face "JetBrains Mono ExtraBold")
+				(size 1.0 1.0)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d285985a-d556-45b5-88ec-84ebf3d4b97f")
+		(effects
+			(font
+				(face "JetBrains Mono ExtraBold")
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "eacc23d3-3158-4b7a-88d0-e6e3093abaca")
+		(effects
+			(font
+				(face "JetBrains Mono ExtraBold")
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -10.95 -6.5)
+		(end 6.9 14.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "58942505-0f51-40f3-9ca0-5aa1b972ef54")
+	)
+	(fp_rect
+		(start -10.95 -9.8)
+		(end 6.9 -6.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "06dd01b0-7a39-44a6-bf1e-2fb0e7d54ff8")
+	)
+	(fp_rect
+		(start -11.07 -6.62)
+		(end 7.02 14.62)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "96894380-c5fc-4d66-af3b-0164db6dd1b1")
+	)
+	(fp_rect
+		(start -11.45 -10.3)
+		(end 7.4 15.0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "aa1d6766-40c4-45b6-b953-afd367801093")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -2.025 6.25 0)
+		(layer "F.Fab")
+		(uuid "f7ad96c4-f09c-4b8b-a82e-128e3c015213")
+		(effects
+			(font
+				(face "JetBrains Mono ExtraBold")
+				(size 1.0 1.0)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at -0.0 0)
+		(size 3.2 3.2)
+		(drill 2.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "dc6afbf0-0e79-430f-a41e-49a011e55d0a")
+	)
+	(pad "1" thru_hole circle
+		(at -0.0 12.5)
+		(size 3.2 3.2)
+		(drill 2.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "bcedbf28-f8d3-40af-93a2-d1733ac5b269")
+	)
+	(pad "2" thru_hole circle
+		(at -7.5 0)
+		(size 3.2 3.2)
+		(drill 2.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a55baaa0-cba6-4974-8cc1-35e4ba5f932f")
+	)
+	(pad "2" thru_hole circle
+		(at -7.5 12.5)
+		(size 3.2 3.2)
+		(drill 2.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "d2d8d88a-134e-416e-b1fc-f061f1867527")
+	)
+	(model "${KIPRJMOD}/lib/3d_models/TerminalBlock_WAGO_2606-1102_1x02_P7.50mm_Horizontal.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(embedded_fonts no)
+)

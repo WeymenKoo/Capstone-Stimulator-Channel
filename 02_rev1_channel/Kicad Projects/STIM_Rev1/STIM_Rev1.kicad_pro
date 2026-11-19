@@ -50,7 +50,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "border_display_style": 2,
+          "border_display_style": 0,
           "border_hatch_pitch": 0.5,
           "corner_radius": 0.0,
           "corner_smoothing": 0,
@@ -60,7 +60,7 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.5,
+          "min_clearance": 0.0,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 1,
@@ -148,20 +148,20 @@
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
         "max_error": 0.005,
-        "min_clearance": 0.15,
-        "min_connection": 0.15,
-        "min_copper_edge_clearance": 0.3,
+        "min_clearance": 0.127,
+        "min_connection": 0.127,
+        "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.25,
+        "min_hole_clearance": 0.3,
         "min_hole_to_hole": 0.5,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
         "min_silk_clearance": 0.15,
-        "min_text_height": 1.0,
+        "min_text_height": 0.8,
         "min_text_thickness": 0.15,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.15,
+        "min_track_width": 0.127,
         "min_via_annular_width": 0.15,
         "min_via_diameter": 0.6,
         "solder_mask_to_copper_clearance": 0.0,
@@ -537,7 +537,7 @@
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "tuning_profile": "",
-        "via_diameter": 0.6,
+        "via_diameter": 0.7,
         "via_drill": 0.3,
         "wire_width": 6
       },
@@ -556,7 +556,7 @@
         "schematic_color": "rgb(255, 0, 171)",
         "track_width": 0.4,
         "tuning_profile": "",
-        "via_diameter": 0.6,
+        "via_diameter": 0.7,
         "via_drill": 0.3,
         "wire_width": 16
       },
@@ -575,7 +575,7 @@
         "schematic_color": "rgb(150, 60, 200)",
         "track_width": 0.4,
         "tuning_profile": "",
-        "via_diameter": 0.6,
+        "via_diameter": 0.7,
         "via_drill": 0.3,
         "wire_width": 16
       },
@@ -588,13 +588,13 @@
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "GND",
+        "name": "FPGA_ISO",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 6,
-        "schematic_color": "rgb(0, 0, 0)",
-        "track_width": 0.4,
+        "schematic_color": "rgb(0, 132, 132)",
+        "track_width": 0.25,
         "tuning_profile": "",
-        "via_diameter": 0.6,
+        "via_diameter": 0.7,
         "via_drill": 0.3,
         "wire_width": 16
       },
@@ -664,13 +664,51 @@
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
+        "name": "ISO_GND",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 6,
+        "schematic_color": "rgb(0, 0, 0)",
+        "track_width": 0.4,
+        "tuning_profile": "",
+        "via_diameter": 0.7,
+        "via_drill": 0.3,
+        "wire_width": 16
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
         "name": "LOGIC5",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 5,
         "schematic_color": "rgb(162, 155, 0)",
         "track_width": 0.4,
         "tuning_profile": "",
-        "via_diameter": 0.6,
+        "via_diameter": 0.7,
+        "via_drill": 0.3,
+        "wire_width": 16
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "SPI_ISO",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 7,
+        "schematic_color": "rgb(0, 0, 132)",
+        "track_width": 0.2,
+        "tuning_profile": "",
+        "via_diameter": 0.7,
         "via_drill": 0.3,
         "wire_width": 16
       }
@@ -922,32 +960,124 @@
         "pattern": "*/-9V"
       },
       {
-        "netclass": "GND",
+        "netclass": "ISO_GND",
+        "pattern": "ISO_GND"
+      },
+      {
+        "netclass": "ISO_GND",
+        "pattern": "*/ISO_GND"
+      },
+      {
+        "netclass": "FPGA_ISO",
+        "pattern": "VBAT"
+      },
+      {
+        "netclass": "FPGA_ISO",
+        "pattern": "*/VBAT"
+      },
+      {
+        "netclass": "HV_OUT",
+        "pattern": "unconnected-(D6-NC-Pad2)"
+      },
+      {
+        "netclass": "HV_OUT",
+        "pattern": "unconnected-(D7-NC-Pad2)"
+      },
+      {
+        "netclass": "HV_OUT",
+        "pattern": "unconnected-(U10-NC-Pad8)"
+      },
+      {
+        "netclass": "FPGA_ISO",
+        "pattern": "+3V3_FPGA"
+      },
+      {
+        "netclass": "FPGA_ISO",
         "pattern": "GND"
       },
       {
-        "netclass": "GND",
-        "pattern": "*/GND"
+        "netclass": "FPGA_ISO",
+        "pattern": "*/SPI_*"
       },
       {
-        "netclass": "AUX12",
-        "pattern": "+12V_IN"
+        "netclass": "FPGA_ISO",
+        "pattern": "*/ENABLE"
       },
       {
-        "netclass": "AUX12",
-        "pattern": "*/+12V_IN"
+        "netclass": "FPGA_ISO",
+        "pattern": "*/FAULT_N"
+      },
+      {
+        "netclass": "FPGA_ISO",
+        "pattern": "unconnected-(U6-EN1-Pad7)"
+      },
+      {
+        "netclass": "FPGA_ISO",
+        "pattern": "unconnected-(U7-EN1-Pad7)"
+      },
+      {
+        "netclass": "FPGA_ISO",
+        "pattern": "unconnected-(U1-CTRL-Pad3)"
+      },
+      {
+        "netclass": "SPI_ISO",
+        "pattern": "/ISO_SCLK"
+      },
+      {
+        "netclass": "SPI_ISO",
+        "pattern": "/ISO_MOSI"
+      },
+      {
+        "netclass": "SPI_ISO",
+        "pattern": "/ISO_MISO"
+      },
+      {
+        "netclass": "SPI_ISO",
+        "pattern": "/ISO_CS_DAC"
+      },
+      {
+        "netclass": "SPI_ISO",
+        "pattern": "/ISO_CS_ADC"
+      },
+      {
+        "netclass": "SPI_ISO",
+        "pattern": "/ISO_CS_ADC2"
+      },
+      {
+        "netclass": "SPI_ISO",
+        "pattern": "/ISO_ENABLE"
+      },
+      {
+        "netclass": "SPI_ISO",
+        "pattern": "*/ISO_EN2"
+      },
+      {
+        "netclass": "SPI_ISO",
+        "pattern": "*/ISO_FAULT_N"
+      },
+      {
+        "netclass": "LOGIC5",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "LOGIC5",
+        "pattern": "*/+5V"
+      },
+      {
+        "netclass": "LOGIC5",
+        "pattern": "+3V3"
+      },
+      {
+        "netclass": "LOGIC5",
+        "pattern": "*/+3V3"
+      },
+      {
+        "netclass": "FPGA_ISO",
+        "pattern": "unconnected-(J3-*"
       },
       {
         "netclass": "HV_OUT",
-        "pattern": "unconnected-(D1-NC-Pad2)"
-      },
-      {
-        "netclass": "HV_OUT",
-        "pattern": "unconnected-(D2-NC-Pad2)"
-      },
-      {
-        "netclass": "HV_OUT",
-        "pattern": "unconnected-(U2-NC-Pad8)"
+        "pattern": "unconnected-(D8-NC-Pad2)"
       }
     ]
   },
@@ -1092,7 +1222,7 @@
         "uuid": "801725e5-e50b-4629-8dff-f10f88598334"
       }
     ],
-    "used_designators": "TP3,TP20,#FLG5,#FLG11-12,#PWR4,#PWR73,R8,R23-25,JP2,JP4-6,RSP1,R20A1,D1B1,RLED1,RSN1,RSHR1,RLIM1,R20B1,D2B1",
+    "used_designators": "RS1,RSHR1,Q1-3,J1-6,JP1-6,RG1,R20A1-2,C1-46,RF1,R20B1,D2B1,D1-10,F1-2,RSN1,U1-18,RLIM1,RB1-2,RLED1-2,H1-4,R1-41,RSP1,D1B1,M1-2,#PWR1-150,#FLG1-12,TP1-39",
     "variants": []
   },
   "sheets": [
@@ -1101,52 +1231,48 @@
       "STIM_Rev1"
     ],
     [
-      "93675b37-d993-5d12-97fc-a317c191ef9c",
-      "[2] Doc - Revision History"
-    ],
-    [
       "a3a00a2e-c646-512b-a4ef-7587689cfda9",
-      "[3] Power - HV Input & Fusing"
+      "[2] Power - HV Input & Fusing"
     ],
     [
       "72ffb2f1-ae13-5145-9887-f498a8b07bfc",
-      "[4] Power - Aux Input & +/-9 V LDOs"
-    ],
-    [
-      "187439ae-9d02-51ae-8afd-618db504358e",
-      "[5] Interface - FPGA"
-    ],
-    [
-      "c696ab63-6e27-5310-bf58-acd9f38b7949",
-      "[6] Analog - Input Clamp & Buffer"
-    ],
-    [
-      "15416e61-56a0-5b0d-b090-bfa41cf71886",
-      "[7] Analog - Howland Current Pump"
-    ],
-    [
-      "f069f885-88b4-57b7-9482-f6ec165967cf",
-      "[8] Output - Limiter & PhotoMOS"
-    ],
-    [
-      "2096539e-cd7e-52a8-ab60-27cf0fbcd4d3",
-      "[9] Sense - Feedback to ADC"
-    ],
-    [
-      "114e91be-7f72-4d1b-af60-80afd734c29a",
-      "[10] Interface - SPI Isolator"
-    ],
-    [
-      "7c14932f-2e34-4ecb-ac99-994f2f04620f",
-      "[11] Interface - DAC Command"
-    ],
-    [
-      "4b7c7ece-13b3-4546-8c13-c3483238e92d",
-      "[12] Interface - ADC Read-back"
+      "[3] Power - Aux Input & +/-12 V Module"
     ],
     [
       "5d3b7a1e-2f44-4c0e-9a61-13c0f0e3a0d1",
-      "[13] Power - Converter Rails"
+      "[4] Power - LDO Rails"
+    ],
+    [
+      "114e91be-7f72-4d1b-af60-80afd734c29a",
+      "[5] Interface - FPGA J3 & SPI Isolator"
+    ],
+    [
+      "7c14932f-2e34-4ecb-ac99-994f2f04620f",
+      "[6] Interface - DAC Command"
+    ],
+    [
+      "c696ab63-6e27-5310-bf58-acd9f38b7949",
+      "[7] Analog - Input Clamp & Buffer"
+    ],
+    [
+      "15416e61-56a0-5b0d-b090-bfa41cf71886",
+      "[8] Analog - Howland Current Pump"
+    ],
+    [
+      "f069f885-88b4-57b7-9482-f6ec165967cf",
+      "[9] Output - Limiter & PhotoMOS"
+    ],
+    [
+      "4b7c7ece-13b3-4546-8c13-c3483238e92d",
+      "[10] Interface - ADC Read-back"
+    ],
+    [
+      "2096539e-cd7e-52a8-ab60-27cf0fbcd4d3",
+      "[11] Sense - Feedback to ADC"
+    ],
+    [
+      "93675b37-d993-5d12-97fc-a317c191ef9c",
+      "[12] Doc - Revision History"
     ]
   ],
   "text_variables": {
@@ -1166,17 +1292,17 @@
     "REVIEWER": "",
     "REVISION": "2.1.0-dev",
     "SHEET_NAME_1": "Doc - Cover",
-    "SHEET_NAME_10": "Interface - SPI Isolator",
-    "SHEET_NAME_11": "Interface - DAC Command",
-    "SHEET_NAME_12": "Interface - ADC Read-back",
-    "SHEET_NAME_13": "Power - Converter Rails",
+    "SHEET_NAME_10": "Interface - ADC Read-back",
+    "SHEET_NAME_11": "Sense - Feedback to ADC",
+    "SHEET_NAME_12": "Doc - Revision History",
+    "SHEET_NAME_13": "......................................",
     "SHEET_NAME_14": "......................................",
     "SHEET_NAME_15": "......................................",
     "SHEET_NAME_16": "......................................",
     "SHEET_NAME_17": "......................................",
     "SHEET_NAME_18": "......................................",
     "SHEET_NAME_19": "......................................",
-    "SHEET_NAME_2": "Doc - Revision History",
+    "SHEET_NAME_2": "Power - HV Input & Fusing",
     "SHEET_NAME_20": "......................................",
     "SHEET_NAME_21": "......................................",
     "SHEET_NAME_22": "......................................",
@@ -1187,7 +1313,7 @@
     "SHEET_NAME_27": "......................................",
     "SHEET_NAME_28": "......................................",
     "SHEET_NAME_29": "......................................",
-    "SHEET_NAME_3": "Power - HV Input & Fusing",
+    "SHEET_NAME_3": "Power - Aux Input & +/-12 V Module",
     "SHEET_NAME_30": "......................................",
     "SHEET_NAME_31": "......................................",
     "SHEET_NAME_32": "......................................",
@@ -1198,13 +1324,13 @@
     "SHEET_NAME_37": "......................................",
     "SHEET_NAME_38": "......................................",
     "SHEET_NAME_39": "......................................",
-    "SHEET_NAME_4": "Power - Aux Input & +/-9 V LDOs",
+    "SHEET_NAME_4": "Power - LDO Rails",
     "SHEET_NAME_40": "......................................",
-    "SHEET_NAME_5": "Interface - FPGA",
-    "SHEET_NAME_6": "Analog - Input Clamp & Buffer",
-    "SHEET_NAME_7": "Analog - Howland Current Pump",
-    "SHEET_NAME_8": "Output - Limiter & PhotoMOS",
-    "SHEET_NAME_9": "Sense - Feedback to ADC",
+    "SHEET_NAME_5": "Interface - FPGA J3 & SPI Isolator",
+    "SHEET_NAME_6": "Interface - DAC Command",
+    "SHEET_NAME_7": "Analog - Input Clamp & Buffer",
+    "SHEET_NAME_8": "Analog - Howland Current Pump",
+    "SHEET_NAME_9": "Output - Limiter & PhotoMOS",
     "VARIANT": "PRELIMINARY"
   },
   "tuning_profiles": {

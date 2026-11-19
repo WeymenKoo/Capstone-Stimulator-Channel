@@ -16,145 +16,6 @@
 		(comment 9 "${REVIEWER}")
 	)
 	(lib_symbols
-		(symbol "STIM_Rev1:+12V"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+12V"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+12V\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+12V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+12V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "STIM_Rev1:+5V"
 			(power global)
 			(pin_numbers
@@ -176,6 +37,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -186,6 +48,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -197,6 +60,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -208,6 +72,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -219,6 +84,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -237,22 +103,10 @@
 			(symbol "+5V_0_1"
 				(polyline
 					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
+						(xy -1.27 2.54) (xy 1.27 2.54)
 					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -315,6 +169,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -325,6 +180,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -336,6 +192,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -347,6 +204,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -358,6 +216,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -376,22 +235,10 @@
 			(symbol "+9V_0_1"
 				(polyline
 					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
+						(xy -1.27 2.54) (xy 1.27 2.54)
 					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -433,7 +280,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "STIM_Rev1:-12V"
+		(symbol "STIM_Rev1:-9V"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -454,16 +301,18 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "-12V"
+			(property "Value" "-9V"
 				(at 0 3.556 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -475,6 +324,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -486,17 +336,19 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"-12V\""
+			(property "Description" "Power symbol creates a global label with name \"-9V\""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -512,7 +364,33 @@
 					)
 				)
 			)
-			(symbol "-12V_0_0"
+			(symbol "-9V_0_1"
+				(polyline
+					(pts
+						(xy -1.27 2.54) (xy 1.27 2.54)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "-9V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -529,20 +407,6 @@
 								(size 1.27 1.27)
 							)
 						)
-					)
-				)
-			)
-			(symbol "-12V_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 1.27) (xy 0.762 1.27) (xy 0 2.54) (xy -0.762 1.27) (xy 0 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
 					)
 				)
 			)
@@ -566,6 +430,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 					(justify left)
@@ -577,6 +442,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 					(justify left)
@@ -589,6 +455,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -600,6 +467,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -611,6 +479,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -703,7 +572,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "STIM_Rev1:GND"
+		(symbol "STIM_Rev1:ISO_GND"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -724,16 +593,18 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "GND"
+			(property "Value" "ISO_GND"
 				(at 0 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -745,6 +616,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -756,17 +628,19 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(property "Description" "Power symbol creates a global label with name \"ISO_GND\" , ground"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -782,7 +656,7 @@
 					)
 				)
 			)
-			(symbol "GND_0_1"
+			(symbol "ISO_GND_0_1"
 				(polyline
 					(pts
 						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
@@ -796,7 +670,7 @@
 					)
 				)
 			)
-			(symbol "GND_1_1"
+			(symbol "ISO_GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
@@ -834,6 +708,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -844,6 +719,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -855,6 +731,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 						(italic yes)
 					)
@@ -867,6 +744,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 						(italic yes)
 					)
@@ -879,6 +757,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -1017,6 +896,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 					(justify left)
@@ -1028,6 +908,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 					(justify left)
@@ -1040,6 +921,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -1051,6 +933,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -1062,6 +945,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -1147,7 +1031,7 @@
 				(pin power_in line
 					(at -2.54 7.62 270)
 					(length 3.81)
-					(name "V+"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1165,7 +1049,7 @@
 				(pin power_in line
 					(at -2.54 -7.62 90)
 					(length 3.81)
-					(name "V-"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1405,6 +1289,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -1415,6 +1300,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -1426,6 +1312,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -1437,6 +1324,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -1448,6 +1336,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -1546,6 +1435,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -1556,6 +1446,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -1567,6 +1458,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -1578,6 +1470,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -1589,6 +1482,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -1691,10 +1585,11 @@
 		)
 		(effects
 			(font
-				(face "Times New Roman")
+				(face "JetBrains Mono")
 				(size 2.54 2.54)
 				(thickness 0.508)
 				(bold yes)
+				(italic yes)
 				(color 162 22 34 1)
 			)
 			(justify bottom)
@@ -1715,10 +1610,11 @@
 		)
 		(effects
 			(font
-				(face "Times New Roman")
+				(face "JetBrains Mono")
 				(size 2.54 2.54)
 				(thickness 0.508)
 				(bold yes)
+				(italic yes)
 				(color 162 22 34 1)
 			)
 			(justify bottom)
@@ -1741,7 +1637,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 				(thickness 0.254)
 				(bold yes)
@@ -1752,7 +1648,7 @@
 	)
 	(text_box "D3"
 		(exclude_from_sim no)
-		(at 139.7 179.07 0)
+		(at 134.62 177.8 0)
 		(size 4.6 3.4)
 		(margins 0.3 0.3 0.3 0.3)
 		(stroke
@@ -1766,7 +1662,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 				(thickness 0.254)
 				(bold yes)
@@ -1791,7 +1687,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 				(thickness 0.254)
 				(bold yes)
@@ -1816,7 +1712,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 				(thickness 0.254)
 				(bold yes)
@@ -1825,10 +1721,10 @@
 		)
 		(uuid "a0e5aab0-78b4-459c-89d1-d6cf072af1ae")
 	)
-	(text_box "MISC NOTE M1:\nR53-R55 1 k isolate the cable capacitance from U22; the FPGA subtracts VMID_REF from both read-backs."
+	(text_box "MISC NOTE M1:\n• R36/R40/R41 1 k isolate the cable capacitance from U18\n• The FPGA subtracts VMID_REF from both read-backs"
 		(exclude_from_sim no)
-		(at 252.96 181.3 0)
-		(size 62 9.2)
+		(at 247.88 180.03 0)
+		(size 62 8.89)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -1841,7 +1737,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 				(color 0 0 0 1)
 			)
@@ -1865,7 +1761,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 				(thickness 0.254)
 				(bold yes)
@@ -1874,10 +1770,10 @@
 		)
 		(uuid "a0e5c3be-8b9a-4eaa-89f2-46e5ef1d6e9a")
 	)
-	(text_box "DESIGN NOTE D3:\nVMID = 4.096 V x 10.0k / 24.7k = 1.658 V (half of a 3.3 V ADC). Other ADC range: re-select R51/R52. U29 runs at ~0.8 mA from +9 V."
+	(text_box "DESIGN NOTE D3:\n• VMID = 4.096 V x 10.0k / 16.04k = 2.554 V (middle of the ADS8689 0-5.12 V range)\n• Other ADC range: re-select R31/R32. U17 runs at ~0.7 mA from +9 V"
 		(exclude_from_sim no)
-		(at 37.06 93.98 0)
-		(size 62 9.2)
+		(at 37.06 99.695 0)
+		(size 62 13.335)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -1890,7 +1786,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 				(color 0 0 0 1)
 			)
@@ -1898,10 +1794,10 @@
 		)
 		(uuid "a0e5c61a-2422-4cb7-ae8b-6807555ee090")
 	)
-	(text_box "LAYOUT NOTE L2:\nC94/C95 at U22 pins 4 and 11, via at the pad."
+	(text_box "LAYOUT NOTE L2:\n• C45/C46 at U18 pins 4 and 11, via at the pad"
 		(exclude_from_sim no)
-		(at 37.06 117.46 0)
-		(size 62 7)
+		(at 37.06 127 0)
+		(size 62 6.985)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)
@@ -1914,7 +1810,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 				(color 0 0 255 1)
 			)
@@ -1922,10 +1818,10 @@
 		)
 		(uuid "a0e5cc37-e8fb-4f82-a0b9-51f88db34c76")
 	)
-	(text_box "DESIGN NOTE D1:\nI_RETURN_ADC = VMID + 0.201 V/mA: RSHR 10 mV/mA x 20.1 (U22A, R71/R70) + VMID (U22B, R72-R75 0.1 %). +/-5 mA -> 0.66-2.66 V."
+	(text_box "DESIGN NOTE D1:\n• I_RETURN_ADC = VMID + 0.201 V/mA: RSHR 10 mV/mA x 20.1 (U18A, R34/R33) + VMID (U18B, R35/R37-R39 0.1 %)\n• +/-5 mA -> 1.55-3.56 V\n• Full span +/-12.7 mA"
 		(exclude_from_sim no)
 		(at 37.06 70.5 0)
-		(size 62 9.2)
+		(size 62 13.335)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -1938,7 +1834,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 				(color 0 0 0 1)
 			)
@@ -1946,10 +1842,10 @@
 		)
 		(uuid "a0e5d2f2-cb92-4464-ac7e-20e48fa4a2aa")
 	)
-	(text_box "DESIGN NOTE D2:\nV_ELEC_ADC = VMID + V_elec / 101 (20 MOhm / 200 k returned to VMID); U22C buffers it (20 pA bias)."
+	(text_box "DESIGN NOTE D2:\n• V_ELEC_ADC = VMID + V_elec / 101 (20 MOhm / 200 k returned to VMID)\n• U18C buffers it (20 pA bias)"
 		(exclude_from_sim no)
-		(at 37.06 82.24 0)
-		(size 62 9.2)
+		(at 37.06 86.36 0)
+		(size 62 10.795)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -1962,7 +1858,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 				(color 0 0 0 1)
 			)
@@ -1970,10 +1866,10 @@
 		)
 		(uuid "a0e5d41e-b4f7-47c3-8d54-a16d975696a8")
 	)
-	(text_box "LAYOUT NOTE L1:\n0.1 % set R72-R75: short, symmetric traces; no copper pour between their pads."
+	(text_box "LAYOUT NOTE L1:\n• 0.1 % set R35/R37-R39: short, symmetric traces\n• No copper pour between their pads"
 		(exclude_from_sim no)
-		(at 37.06 105.72 0)
-		(size 62 9.2)
+		(at 37.06 115.57 0)
+		(size 62 8.89)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)
@@ -1986,7 +1882,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 				(color 0 0 255 1)
 			)
@@ -1994,9 +1890,9 @@
 		)
 		(uuid "a0e5f15e-0d8e-436d-a6de-6c331e0e3779")
 	)
-	(text_box "[9] Sense - Feedback to ADC"
+	(text_box "[11] Sense - Feedback to ADC"
 		(exclude_from_sim no)
-		(at 17.08 16.51 0)
+		(at 17.08 20.32 0)
 		(size 385.84 10.16)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -2008,10 +1904,11 @@
 		)
 		(effects
 			(font
-				(face "Times New Roman")
+				(face "JetBrains Mono")
 				(size 7 7)
 				(thickness 1.4)
 				(bold yes)
+				(italic yes)
 				(color 162 22 34 1)
 			)
 			(justify top)
@@ -2025,13 +1922,13 @@
 		(uuid "2632171c-5aaa-5fac-9ebb-922d19912432")
 	)
 	(junction
-		(at 180.34 204.47)
+		(at 175.26 203.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "30f2cf34-7ef6-5836-b4a5-a0f5b0b375f0")
 	)
 	(junction
-		(at 236.22 207.01)
+		(at 231.14 205.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3cc7aaff-5ff8-5632-8153-381980fd2b59")
@@ -2049,13 +1946,13 @@
 		(uuid "5ecdbc3b-8917-561a-9ce8-10c07319c2ba")
 	)
 	(junction
-		(at 241.3 207.01)
+		(at 236.22 205.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5f1831f8-8733-59cd-884e-4c3ab2a30cfa")
 	)
 	(junction
-		(at 269.24 207.01)
+		(at 264.16 205.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "883bc405-cabe-5697-9552-7afd08512aef")
@@ -2067,7 +1964,7 @@
 		(uuid "898773b6-2159-4d3b-b855-e10a7e212d07")
 	)
 	(junction
-		(at 148.59 191.77)
+		(at 143.51 190.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8e1eb1bb-f164-5027-92bf-46d6828d4835")
@@ -2096,9 +1993,15 @@
 		(color 0 0 0 0)
 		(uuid "bf9816c4-08b7-544a-a2be-7e2d4a639793")
 	)
+	(junction
+		(at 255.27 86.36)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ecdcde50-6d79-4b8b-86ca-e6512a601074")
+	)
 	(wire
 		(pts
-			(xy 236.22 219.71) (xy 215.9 219.71)
+			(xy 231.14 218.44) (xy 210.82 218.44)
 		)
 		(stroke
 			(width 0)
@@ -2108,7 +2011,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 207.01) (xy 241.3 207.01)
+			(xy 228.6 205.74) (xy 236.22 205.74)
 		)
 		(stroke
 			(width 0)
@@ -2138,7 +2041,17 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 209.55) (xy 218.44 209.55)
+			(xy 255.27 86.36) (xy 252.73 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ca2835a-8d3d-426d-833d-8fc3ff1a6a87")
+	)
+	(wire
+		(pts
+			(xy 210.82 208.28) (xy 213.36 208.28)
 		)
 		(stroke
 			(width 0)
@@ -2148,7 +2061,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 204.47) (xy 148.59 201.93)
+			(xy 143.51 203.2) (xy 143.51 200.66)
 		)
 		(stroke
 			(width 0)
@@ -2168,7 +2081,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 179.07) (xy 148.59 181.61)
+			(xy 143.51 177.8) (xy 143.51 180.34)
 		)
 		(stroke
 			(width 0)
@@ -2188,7 +2101,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 217.17) (xy 180.34 214.63)
+			(xy 175.26 215.9) (xy 175.26 213.36)
 		)
 		(stroke
 			(width 0)
@@ -2198,7 +2111,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 204.47) (xy 180.34 207.01)
+			(xy 175.26 203.2) (xy 175.26 205.74)
 		)
 		(stroke
 			(width 0)
@@ -2218,7 +2131,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 191.77) (xy 180.34 191.77)
+			(xy 143.51 190.5) (xy 175.26 190.5)
 		)
 		(stroke
 			(width 0)
@@ -2308,7 +2221,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 207.01) (xy 252.73 207.01)
+			(xy 236.22 205.74) (xy 247.65 205.74)
 		)
 		(stroke
 			(width 0)
@@ -2338,7 +2251,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 207.01) (xy 269.24 207.01)
+			(xy 255.27 205.74) (xy 264.16 205.74)
 		)
 		(stroke
 			(width 0)
@@ -2348,7 +2261,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 189.23) (xy 148.59 191.77)
+			(xy 143.51 187.96) (xy 143.51 190.5)
 		)
 		(stroke
 			(width 0)
@@ -2418,7 +2331,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 191.77) (xy 148.59 194.31)
+			(xy 143.51 190.5) (xy 143.51 193.04)
 		)
 		(stroke
 			(width 0)
@@ -2428,7 +2341,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 201.93) (xy 180.34 204.47)
+			(xy 175.26 200.66) (xy 175.26 203.2)
 		)
 		(stroke
 			(width 0)
@@ -2458,7 +2371,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 207.01) (xy 241.3 199.39)
+			(xy 236.22 205.74) (xy 236.22 198.12)
 		)
 		(stroke
 			(width 0)
@@ -2508,7 +2421,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 191.77) (xy 180.34 194.31)
+			(xy 175.26 190.5) (xy 175.26 193.04)
 		)
 		(stroke
 			(width 0)
@@ -2518,7 +2431,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 207.01) (xy 236.22 219.71)
+			(xy 231.14 205.74) (xy 231.14 218.44)
 		)
 		(stroke
 			(width 0)
@@ -2588,7 +2501,7 @@
 	)
 	(wire
 		(pts
-			(xy 269.24 207.01) (xy 311.15 207.01)
+			(xy 264.16 205.74) (xy 306.07 205.74)
 		)
 		(stroke
 			(width 0)
@@ -2598,7 +2511,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 204.47) (xy 218.44 204.47)
+			(xy 175.26 203.2) (xy 213.36 203.2)
 		)
 		(stroke
 			(width 0)
@@ -2618,7 +2531,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 219.71) (xy 215.9 209.55)
+			(xy 210.82 218.44) (xy 210.82 208.28)
 		)
 		(stroke
 			(width 0)
@@ -2660,6 +2573,7 @@
 		(at 181.61 76.2 0)
 		(effects
 			(font
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -2670,6 +2584,7 @@
 		(at 250.19 52.07 0)
 		(effects
 			(font
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -2677,19 +2592,32 @@
 		(uuid "2538c346-7aee-5a0b-8550-d1c78c5de18e")
 	)
 	(label "IRET_SUM_N"
-		(at 255.27 86.36 180)
+		(at 252.73 86.36 180)
 		(effects
 			(font
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
 		(uuid "4737ac0e-d59e-5091-b6de-15354fde8c1b")
 	)
+	(label "VMID_REF"
+		(at 306.07 205.74 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5384809f-c9da-4fc8-a4a8-29c629959097")
+	)
 	(label "I_RETURN_BUF"
 		(at 289.56 76.2 0)
 		(effects
 			(font
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -2700,6 +2628,7 @@
 		(at 213.36 73.66 0)
 		(effects
 			(font
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -2707,9 +2636,10 @@
 		(uuid "6d734f7a-c6c3-51ec-8074-13aeedd66f17")
 	)
 	(label "VMID_DIV"
-		(at 185.42 204.47 0)
+		(at 180.34 203.2 0)
 		(effects
 			(font
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -2717,9 +2647,10 @@
 		(uuid "99f88f77-12bb-5a38-8b10-398426a1bbbd")
 	)
 	(label "VREF_4V096"
-		(at 152.4 191.77 0)
+		(at 147.32 190.5 0)
 		(effects
 			(font
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -2730,6 +2661,7 @@
 		(at 257.81 139.7 0)
 		(effects
 			(font
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -2740,6 +2672,7 @@
 		(at 254 73.66 180)
 		(effects
 			(font
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
@@ -2751,6 +2684,7 @@
 		(at 167.64 137.16 180)
 		(effects
 			(font
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 			)
 			(justify right)
@@ -2762,6 +2696,7 @@
 		(at 167.64 71.12 180)
 		(effects
 			(font
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 			)
 			(justify right)
@@ -2770,9 +2705,10 @@
 	)
 	(hierarchical_label "VMID"
 		(shape output)
-		(at 241.3 199.39 90)
+		(at 236.22 198.12 90)
 		(effects
 			(font
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 			)
 			(justify left)
@@ -2784,28 +2720,19 @@
 		(at 330.2 139.7 0)
 		(effects
 			(font
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
 		(uuid "be572516-0144-557a-8fd4-b97ddc5db0f5")
 	)
-	(hierarchical_label "VMID_REF"
-		(shape output)
-		(at 311.15 207.01 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "bf79b441-fa60-5e21-8672-b66365dd1143")
-	)
 	(hierarchical_label "I_RETURN_ADC"
 		(shape output)
 		(at 330.2 76.2 0)
 		(effects
 			(font
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 			)
 			(justify left)
@@ -2814,7 +2741,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:R")
-		(at 180.34 210.82 0)
+		(at 175.26 209.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2823,134 +2750,146 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "062ad898-7882-5e56-ba26-f939b3139b4f")
-		(property "Reference" "R52"
-			(at 182.88 209.55 0)
+		(property "Reference" "R32"
+			(at 177.8 208.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
 		)
 		(property "Value" "10.0k 1% 0603"
-			(at 182.88 212.09 0)
+			(at 177.8 210.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
 		)
 		(property "Footprint" "STIM_Rev1:R_0603_1608Metric"
-			(at 180.34 210.82 0)
+			(at 175.26 209.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 210.82 0)
+			(at 175.26 209.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Description" "resistor"
-			(at 180.34 210.82 0)
+			(at 175.26 209.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Note" ""
-			(at 180.34 210.82 0)
+			(at 175.26 209.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 180.34 210.82 0)
+			(at 175.26 209.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Sim.Params" "r=10000"
-			(at 180.34 210.82 0)
+			(at 175.26 209.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "MPN" "0603WAF1002T5E"
-			(at 180.34 210.82 0)
+			(at 175.26 209.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL"
-			(at 180.34 210.82 0)
+			(at 175.26 209.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "LCSC" "C25804"
-			(at 180.34 210.82 0)
+			(at 175.26 209.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "JLC" "Basic"
-			(at 180.34 210.82 0)
+			(at 175.26 209.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2964,7 +2903,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "R52")
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -2981,12 +2920,13 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "07a0a269-8822-50c7-9369-ca500372e113")
-		(property "Reference" "C94"
+		(property "Reference" "C45"
 			(at 121.92 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -2998,6 +2938,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -3010,6 +2951,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3021,6 +2963,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3032,6 +2975,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3043,6 +2987,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3054,6 +2999,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3065,6 +3011,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3076,17 +3023,19 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Note" "at U22"
+		(property "Note" "at U18"
 			(at 119.38 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3098,6 +3047,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3109,6 +3059,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3122,14 +3073,14 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "C94")
+					(reference "C45")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "STIM_Rev1:-12V")
+		(lib_id "STIM_Rev1:-9V")
 		(at 200.66 85.09 180)
 		(unit 1)
 		(body_style 1)
@@ -3139,23 +3090,25 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "19478d6b-da90-5caf-a18b-e70f4bf3b8a6")
-		(property "Reference" "#PWR058"
+		(property "Reference" "#PWR0149"
 			(at 200.66 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "-12V"
+		(property "Value" "-9V"
 			(at 200.66 88.646 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3167,6 +3120,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3178,6 +3132,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3188,6 +3143,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3198,14 +3154,14 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "#PWR058")
+					(reference "#PWR0149")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "STIM_Rev1:+12V")
+		(lib_id "STIM_Rev1:+9V")
 		(at 119.38 101.6 0)
 		(unit 1)
 		(body_style 1)
@@ -3215,23 +3171,25 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "1e4a3482-f6db-552e-a391-4e3f86ac7d5f")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR0140"
 			(at 119.38 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "+12V"
+		(property "Value" "+9V"
 			(at 119.38 98.044 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3243,6 +3201,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3254,6 +3213,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3264,6 +3224,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3274,7 +3235,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "#PWR063")
+					(reference "#PWR0140")
 					(unit 1)
 				)
 			)
@@ -3291,12 +3252,13 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "23330e54-1433-5444-bc8d-8002c0f5a568")
-		(property "Reference" "R71"
+		(property "Reference" "R34"
 			(at 200.66 93.218 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3307,6 +3269,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3318,6 +3281,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3329,6 +3293,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3340,6 +3305,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3351,6 +3317,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3362,6 +3329,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3373,6 +3341,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3384,6 +3353,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3395,6 +3365,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3406,6 +3377,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3417,6 +3389,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3430,7 +3403,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "R71")
+					(reference "R34")
 					(unit 1)
 				)
 			)
@@ -3447,12 +3420,13 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "244f36db-b692-548a-a31f-a6265511e8df")
-		(property "Reference" "U22"
+		(property "Reference" "U18"
 			(at 240.538 130.302 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -3464,6 +3438,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -3476,6 +3451,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3487,6 +3463,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3498,6 +3475,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3509,6 +3487,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3520,6 +3499,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3531,6 +3511,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3542,6 +3523,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3553,6 +3535,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3602,7 +3585,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "U22")
+					(reference "U18")
 					(unit 3)
 				)
 			)
@@ -3610,7 +3593,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:+9V")
-		(at 148.59 179.07 0)
+		(at 143.51 177.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3619,55 +3602,60 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2baeac07-2cbb-5256-b8e2-fe2bc28b19c7")
-		(property "Reference" "#PWR060"
-			(at 148.59 179.07 0)
+		(property "Reference" "#PWR0142"
+			(at 143.51 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Value" "+9V"
-			(at 148.59 175.514 0)
+			(at 143.51 174.244 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Footprint" ""
-			(at 148.59 179.07 0)
+			(at 143.51 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Datasheet" ""
-			(at 148.59 179.07 0)
+			(at 143.51 177.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Description" ""
-			(at 148.59 179.07 0)
+			(at 143.51 177.8 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3678,7 +3666,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "#PWR060")
+					(reference "#PWR0142")
 					(unit 1)
 				)
 			)
@@ -3695,12 +3683,13 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "2f7207d6-47a2-5828-b66e-a30b0ae2f28a")
-		(property "Reference" "R54"
+		(property "Reference" "R41"
 			(at 309.88 72.898 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3711,6 +3700,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3722,6 +3712,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3733,6 +3724,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3744,6 +3736,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3755,6 +3748,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3766,6 +3760,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3777,6 +3772,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3788,6 +3784,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3799,6 +3796,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3810,6 +3808,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3821,6 +3820,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3834,7 +3834,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "R54")
+					(reference "R41")
 					(unit 1)
 				)
 			)
@@ -3842,7 +3842,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:R")
-		(at 256.54 207.01 90)
+		(at 251.46 205.74 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3851,132 +3851,144 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "31ce69c1-7432-5fdd-87cc-f5a0799617bc")
-		(property "Reference" "R53"
-			(at 256.54 203.708 90)
+		(property "Reference" "R36"
+			(at 251.46 202.438 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Value" "1k 1% 0603"
-			(at 256.54 210.312 90)
+			(at 251.46 209.042 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Footprint" "STIM_Rev1:R_0603_1608Metric"
-			(at 256.54 207.01 0)
+			(at 251.46 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Datasheet" ""
-			(at 256.54 207.01 0)
+			(at 251.46 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Description" "resistor"
-			(at 256.54 207.01 0)
+			(at 251.46 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Note" "series isolation to the cable"
-			(at 256.54 207.01 0)
+			(at 251.46 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 256.54 207.01 0)
+			(at 251.46 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Sim.Params" "r=1000"
-			(at 256.54 207.01 0)
+			(at 251.46 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "MPN" "0603WAF1001T5E"
-			(at 256.54 207.01 0)
+			(at 251.46 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL"
-			(at 256.54 207.01 0)
+			(at 251.46 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "LCSC" "C21190"
-			(at 256.54 207.01 0)
+			(at 251.46 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "JLC" "Basic"
-			(at 256.54 207.01 0)
+			(at 251.46 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3990,15 +4002,15 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "R53")
+					(reference "R36")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "STIM_Rev1:GND")
-		(at 180.34 217.17 0)
+		(lib_id "STIM_Rev1:ISO_GND")
+		(at 175.26 215.9 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4007,55 +4019,60 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3bcbe1c7-4ba4-585d-a03f-8d58fdebd6f5")
-		(property "Reference" "#PWR062"
-			(at 180.34 217.17 0)
+		(property "Reference" "#PWR0146"
+			(at 175.26 215.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 180.34 221.996 0)
+		(property "Value" "ISO_GND"
+			(at 175.26 220.726 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Footprint" ""
-			(at 180.34 217.17 0)
+			(at 175.26 215.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 217.17 0)
+			(at 175.26 215.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Description" ""
-			(at 180.34 217.17 0)
+			(at 175.26 215.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4066,7 +4083,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "#PWR062")
+					(reference "#PWR0146")
 					(unit 1)
 				)
 			)
@@ -4083,12 +4100,13 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "3eab2e1e-bcee-5271-a468-47ee9f7850a7")
-		(property "Reference" "TP28"
+		(property "Reference" "TP38"
 			(at 295.91 133.096 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -4100,6 +4118,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -4112,6 +4131,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4123,6 +4143,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4134,6 +4155,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4145,6 +4167,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4155,7 +4178,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "TP28")
+					(reference "TP38")
 					(unit 1)
 				)
 			)
@@ -4163,7 +4186,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:R")
-		(at 148.59 185.42 0)
+		(at 143.51 184.15 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4172,134 +4195,146 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4266fab8-aaaa-5557-a155-cafe81e95d00")
-		(property "Reference" "R50"
-			(at 151.13 184.15 0)
+		(property "Reference" "R30"
+			(at 146.05 182.88 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
 		)
 		(property "Value" "5.1k 1% 0603"
-			(at 151.13 186.69 0)
+			(at 146.05 185.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
 		)
 		(property "Footprint" "STIM_Rev1:R_0603_1608Metric"
-			(at 148.59 185.42 0)
+			(at 143.51 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Datasheet" ""
-			(at 148.59 185.42 0)
+			(at 143.51 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Description" "resistor"
-			(at 148.59 185.42 0)
+			(at 143.51 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "MPN" "0603WAF5101T5E"
-			(at 148.59 185.42 0)
+			(at 143.51 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL"
-			(at 148.59 185.42 0)
+			(at 143.51 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "LCSC" "C23186"
-			(at 148.59 185.42 0)
+			(at 143.51 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "JLC" "Basic"
-			(at 148.59 185.42 0)
+			(at 143.51 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Note" "LM4040 bias from +9V: (9.0-4.096)/5.1k = 0.96 mA, ~0.8 mA in U29 after the R51/R52 divider"
-			(at 148.59 185.42 0)
+		(property "Note" "LM4040 bias from +9V: (9.0-4.096)/5.1k = 0.96 mA, ~0.7 mA in U17 after the R31/R32 divider"
+			(at 143.51 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 148.59 185.42 0)
+			(at 143.51 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Sim.Params" "r=5100"
-			(at 148.59 185.42 0)
+			(at 143.51 184.15 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4313,7 +4348,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "R50")
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -4330,12 +4365,13 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4a122b50-92ac-5256-8f6e-ab23e6864280")
-		(property "Reference" "R70"
+		(property "Reference" "R33"
 			(at 184.15 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -4347,6 +4383,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -4359,6 +4396,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4370,6 +4408,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4381,6 +4420,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4392,6 +4432,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4403,6 +4444,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4414,6 +4456,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4425,17 +4468,19 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Note" "x20.1 with R71"
+		(property "Note" "x20.1 with R34"
 			(at 181.61 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4447,6 +4492,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4458,6 +4504,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4471,7 +4518,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "R70")
+					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -4488,12 +4535,13 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4e485ece-5a03-5567-87b6-a435dc735b21")
-		(property "Reference" "TP27"
+		(property "Reference" "TP39"
 			(at 325.12 69.596 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -4505,6 +4553,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -4517,6 +4566,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4528,6 +4578,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4539,6 +4590,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4550,6 +4602,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4560,7 +4613,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "TP27")
+					(reference "TP39")
 					(unit 1)
 				)
 			)
@@ -4577,12 +4630,13 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5f8b8f8e-f84a-511e-bdbc-93e307100023")
-		(property "Reference" "U22"
+		(property "Reference" "U18"
 			(at 272.288 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -4594,6 +4648,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -4606,6 +4661,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4617,6 +4673,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4628,6 +4685,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4639,6 +4697,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4650,6 +4709,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4661,6 +4721,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4672,6 +4733,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4683,6 +4745,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4732,14 +4795,14 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "U22")
+					(reference "U18")
 					(unit 2)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "STIM_Rev1:GND")
+		(lib_id "STIM_Rev1:ISO_GND")
 		(at 255.27 114.3 0)
 		(unit 1)
 		(body_style 1)
@@ -4749,23 +4812,25 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5f91145f-495d-5483-a000-701ccf719b66")
-		(property "Reference" "#PWR059"
+		(property "Reference" "#PWR0150"
 			(at 255.27 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "ISO_GND"
 			(at 255.27 119.126 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4777,6 +4842,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4788,6 +4854,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4798,6 +4865,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4808,14 +4876,14 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "#PWR059")
+					(reference "#PWR0150")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "STIM_Rev1:+12V")
+		(lib_id "STIM_Rev1:+9V")
 		(at 200.66 60.96 0)
 		(unit 1)
 		(body_style 1)
@@ -4825,23 +4893,25 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "632e9fb7-0417-5543-87ab-f78c79a0df5e")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR0148"
 			(at 200.66 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "+12V"
+		(property "Value" "+9V"
 			(at 200.66 57.404 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4853,6 +4923,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4864,6 +4935,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4874,6 +4946,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4884,7 +4957,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "#PWR057")
+					(reference "#PWR0148")
 					(unit 1)
 				)
 			)
@@ -4901,12 +4974,13 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "708b7884-db26-5fc6-a6d9-ac3db8d01ce9")
-		(property "Reference" "R73"
+		(property "Reference" "R38"
 			(at 259.08 58.42 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify right)
@@ -4918,6 +4992,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify right)
@@ -4930,6 +5005,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4941,6 +5017,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4952,6 +5029,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4963,6 +5041,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4974,6 +5053,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4985,6 +5065,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4996,6 +5077,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5007,6 +5089,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5018,6 +5101,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5029,6 +5113,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5042,7 +5127,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "R73")
+					(reference "R38")
 					(unit 1)
 				)
 			)
@@ -5059,12 +5144,13 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "848b6e98-bd8d-569b-ab78-fa47ff8315c5")
-		(property "Reference" "U22"
+		(property "Reference" "U18"
 			(at 206.248 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -5076,6 +5162,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -5088,6 +5175,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5099,6 +5187,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5110,6 +5199,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5121,6 +5211,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5132,6 +5223,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5143,6 +5235,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5154,6 +5247,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5165,6 +5259,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5214,7 +5309,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "U22")
+					(reference "U18")
 					(unit 1)
 				)
 			)
@@ -5231,12 +5326,13 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8501d7c4-3729-5d73-8667-0b9f184155d6")
-		(property "Reference" "R55"
+		(property "Reference" "R40"
 			(at 280.67 136.398 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5247,6 +5343,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5258,6 +5355,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5269,6 +5367,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5280,6 +5379,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5291,6 +5391,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5302,6 +5403,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5313,6 +5415,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5324,6 +5427,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5335,6 +5439,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5346,6 +5451,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5357,6 +5463,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5370,7 +5477,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "R55")
+					(reference "R40")
 					(unit 1)
 				)
 			)
@@ -5387,12 +5494,13 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "95f0f8f6-29cd-5e42-a485-4d3e823e994a")
-		(property "Reference" "C95"
+		(property "Reference" "C46"
 			(at 152.4 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify right)
@@ -5404,6 +5512,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify right)
@@ -5416,6 +5525,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5427,6 +5537,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5438,6 +5549,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5449,6 +5561,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5460,6 +5573,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5471,6 +5585,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5482,17 +5597,19 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Note" "at U22"
+		(property "Note" "at U18"
 			(at 149.86 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5504,6 +5621,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5515,6 +5633,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5528,7 +5647,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "C95")
+					(reference "C46")
 					(unit 1)
 				)
 			)
@@ -5545,12 +5664,13 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "96df438a-5a59-511a-88be-55f1390e9775")
-		(property "Reference" "R74"
+		(property "Reference" "R37"
 			(at 257.81 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify right)
@@ -5562,6 +5682,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify right)
@@ -5574,6 +5695,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5585,6 +5707,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5596,6 +5719,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5607,6 +5731,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5618,6 +5743,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5629,6 +5755,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5640,6 +5767,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5651,6 +5779,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5662,6 +5791,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5673,6 +5803,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5686,14 +5817,14 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "R74")
+					(reference "R37")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "STIM_Rev1:GND")
+		(lib_id "STIM_Rev1:ISO_GND")
 		(at 149.86 101.6 180)
 		(unit 1)
 		(body_style 1)
@@ -5703,23 +5834,25 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9e30e9ec-4a39-53dc-805a-e5327f38d7fe")
-		(property "Reference" "#PWR066"
+		(property "Reference" "#PWR0144"
 			(at 149.86 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "ISO_GND"
 			(at 149.86 96.774 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5731,6 +5864,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5742,6 +5876,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5752,6 +5887,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5762,7 +5898,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "#PWR066")
+					(reference "#PWR0144")
 					(unit 1)
 				)
 			)
@@ -5770,77 +5906,83 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:TestPoint")
-		(at 269.24 207.01 0)
+		(at 264.16 205.74 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(uuid "9e35647c-9d81-5b01-861d-62f5723159c3")
-		(property "Reference" "TP29"
-			(at 271.78 200.406 0)
+		(property "Reference" "TP37"
+			(at 266.7 199.136 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
 		)
 		(property "Value" "VMID_REF"
-			(at 271.78 202.946 0)
+			(at 266.7 201.676 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" "STIM_Rev1:TestPoint_Keystone_5000-5004_Miniature"
-			(at 269.24 207.01 0)
+		(property "Footprint" "STIM_Rev1:TestPoint_Pad_D1.2mm"
+			(at 264.16 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Datasheet" ""
-			(at 269.24 207.01 0)
+			(at 264.16 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Description" "test loop Keystone 5001"
-			(at 269.24 207.01 0)
+		(property "Description" "test pad 1.2 mm (bare copper)"
+			(at 264.16 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Note" "bench probe loop"
-			(at 269.24 207.01 0)
+		(property "Note" "bench probe pad"
+			(at 264.16 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5851,7 +5993,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "TP29")
+					(reference "TP37")
 					(unit 1)
 				)
 			)
@@ -5859,7 +6001,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:LM4040A41")
-		(at 148.59 198.12 90)
+		(at 143.51 196.85 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5868,110 +6010,120 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9f8bd836-8077-5337-a16f-1c8bcefa8ade")
-		(property "Reference" "U29"
-			(at 152.9207 196.85 90)
+		(property "Reference" "U17"
+			(at 147.8407 195.58 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Value" "LM4040A41 4.096V 0.1%"
-			(at 163.6649 199.39 90)
+			(at 158.5849 198.12 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Footprint" "STIM_Rev1:SOT-23"
-			(at 148.59 198.12 0)
+			(at 143.51 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/lm4040.pdf"
-			(at 148.59 198.12 0)
+			(at 143.51 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Description" "LM4040A41IDBZR"
-			(at 148.59 198.12 0)
+			(at 143.51 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "MPN" "LM4040AIM3-4.1/NOPB"
-			(at 148.59 198.12 0)
+			(at 143.51 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Manufacturer" "TI"
-			(at 148.59 198.12 0)
+			(at 143.51 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "LCSC" "C126807"
-			(at 148.59 198.12 0)
+			(at 143.51 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "JLC" "Extended"
-			(at 148.59 198.12 0)
+			(at 143.51 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Note" "pin 3 (pad only) floats"
-			(at 148.59 198.12 0)
+			(at 143.51 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -5988,15 +6140,15 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "U29")
+					(reference "U17")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "STIM_Rev1:GND")
-		(at 148.59 204.47 0)
+		(lib_id "STIM_Rev1:ISO_GND")
+		(at 143.51 203.2 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6005,55 +6157,60 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a25ee10f-764b-530c-a76c-0e38ca763e79")
-		(property "Reference" "#PWR061"
-			(at 148.59 204.47 0)
+		(property "Reference" "#PWR0143"
+			(at 143.51 203.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 148.59 209.296 0)
+		(property "Value" "ISO_GND"
+			(at 143.51 208.026 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Footprint" ""
-			(at 148.59 204.47 0)
+			(at 143.51 203.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Datasheet" ""
-			(at 148.59 204.47 0)
+			(at 143.51 203.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Description" ""
-			(at 148.59 204.47 0)
+			(at 143.51 203.2 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6064,14 +6221,14 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "#PWR061")
+					(reference "#PWR0143")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "STIM_Rev1:-12V")
+		(lib_id "STIM_Rev1:-9V")
 		(at 149.86 114.3 180)
 		(unit 1)
 		(body_style 1)
@@ -6081,23 +6238,25 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b459fa46-7d0e-5cdc-ae5e-ef666306d035")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR0145"
 			(at 149.86 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "-12V"
+		(property "Value" "-9V"
 			(at 149.86 117.856 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6109,6 +6268,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6120,6 +6280,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6130,6 +6291,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6140,14 +6302,14 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "#PWR065")
+					(reference "#PWR0145")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "STIM_Rev1:GND")
+		(lib_id "STIM_Rev1:ISO_GND")
 		(at 181.61 114.3 0)
 		(unit 1)
 		(body_style 1)
@@ -6157,23 +6319,25 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b646ccb3-bc11-5811-a4a4-74d658289db2")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR0147"
 			(at 181.61 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "ISO_GND"
 			(at 181.61 119.126 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6185,6 +6349,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6196,6 +6361,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6206,6 +6372,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6216,7 +6383,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "#PWR056")
+					(reference "#PWR0147")
 					(unit 1)
 				)
 			)
@@ -6224,7 +6391,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:R")
-		(at 180.34 198.12 0)
+		(at 175.26 196.85 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6233,134 +6400,146 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c1a19ae2-5c8d-5b84-9bc3-75b1b2b952d7")
-		(property "Reference" "R51"
-			(at 182.88 196.85 0)
+		(property "Reference" "R31"
+			(at 177.8 195.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
 		)
-		(property "Value" "14.7k 1% 0603"
-			(at 182.88 199.39 0)
+		(property "Value" "6.04k 1% 0603"
+			(at 177.8 198.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
 		)
 		(property "Footprint" "STIM_Rev1:R_0603_1608Metric"
-			(at 180.34 198.12 0)
+			(at 175.26 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 198.12 0)
+			(at 175.26 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Description" "resistor"
-			(at 180.34 198.12 0)
+			(at 175.26 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Note" "VMID = 4.096 x 10.0k / (14.7k + 10.0k) = 1.658 V: half of a 3.3 V ADC range; select to ADC"
-			(at 180.34 198.12 0)
+		(property "Note" "VMID = 4.096 x 10.0k / (6.04k + 10.0k) = 2.554 V: middle of the ADS8689 0-5.12 V range (review S1); I_RETURN reads +/-12.7 mA"
+			(at 175.26 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 180.34 198.12 0)
+			(at 175.26 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Sim.Params" "r=14700"
-			(at 180.34 198.12 0)
+		(property "Sim.Params" "r=6040"
+			(at 175.26 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "MPN" "0603WAF1472T5E"
-			(at 180.34 198.12 0)
+		(property "MPN" "0603WAF6041T5E"
+			(at 175.26 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL"
-			(at 180.34 198.12 0)
+			(at 175.26 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "LCSC" "C22874"
-			(at 180.34 198.12 0)
+		(property "LCSC" "C25977"
+			(at 175.26 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "JLC" "Extended"
-			(at 180.34 198.12 0)
+			(at 175.26 196.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6374,14 +6553,14 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "R51")
+					(reference "R31")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "STIM_Rev1:GND")
+		(lib_id "STIM_Rev1:ISO_GND")
 		(at 119.38 114.3 0)
 		(unit 1)
 		(body_style 1)
@@ -6391,23 +6570,25 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cf42f259-82b3-5223-9a50-e9dc3f13f57e")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR0141"
 			(at 119.38 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "ISO_GND"
 			(at 119.38 119.126 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6419,6 +6600,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6430,6 +6612,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6440,6 +6623,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6450,7 +6634,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "#PWR064")
+					(reference "#PWR0141")
 					(unit 1)
 				)
 			)
@@ -6467,12 +6651,13 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e18e7f19-108f-5322-bd99-39f925b8f744")
-		(property "Reference" "R72"
+		(property "Reference" "R35"
 			(at 236.22 70.358 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6483,6 +6668,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6494,6 +6680,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6505,6 +6692,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6516,6 +6704,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6527,6 +6716,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6538,6 +6728,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6549,6 +6740,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6560,6 +6752,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6571,6 +6764,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6582,6 +6776,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6593,6 +6788,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6606,7 +6802,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "R72")
+					(reference "R35")
 					(unit 1)
 				)
 			)
@@ -6614,7 +6810,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:OPA4192")
-		(at 226.06 207.01 0)
+		(at 220.98 205.74 0)
 		(unit 4)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6623,112 +6819,122 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e8fc35cf-ca9a-5126-ab0d-4b82d4935792")
-		(property "Reference" "U22"
-			(at 221.488 197.612 0)
+		(property "Reference" "U18"
+			(at 216.408 196.342 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
 		)
 		(property "Value" "OPA4192"
-			(at 221.488 200.152 0)
+			(at 216.408 198.882 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
 		)
 		(property "Footprint" "STIM_Rev1:TSSOP-14_4.4x5mm_P0.65mm"
-			(at 226.06 207.01 0)
+			(at 220.98 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa4192.pdf"
-			(at 226.06 207.01 0)
+			(at 220.98 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Description" "OPA4192IPWR quad"
-			(at 226.06 207.01 0)
+			(at 220.98 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "MPN" "OPA4192IPWR"
-			(at 226.06 207.01 0)
+			(at 220.98 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Manufacturer" "TI"
-			(at 226.06 207.01 0)
+			(at 220.98 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "LCSC" "C2057935"
-			(at 226.06 207.01 0)
+			(at 220.98 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "JLC" "Extended"
-			(at 226.06 207.01 0)
+			(at 220.98 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
 		(property "Note" "A: x20.1 on the return shunt (0.201 V/mA); B: adds VMID (unity difference amp); C: electrode divider buffer; D: VMID buffer"
-			(at 226.06 207.01 0)
+			(at 220.98 205.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6778,7 +6984,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "U22")
+					(reference "U18")
 					(unit 4)
 				)
 			)
@@ -6795,12 +7001,13 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f7a31847-abc5-550e-9ccd-c2f99101ff81")
-		(property "Reference" "R75"
+		(property "Reference" "R39"
 			(at 271.78 93.218 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6811,6 +7018,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6822,6 +7030,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6833,6 +7042,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6844,6 +7054,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6855,6 +7066,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6866,6 +7078,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6877,6 +7090,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6888,6 +7102,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6899,6 +7114,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6910,6 +7126,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6921,6 +7138,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -6934,7 +7152,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/2096539e-cd7e-52a8-ab60-27cf0fbcd4d3"
-					(reference "R75")
+					(reference "R39")
 					(unit 1)
 				)
 			)

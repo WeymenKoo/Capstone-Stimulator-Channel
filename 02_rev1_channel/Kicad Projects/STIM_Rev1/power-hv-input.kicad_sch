@@ -37,6 +37,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -47,6 +48,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -58,6 +60,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -69,6 +72,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -80,6 +84,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -98,22 +103,10 @@
 			(symbol "+HV_0_1"
 				(polyline
 					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
+						(xy -1.27 2.54) (xy 1.27 2.54)
 					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -176,6 +169,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -186,6 +180,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -197,6 +192,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -208,6 +204,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -219,6 +216,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -237,22 +235,10 @@
 			(symbol "+HV_IN_0_1"
 				(polyline
 					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
+						(xy -1.27 2.54) (xy 1.27 2.54)
 					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -315,6 +301,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -325,6 +312,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -336,6 +324,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -347,6 +336,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -358,6 +348,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -396,14 +387,26 @@
 			(symbol "-HV_0_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 1.27) (xy 0.762 1.27) (xy 0 2.54) (xy -0.762 1.27) (xy 0 1.27)
+						(xy -1.27 2.54) (xy 1.27 2.54)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
 						(type default)
 					)
 					(fill
-						(type outline)
+						(type none)
 					)
 				)
 			)
@@ -430,6 +433,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -440,6 +444,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -451,6 +456,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -462,6 +468,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -473,6 +480,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -511,14 +519,26 @@
 			(symbol "-HV_IN_0_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 1.27) (xy 0.762 1.27) (xy 0 2.54) (xy -0.762 1.27) (xy 0 1.27)
+						(xy -1.27 2.54) (xy 1.27 2.54)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
 						(type default)
 					)
 					(fill
-						(type outline)
+						(type none)
 					)
 				)
 			)
@@ -542,6 +562,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 					(justify left)
@@ -553,6 +574,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 					(justify left)
@@ -565,6 +587,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -576,6 +599,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -587,6 +611,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -679,6 +704,189 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "STIM_Rev1:D"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "STIM_Rev1:D_SMB"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Rectifier diode, pin 1 = K (matches D_SMB pad 1)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "diode rectifier"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "D_SMB* D_SMA*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "D_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "STIM_Rev1:Fuse"
 			(pin_numbers
 				(hide yes)
@@ -697,6 +905,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -707,6 +916,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -718,6 +928,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -729,6 +940,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -740,6 +952,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -831,7 +1044,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "STIM_Rev1:GND"
+		(symbol "STIM_Rev1:ISO_GND"
 			(power global)
 			(pin_numbers
 				(hide yes)
@@ -852,16 +1065,18 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "GND"
+			(property "Value" "ISO_GND"
 				(at 0 -3.81 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -873,6 +1088,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -884,17 +1100,19 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(property "Description" "Power symbol creates a global label with name \"ISO_GND\" , ground"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -910,7 +1128,7 @@
 					)
 				)
 			)
-			(symbol "GND_0_1"
+			(symbol "ISO_GND_0_1"
 				(polyline
 					(pts
 						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
@@ -924,7 +1142,7 @@
 					)
 				)
 			)
-			(symbol "GND_1_1"
+			(symbol "ISO_GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
@@ -967,6 +1185,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -977,6 +1196,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -988,6 +1208,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -999,6 +1220,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -1010,6 +1232,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -1079,6 +1302,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -1089,6 +1313,7 @@
 				(do_not_autoplace no)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -1100,6 +1325,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -1111,6 +1337,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -1122,6 +1349,7 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -1201,7 +1429,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "STIM_Rev1:Screw_Terminal_01x03"
+		(symbol "STIM_Rev1:Terminal_PushIn_01x03"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -1217,27 +1445,30 @@
 				(do_not_autoplace no)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Screw_Terminal_01x03"
+			(property "Value" "Terminal_PushIn_01x03"
 				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "STIM_Rev1:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal"
+			(property "Footprint" "STIM_Rev1:TerminalBlock_WAGO_2606-1103_1x03_P7.50mm_Horizontal"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
@@ -1249,22 +1480,24 @@
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Push-in spring-clamp PCB terminal block with a lever per pole, single row, 01x03 (WAGO 2604 / 2606 type); same pin positions as Screw_Terminal_01x03"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
 				(effects
 					(font
+						(face "JetBrains Mono")
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "ki_keywords" "screw terminal"
+			(property "ki_keywords" "terminal block push-in spring lever WAGO"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1286,7 +1519,7 @@
 					)
 				)
 			)
-			(symbol "Screw_Terminal_01x03_1_1"
+			(symbol "Terminal_PushIn_01x03_1_1"
 				(rectangle
 					(start -1.27 3.81)
 					(end 1.27 -3.81)
@@ -1300,7 +1533,79 @@
 				)
 				(polyline
 					(pts
-						(xy -0.5334 2.8702) (xy 0.3302 2.032)
+						(xy -1.27 2.54) (xy -0.127 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy -0.127 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -2.54) (xy -0.127 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 0.381 3.683)
+					(end 1.016 3.302)
+					(stroke
+						(width 0.1016)
+						(type default)
+					)
+					(fill
+						(type color)
+						(color 245 115 25 1)
+					)
+				)
+				(rectangle
+					(start 0.381 1.143)
+					(end 1.016 0.762)
+					(stroke
+						(width 0.1016)
+						(type default)
+					)
+					(fill
+						(type color)
+						(color 245 115 25 1)
+					)
+				)
+				(rectangle
+					(start 0.381 -1.397)
+					(end 1.016 -1.778)
+					(stroke
+						(width 0.1016)
+						(type default)
+					)
+					(fill
+						(type color)
+						(color 245 115 25 1)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.889 3.302) (xy -0.127 2.54) (xy 0.889 1.778)
 					)
 					(stroke
 						(width 0.1524)
@@ -1312,7 +1617,7 @@
 				)
 				(polyline
 					(pts
-						(xy -0.5334 0.3302) (xy 0.3302 -0.508)
+						(xy 0.889 0.762) (xy -0.127 0) (xy 0.889 -0.762)
 					)
 					(stroke
 						(width 0.1524)
@@ -1324,77 +1629,8 @@
 				)
 				(polyline
 					(pts
-						(xy -0.5334 -2.2098) (xy 0.3302 -3.048)
+						(xy 0.889 -1.778) (xy -0.127 -2.54) (xy 0.889 -3.302)
 					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.3556 3.048) (xy 0.508 2.2098)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.3556 0.508) (xy 0.508 -0.3302)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.3556 -2.032) (xy 0.508 -2.8702)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 2.54)
-					(radius 0.635)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 0.635)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -2.54)
-					(radius 0.635)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -1460,133 +1696,10 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "STIM_Rev1:TestPoint"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.762)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TestPoint"
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "STIM_Rev1:TestPoint_Keystone_5000-5004_Miniature"
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Keystone 5001 test loop"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "test point tp"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "TestPoint_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TestPoint_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
-	(text_box "[3] Power - HV Input & Fusing"
+	(text_box "[2] Power - HV Input & Fusing"
 		(exclude_from_sim no)
-		(at 17.08 16.51 0)
+		(at 17.08 20.32 0)
 		(size 262.84 10.16)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -1598,20 +1711,21 @@
 		)
 		(effects
 			(font
-				(face "Times New Roman")
+				(face "JetBrains Mono")
 				(size 7 7)
 				(thickness 1.4)
 				(bold yes)
+				(italic yes)
 				(color 162 22 34 1)
 			)
 			(justify top)
 		)
 		(uuid "4a1639e5-d11c-5cd5-b666-114ed39b41d2")
 	)
-	(text_box "DESIGN NOTE D1:\nF1/F2 Littelfuse 0451.500MRL (NANO2, 500 mA fast, 125 VAC/VDC, LCSC C142836). Covers a rail-to-GND fault (<= 110 V). A +HV to -HV short puts up to 220 V across the first fuse to open: fine at +/-30 V bench rails; for +/-100 V find a >= 250 VDC part or accept the risk (open item). R23/R24 bleed C2/C3 (tau 0.2 s)."
+	(text_box "DESIGN NOTE D3:\n• J1 WAGO 2606-1103: push-in CAGE CLAMP, one lever per pole, 7.5 mm pitch [DS]\n• IEC 60664-1: 630 V (OVC III, PD2), 500 V (III, PD3), 1000 V (II, PD2); 6 kV impulse; 41 A [DS]\n• UL 1059: 300 V use group B, 600 V group D (5 A); CSA 600 V group D [DS]\n• Here: 110 V pole to COM, 220 V +HV to -HV (outer poles, 15 mm apart) [H]: 630 V rating >= 2.8x\n• Wire: solid or fine-stranded 0.2-10 mm2 (24-8 AWG), no ferrule; strip 11-13 mm [DS]\n• Housing material group I (CTI >= 600), -60 to +105 C [DS]; PCB pad gap 4.3 mm (rule 2.7 mm)"
 		(exclude_from_sim no)
-		(at 125.8 115.6 0)
-		(size 52 16.7916)
+		(at 38.1 127.635 0)
+		(size 52 36.195)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -1624,7 +1738,31 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left top)
+		)
+		(uuid "75ad42d0-0438-4673-ac75-2b0256163e5f")
+	)
+	(text_box "DESIGN NOTE D1:\n• F1/F2 Littelfuse 0451.500MRL (NANO2, 500 mA fast, 125 VAC/VDC, LCSC C142836)\n• Covers a rail-to-ISO_GND fault (<= 110 V)\n• A +HV to -HV short puts up to 220 V across the first fuse to open: fine at +/-30 V bench rails\n• For +/-100 V find a >= 250 VDC part or accept the risk (open item)\n• R1/R2 bleed C1/C2 (tau 0.2 s)"
+		(exclude_from_sim no)
+		(at 125.8 115.6 0)
+		(size 52 23.495)
+		(margins 1 1 1 1)
+		(stroke
+			(width 0.8)
+			(type solid)
+			(color 200 200 200 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 				(color 0 0 0 1)
 			)
@@ -1632,10 +1770,10 @@
 		)
 		(uuid "a0e5069f-9125-4296-a270-d7a755970f73")
 	)
-	(text_box "DESIGN NOTE D2:\nRSP/RSN 10 Ohm 1 W: rail current = (TP1 - TP2) / 10 Ohm, 10 mV per mA. 2512 so a board short, limited by the fuse, does not open them."
+	(text_box "DESIGN NOTE D2:\n• RSP1/RSN1 10 Ohm 1 W: rail current = V across its pads / 10 Ohm (10 mV per mA)\n• 2512 so a board short, limited by the fuse, does not open them"
 		(exclude_from_sim no)
-		(at 125.8 135.92 0)
-		(size 52 11.4)
+		(at 125.8 140.335 0)
+		(size 52 13.335)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -1648,7 +1786,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 				(color 0 0 0 1)
 			)
@@ -1656,10 +1794,10 @@
 		)
 		(uuid "a0e57633-3e54-42b1-890f-2789f77d4de5")
 	)
-	(text_box "LAYOUT NOTE L1:\nHV island: 1.5 mm clearance and creepage from +/-HV to everything else and between +HV and -HV (L1/L4); 0.6 mm within one rail side; HV tracks >= 0.3 mm; 0.5 mm antipads on L2/L3."
+	(text_box "LAYOUT NOTE L1:\n• HV island: 1.5 mm clearance and creepage from +/-HV to everything else and between +HV and -HV (L1/L4)\n• 0.6 mm within one rail side\n• HV tracks >= 0.3 mm\n• 0.5 mm antipads on L2/L3"
 		(exclude_from_sim no)
 		(at 38.1 80.01 0)
-		(size 52 13.6)
+		(size 52 17.145)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)
@@ -1672,7 +1810,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 				(color 0 0 255 1)
 			)
@@ -1680,10 +1818,10 @@
 		)
 		(uuid "a0e58c83-89f3-4700-b75d-3f9215d8f815")
 	)
-	(text_box "LAYOUT NOTE L3:\nC2/C3 at the rail entry; GND pad straight to L2 through a via at the pad."
+	(text_box "LAYOUT NOTE L3:\n• C1/C2 at the rail entry\n• ISO_GND pad straight to L2 through a via at the pad"
 		(exclude_from_sim no)
 		(at 188.03 130.47 0)
-		(size 52 9.2)
+		(size 52 10.795)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)
@@ -1696,7 +1834,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 				(color 0 0 255 1)
 			)
@@ -1704,10 +1842,10 @@
 		)
 		(uuid "a0e59056-4624-418e-a789-d0acf2644e7a")
 	)
-	(text_box "LAYOUT NOTE L2:\nKelvin (four-wire) sense traces from the RSP/RSN pads to the test loops."
+	(text_box "LAYOUT NOTE L2:\n• Kelvin (four-wire) sense traces from the RSP/RSN pads to the test loops"
 		(exclude_from_sim no)
 		(at 138.5 45.41 0)
-		(size 52 9.2)
+		(size 52 8.89)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)
@@ -1720,7 +1858,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 				(color 0 0 255 1)
 			)
@@ -1728,10 +1866,10 @@
 		)
 		(uuid "a0e5e0c9-0c75-46fd-b03f-d319e3112584")
 	)
-	(text_box "MISC NOTE M1:\nJ1: 1 = +HV_IN, 2 = GND, 3 = -HV_IN. Bench: two 30 V supplies in series, midpoint to GND, JP1/JP2 closed. One supply with -HV tied to GND does not work."
+	(text_box "MISC NOTE M1:\n• J1: 1 = +HV_IN, 2 = ISO_GND, 3 = -HV_IN\n• Bench: two 30 V supplies in series, midpoint to ISO_GND, JP2/JP3 closed\n• One supply with -HV tied to ISO_GND does not work\n• J1 is not keyed: D1/D2 conduct on a reversed lead (the bench supply limits, or F1/F2 open)\n• J1 WAGO 2606-1103: open the lever, push in bare stranded wire stripped 11-13 mm (no ferrule, no tool), close the lever"
 		(exclude_from_sim no)
 		(at 38.17 97.82 0)
-		(size 52 11.4)
+		(size 52 27.94)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -1744,7 +1882,7 @@
 		)
 		(effects
 			(font
-				(face "Arial")
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 				(color 0 0 0 1)
 			)
@@ -1795,16 +1933,16 @@
 		(uuid "756fbf43-63fd-5969-8989-694f9d878aee")
 	)
 	(junction
-		(at 181.61 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "81f8424f-4ec5-5f76-af8d-551a625b4689")
-	)
-	(junction
 		(at 111.76 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8584d4ed-8abb-53e7-bf32-9e05c76de6f0")
+	)
+	(junction
+		(at 203.2 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "96fa47ea-03f3-41e3-8d09-1737f5ef824d")
 	)
 	(junction
 		(at 97.79 66.04)
@@ -1825,6 +1963,12 @@
 		(uuid "a0b8d99a-265a-54c3-998f-a1db15b869d0")
 	)
 	(junction
+		(at 203.2 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a23c5efd-3501-412f-bf30-ed447526e193")
+	)
+	(junction
 		(at 111.76 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1837,10 +1981,16 @@
 		(uuid "a90e9551-1fbd-5dc6-9163-5ac38b37c12c")
 	)
 	(junction
-		(at 181.61 101.6)
+		(at 203.2 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e16f3b8f-1e2e-5cc1-b8fd-6e4385292e88")
+		(uuid "c849a13a-4cef-45d9-a149-1d017100bee3")
+	)
+	(junction
+		(at 203.2 116.84)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cf50bd9b-0aa2-4ac3-a9e7-47331278d178")
 	)
 	(wire
 		(pts
@@ -1851,16 +2001,6 @@
 			(type default)
 		)
 		(uuid "08e65b3d-b757-48f2-9e36-a40a51e05024")
-	)
-	(wire
-		(pts
-			(xy 191.77 106.68) (xy 214.63 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d5bdadc-2690-4af0-89e5-c0ca7c54ef93")
 	)
 	(wire
 		(pts
@@ -1901,6 +2041,16 @@
 			(type default)
 		)
 		(uuid "1d76de2c-70af-4bfc-8d87-744f4d9aa321")
+	)
+	(wire
+		(pts
+			(xy 203.2 69.85) (xy 214.63 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29a253b8-d9e7-4657-8562-f01516ca2385")
 	)
 	(wire
 		(pts
@@ -2004,6 +2154,26 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 116.84) (xy 214.63 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6078a624-0fc9-47bb-b0ad-2c89c3f174f9")
+	)
+	(wire
+		(pts
+			(xy 191.77 116.84) (xy 203.2 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "626b6c99-f0da-4340-a2d9-4964512c17fa")
+	)
+	(wire
+		(pts
 			(xy 191.77 69.85) (xy 191.77 71.12)
 		)
 		(stroke
@@ -2011,6 +2181,16 @@
 			(type default)
 		)
 		(uuid "69314a5e-a243-4b9f-8239-defcb058b667")
+	)
+	(wire
+		(pts
+			(xy 203.2 115.57) (xy 203.2 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cd18de9-9493-4c62-b1b8-34c904949355")
 	)
 	(wire
 		(pts
@@ -2034,7 +2214,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 66.04) (xy 181.61 66.04)
+			(xy 170.18 66.04) (xy 191.77 66.04)
 		)
 		(stroke
 			(width 0)
@@ -2051,6 +2231,16 @@
 			(type default)
 		)
 		(uuid "81855c1d-7396-52a0-9ab9-3a07894c8b59")
+	)
+	(wire
+		(pts
+			(xy 203.2 106.68) (xy 203.2 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8716441d-bd6d-4470-a4c9-38fc70839d6c")
 	)
 	(wire
 		(pts
@@ -2074,6 +2264,16 @@
 	)
 	(wire
 		(pts
+			(xy 203.2 80.01) (xy 214.63 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "932341f3-c583-47c3-b8cc-b115072fa8fe")
+	)
+	(wire
+		(pts
 			(xy 191.77 82.55) (xy 191.77 80.01)
 		)
 		(stroke
@@ -2084,13 +2284,13 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 80.01) (xy 214.63 80.01)
+			(xy 203.2 69.85) (xy 203.2 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a1f2dc6c-97ae-4f30-8d10-668f894a21df")
+		(uuid "a3086921-0d8a-4b18-a70e-94104d886854")
 	)
 	(wire
 		(pts
@@ -2101,6 +2301,16 @@
 			(type default)
 		)
 		(uuid "a3ecbce7-5f6c-5292-8e71-f1e7fdb649fa")
+	)
+	(wire
+		(pts
+			(xy 191.77 80.01) (xy 203.2 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5416606-6377-4d25-9290-4bc30b27518f")
 	)
 	(wire
 		(pts
@@ -2144,6 +2354,16 @@
 	)
 	(wire
 		(pts
+			(xy 191.77 106.68) (xy 203.2 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb9d7fce-08be-4fa8-a50b-6e46e01fb2ba")
+	)
+	(wire
+		(pts
 			(xy 111.76 101.6) (xy 130.81 101.6)
 		)
 		(stroke
@@ -2184,13 +2404,13 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 116.84) (xy 214.63 116.84)
+			(xy 191.77 69.85) (xy 203.2 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d81bd83b-35d8-4b9d-ad1e-2968b3649455")
+		(uuid "c90f0468-1390-4fd7-b360-fd1346cff34c")
 	)
 	(wire
 		(pts
@@ -2204,13 +2424,23 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 69.85) (xy 214.63 69.85)
+			(xy 203.2 106.68) (xy 214.63 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f3b7b446-b323-4266-80d4-649a63769a0a")
+		(uuid "dc080c96-dc72-4f89-8def-cc4f8bf0d60f")
+	)
+	(wire
+		(pts
+			(xy 203.2 78.74) (xy 203.2 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e62c193c-1a90-480b-8c19-ca0f683a3751")
 	)
 	(wire
 		(pts
@@ -2232,20 +2462,11 @@
 		)
 		(uuid "fe1c93cb-685d-51f5-9d3c-091d80c5e021")
 	)
-	(wire
-		(pts
-			(xy 181.61 66.04) (xy 191.77 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fff92681-2a93-5711-bf6e-b4b66cb8e4a0")
-	)
 	(label "-HV_FUSED"
 		(at 142.24 101.6 0)
 		(effects
 			(font
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
@@ -2256,11 +2477,36 @@
 		(at 142.24 66.04 0)
 		(effects
 			(font
+				(face "JetBrains Mono")
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
 		(uuid "e7a766c7-c529-51d3-ab69-2654d6949bc3")
+	)
+	(hierarchical_label "+HV"
+		(shape passive)
+		(at 236.22 62.23 90)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0a07d1ba-8997-4e66-a713-4607efdf4d7a")
+	)
+	(hierarchical_label "-HV"
+		(shape passive)
+		(at 236.22 105.41 270)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "91d35f19-4985-4b68-ad25-86c864104936")
 	)
 	(symbol
 		(lib_id "STIM_Rev1:PWR_FLAG")
@@ -2273,13 +2519,14 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0090f63e-b29d-5aa0-ba2c-a31741ae6ae7")
-		(property "Reference" "#FLG001"
+		(property "Reference" "#FLG01"
 			(at 111.76 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2290,6 +2537,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2301,6 +2549,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2312,6 +2561,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2322,6 +2572,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2332,7 +2583,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/a3a00a2e-c646-512b-a4ef-7587689cfda9"
-					(reference "#FLG001")
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -2350,13 +2601,14 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "049d95c0-9391-569e-a315-6eaeb1fa1b8e")
-		(property "Reference" "#FLG003"
+		(property "Reference" "#FLG03"
 			(at 111.76 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2367,6 +2619,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2378,6 +2631,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2389,6 +2643,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2399,6 +2654,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2409,7 +2665,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/a3a00a2e-c646-512b-a4ef-7587689cfda9"
-					(reference "#FLG003")
+					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -2427,13 +2683,14 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "0c312a26-c9ad-5411-82df-c82fbff8b348")
-		(property "Reference" "#FLG004"
+		(property "Reference" "#FLG05"
 			(at 199.39 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2444,6 +2701,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2455,6 +2713,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2466,6 +2725,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2476,6 +2736,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2486,7 +2747,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/a3a00a2e-c646-512b-a4ef-7587689cfda9"
-					(reference "#FLG004")
+					(reference "#FLG05")
 					(unit 1)
 				)
 			)
@@ -2503,13 +2764,14 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "17a59862-3a45-5405-9d55-06620ff98e49")
-		(property "Reference" "#FLG002"
+		(property "Reference" "#FLG04"
 			(at 199.39 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2520,6 +2782,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2531,6 +2794,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2542,6 +2806,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2552,6 +2817,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2562,14 +2828,159 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/a3a00a2e-c646-512b-a4ef-7587689cfda9"
-					(reference "#FLG002")
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "STIM_Rev1:Screw_Terminal_01x03")
+		(lib_id "STIM_Rev1:D")
+		(at 203.2 74.93 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "21df641b-93a2-4788-8caa-817d5250500b")
+		(property "Reference" "D1"
+			(at 205.74 73.66 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "S2J"
+			(at 205.74 76.2 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "STIM_Rev1:D_SMB"
+			(at 203.2 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "600 V 2 A rectifier, SMB: reverse-polarity shunt"
+			(at 203.2 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "S2J-E3/52T"
+			(at 203.2 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 203.2 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C435920"
+			(at 203.2 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLC" "Extended"
+			(at 203.2 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Note" "review S4: reverse-biased in normal use; a reversed +HV lead makes it conduct, so the bench supply limits or F1 opens"
+			(at 203.2 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4014ff90-cbfb-458c-93cf-553e2b5d69ed")
+		)
+		(pin "2"
+			(uuid "ae395134-a2a4-4eed-abf4-d47f9d6dda7d")
+		)
+		(instances
+			(project "STIM_Rev1"
+				(path "/801725e5-e50b-4629-8dff-f10f88598334/a3a00a2e-c646-512b-a4ef-7587689cfda9"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "STIM_Rev1:Terminal_PushIn_01x03")
 		(at 88.9 68.58 0)
 		(mirror y)
 		(unit 1)
@@ -2586,103 +2997,127 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "HV_IN 3P 5.08mm"
-			(at 78.232 65.786 0)
+		(property "Value" "HV_IN 3P 7.5mm push-in"
+			(at 86.36 65.786 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "STIM_Rev1:TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal"
+		(property "Footprint" "STIM_Rev1:TerminalBlock_WAGO_2606-1103_1x03_P7.50mm_Horizontal"
 			(at 88.9 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.wago.com/2606-1103"
 			(at 88.9 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Description" "screw terminal 3P, HV rated (connector choice open)"
+		(property "Description" "push-in lever terminal block 3P 7.5 mm, 630 V IEC / 600 V UL, bare stranded wire 24-8 AWG"
 			(at 88.9 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "MPN" "KF128-5.08-3P-AA"
-			(at 76.708 68.326 0)
+		(property "MPN" "2606-1103"
+			(at 86.36 68.326 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Manufacturer" "Cixi Kefa Elec"
+		(property "Manufacturer" "WAGO"
 			(at 88.9 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "LCSC" "C474953"
+		(property "LCSC" "C3817916"
 			(at 88.9 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "JLC" "Extended"
+		(property "JLC" "THT, hand-solder"
 			(at 88.9 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Note" "from the power board: +/-100 V nominal (90-110 V); bench: two 30 V supplies in series"
+		(property "Note" "from the power board: +/-100 V nominal (90-110 V); bench: two 30 V supplies in series. Lever per pole, no tool, no ferrule: strip 11-13 mm. DigiKey.ca 2946-2606-1103-ND, 707 in stock 2026-11-18"
 			(at 88.9 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Alternate" "LCSC C3817916 is the 2606-1103/020-000 variant (80 pcs 2026-11-18); DigiKey.ca also stocks /010-000 and /020-000. Phoenix SPT 5/3-H-7,5-ZB (1719202) push-button, same pitch, own footprint"
+			(at 88.9 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2722,6 +3157,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2732,6 +3168,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2743,6 +3180,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2754,6 +3192,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2765,17 +3204,19 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Note" "check the 451 land pattern against Fuse_2410; 125 VDC covers a rail-to-GND fault, not a +HV to -HV short at +/-100 V (see sheet note D1)"
+		(property "Note" "check the 451 land pattern against Fuse_2410; 125 VDC covers a rail-to-ISO_GND fault, not a +HV to -HV short at +/-100 V (see sheet note D6)"
 			(at 134.62 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2786,6 +3227,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2797,6 +3239,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2808,6 +3251,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2819,6 +3263,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2849,12 +3294,13 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "27f78797-1ab6-4dcc-b485-e1d3cfd103d1")
-		(property "Reference" "R24"
+		(property "Reference" "R2"
 			(at 217.17 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -2866,6 +3312,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -2878,6 +3325,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2889,6 +3337,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2900,6 +3349,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2911,6 +3361,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2922,6 +3373,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2933,6 +3385,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2944,17 +3397,19 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Note" "bleeder across C3 (ELE-02): tau = 200k x 1u = 0.2 s, 50 mW at 100 V"
+		(property "Note" "bleeder across C2 (ELE-02): tau = 200k x 1u = 0.2 s, 50 mW at 100 V"
 			(at 214.63 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2966,6 +3421,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2977,6 +3433,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -2990,7 +3447,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/a3a00a2e-c646-512b-a4ef-7587689cfda9"
-					(reference "R24")
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -3013,6 +3470,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3023,6 +3481,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3034,6 +3493,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3045,6 +3505,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3056,17 +3517,19 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Note" "check the 451 land pattern against Fuse_2410; 125 VDC covers a rail-to-GND fault, not a +HV to -HV short at +/-100 V (see sheet note D1)"
+		(property "Note" "check the 451 land pattern against Fuse_2410; 125 VDC covers a rail-to-ISO_GND fault, not a +HV to -HV short at +/-100 V (see sheet note D6)"
 			(at 134.62 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3077,6 +3540,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3088,6 +3552,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3099,6 +3564,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3110,6 +3576,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3146,6 +3613,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3156,6 +3624,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3167,6 +3636,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3178,6 +3648,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3189,6 +3660,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3200,6 +3672,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3211,6 +3684,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3222,6 +3696,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3233,6 +3708,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3244,6 +3720,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3255,6 +3732,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3266,6 +3744,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3286,96 +3765,6 @@
 		)
 	)
 	(symbol
-		(lib_id "STIM_Rev1:TestPoint")
-		(at 181.61 101.6 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "402f6002-5e14-5696-99e3-fc8a5a8bd524")
-		(property "Reference" "TP4"
-			(at 184.15 97.536 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "-HV"
-			(at 184.15 94.996 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "STIM_Rev1:TestPoint_Keystone_5000-5004_Miniature"
-			(at 181.61 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 181.61 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test loop Keystone 5001"
-			(at 181.61 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Note" "bench probe loop"
-			(at 181.61 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "313298b1-12ca-5517-a0e1-d63c927cd056")
-		)
-		(instances
-			(project "STIM_Rev1"
-				(path "/801725e5-e50b-4629-8dff-f10f88598334/a3a00a2e-c646-512b-a4ef-7587689cfda9"
-					(reference "TP4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "STIM_Rev1:C")
 		(at 191.77 111.76 0)
 		(unit 1)
@@ -3386,26 +3775,28 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "50ae9f7c-85f5-5cd7-a68e-d28ece46abbb")
-		(property "Reference" "C3"
-			(at 194.31 110.49 0)
+		(property "Reference" "C2"
+			(at 189.23 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "1u X7R 400V 1812"
-			(at 194.31 113.03 0)
+			(at 189.23 113.03 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "STIM_Rev1:C_1812_4532Metric"
@@ -3415,6 +3806,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3426,6 +3818,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3437,6 +3830,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3448,6 +3842,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3459,6 +3854,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3470,6 +3866,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3481,6 +3878,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3492,6 +3890,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3503,6 +3902,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3516,7 +3916,152 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/a3a00a2e-c646-512b-a4ef-7587689cfda9"
-					(reference "C3")
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "STIM_Rev1:D")
+		(at 203.2 111.76 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5f6b170a-00de-4d7a-9bc6-3b09919d9fe0")
+		(property "Reference" "D2"
+			(at 205.74 110.49 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "S2J"
+			(at 205.74 113.03 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "STIM_Rev1:D_SMB"
+			(at 203.2 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 203.2 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "600 V 2 A rectifier, SMB: reverse-polarity shunt"
+			(at 203.2 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "S2J-E3/52T"
+			(at 203.2 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 203.2 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C435920"
+			(at 203.2 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLC" "Extended"
+			(at 203.2 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Note" "review S4: reverse-biased in normal use; a reversed -HV lead makes it conduct, so the bench supply limits or F2 opens"
+			(at 203.2 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "79d23e7b-5041-49a4-94af-b60a4ec94aa1")
+		)
+		(pin "2"
+			(uuid "b4803529-1601-47d7-b83b-34fd91b83ed3")
+		)
+		(instances
+			(project "STIM_Rev1"
+				(path "/801725e5-e50b-4629-8dff-f10f88598334/a3a00a2e-c646-512b-a4ef-7587689cfda9"
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -3533,13 +4078,14 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6cfa6e92-38eb-5be3-8b94-45b04c36dee7")
-		(property "Reference" "#PWR001"
+		(property "Reference" "#PWR09"
 			(at 97.79 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3550,6 +4096,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3561,6 +4108,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3572,6 +4120,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3582,6 +4131,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3592,7 +4142,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/a3a00a2e-c646-512b-a4ef-7587689cfda9"
-					(reference "#PWR001")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -3609,26 +4159,28 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6f5823d3-3bee-5d21-9fe9-27f83af8994e")
-		(property "Reference" "C2"
-			(at 194.31 73.66 0)
+		(property "Reference" "C1"
+			(at 189.23 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "1u X7R 400V 1812"
-			(at 194.31 76.2 0)
+			(at 189.23 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "STIM_Rev1:C_1812_4532Metric"
@@ -3638,6 +4190,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3649,6 +4202,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3660,6 +4214,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3671,6 +4226,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3682,6 +4238,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3693,6 +4250,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3704,6 +4262,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3715,6 +4274,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3726,6 +4286,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3739,7 +4300,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/a3a00a2e-c646-512b-a4ef-7587689cfda9"
-					(reference "C2")
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -3756,13 +4317,14 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7fe245ce-6ae0-45b4-b8d7-e9a998bd6ea0")
-		(property "Reference" "#FLG05"
+		(property "Reference" "#FLG02"
 			(at 111.76 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3773,6 +4335,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3784,6 +4347,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3795,6 +4359,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3805,6 +4370,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3815,96 +4381,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/a3a00a2e-c646-512b-a4ef-7587689cfda9"
-					(reference "#FLG05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "STIM_Rev1:TestPoint")
-		(at 181.61 66.04 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b47d1e28-c230-598b-bef4-6e987554750a")
-		(property "Reference" "TP2"
-			(at 184.15 59.436 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "+HV"
-			(at 184.15 61.976 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "STIM_Rev1:TestPoint_Keystone_5000-5004_Miniature"
-			(at 181.61 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 181.61 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test loop Keystone 5001"
-			(at 181.61 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Note" "bench probe loop"
-			(at 181.61 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d0ac7236-fa41-592e-9e58-e6cb497f4138")
-		)
-		(instances
-			(project "STIM_Rev1"
-				(path "/801725e5-e50b-4629-8dff-f10f88598334/a3a00a2e-c646-512b-a4ef-7587689cfda9"
-					(reference "TP2")
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
@@ -3921,12 +4398,13 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bcfd43b1-7f88-46e9-9186-adfd35443022")
-		(property "Reference" "R23"
+		(property "Reference" "R1"
 			(at 217.17 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -3938,6 +4416,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 				(justify left)
@@ -3950,6 +4429,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3961,6 +4441,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3972,6 +4453,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3983,6 +4465,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -3994,6 +4477,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4005,6 +4489,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4016,17 +4501,19 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Note" "bleeder across C2 (ELE-02): tau = 200k x 1u = 0.2 s, 50 mW at 100 V"
+		(property "Note" "bleeder across C1 (ELE-02): tau = 200k x 1u = 0.2 s, 50 mW at 100 V"
 			(at 214.63 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4038,6 +4525,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4049,6 +4537,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4062,14 +4551,14 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/a3a00a2e-c646-512b-a4ef-7587689cfda9"
-					(reference "R23")
+					(reference "R1")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "STIM_Rev1:GND")
+		(lib_id "STIM_Rev1:ISO_GND")
 		(at 191.77 82.55 0)
 		(unit 1)
 		(body_style 1)
@@ -4079,23 +4568,25 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cf28b6ca-08dc-5ade-8990-a5385d11cb80")
-		(property "Reference" "#PWR003"
+		(property "Reference" "#PWR012"
 			(at 191.77 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "ISO_GND"
 			(at 191.77 87.376 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4107,6 +4598,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4118,6 +4610,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4128,6 +4621,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4138,14 +4632,14 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/a3a00a2e-c646-512b-a4ef-7587689cfda9"
-					(reference "#PWR003")
+					(reference "#PWR012")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "STIM_Rev1:GND")
+		(lib_id "STIM_Rev1:ISO_GND")
 		(at 111.76 80.01 0)
 		(unit 1)
 		(body_style 1)
@@ -4155,23 +4649,25 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "df11c02b-07b2-435e-86e9-e39835628348")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR011"
 			(at 111.76 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "ISO_GND"
 			(at 111.76 84.836 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4183,6 +4679,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4194,6 +4691,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4204,6 +4702,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4214,7 +4713,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/a3a00a2e-c646-512b-a4ef-7587689cfda9"
-					(reference "#PWR04")
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -4231,13 +4730,14 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "e0735179-4427-547e-914e-81683653cd0b")
-		(property "Reference" "#PWR005"
+		(property "Reference" "#PWR010"
 			(at 97.79 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4248,6 +4748,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4259,6 +4760,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4270,6 +4772,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4280,6 +4783,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4290,7 +4794,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/a3a00a2e-c646-512b-a4ef-7587689cfda9"
-					(reference "#PWR005")
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
@@ -4313,6 +4817,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4323,6 +4828,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4334,6 +4840,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4345,6 +4852,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4356,6 +4864,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4367,6 +4876,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4378,6 +4888,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4389,6 +4900,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4400,6 +4912,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4411,6 +4924,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4422,6 +4936,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4433,6 +4948,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4453,7 +4969,7 @@
 		)
 	)
 	(symbol
-		(lib_id "STIM_Rev1:GND")
+		(lib_id "STIM_Rev1:ISO_GND")
 		(at 191.77 119.38 0)
 		(unit 1)
 		(body_style 1)
@@ -4463,23 +4979,25 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fa2efa87-c76f-5f53-b6b8-1ce8a314ed9b")
-		(property "Reference" "#PWR007"
+		(property "Reference" "#PWR013"
 			(at 191.77 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "ISO_GND"
 			(at 191.77 124.206 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4491,6 +5009,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4502,6 +5021,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4512,6 +5032,7 @@
 			(do_not_autoplace no)
 			(effects
 				(font
+					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
 			)
@@ -4522,32 +5043,10 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/a3a00a2e-c646-512b-a4ef-7587689cfda9"
-					(reference "#PWR007")
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
 		)
-	)
-	(hierarchical_label "+HV"
-		(shape passive)
-		(at 236.22 62.23 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0a07d1ba-8997-4e66-a713-4607efdf4d7a")
-	)
-	(hierarchical_label "-HV"
-		(shape passive)
-		(at 236.22 105.41 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "91d35f19-4985-4b68-ad25-86c864104936")
 	)
 )

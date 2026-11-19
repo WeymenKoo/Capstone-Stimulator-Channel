@@ -1,0 +1,170 @@
+(footprint "Converter_DCDC_RECOM_RS3_SIP-8_P2.54mm"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "RECOM RS3 isolated DC-DC, SIP-8 with 7 pins (no pin 4), 2.54 mm pitch, body 21.8 x 9.2 x 11.1 mm, pin 1 2.00 mm from the body end, pin row 3.20 mm from the back face and 6.0 mm from the marking face, 1.00 mm holes [DS RS3 rev 4/2024 p. 5]. Pads 3 and 5 are 3.28 mm apart (input side / output side): the board-level gap across the module. https://recom-power.com/pdf/Econoline/RS3.pdf")
+	(tags "DC-DC isolated SIP-8 RECOM RS3 RS3-1212D")
+	(property "Reference" "REF**"
+		(at 8.89 -4.6 0)
+		(layer "F.SilkS")
+		(uuid "b5d63210-5028-4853-8076-2f4b7194629c")
+		(effects
+			(font
+				(face "JetBrains Mono ExtraBold")
+				(size 1.0 1.0)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Converter_DCDC_RECOM_RS3_SIP-8_P2.54mm"
+		(at 8.89 7.4 0)
+		(layer "F.Fab")
+		(uuid "d8f9c494-2d4a-41c0-b9a3-8075c583b7d6")
+		(effects
+			(font
+				(face "JetBrains Mono ExtraBold")
+				(size 1.0 1.0)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "663151bf-1514-44c5-944b-0622cb352d95")
+		(effects
+			(font
+				(face "JetBrains Mono ExtraBold")
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "920f9ec5-fb9a-4e1d-b129-de224c61fb8c")
+		(effects
+			(font
+				(face "JetBrains Mono ExtraBold")
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -2 -3.2)
+		(end 19.8 6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "b4d3e4f1-6edd-48f3-aaf8-cc9b3dbd77be")
+	)
+	(fp_rect
+		(start -2.12 -3.32)
+		(end 19.92 6.12)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "a0732efb-fc06-45aa-833c-fb928495dcbe")
+	)
+	(fp_rect
+		(start -2.5 -3.7)
+		(end 20.3 6.5)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "08e3f9ad-1bf3-4005-b7dc-d07c0acce852")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 8.89 2.5 0)
+		(layer "F.Fab")
+		(uuid "7076c72b-34e4-4915-ae78-d310ef66e6ae")
+		(effects
+			(font
+				(face "JetBrains Mono ExtraBold")
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a34b3210-f95e-4e0d-a862-d46e94179db4")
+	)
+	(pad "2" thru_hole circle
+		(at 2.54 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "172f354e-ca9c-42db-839d-2bdd2469e20c")
+	)
+	(pad "3" thru_hole circle
+		(at 5.08 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "007792dd-64e6-4155-96b5-38cb2b31340f")
+	)
+	(pad "5" thru_hole circle
+		(at 10.16 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "ffe0865e-071b-4341-84d7-39c80a35f2c4")
+	)
+	(pad "6" thru_hole circle
+		(at 12.7 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e1a97339-7b99-49e0-b6ce-0360b4e98df3")
+	)
+	(pad "7" thru_hole circle
+		(at 15.24 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c1debc32-e299-46fe-bb4b-c9dd543f5a85")
+	)
+	(pad "8" thru_hole circle
+		(at 17.78 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "cddc6f55-81f2-44dc-b3bc-45c7bef64986")
+	)
+	(model "${KIPRJMOD}/lib/3d_models/Converter_DCDC_RECOM_RS3_SIP-8_P2.54mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(embedded_fonts no)
+)
