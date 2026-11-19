@@ -1,0 +1,68 @@
+"# JY063 STIM Rev 1 channel, schematic 2.1.0-dev 2026-11-18 e (re-annotated per sheet; J2 = J5 = WAGO 2606-1102; R25 limiter link). One line per MPN, DNP lines separate. Stock and prices: LCSC and DigiKey.ca web pages read 2026-11-18, carried over by MPN; empty = not checked. USD, qty-1 price."
+Qty,References,Value,Footprint,Manufacturer,MPN,LCSC,JLC type,LCSC stock,LCSC unit USD,Ext USD (1 board),DigiKey PN,DigiKey.ca stock,Flags,Alternate,Sourcing note
+2,"C1,C2",1u X7R 400V 1812,C_1812_4532Metric,PSA,FE2CX105M501LFL,C19267793,Extended,2288,2.71,5.420,,,DigiKey not checked,,single LCSC source (PSA); DigiKey: any X7R 1 uF >= 400 V 1812
+17,"C3,C4,C5,C8,C9,C10,C11,C14,C15,C20,C21,C31,C32,C34,C38,C39,C41",10u X5R 25V 0805,C_0805_2012Metric,Samsung,CL21A106KAYNNNE,C15850,Basic,1770720,0.0314,0.534,,,DigiKey not checked,,
+7,"C6,C7,C12,C13,C25,C33,C40",10n X7R 50V 0603,C_0603_1608Metric,Samsung,CL10B103KB8NNNC,C1589,Extended,1268450,0.0071,0.050,,,DigiKey not checked,,
+11,"C16,C17,C18,C19,C22,C23,C24,C26,C27,C45,C46",100n X7R 50V 0603,C_0603_1608Metric,Samsung,CL10B104KB8NNNC,C1591,Extended,385100,0.0071,0.078,,,DigiKey not checked,,
+2,"C28,C29",100n X7R 250V 1206,C_1206_3216Metric,CCTC,TCC1206X7R104M251FT,C282822,Extended,131510,0.0145,0.029,,,DigiKey not checked,,
+1,C30,47p C0G 50V 0603,C_0603_1608Metric,Samsung Electro-Mechanics,CL10C470JB8NNNC,C1671,Basic,87700,0.0064,0.006,,,DigiKey not checked,,
+6,"C35,C36,C37,C42,C43,C44",1u X5R 50V 0603,C_0603_1608Metric,Samsung,CL10A105KB8NNNC,C15849,Basic,1095600,0.0096,0.058,,,DigiKey not checked,,
+2,"D1,D2",S2J,D_SMB,Vishay,S2J-E3/52T,C435920,Extended,340,0.154,0.308,,,DigiKey not checked,,
+2,"D3,D9",PWR red 0805,LED_0805_2012Metric,NATIONSTAR,NCD0805R1,C84256,Basic,1974550,0.0136,0.027,,,DigiKey not checked,,
+2,"D4,D5",BZX84C7V5,SOT-23,onsemi,BZX84C7V5LT1G,C236201,Extended,290,0.046,0.092,,,LCSC LOW; DigiKey not checked,,low LCSC stock
+2,"D6,D7",BAS16,SOT-23,JSCJ,BAS16 A6,C8489,Extended,1620,0.0218,0.044,,,DigiKey not checked,,DigiKey: BAS16LT1G
+1,D8,BZX84C36,SOT-23,onsemi,BZX84C36LT1G,C235982,Extended,20,0.034,0.034,,,LCSC LOW; DigiKey not checked,,LOW: 20 pcs at LCSC; buy at DigiKey or order now
+1,D10,SMBJ100CA,D_SMB,Littelfuse,SMBJ100CA,C1972909,Extended,2290,0.1435,0.143,,,DigiKey not checked,SMBJ100CA Brightking C78405 / RUILON C9024,"Littelfuse; replaces Diodes SMBJ100CA-13-F (C135029, out of stock)"
+2,"F1,F2",500mA 125V 2410,Fuse_2410_6125Metric_SST,Littelfuse,0451.500MRL,C142836,Extended,9610,0.137,0.274,,,DigiKey not checked,,
+4,"H1,H2,H3,H4",M3 3.4mm NPTH,MountingHole_3.4mm_M3_Keepout6.5mm,,,,,,,,,,not a part (board feature),,
+1,J1,HV_IN 3P 7.5mm push-in,TerminalBlock_WAGO_2606-1103_1x03_P7.50mm_Horizontal,WAGO,2606-1103,C3817916,"THT, hand-solder",80,,,2946-2606-1103-ND,707,"LCSC LOW (80, /020-000 variant); THT hand-solder","LCSC C3817916 is the 2606-1103/020-000 variant (80 pcs 2026-11-18); DigiKey.ca also stocks /010-000 and /020-000. Phoenix SPT 5/3-H-7,5-ZB (1719202) push-button, same pitch, own footprint","2026-11-18 d: lever push-in, bare stranded wire 24-8 AWG, no ferrule or tool, strip 11-13 mm; 630 V IEC PD2 / 600 V UL. DigiKey.ca CAD 15.46 qty 1. LCSC price USD 6.98"
+2,"J2,J5","2P 7.5mm push-in (J2 VBAT_IN, J5 ELECTRODES)",TerminalBlock_WAGO_2606-1102_1x02_P7.50mm_Horizontal,WAGO,2606-1102,C3817152,"THT, hand-solder",,,,2606-1102 (WAGO via DigiKey.ca),6063,LCSC not checked; THT hand-solder,"WAGO 2606-1102/020-000 (600 V UL, DigiKey.ca 540); LCSC stock not checked","2026-11-18 d: lever push-in, bare stranded wire 24-8 AWG, no ferrule or tool, strip 11-13 mm; 630 V IEC PD2 / 300 V UL. DigiKey.ca CAD 10.78 qty 1"
+2,"J3,J4","2x13 2.54mm IDC (J3 FPGA_IF, J4 ISO_BYPASS)",IDC-Header_2x13_P2.54mm_Vertical,On Shore Technology,302-S261,C9040,Extended,7869,0.448,0.896,ED10526-ND,6346,,LCSC C9040 = BOOMELE 2.54-2*13P; DigiKey ED10526-ND; ribbon socket BOOMELE C16471,LCSC part is BOOMELE 2.54-2*13P (26-pos IDC header); ribbon socket BOOMELE C16471
+1,JP1,JP 1x2,PinHeader_1x02_P2.54mm_Vertical,,,,,,,,,,no MPN chosen,,
+2,"JP2,JP3",JP 1x2 5.08mm,PinHeader_1x02_P5.08mm_Vertical,,,,,,,,,,no MPN chosen; HV: see the jumper options,,
+2,"M1,M2",DN2540N8,SOT-89-3,MICROCHIP,DN2540N8-G,C145573,Extended,,,,,,DNP,,"DNP, limiter on hold"
+1,Q1,MJD340,TO-252-2,DIODES,MJD340-13,C443830,Extended,1577,0.605,0.605,,,DigiKey not checked,MJD340T4G onsemi C140579,DigiKey: MJD340T4G
+1,Q2,MJD350,TO-252-2,DIODES,MJD350-13,C460225,Extended,177,0.458,0.458,,,LCSC LOW; DigiKey not checked,,low LCSC stock; DigiKey: MJD350T4G
+1,Q3,2N7002,SOT-23,JSCJ,2N7002,C8545,Basic,5505150,0.016,0.016,,,DigiKey not checked,,
+3,"R1,R2,R28",200k 1% 200V 1206,R_1206_3216Metric,UNI-ROYAL,1206W4F2003T5E,C17954,Extended,112900,0.0046,0.014,,,DigiKey not checked,,
+2,"R3,R5",66.5k 1% 0603,R_0603_1608Metric,YAGEO,RC0603FR-0766K5L,C137691,Extended,13600,0.0033,0.007,,,DigiKey not checked,,"replaces UNI-ROYAL 0603WAF6652T5E (C23225, 100 pcs left)"
+9,"R4,R6,R8,R10,R14,R15,R16,R29,R32",10.0k 1% 0603,R_0603_1608Metric,UNI-ROYAL,0603WAF1002T5E,C25804,Basic,2695900,0.002,0.018,,,DigiKey not checked,,
+1,R7,32.4k 1% 0603,R_0603_1608Metric,UNI-ROYAL,0603WAF3242T5E,C13187,Basic,62300,0.0017,0.002,,,DigiKey not checked,,
+1,R9,17.8k 1% 0603,R_0603_1608Metric,UNI-ROYAL,0603WAF1782T5E,C22821,Basic,500,0.0022,0.002,,,DigiKey not checked,,low LCSC stock
+1,R11,15k 1% 0603,R_0603_1608Metric,UNI-ROYAL,0603WAF1502T5E,C22809,Basic,1283600,0.0029,0.003,,,DigiKey not checked,,
+3,"R12,R13,R26",100k 1% 0603,R_0603_1608Metric,UNI-ROYAL,0603WAF1003T5E,C25803,Basic,4783200,0.003,0.009,,,DigiKey not checked,,
+1,R17,0R 0603,R_0603_1608Metric,UNI-ROYAL,0603WAF0000T5E,C21189,Basic,7266600,0.0021,0.002,,,DigiKey not checked,,
+4,"R18,R19,R22,R23",44.2k 1% 200V 1206,R_1206_3216Metric,CHANGLONG,CL1206FN44K2PS,C53284084,Extended,4400,0.0033,0.013,,,DigiKey not checked,,
+2,"R20,R21",14.3k 1% 0805,R_0805_2012Metric,UNI-ROYAL,0805W8F1432T5E,C17456,Extended,2000,0.0025,0.005,,,DigiKey not checked,,
+2,"R20A1,R20B1",10.0M 1% 200V 1206,R_1206_3216Metric,FOJAN,FRC1206F1005TS,C2933576,Extended,203400,0.0055,0.011,,,DigiKey not checked,,
+2,"R24,R33",1.00k 0.1% 25ppm 0805,R_0805_2012Metric,YAGEO,RT0805BRD071KL,C110774,Extended,132580,0.0368,0.074,,,DigiKey not checked,,
+1,R25,0R 1206,R_1206_3216Metric,UNI-ROYAL,1206W4F0000T5E,C17888,Extended,,,,,,new line: stock not checked; could be 0603 (same line as R17) if the footprint changes,,
+1,R27,100k 1% 200V 1206,R_1206_3216Metric,UNI-ROYAL,1206W4F1003T5E,C17900,Extended,286500,0.0065,0.006,,,DigiKey not checked,,
+1,R30,5.1k 1% 0603,R_0603_1608Metric,UNI-ROYAL,0603WAF5101T5E,C23186,Basic,13491800,0.0016,0.002,,,DigiKey not checked,,
+1,R31,6.04k 1% 0603,R_0603_1608Metric,UNI-ROYAL,0603WAF6041T5E,C25977,Extended,60300,0.0017,0.002,,,DigiKey not checked,,
+1,R34,19.1k 0.1% 25ppm 0603,R_0603_1608Metric,YAGEO,RT0603BRD0719K1L,C861184,Extended,7160,0.0359,0.036,,,DigiKey not checked,,
+4,"R35,R37,R38,R39",10.0k 0.1% 25ppm 0603,R_0603_1608Metric,YAGEO,RT0603BRD0710KL,C95204,Extended,381640,0.0263,0.105,,,,,
+4,"R36,R40,R41,RS1",1k 1% 0603,R_0603_1608Metric,UNI-ROYAL,0603WAF1001T5E,C21190,Basic,5419600,0.0017,0.007,,,DigiKey not checked,,
+2,"RB1,RB2",41.2k 1% 200V 1206,R_1206_3216Metric,UNI-ROYAL,1206W4F4122T5E,C247267,Extended,1000,0.0033,0.007,,,DigiKey not checked,,
+1,RF1,40.2k 0.1% 25ppm 0603,R_0603_1608Metric,YAGEO,RT0603BRD0740K2L,C723489,Extended,8100,0.0347,0.035,,,DigiKey not checked,,
+1,RG1,10.0k 0.1% 25ppm 0603,R_0603_1608Metric,YAGEO,RT0603BRD0710KL,C95204,Extended,381640,0.0263,,,,DNP,,
+1,RLED1,750 1% 1206,R_1206_3216Metric,UNI-ROYAL,1206W4F7500T5E,C17985,Extended,22200,0.0051,0.005,,,DigiKey not checked,,
+1,RLIM1,SOT 165-432 1% 0805,R_0805_2012Metric,,E96 kit 165-432 Ohm 0805 1 %,,,,,,,,DNP; no LCSC number,,
+1,RSHR1,10 0.1% 25ppm 0603,R_0603_1608Metric,YAGEO,RT0603BRD0710RL,C861082,Extended,20410,0.0693,0.069,,,DigiKey not checked,,
+2,"RSN1,RSP1",10 1% 1W 2512,R_2512_6332Metric,UNI-ROYAL,25121WF100JT4E,C47019,Extended,94180,0.0331,0.066,,,DigiKey not checked,,
+14,"TP6,TP7,TP8,TP18,TP19,TP21,TP22,TP23,TP25,TP28,TP29,TP32,TP38,TP39",test loop,TestPoint_Keystone_5000-5004_Miniature,Keystone,5001,,"THT, hand-solder",,,,,,hand-fit; LCSC number not checked,,
+1,U1,RS3-1212D,Converter_DCDC_RECOM_RS3_SIP-8_P2.54mm,RECOM,RS3-1212D,TBD,"THT, hand-solder",,,,945-1563-5-ND,505,LCSC not checked; THT hand-solder,"Traco TMR 3-1222 (same SIP-8 pin-out [ASSUME], DigiKey.ca 1951-2598-ND, 55 in stock / 20 wk 2026-11-18)","D-L 2026-11-18: replaces WRA1212S-3WR2 (85 pcs LCSC, 0 DigiKey.ca). DigiKey.ca CAD 29.61 qty 1. Pin-out [DS], closes M1"
+3,"U2,U4,U5",TPS7A4901,Texas_DGN0008D_VSSOP-8-1EP_3x3mm_P0.65mm_EP2x2.94mm_Mask1.57x1.89mm,Texas Instruments,TPS7A4901DGNR,C16430,Extended,11547,1.62,4.860,296-27751-1-ND,0,DIGIKEY.CA 0,,DigiKey.ca at 0: LCSC only today
+1,U3,TPS7A3001,Texas_DGN0008D_VSSOP-8-1EP_3x3mm_P0.65mm_EP2x2.94mm_Mask1.57x1.89mm,Texas Instruments,TPS7A3001DGNR,C33835,Extended,3384,2.29,2.290,296-27750-1-ND,0,DIGIKEY.CA 0,,DigiKey.ca at 0: LCSC only today
+1,U6,ISO7741FDWR,SOIC-16W_7.5x10.3mm_P1.27mm,Texas Instruments,ISO7741FDWR,C485810,Extended,673,1.77,1.770,296-48141-1-ND,0,DIGIKEY.CA 0,"No drop-in: three forward channels are used, so ISO7742F does not fit. Same part elsewhere: DigiKey 296-48141-1-ND (0 on DigiKey.ca 2026-11-18) or the ISO7741FDW tube","DigiKey.ca at 0 (ISO7741FDW tube 178). Drop-in: ISO7742FDWR, LCSC C2862403 393 pcs, DigiKey 296-44610-1-ND 3277 pcs"
+1,U7,ISO7741DWR,SOIC-16W_7.5x10.3mm_P1.27mm,Texas Instruments,ISO7741DWR,C571196,Extended,11227,1.52,1.520,296-47781-1-ND,0,DIGIKEY.CA 0,,DigiKey.ca at 0 (ISO7741BDW basic-insulation grade 789): LCSC is the source
+1,U8,AD5761RBRUZ,TSSOP-16_4.4x5mm_P0.65mm,Analog Devices,AD5761RBRUZ-RL7,C515877,Extended,340,13.03,13.030,AD5761RBRUZ-RL7CT-ND,729,,,
+2,"U9,U11",OPA192,SOT-23-5,TI,OPA192IDBVR,C139648,Extended,6891,1.82,3.640,296-42105-1-ND,30031,,,
+1,U10,INA149,SOIC-8_3.9x4.9mm_P1.27mm,TI,INA149AIDR,C183089,Extended,402,4.57,4.570,296-30028-1-ND,0,DIGIKEY.CA 0,INA149AID (tube) C1346122,DigiKey.ca at 0: LCSC only today
+2,"U12,U13",AQY214S,Panasonic_SOP-4_4.4x4.3mm_P2.54mm,PANASONIC,AQY214SX,C719755,Extended,2641,1.44,2.880,255-AQY214SXTR-ND,3212,,"CPC1025NTR (Digi-Key 212-CPC1025NTRCT-ND, LAST TIME BUY 11/11/2026; the P2 baseline part, same SOP-4 2.54 footprint family)",
+1,U14,AQY414S,Panasonic_SOP-4_4.4x4.3mm_P2.54mm,Panasonic,AQY414SX,,Extended,0,,,255-AQY414SXTR-ND,148,NOT AT LCSC,DigiKey 255-AQY414SXTR-ND is the source (Panasonic at LCSC 0). LCSC clone GAQY414S C19188667: not qualified,DigiKey only (Panasonic at LCSC 0). LCSC clone GAQY414S C19188667 1929 pcs: not qualified
+2,"U15,U16",ADS8689IPWR,TSSOP-16_4.4x5mm_P0.65mm,Texas Instruments,ADS8689IPWR,C135986,Extended,732,5.48,10.960,296-48486-1-ND,1884,,,
+1,U17,LM4040A41 4.096V 0.1%,SOT-23,TI,LM4040AIM3-4.1/NOPB,C126807,Extended,1733,1.76,1.760,,,DigiKey not checked,,
+1,U18,OPA4192,TSSOP-14_4.4x5mm_P0.65mm,TI,OPA4192IPWR,C2057935,Extended,247,10.42,10.420,296-46618-1-ND,0,LCSC LOW; DIGIKEY.CA 0,,DigiKey.ca at 0: LCSC only today
+
+152,parts fitted,,,,,,,,LCSC total (priced lines),67.27,,,"U14 (DigiKey only), U1, WAGO and hand-fit parts are not all in the total"

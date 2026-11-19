@@ -10,9 +10,8 @@
 		(layer "F.SilkS")
 		(effects
 			(font
-				(face "JetBrains Mono")
+				(face "JetBrains Mono ExtraBold")
 				(size 1 1)
-				(bold yes)
 				(thickness 0.15)
 			)
 		)
@@ -22,9 +21,8 @@
 		(layer "F.Fab")
 		(effects
 			(font
-				(face "JetBrains Mono")
+				(face "JetBrains Mono ExtraBold")
 				(size 1 1)
-				(bold yes)
 				(thickness 0.15)
 			)
 		)
@@ -35,7 +33,7 @@
 		(hide yes)
 		(effects
 			(font
-				(face "JetBrains Mono")
+				(face "JetBrains Mono ExtraBold")
 				(size 1 1)
 				(thickness 0.15)
 			)
@@ -292,9 +290,8 @@
 		(layer "F.Fab")
 		(effects
 			(font
-				(face "JetBrains Mono")
+				(face "JetBrains Mono ExtraBold")
 				(size 1 1)
-				(bold yes)
 				(thickness 0.15)
 			)
 		)
