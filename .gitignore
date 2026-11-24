@@ -29,3 +29,7 @@ DECISIONS.md
 # AI-assistant working files stay local
 CLAUDE.md
 .claude/
+
+# Not published: client's schematic (excerpt in tests/B0-bringup/figs), superseded block diagram
+01_client_board/Client_Prototype_HowlandPump.pdf
+02_rev1_channel/Kicad Projects/STIM_Rev1/Documentation/rev1_block_diagram.*
