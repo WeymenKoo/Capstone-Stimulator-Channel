@@ -7,7 +7,7 @@ Simulations: `tests/<ID>-…/<ID>-….asc` (LTspice; each steps the rail between
 
 Each row is one simulation with one bench measurement that uses the same stimulus and reads the same quantity.
 Fill the Sim and Bench columns as numbers; Pass = within the stated tolerance. Tag values [L] LTspice, [B] bench.
-Bench setup: **±30 V** from the MCLD 3042 Xantrex XPH 35-4T (two floating 35 V outputs in series, mid-point = GND, 50 mA limits). Scope DHO804 (4 ch, scripted), generator bench DG1022 (scripted; FG085 fallback), DMM Fluke 45 5-digit (A2/A5b), BM235 rail current. Probe points per `Client_Prototype_HowlandPump.pdf`. A1 adds the Q1/Q2 Vbe rows and an optional window-vs-rail sweep (±35 V; ±50 V with a second dual supply) for the transistor question.
+Bench setup: **±30 V** from the MCLD 3042 Xantrex XPH 35-4T (two floating 35 V outputs in series, mid-point = GND, 50 mA limits). Scope DHO804 (4 ch, scripted), generator bench DG1022 (scripted; FG085 fallback), DMM Fluke 45 5-digit (A2/A5b), BM235 rail current. Probe points per the client's schematic (not published in this repository). A1 adds the Q1/Q2 Vbe rows and an optional window-vs-rail sweep (±35 V; ±50 V with a second dual supply) for the transistor question.
 ±100 V rows wait for the HV module. Load for ±30 V rows: 1.00 kΩ 1 % (and 2.2 kΩ where stated). Source: function
 generator, 50 Ω, or the FPGA DAC once available (1 mA/V).
 
@@ -19,7 +19,7 @@ generator, 50 Ω, or the FPGA DAC once available (1 mA/V).
 | A4 | Frequency response (step 4) | 2 mA pk sine, 1 Hz–10 kHz, 1 kΩ | I_load magnitude at 1, 10, 100, 300, 1 k, 10 k Hz | 0.000 dB to 1 kHz, +0.002 dB at 10 kHz; loop peak +6.0 dB at 603 kHz | | 0.000 dB; +0.001 dB at 10 kHz; peak +6.5 dB at 741 kHz | | ±0.5 dB | |
 | A5 | Output impedance (step 8) | 2 mA DC; load 1.0 kΩ → 2.2 kΩ | ΔI / ΔV → Z_out | ΔI +0.015 %, |Z| 8.1 MΩ (50 Ω gen); A5a: 300 MΩ ideal, 36 pF | | same (rail-independent) | | order of magnitude; bench ΔI < 0.1 % | |
 | A6 | Load reach / compliance (step 2) | 5 mA DC; sweep R_load | R at which I drops 1 % | n/a at ±30 V (bench: use 2.2 k, 3.3 k, expect clipping) | | 13.75 kΩ sink, 14.3 kΩ source (archive) | | ±10 % | |
-| A7 | Power-up / single-rail loss (step 5) | 2 mA DC into 1 kΩ; switch one rail off, then on | I_load peak and duration during the event | +rail lost: −5.9 mA cont.; +rail first: +6.6 mA while alone | (SEQ 2, 3 only; Weymen's call) | +rail lost: −9.7 mA cont.; +rail first: +23.4 mA (model est.) | | ±50 % | |
+| A7 | Power-up / single-rail loss (step 5) | 2 mA DC into 1 kΩ; switch one rail off, then on | I_load peak and duration during the event | +rail lost: −5.9 mA cont.; +rail first: +6.6 mA while alone | (SEQ 2, 3 only; designer's call) | +rail lost: −9.7 mA cont.; +rail first: +23.4 mA (model est.) | | ±50 % | |
 | A8 | Rail ripple → load (step 6) | 100 mVpp at f_sw on one rail | I_load ripple | deferred to power board | | 0.29 Vpp→5 µA @150 kHz (archive) | | | |
 
 ## Rev 1 additions (only on the Rev 1 board)

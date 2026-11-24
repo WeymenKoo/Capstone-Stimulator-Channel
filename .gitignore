@@ -25,3 +25,7 @@ DECISIONS.md
 02_rev1_channel/REVIEW_*.md
 03_safety_plan/parking-lot.md
 03_safety_plan/research-brief.md
+
+# AI-assistant working files stay local
+CLAUDE.md
+.claude/

@@ -1,7 +1,7 @@
 # Vendor models
 
-SPICE models downloaded from the manufacturers, kept as received. The simulation folders carry their own working copies
-(`2-pump-characterization/client-board-models.lib`, `3-compliance-and-limiter/models/`, `4-rev1-design/03_sim/models/`).
+SPICE models downloaded from the manufacturers, kept as received. The simulations use the working copies in
+`../client-board-models.lib` and `../client-board-channel-subcircuit.lib`.
 
 | File | Part | Source |
 |---|---|---|

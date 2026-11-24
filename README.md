@@ -1,29 +1,112 @@
-# STIM Rev 1 hardware (JY063)
+# STIM channel: digitally controlled EVS current-source channel (JY063)
 
-UBC ELEC 491 capstone, project JY063. One channel of a four-channel electrical vestibular stimulator: a ±100 V
-bootstrapped Howland current pump (the client's STIM board) and our Rev 1 bench prototype of it.
+UBC ELEC 491 capstone, project JY063 (Project 63, *Multi-Channel Neural Interface for Immersive Virtual Reality: A
+High-Speed Digital Vestibular Stimulation System*), for the UBC Sensorimotor Physiology Laboratory.
 
-**Status.** The client board failed its as-built bring-up (B0, Nov 6): Q1/Q2 are fitted with the wrong polarity and the
-op-amp supply measures 44 Ω, so acceptance tests A1–A7 were simulated but not run on the bench. The Rev 1 schematic
-(rev 2.1.0-dev, PRELIMINARY) is complete: AD5761R command DAC, two ADS8689 read-back ADCs, two ISO7741 isolators and
-+5 V / +3.3 V rails. The PCB is placed, not routed. Rev 1 is a bench prototype for dummy loads only, not a safety
-sign-off; the safety loop is planned for Rev 2.
+## The project
 
-| Folder | What is in it |
+VR motion sickness comes largely from the mismatch between what the eyes see and what the vestibular system in the
+inner ear reports about head motion. Electrical vestibular stimulation (EVS), a small current passed through
+electrodes on the head, can create the sensation of head motion. The client's existing proof-of-concept is a
+single-channel, analog-driven Howland current pump that can only produce roll (side-to-side) cues.
+
+The project turns it into a scalable, digitally controlled multi-channel bench-top stimulator (4, then 8 channels) so
+that currents balanced across an electrode array can steer the perceived rotation in pitch, yaw and roll. The main
+targets from the project brief:
+
+| Requirement | Target |
 |---|---|
-| `01_client_board/` | LTspice model of the client's STIM board (`model/`), one simulation per acceptance test (`tests/A1`–`A7`), the bench test plan (`acceptance-tests.md`), the B0 bring-up report (`BENCH-B0-SUMMARY.docx`) with its raw data and photos (`tests/B0-bringup/`), the client's schematic (`Client_Prototype_HowlandPump.pdf`) and the stage design calculator (`deck/`) |
-| `02_rev1_channel/` | Rev 1 analog channel: KiCad project `Kicad Projects/STIM_Rev1/` (own README, schematic PDF, BoM), FPGA interface contract `ICD_J3.md`, backup ±100 V flyback power stage `PWR_Rev1/` (filled TI calculators in `calc/`) |
-| `03_safety_plan/` | Rev 2 safety-loop schematic sketch (KiCad + PDF) |
+| Output current | up to ±5 mA per channel (stretch: 10 mA) |
+| Accuracy | delivered current within ±1 % of the commanded current |
+| Update rate | ≥ 1 kHz command / update rate, jitter < 100 µs |
+| Control | digital (DAC / FPGA) instead of analog voltage inputs |
+| Power | integrated battery-operated supply |
+| Verification | simulation model before fabrication; bench tests on electronic / dummy loads only (no human testing) |
 
-**Bench test plan and report.** `01_client_board/acceptance-tests.md` lists each test as one simulation and one bench
-measurement with the same stimulus, load and tolerance, with the simulated values filled in.
-`01_client_board/BENCH-B0-SUMMARY.docx` is the bench report for the as-built client board: setup, measurements,
-the polarity fault found against the schematic, and why the acceptance tests stopped there.
+This repository holds the **hardware of one stimulator channel (STIM Rev 1)**: the working files, simulations, raw
+bench data and results. The milestone documents point here for data access, so files are kept as raw and as close to
+how they were produced as possible; each folder's README says what is in it and how it was produced.
 
-**Running a simulation.** Open the `.asc` in LTspice 26.x and run it. Every directive is on the sheet; results are
-written to the SPICE error log by `.meas` (View → SPICE Error Log). Each test steps the rails between ±30 V and
-±100 V, so one run gives both simulation columns of the test plan. `.raw` and `.log` outputs are not committed.
+## Block diagram: STIM Rev 1 channel
 
-**Number tags.** [DS] datasheet, [H] hand calculation, [L] LTspice, [N] ngspice, [B] bench, [ASSUME] assumption.
+```mermaid
+flowchart LR
+  subgraph FPGA_SIDE["FPGA side (GND_FPGA)"]
+    FPGA["FPGA host<br/>Red Pitaya, off-board<br/>SPI master + ENABLE"]
+    J3["J3 2x13 IDC<br/>(Red Pitaya E1 pin-out)"]
+    VBAT["J2 VBAT 9-12.6 V<br/>(3S Li-ion)"]
+  end
+  subgraph ISO["Isolation barrier, 7.0 mm"]
+    ISO77["U6 / U7 ISO7741<br/>digital isolators"]
+    DCDC["U1 RS3-1212D<br/>isolated ±12 V"]
+  end
+  subgraph LV["Board low-voltage side (ISO_GND)"]
+    LDO["U2 / U3 ±9 V LDO<br/>U4 +5 V, U5 +3V3"]
+    DAC["U8 AD5761R<br/>16-bit DAC, ±5 V"]
+    BUF["Clamp D4 / D5<br/>+ U9 buffer"]
+    ADC["U15 / U16 ADS8689<br/>16-bit read-back ADCs"]
+    SENSE["U18 OPA4192<br/>shunt + V_elec sense"]
+  end
+  subgraph HV["High-voltage analog (±100 V)"]
+    HVIN["J1 ±100 V in<br/>F1 / F2, bleeders"]
+    PUMP["Howland current pump<br/>U10 INA149, Q1 / Q2<br/>bootstrapped rails, 1 mA/V"]
+    LIM["Limiter M1 / M2<br/>(DNP in Rev 1)"]
+    SW["U12 / U13 AQY214S<br/>PhotoMOS output switches"]
+    J5["J5 electrodes<br/>STIM / RET"]
+  end
+  FPGA <--> J3 <--> ISO77
+  ISO77 -- "SPI: CS_DAC" --> DAC --> BUF --> PUMP --> LIM --> SW --> J5
+  ISO77 -- ENABLE --> SW
+  J5 -- return current --> SENSE --> ADC -- MISO --> ISO77
+  VBAT --> DCDC --> LDO
+  HVIN --> PUMP
+```
 
-Owner: Weymen Koo.
+## PCB: current state (work in progress)
+
+![STIM Rev 1 PCB, top side, work in progress](docs/img/rev1_pcb_top_wip.png)
+
+**Work in progress.** Schematic rev 2.1.0-dev (PRELIMINARY) is complete; the 100 × 100 mm, 4-layer board is placed and
+routing is in progress. The image is rendered from `STIM_Rev1.kicad_pcb` as committed in this repository (pads,
+copper pours and silkscreen of the top side). Rev 1 is a bench prototype for dummy loads only, not a safety sign-off.
+Full specification, sheet list and design rules: [`02_rev1_channel/Kicad Projects/STIM_Rev1/README.md`](02_rev1_channel/Kicad%20Projects/STIM_Rev1/README.md).
+
+## Repository map
+
+| Folder | Contents |
+|---|---|
+| [`01_client_board/`](01_client_board/) | LTspice model of the client's single-channel reference board, one simulation per acceptance test, the bench test plan, and the bench session record with its raw data |
+| [`02_rev1_channel/`](02_rev1_channel/) | STIM Rev 1 KiCad project (schematic, PCB, libraries, BoM, ERC), FPGA interface control document `ICD_J3.md`, backup ±100 V flyback power-stage calculators `PWR_Rev1/` |
+| [`03_safety_plan/`](03_safety_plan/) | Rev 2 safety-loop block schematic (planning sketch, KiCad + PDF) |
+| [`docs/img/`](docs/img/) | Images used by this README |
+
+## Conventions
+
+- **Number tags.** [DS] datasheet, [H] hand calculation, [L] LTspice, [N] ngspice, [B] bench measurement,
+  [ASSUME] stated assumption. A value without a tag is a nominal design value.
+- **Dates** are ISO (YYYY-MM-DD) and appear in file names where a file is a snapshot (BoM, floorplan, sourcing).
+- **Simulations.** Open an `.asc` in LTspice 26.x and run it; all directives are on the sheet and results are written
+  to the SPICE error log by `.meas`. `.raw` / `.log` outputs are regenerated by running and are not committed.
+- **KiCad.** KiCad 10. Install the JetBrains Mono font before opening the board (silkscreen text).
+
+## Contributions and AI-tool use
+
+All engineering work and decisions in this repository are the channel designer's (repository owner) unless listed
+below.
+
+| Work | Done by |
+|---|---|
+| Project plan, test plan and acceptance criteria | channel designer |
+| Simulation set-up: circuit models, test benches, stimuli, what to sweep and why | channel designer |
+| Schematic, PCB design, layout, routing, design rules | channel designer |
+| Part selection (pump, power, protection, switches, connectors) | channel designer |
+| Selection of the command DAC (AD5761R), read-back ADCs (ADS8689) and digital isolators (ISO7741) | other JY063 team members |
+| Bench work: wiring, power-up, every measurement | channel designer |
+| Interpreting results, verifying every result, every engineering decision | channel designer |
+
+**Claude (Anthropic's AI assistant)** was used as a tool to speed up an otherwise time-intensive workflow. Its role
+was limited to the repetitive work: running the iterative LTspice sweeps the designer set up and processing the raw
+LTspice output into tables and plots; writing and running instrument-control and data-capture scripts; converting raw
+bench data, processing plots and entering logged values; and formatting documents, including the formatting and the
+written summary of the bench session record. Claude made no engineering decisions. Every result it produced was
+reviewed and verified by the designer against the raw data in this repository.
