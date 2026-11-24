@@ -54,7 +54,7 @@ STIM_Rev1
 │   ├── lib_sym      # STIM_Rev1.kicad_sym: every symbol of the design
 │   ├── lib_fp       # STIM_Rev1.pretty: every footprint of the design
 │   └── 3d_models    # STEP models
-├── Documentation    # block diagram, floorplan, placement, sourcing snapshot (csv)
+├── Documentation    # floorplan, placement, sourcing snapshot (csv)
 ├── Schematic        # PDF of the schematic
 ├── Manufacturing
 │   ├── Assembly     # BoM, CPL (after layout, Fabrication Toolkit)

@@ -7,7 +7,7 @@ Simulations: `tests/<ID>-…/<ID>-….asc` (LTspice; each steps the rail between
 
 Each row is one simulation with one bench measurement that uses the same stimulus and reads the same quantity.
 Fill the Sim and Bench columns as numbers; Pass = within the stated tolerance. Tag values [L] LTspice, [B] bench.
-Bench setup: **±30 V** from the MCLD 3042 Xantrex XPH 35-4T (two floating 35 V outputs in series, mid-point = GND, 50 mA limits). Scope DHO804 (4 ch, scripted), generator bench DG1022 (scripted; FG085 fallback), DMM Fluke 45 5-digit (A2/A5b), BM235 rail current. Probe points per `Client_Prototype_HowlandPump.pdf`. A1 adds the Q1/Q2 Vbe rows and an optional window-vs-rail sweep (±35 V; ±50 V with a second dual supply) for the transistor question.
+Bench setup: **±30 V** from the MCLD 3042 Xantrex XPH 35-4T (two floating 35 V outputs in series, mid-point = GND, 50 mA limits). Scope DHO804 (4 ch, scripted), generator bench DG1022 (scripted; FG085 fallback), DMM Fluke 45 5-digit (A2/A5b), BM235 rail current. Probe points per the client's schematic (not published in this repository). A1 adds the Q1/Q2 Vbe rows and an optional window-vs-rail sweep (±35 V; ±50 V with a second dual supply) for the transistor question.
 ±100 V rows wait for the HV module. Load for ±30 V rows: 1.00 kΩ 1 % (and 2.2 kΩ where stated). Source: function
 generator, 50 Ω, or the FPGA DAC once available (1 mA/V).
 
