@@ -116,8 +116,8 @@ still needs a forward isolator channel that Rev 1 does not have.
 3. **LDAC:** one DAC per board, LDAC tied low: "the DAC register is updated when the input register is updated" [DS pin
    11], i.e. on SYNC rising. A shared LDAC only matters when several DACs (four boards) must update in the same
    instant; with sequential SPI writes the skew is one 24-bit frame per board (2.4 us at 10 MHz). That is a Rev 2
-   interface-board item (shared LDAC_N and RESET_N through a third isolator, J3 2x10): `03_safety_plan/parking-lot.md`.
+   interface-board item (shared LDAC_N and RESET_N through a third isolator, J3 2x10).
 
 ## Change control
-Changing a pin, a range or a scale here changes sheets [5], [6], [10] or RG1 / R31 / R32. File the change in
-`DECISIONS.md` and the KiCad `CHANGELOG.md`.
+Changing a pin, a range or a scale here changes sheets [5], [6], [10] or RG1 / R31 / R32. Agree the change with
+CPEN before editing the schematic.

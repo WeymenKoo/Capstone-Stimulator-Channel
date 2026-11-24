@@ -1,13 +1,13 @@
-# Acceptance tests: client STIM board (and Rev 1), sim ↔ bench
+# Bench test plan: client STIM board (and Rev 1), sim ↔ bench
 
-> **Status 2026-11-15:** client board failed B0 (`tests/B0-bringup/`); its bench columns stay empty unless it is repaired
-> (`../PLAN.md` §3). Rev 1 runs the same rows after its December bring-up (`../02_rev1_channel/README.md`).
+> **Status:** the client board failed its as-built bring-up (B0, report `BENCH-B0-SUMMARY.docx`, data in
+> `tests/B0-bringup/`), so the bench columns are empty. Rev 1 runs the same rows after its bring-up.
 
-Schematics: `tests/<ID>-…/` (see `tests/README.md`). Model: `model/client-board-model.asc`.
+Simulations: `tests/<ID>-…/<ID>-….asc` (LTspice; each steps the rail between ±30 V and ±100 V). Model: `model/client-board-model.asc`.
 
 Each row is one simulation with one bench measurement that uses the same stimulus and reads the same quantity.
 Fill the Sim and Bench columns as numbers; Pass = within the stated tolerance. Tag values [L] LTspice, [B] bench.
-Bench session (slipped from Nov 3; sheet `BENCH-SESSION_30V.docx`, rig `bench/bench_rig.py`): **±30 V** from the MCLD 3042 Xantrex XPH 35-4T (two floating 35 V outputs in series, mid-point = GND, 50 mA limits). Scope DHO804 (4 ch, scripted), generator bench DG1022 (scripted; FG085 fallback), DMM Fluke 45 5-digit (A2/A5b), BM235 rail current. Probe points per `Client_Prototype_HowlandPump.pdf` are listed on the sheet. A1 adds the Q1/Q2 Vbe rows and an optional window-vs-rail sweep (±35 V; ±50 V with a second dual supply) for the transistor question.
+Bench setup: **±30 V** from the MCLD 3042 Xantrex XPH 35-4T (two floating 35 V outputs in series, mid-point = GND, 50 mA limits). Scope DHO804 (4 ch, scripted), generator bench DG1022 (scripted; FG085 fallback), DMM Fluke 45 5-digit (A2/A5b), BM235 rail current. Probe points per `Client_Prototype_HowlandPump.pdf`. A1 adds the Q1/Q2 Vbe rows and an optional window-vs-rail sweep (±35 V; ±50 V with a second dual supply) for the transistor question.
 ±100 V rows wait for the HV module. Load for ±30 V rows: 1.00 kΩ 1 % (and 2.2 kΩ where stated). Source: function
 generator, 50 Ω, or the FPGA DAC once available (1 mA/V).
 
@@ -32,18 +32,9 @@ generator, 50 Ω, or the FPGA DAC once available (1 mA/V).
 | R4 | Read-back scaling | A2 currents; 10, 20, 50 V on electrode | I_RETURN_ADC, V_ELEC_ADC vs DMM | | | ±1 % | |
 | R5 | ±9 V LDO / ±12 V DC-DC rails | +12 V in | rail values, ripple; U32 pinout check first | | | ±5 % | |
 
-Gate sims for the Rev 1 order (G1 pump ringing, G2 limiter + rail loss = D-A7) live in `../02_rev1_channel/tests/`.
-
 ## Method notes
 - Bench current: measure V across the 1 kΩ 0.1 % load with a 6½-digit DMM (DC) or scope differential probe (AC).
   Never a series ammeter in the loop above 1 kHz.
 - Sim stimulus must be the bench stimulus: 50 Ω source, same edge time, same load value and tolerance.
 - Same figure for both: overlay sim (dashed) and bench (solid) on one plot per row. That overlay is the DR1
   "simulation suite" evidence and the V&V plan's method.
-
-## Deck 2 must-fix before it is shown again (from the Oct 20 review)
-1. Nyquist/loop-gain slides (Figs 19–20) contradict closed-loop data: lead with closed-loop evidence, mark
-   Figs 19–20 "not yet reconciled", delete the "RHP pole explains the 10 kΩ mismatch" sentence.
-2. "0.23 % at 1 kHz" is phase lag (~0.36 µs), not amplitude error; reword Fig 23 and the Step 8 summary.
-3. Wording: overshoot is vs final value; "settling adds ≤ ~3 µs variation"; "300 Hz: KPI upper band";
-   fault currents are macromodel estimates; "300 boards × 2 loads"; remove the 16 placeholder slides.
