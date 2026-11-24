@@ -2,28 +2,28 @@ ERC report (2026-11-08T00:50:37, Encoding UTF8)
 Report includes: Errors, Warnings, Exclusions
 
 ***** Sheet /
-[simulation_model_issue]: Simulation model library not found at '/Users/kooweymen/Library/CloudStorage/GoogleDrive-kooweymen@gmail.com/Other computers/MBA 1/Documents/UBC/Y5 Courses/Capstone Elec 491/Weymen Cpastone/STIM_Rev1/02_rev1_channel/Kicad Projects/STIM_Rev1/Simulation/models/s02_standins_ng.lib'
+[simulation_model_issue]: Simulation model library not found at '<repo>/02_rev1_channel/Kicad Projects/STIM_Rev1/Simulation/models/s02_standins_ng.lib'
 File '${KIPRJMOD}/Simulation/models/s02_standins_ng.lib' does not exist.
 Error loading simulation model: could not find base model 'BZX84C6V2_JY' in library '${KIPRJMOD}/Simulation/models/s02_standins_ng.lib'
     ; warning
     @(114.30 mm, 99.06 mm): Symbol D3 [BZX84C6V2]
-[simulation_model_issue]: Simulation model library not found at '/Users/kooweymen/Library/CloudStorage/GoogleDrive-kooweymen@gmail.com/Other computers/MBA 1/Documents/UBC/Y5 Courses/Capstone Elec 491/Weymen Cpastone/STIM_Rev1/02_rev1_channel/Kicad Projects/STIM_Rev1/Simulation/models/s02_standins_ng.lib'
+[simulation_model_issue]: Simulation model library not found at '<repo>/02_rev1_channel/Kicad Projects/STIM_Rev1/Simulation/models/s02_standins_ng.lib'
 Error loading simulation model: could not find base model 'BZX84C6V2_JY' in library '${KIPRJMOD}/Simulation/models/s02_standins_ng.lib'
     ; warning
     @(114.30 mm, 111.76 mm): Symbol D4 [BZX84C6V2]
-[simulation_model_issue]: Simulation model library not found at '/Users/kooweymen/Library/CloudStorage/GoogleDrive-kooweymen@gmail.com/Other computers/MBA 1/Documents/UBC/Y5 Courses/Capstone Elec 491/Weymen Cpastone/STIM_Rev1/02_rev1_channel/Kicad Projects/STIM_Rev1/Simulation/models/s01_ng.lib'
+[simulation_model_issue]: Simulation model library not found at '<repo>/02_rev1_channel/Kicad Projects/STIM_Rev1/Simulation/models/s01_ng.lib'
 Error loading simulation model: could not find base model 'BAS16' in library '${KIPRJMOD}/Simulation/models/s01_ng.lib'
     ; warning
     @(238.76 mm, 130.81 mm): Symbol D1 [BAS16]
-[simulation_model_issue]: Simulation model library not found at '/Users/kooweymen/Library/CloudStorage/GoogleDrive-kooweymen@gmail.com/Other computers/MBA 1/Documents/UBC/Y5 Courses/Capstone Elec 491/Weymen Cpastone/STIM_Rev1/02_rev1_channel/Kicad Projects/STIM_Rev1/Simulation/models/s01_ng.lib'
+[simulation_model_issue]: Simulation model library not found at '<repo>/02_rev1_channel/Kicad Projects/STIM_Rev1/Simulation/models/s01_ng.lib'
 Error loading simulation model: could not find base model 'BAS16' in library '${KIPRJMOD}/Simulation/models/s01_ng.lib'
     ; warning
     @(238.76 mm, 153.67 mm): Symbol D2 [BAS16]
-[simulation_model_issue]: Simulation model library not found at '/Users/kooweymen/Library/CloudStorage/GoogleDrive-kooweymen@gmail.com/Other computers/MBA 1/Documents/UBC/Y5 Courses/Capstone Elec 491/Weymen Cpastone/STIM_Rev1/02_rev1_channel/Kicad Projects/STIM_Rev1/Simulation/models/s01_ng.lib'
+[simulation_model_issue]: Simulation model library not found at '<repo>/02_rev1_channel/Kicad Projects/STIM_Rev1/Simulation/models/s01_ng.lib'
 Error loading simulation model: could not find base model 'MJD340' in library '${KIPRJMOD}/Simulation/models/s01_ng.lib'
     ; warning
     @(283.21 mm, 121.92 mm): Symbol Q2 [MJD340]
-[simulation_model_issue]: Simulation model library not found at '/Users/kooweymen/Library/CloudStorage/GoogleDrive-kooweymen@gmail.com/Other computers/MBA 1/Documents/UBC/Y5 Courses/Capstone Elec 491/Weymen Cpastone/STIM_Rev1/02_rev1_channel/Kicad Projects/STIM_Rev1/Simulation/models/s01_ng.lib'
+[simulation_model_issue]: Simulation model library not found at '<repo>/02_rev1_channel/Kicad Projects/STIM_Rev1/Simulation/models/s01_ng.lib'
 File '${KIPRJMOD}/Simulation/models/s01_ng.lib' does not exist.
 Error loading simulation model: could not find base model 'MJD350' in library '${KIPRJMOD}/Simulation/models/s01_ng.lib'
     ; warning

@@ -1,6 +1,6 @@
 # ICD: Rev 1 analog board J3 <-> FPGA (Red Pitaya)
 
-JY063 · rewritten 2026-11-07 (Weymen, from the 2.1.0-dev schematic sheets 5, 10, 11, 12, 13) · **status: proposal,
+JY063 · rewritten 2026-11-07 (from the 2.1.0-dev schematic sheets 5, 10, 11, 12, 13) · **status: proposal,
 not agreed** · to CPEN1/CPEN2 for sign-off. Replaces the 2026-10-28 analog pinout (DAC_CMD / read-back on J3), which
 no longer exists: the DAC and ADC are on the board behind digital isolators.
 
