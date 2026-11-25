@@ -1122,14 +1122,6 @@
       {
         "netclass": "HV_OUT",
         "pattern": "unconnected-(D8-NC-Pad2)"
-      },
-      {
-        "netclass": "HV_POS",
-        "pattern": "*/+HV_CH"
-      },
-      {
-        "netclass": "HV_NEG",
-        "pattern": "*/-HV_CH"
       }
     ]
   },
@@ -1274,7 +1266,7 @@
         "uuid": "801725e5-e50b-4629-8dff-f10f88598334"
       }
     ],
-    "used_designators": "RS1,RSHR1,Q1-3,J1-6,JP1-6,RG1,R20A1-2,C1-46,RF1,R20B1,D2B1,D1-10,F1-2,RSN1,U1-18,RLIM1,RB1-2,RLED1-2,H1-4,R1-41,RSP1,D1B1,M1-2,#PWR1-150,#PWR152,#FLG1-12,TP1-39",
+    "used_designators": "TP1-39,#FLG1-12,#PWR1-150,#PWR152,M1-2,D1B1,RSP1,R1-41,RLED1-2,H1-4,RSN1,U1-18,RLIM1,F1-2,D1-10,D2B1,R20B1,C1-46,RF1,R20A1-2,RG1,J1-6,JP1-6,RB1-2,Q1-3,RSHR1,RS1",
     "variants": []
   },
   "sheets": [
@@ -1304,31 +1296,23 @@
     ],
     [
       "9d0bdb08-6c29-5890-90c8-6fbe493cc345",
-      "CH1"
-    ],
-    [
-      "ecbc1c2c-07dc-54da-af77-4f697fa6928c",
-      "CH2"
-    ],
-    [
-      "61a93ef7-2241-5e8c-bfe7-6ac30ddfbd28",
-      "CH3"
-    ],
-    [
-      "99dc508b-ab7b-52f8-bd3b-576ba43e7cd9",
-      "CH4"
+      "[7-9] Channel CH1"
     ],
     [
       "c696ab63-6e27-5310-bf58-acd9f38b7949",
-      "Input Clamp & Buffer"
+      "[7] Analog - Input Clamp & Buffer"
     ],
     [
       "15416e61-56a0-5b0d-b090-bfa41cf71886",
-      "Howland Current Pump"
+      "[8] Analog - Howland Current Pump"
     ],
     [
       "f069f885-88b4-57b7-9482-f6ec165967cf",
-      "Limiter & PhotoMOS"
+      "[9] Output - Limiter & PhotoMOS"
+    ],
+    [
+      "2354af35-49b9-513f-bf34-cd6a0de66331",
+      "Return Electrode & Shunt"
     ],
     [
       "4b7c7ece-13b3-4546-8c13-c3483238e92d",

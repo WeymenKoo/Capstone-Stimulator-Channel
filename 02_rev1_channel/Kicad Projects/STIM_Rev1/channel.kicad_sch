@@ -264,20 +264,6 @@
 				(justify left)
 			)
 		)
-		(pin "RET_SHUNT" output
-			(at 215.9 114.3 180)
-			(uuid "1061266e-c885-47e0-a3cb-920c0df91c14")
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-					(thickness 0.3048)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-				(justify left)
-			)
-		)
 		(pin "V_ELEC_DIV" output
 			(at 215.9 118.11 180)
 			(uuid "60d7706a-6ca8-435e-8d4e-9b9698a72f27")
@@ -389,28 +375,6 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 114.3) (xy 215.9 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ec27730-f354-5c57-8142-5e42b95c1c76")
-	)
-	(hierarchical_label "RET_SHUNT"
-		(shape output)
-		(at 193.04 114.3 180)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "35218a2e-c549-5835-95b4-5124088c17a2")
-	)
-	(wire
-		(pts
 			(xy 193.04 118.11) (xy 215.9 118.11)
 		)
 		(stroke
@@ -453,7 +417,7 @@
 		)
 		(uuid "45e43d8c-eb66-5816-95be-72973194d360")
 	)
-	(text "One stimulating channel: [7] clamp + buffer -> [8] Howland pump -> [9] limiter link + PhotoMOS.\nThe three pages are the single-channel Rev 1 sheets, unchanged (nested 2026-11-24).\nPlaced 4 times (CH1-CH4). Until the return sheet exists (phase 3) each copy still carries the return parts:\nU13 (return PhotoMOS), U14 (park), RSHR1 (return shunt), J5 pin 2 (RET), TP28."
+	(text "One stimulating channel: [7] clamp + buffer -> [8] Howland pump -> [9] limiter link + PhotoMOS.\nThe three pages are the single-channel Rev 1 sheets, unchanged (nested 2026-11-24).\nPlaced 4 times (CH1-CH4). The return electrode and its shunt are on the shared Return sheet (never switched)."
 		(exclude_from_sim no)
 		(at 50.8 146.05 0)
 		(effects

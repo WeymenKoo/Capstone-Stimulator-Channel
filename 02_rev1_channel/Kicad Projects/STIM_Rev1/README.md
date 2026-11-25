@@ -47,9 +47,10 @@ Tags: [N] ngspice, [L] LTspice, [H] hand calc, [DS] datasheet, [B] bench (none y
    Input Clamp & Buffer (`analog-clamp-buffer.kicad_sch`), Howland Current Pump (`analog-current-pump.kicad_sch`),
    Limiter & PhotoMOS (`output-limiter-photomos.kicad_sch`). Designators by channel: CHn part k = k + 100 n (R24 -> R124 / R224 / R324 / R424)
 8-22. the three channel pages for CH1-CH4
-23. Interface - ADC Read-back (`interface-adc-readback.kicad_sch`) - U15 / U16 ADS8689 (I and V)
-24. Sense - Feedback to ADC (`sense-feedback-adc.kicad_sch`)
-25. Doc - Revision History (`revision-history.kicad_sch`)
+23. Return Electrode & Shunt (`return.kicad_sch`) - J6 RET banana jack, RSHR1 100 ohm 0.1 % to COM, TP28 / TP31; never switched
+24. Interface - ADC Read-back (`interface-adc-readback.kicad_sch`) - U15 / U16 ADS8689 (I and V)
+25. Sense - Feedback to ADC (`sense-feedback-adc.kicad_sch`) - still scaled for a 10 ohm shunt until phase 6
+26. Doc - Revision History (`revision-history.kicad_sch`)
 
 ## Directory structure
 

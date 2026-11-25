@@ -77,8 +77,10 @@ Phase 1 fixes (done): per channel a second floating-rail cap (C47, U11), +HV / -
 Kelvin test-loop pair across R24 (TP25 + TP26, 1 V = 1 mA, floats at the electrode voltage).
 Phase 2 (done): the channel is placed four times (CH1-CH4, designators R1xx / R2xx / R3xx / R4xx and so on), each
 fed from the shared +/-HV through its own 0 ohm links (R150 / R151 ...) and with its own ISO_GND test loop; design
-rule "HV channel to channel" keeps 1.5 mm between the floating / output nets of different channels. Until phase 3
-each copy still carries the old return-path parts.
+rule "HV channel to channel" keeps 1.5 mm between the floating / output nets of different channels.
+Phase 3 (done): one shared return electrode, never switched: J6 (4 mm banana) -> RSHR1 100 ohm 0.1 % -> COM, test
+loops TP28 / TP31 across the shunt (1 mV = 10 uA). The per-channel return PhotoMOS (U13) and shunt are gone; each
+channel keeps its stimulating PhotoMOS (U12) and its park (U14 + R27).
 Full specification, sheet list and design rules: [`02_rev1_channel/Kicad Projects/STIM_Rev1/README.md`](02_rev1_channel/Kicad%20Projects/STIM_Rev1/README.md).
 
 ## Repository map

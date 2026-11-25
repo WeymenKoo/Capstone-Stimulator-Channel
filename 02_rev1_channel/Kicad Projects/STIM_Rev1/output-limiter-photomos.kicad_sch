@@ -2760,7 +2760,7 @@
 		)
 		(uuid "7e7ba4a9-b3b2-5865-82d7-1ff76d7c5250")
 	)
-	(text_box "PhotoMOS Switches, TVS, Electrodes and Return Shunt"
+	(text_box "PhotoMOS Switch, Park, TVS and Electrode"
 		(exclude_from_sim no)
 		(at 171.45 216.54 0)
 		(size 190.5 5.71)
@@ -2907,7 +2907,7 @@
 		)
 		(uuid "a0e544b8-e091-4ffc-98a3-335324d7b631")
 	)
-	(text_box "DESIGN NOTE D2:\n• U12 (stimulating), U13 (return) and U14 (Form-B park) share one LED string: one failure opens U12/U13 and leaves the park closed\n• D9 OUT EN lights only while the electrodes are live\n• RLED1 750 Ohm from +12V (was VBAT until 2026-11-18) sets ~7-9 mA with four LEDs [H] (AQY operate <= 3 mA [DS])"
+	(text_box "DESIGN NOTE D2:\n• U12 (stimulating) and U14 (Form-B park) share one LED string; the return electrode is on the shared Return sheet and is never switched (4-ch revamp)\n• D9 OUT EN lights only while this electrode is live\n• RLED1 750 Ohm from +12V: D9 + two PhotoMOS LEDs, ~10 mA [H] (AQY operate <= 3 mA [DS])"
 		(exclude_from_sim no)
 		(at 85.32 131.445 0)
 		(size 62 19.685)
@@ -2956,7 +2956,7 @@
 		)
 		(uuid "a0e5515f-3a3a-42f9-aae3-2b792b42a907")
 	)
-	(text_box "DESIGN NOTE D3:\n• ENABLE low or open (R26 pull-down) = LED string off = U12/U13 open and U14 closed: R27 parks I_SENSE near 0 V, so the next enable does not dump a charged output (G3)"
+	(text_box "DESIGN NOTE D3:\n• ENABLE low or open (R26 pull-down) = LED string off = U12 open and U14 closed: R27 parks I_SENSE near 0 V, so the next enable does not dump a charged output (G3)"
 		(exclude_from_sim no)
 		(at 85.32 152.4 0)
 		(size 62 10.795)
@@ -3004,7 +3004,7 @@
 		)
 		(uuid "a0e59067-71ec-412f-986f-e036cce32177")
 	)
-	(text_box "LAYOUT NOTE L2:\n• RSHR: Kelvin traces from its pads to U18 (0.1 % part, D5)\n• Keep the return path J5 -> U13 -> RSHR -> ISO_GND short"
+	(text_box "LAYOUT NOTE L2:\n• Return shunt and return electrode: shared Return sheet (RSHR1, J6)\n• J5 pin 2 (old RET) unused until the electrode jack replaces J5 (phase 4)"
 		(exclude_from_sim no)
 		(at 85.32 189.23 0)
 		(size 62 12.7)
@@ -3030,7 +3030,7 @@
 	)
 	(text_box "L2"
 		(exclude_from_sim no)
-		(at 190.5 153.67 0)
+		(at 325.12 77.47 0)
 		(size 4.6 3.4)
 		(margins 0.3 0.3 0.3 0.3)
 		(stroke
@@ -3233,12 +3233,6 @@
 		(uuid "29225c67-60f6-538a-81dd-db03d5ce77c8")
 	)
 	(junction
-		(at 205.74 147.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2b5201d4-8294-528f-a49b-4821b2594e00")
-	)
-	(junction
 		(at 77.47 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3261,12 +3255,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9a9cfd88-68cb-5c9f-879e-7a139460a614")
-	)
-	(junction
-		(at 199.39 147.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9dc4aee8-66d9-5666-9f21-5e97717c9201")
 	)
 	(junction
 		(at 298.45 104.14)
@@ -3301,16 +3289,6 @@
 			(type default)
 		)
 		(uuid "00365856-555d-4008-b9ae-84a3b8eea0e9")
-	)
-	(wire
-		(pts
-			(xy 199.39 163.83) (xy 199.39 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0978ecff-9461-42c6-9668-ed98bb1c1cca")
 	)
 	(wire
 		(pts
@@ -3414,16 +3392,6 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 147.32) (xy 227.33 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "32ef90fe-2c79-5ed5-9e1d-c591c9306471")
-	)
-	(wire
-		(pts
 			(xy 265.43 135.89) (xy 298.45 135.89)
 		)
 		(stroke
@@ -3504,16 +3472,6 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 147.32) (xy 325.12 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "525c23ed-bd2c-5b48-a243-3e76c6781572")
-	)
-	(wire
-		(pts
 			(xy 280.67 85.09) (xy 298.45 85.09)
 		)
 		(stroke
@@ -3521,16 +3479,6 @@
 			(type default)
 		)
 		(uuid "53d6eecf-1c55-51db-948b-d00bd2600e1e")
-	)
-	(wire
-		(pts
-			(xy 232.41 118.11) (xy 234.95 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "587e9e05-808b-4b31-9d58-fd2f78ebd91f")
 	)
 	(wire
 		(pts
@@ -3604,16 +3552,6 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 147.32) (xy 199.39 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "79ece9ff-f25e-59c4-8c07-275742eb650b")
-	)
-	(wire
-		(pts
 			(xy 185.42 100.33) (xy 180.34 100.33)
 		)
 		(stroke
@@ -3674,16 +3612,6 @@
 	)
 	(wire
 		(pts
-			(xy 337.82 87.63) (xy 325.12 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95f7183e-b178-5ed6-9ee7-735bdb9b1c70")
-	)
-	(wire
-		(pts
 			(xy 289.56 172.72) (xy 287.02 172.72)
 		)
 		(stroke
@@ -3714,16 +3642,6 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 137.16) (xy 242.57 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96b0f8d2-bd84-5529-9b33-bdda57b576c5")
-	)
-	(wire
-		(pts
 			(xy 232.41 95.25) (xy 232.41 113.03)
 		)
 		(stroke
@@ -3751,16 +3669,6 @@
 			(type default)
 		)
 		(uuid "a2e6ec74-248f-5e31-b860-3b8dffce0ed9")
-	)
-	(wire
-		(pts
-			(xy 232.41 118.11) (xy 232.41 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a784606c-49bf-4509-b7fd-3788a6da9c4c")
 	)
 	(wire
 		(pts
@@ -3844,16 +3752,6 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 147.32) (xy 190.5 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc033492-fe26-5a90-81d7-d9847b98b256")
-	)
-	(wire
-		(pts
 			(xy 298.45 85.09) (xy 298.45 92.71)
 		)
 		(stroke
@@ -3894,16 +3792,6 @@
 	)
 	(wire
 		(pts
-			(xy 325.12 87.63) (xy 325.12 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f82c268b-115f-5a7d-b3e4-63276166cae5")
-	)
-	(wire
-		(pts
 			(xy 102.87 85.09) (xy 116.84 85.09)
 		)
 		(stroke
@@ -3932,28 +3820,6 @@
 		)
 		(uuid "fecbdbc1-3ce3-42eb-88a2-dc267a92f3bf")
 	)
-	(label "PMOS_LED_M2"
-		(at 234.95 118.11 0)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0e25419b-c6f5-41ef-9ab4-746b49823f12")
-	)
-	(label "ELECTRODE_RET"
-		(at 255.27 147.32 0)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "10be19e4-4318-5bd4-bbde-b4f8861cb68c")
-	)
 	(label "LIM_SRC_B"
 		(at 95.25 93.98 0)
 		(effects
@@ -3976,7 +3842,7 @@
 		)
 		(uuid "307e693f-dfa5-5965-9a24-81d16a505e39")
 	)
-	(label "PMOS_LED_M2"
+	(label "PMOS_LED_K"
 		(at 307.34 185.42 0)
 		(effects
 			(font
@@ -4019,17 +3885,6 @@
 			(justify left bottom)
 		)
 		(uuid "874e88b9-4c21-51e6-916e-2cfcf43c562f")
-	)
-	(label "PMOS_LED_K"
-		(at 242.57 132.08 90)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "883c66f6-86e9-5bb2-9f01-1cdffe794fa3")
 	)
 	(label "PMOS_LED_M1"
 		(at 292.1 185.42 180)
@@ -4086,18 +3941,6 @@
 			(justify right)
 		)
 		(uuid "1ca0e74e-8bcf-526d-97e6-4c7dbfe785b7")
-	)
-	(hierarchical_label "RET_SHUNT"
-		(shape output)
-		(at 190.5 147.32 180)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "33c18a38-c06c-56ff-aac9-f6320d9eebe6")
 	)
 	(hierarchical_label "VMID"
 		(shape input)
@@ -5238,183 +5081,6 @@
 		)
 	)
 	(symbol
-		(lib_id "STIM_Rev1:AQY214S")
-		(at 237.49 144.78 0)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3c0ad2e3-d34b-5f7c-9b50-4f34785823dc")
-		(property "Reference" "U113"
-			(at 230.124 150.622 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "AQY214S"
-			(at 230.378 154.178 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Footprint" "STIM_Rev1:Panasonic_SOP-4_4.4x4.3mm_P2.54mm"
-			(at 237.49 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/4d9d7f508469bf06a469996455e6ec34.pdf?productCode=C719755"
-			(at 237.49 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "AQY214SX PhotoMOS 400 V (alt. CPC1025NTR)"
-			(at 237.49 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "AQY214SX"
-			(at 237.49 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "PANASONIC"
-			(at 237.49 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C719755"
-			(at 237.49 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLC" "Extended"
-			(at 237.49 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Alternate" "CPC1025NTR (Digi-Key 212-CPC1025NTRCT-ND, LAST TIME BUY 11/11/2026; the P2 baseline part, same SOP-4 2.54 footprint family)"
-			(at 237.49 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Note" "return-side switch: second disconnect"
-			(at 237.49 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "dac21a98-5844-5a2d-a2e4-c93bd0ed2779")
-		)
-		(pin "2"
-			(uuid "114165fc-1397-5d48-988d-abfd5b554436")
-		)
-		(pin "3"
-			(uuid "162990d4-7cee-5c9a-bad1-7fc31475eabe")
-		)
-		(pin "4"
-			(uuid "0b6ce130-3b09-5d5f-a220-18b24211de5a")
-		)
-		(instances
-			(project "STIM_Rev1"
-				(path "/801725e5-e50b-4629-8dff-f10f88598334/9d0bdb08-6c29-5890-90c8-6fbe493cc345/f069f885-88b4-57b7-9482-f6ec165967cf"
-					(reference "U113")
-					(unit 1)
-				)
-				(path "/801725e5-e50b-4629-8dff-f10f88598334/ecbc1c2c-07dc-54da-af77-4f697fa6928c/f069f885-88b4-57b7-9482-f6ec165967cf"
-					(reference "U213")
-					(unit 1)
-				)
-				(path "/801725e5-e50b-4629-8dff-f10f88598334/61a93ef7-2241-5e8c-bfe7-6ac30ddfbd28/f069f885-88b4-57b7-9482-f6ec165967cf"
-					(reference "U313")
-					(unit 1)
-				)
-				(path "/801725e5-e50b-4629-8dff-f10f88598334/99dc508b-ab7b-52f8-bd3b-576ba43e7cd9/f069f885-88b4-57b7-9482-f6ec165967cf"
-					(reference "U413")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "STIM_Rev1:2N7002")
 		(at 238.76 194.31 0)
 		(unit 1)
@@ -5916,188 +5582,6 @@
 				)
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/99dc508b-ab7b-52f8-bd3b-576ba43e7cd9/f069f885-88b4-57b7-9482-f6ec165967cf"
 					(reference "C430")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "STIM_Rev1:R")
-		(at 199.39 154.94 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "70622ce4-e8cf-5d8c-9866-95183eae0b37")
-		(property "Reference" "RSHR101"
-			(at 201.93 153.67 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10 0.1% 25ppm 0603"
-			(at 201.93 156.21 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "STIM_Rev1:R_0603_1608Metric"
-			(at 199.39 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 199.39 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "resistor"
-			(at 199.39 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "RT0603BRD0710RL"
-			(at 199.39 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 199.39 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C861082"
-			(at 199.39 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLC" "Extended"
-			(at 199.39 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Note" "return shunt: 10 mV/mA to the read-back amplifier"
-			(at 199.39 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "R"
-			(at 199.39 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Params" "r=10"
-			(at 199.39 154.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5baa4a2d-3654-5b42-bec9-8d2bc359691d")
-		)
-		(pin "2"
-			(uuid "9a875fa1-a0ea-55b1-81ed-daed8463c35a")
-		)
-		(instances
-			(project "STIM_Rev1"
-				(path "/801725e5-e50b-4629-8dff-f10f88598334/9d0bdb08-6c29-5890-90c8-6fbe493cc345/f069f885-88b4-57b7-9482-f6ec165967cf"
-					(reference "RSHR101")
-					(unit 1)
-				)
-				(path "/801725e5-e50b-4629-8dff-f10f88598334/ecbc1c2c-07dc-54da-af77-4f697fa6928c/f069f885-88b4-57b7-9482-f6ec165967cf"
-					(reference "RSHR201")
-					(unit 1)
-				)
-				(path "/801725e5-e50b-4629-8dff-f10f88598334/61a93ef7-2241-5e8c-bfe7-6ac30ddfbd28/f069f885-88b4-57b7-9482-f6ec165967cf"
-					(reference "RSHR301")
-					(unit 1)
-				)
-				(path "/801725e5-e50b-4629-8dff-f10f88598334/99dc508b-ab7b-52f8-bd3b-576ba43e7cd9/f069f885-88b4-57b7-9482-f6ec165967cf"
-					(reference "RSHR401")
 					(unit 1)
 				)
 			)
@@ -6641,113 +6125,6 @@
 				)
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/99dc508b-ab7b-52f8-bd3b-576ba43e7cd9/f069f885-88b4-57b7-9482-f6ec165967cf"
 					(reference "R426")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "STIM_Rev1:TestPoint")
-		(at 205.74 147.32 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a7da9103-4c5f-50b5-8d35-e6ffa3d24e8e")
-		(property "Reference" "TP128"
-			(at 208.28 140.716 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "RET_SHUNT"
-			(at 208.28 143.256 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical"
-			(at 205.74 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 205.74 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test pin 1x01 2.54 mm (LV signal)"
-			(at 205.74 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Note" "bench probe pin"
-			(at 205.74 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "65e0db03-f551-5f74-9811-9d16dc1c7daa")
-		)
-		(instances
-			(project "STIM_Rev1"
-				(path "/801725e5-e50b-4629-8dff-f10f88598334/9d0bdb08-6c29-5890-90c8-6fbe493cc345/f069f885-88b4-57b7-9482-f6ec165967cf"
-					(reference "TP128")
-					(unit 1)
-				)
-				(path "/801725e5-e50b-4629-8dff-f10f88598334/ecbc1c2c-07dc-54da-af77-4f697fa6928c/f069f885-88b4-57b7-9482-f6ec165967cf"
-					(reference "TP228")
-					(unit 1)
-				)
-				(path "/801725e5-e50b-4629-8dff-f10f88598334/61a93ef7-2241-5e8c-bfe7-6ac30ddfbd28/f069f885-88b4-57b7-9482-f6ec165967cf"
-					(reference "TP328")
-					(unit 1)
-				)
-				(path "/801725e5-e50b-4629-8dff-f10f88598334/99dc508b-ab7b-52f8-bd3b-576ba43e7cd9/f069f885-88b4-57b7-9482-f6ec165967cf"
-					(reference "TP428")
 					(unit 1)
 				)
 			)
@@ -7682,99 +7059,6 @@
 		)
 	)
 	(symbol
-		(lib_id "STIM_Rev1:ISO_GND")
-		(at 199.39 163.83 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c3b6aeca-af2a-5b5e-99a1-c7febd92e207")
-		(property "Reference" "#PWR1108"
-			(at 199.39 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ISO_GND"
-			(at 199.39 168.656 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 199.39 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 199.39 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 199.39 163.83 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "64af6a57-dd7e-55f6-bcd5-94132eee0782")
-		)
-		(instances
-			(project "STIM_Rev1"
-				(path "/801725e5-e50b-4629-8dff-f10f88598334/9d0bdb08-6c29-5890-90c8-6fbe493cc345/f069f885-88b4-57b7-9482-f6ec165967cf"
-					(reference "#PWR1108")
-					(unit 1)
-				)
-				(path "/801725e5-e50b-4629-8dff-f10f88598334/ecbc1c2c-07dc-54da-af77-4f697fa6928c/f069f885-88b4-57b7-9482-f6ec165967cf"
-					(reference "#PWR2108")
-					(unit 1)
-				)
-				(path "/801725e5-e50b-4629-8dff-f10f88598334/61a93ef7-2241-5e8c-bfe7-6ac30ddfbd28/f069f885-88b4-57b7-9482-f6ec165967cf"
-					(reference "#PWR3108")
-					(unit 1)
-				)
-				(path "/801725e5-e50b-4629-8dff-f10f88598334/99dc508b-ab7b-52f8-bd3b-576ba43e7cd9/f069f885-88b4-57b7-9482-f6ec165967cf"
-					(reference "#PWR4108")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "STIM_Rev1:R")
 		(at 115.57 71.12 90)
 		(unit 1)
@@ -8275,5 +7559,9 @@
 				)
 			)
 		)
+	)
+	(no_connect
+		(at 337.82 87.63)
+		(uuid "63eeba04-2882-5d34-91fc-4ef8ecb4e015")
 	)
 )
