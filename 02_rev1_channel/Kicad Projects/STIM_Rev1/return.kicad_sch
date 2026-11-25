@@ -551,7 +551,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:Conn_01x01_Socket")
-		(at 50.8 88.9 180)
+		(at 102.87 76.2 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -561,7 +561,7 @@
 		(dnp no)
 		(uuid "d7980c33-d1a6-5360-9be3-166bd36b5a26")
 		(property "Reference" "J6"
-			(at 45.72 85.09 0)
+			(at 97.79 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -569,10 +569,11 @@
 					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "RET 4 mm banana (black)"
-			(at 48.26 93.98 0)
+			(at 97.79 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -580,11 +581,12 @@
 					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
+				(justify left)
 				
 			)
 		)
 		(property "Footprint" "STIM_Rev1:CalTest_CT3151"
-			(at 50.8 88.9 0)
+			(at 102.87 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -596,7 +598,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.caltestelectronics.com/images/attachments/P315100rH_drawing.pdf"
-			(at 50.8 88.9 0)
+			(at 102.87 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -608,7 +610,7 @@
 			)
 		)
 		(property "Description" "return electrode: sheathed 4 mm safety jack, right angle, hand-solder"
-			(at 50.8 88.9 0)
+			(at 102.87 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -620,7 +622,7 @@
 			)
 		)
 		(property "MPN" "CT3151SP-0"
-			(at 50.8 88.9 0)
+			(at 102.87 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -632,7 +634,7 @@
 			)
 		)
 		(property "Manufacturer" "Cal Test Electronics"
-			(at 50.8 88.9 0)
+			(at 102.87 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -644,7 +646,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 50.8 88.9 0)
+			(at 102.87 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -656,7 +658,7 @@
 			)
 		)
 		(property "Note" "hand-solder; black = RET; electrodes E1-E4 another colour (phase 4)"
-			(at 50.8 88.9 0)
+			(at 102.87 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -681,7 +683,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:TestPoint")
-		(at 71.12 88.9 0)
+		(at 128.27 76.2 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -691,7 +693,7 @@
 		(dnp no)
 		(uuid "d14a8d86-fa59-5ba5-983a-bc90a5d41058")
 		(property "Reference" "TP28"
-			(at 73.66 82.296 0)
+			(at 129.54 70.485 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -703,7 +705,7 @@
 			)
 		)
 		(property "Value" "I_RET_SENSE"
-			(at 73.66 84.836 0)
+			(at 129.54 73.025 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -715,7 +717,7 @@
 			)
 		)
 		(property "Footprint" "STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical"
-			(at 71.12 88.9 0)
+			(at 128.27 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -727,7 +729,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 71.12 88.9 0)
+			(at 128.27 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -739,7 +741,7 @@
 			)
 		)
 		(property "Description" "test pin 1x01 2.54 mm: return shunt, electrode side"
-			(at 71.12 88.9 0)
+			(at 128.27 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -764,7 +766,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:R")
-		(at 88.9 95.25 0)
+		(at 149.86 82.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -774,7 +776,7 @@
 		(dnp no)
 		(uuid "2527bc4c-962e-5024-89a8-48582d3c1421")
 		(property "Reference" "RSHR1"
-			(at 91.44 93.98 0)
+			(at 152.146 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -786,7 +788,7 @@
 			)
 		)
 		(property "Value" "100 0.1% 25ppm 0805"
-			(at 91.44 96.52 0)
+			(at 152.146 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -798,7 +800,7 @@
 			)
 		)
 		(property "Footprint" "STIM_Rev1:R_0805_2012Metric"
-			(at 88.9 95.25 0)
+			(at 149.86 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -810,7 +812,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 95.25 0)
+			(at 149.86 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -822,7 +824,7 @@
 			)
 		)
 		(property "Description" "resistor"
-			(at 88.9 95.25 0)
+			(at 149.86 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -834,7 +836,7 @@
 			)
 		)
 		(property "MPN" "RT0805BRD07100RL"
-			(at 88.9 95.25 0)
+			(at 149.86 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -846,7 +848,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 88.9 95.25 0)
+			(at 149.86 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -858,7 +860,7 @@
 			)
 		)
 		(property "LCSC" "TBD"
-			(at 88.9 95.25 0)
+			(at 149.86 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -870,7 +872,7 @@
 			)
 		)
 		(property "JLC" ""
-			(at 88.9 95.25 0)
+			(at 149.86 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -882,7 +884,7 @@
 			)
 		)
 		(property "Note" "return shunt: 1 mV = 10 uA; 10 mA -> 1 V, 10 mW; 15 mA fault -> 22 mW"
-			(at 88.9 95.25 0)
+			(at 149.86 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -894,7 +896,7 @@
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 88.9 95.25 0)
+			(at 149.86 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -906,7 +908,7 @@
 			)
 		)
 		(property "Sim.Params" "r=100"
-			(at 88.9 95.25 0)
+			(at 149.86 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -934,7 +936,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:TestPoint")
-		(at 116.84 104.14 0)
+		(at 162.56 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -944,7 +946,7 @@
 		(dnp no)
 		(uuid "efbaf72e-c066-5c54-8481-2c9b2405f356")
 		(property "Reference" "TP31"
-			(at 119.38 97.536 0)
+			(at 163.83 85.725 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -956,7 +958,7 @@
 			)
 		)
 		(property "Value" "COM (shunt)"
-			(at 119.38 100.076 0)
+			(at 163.83 88.265 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -968,7 +970,7 @@
 			)
 		)
 		(property "Footprint" "STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical"
-			(at 116.84 104.14 0)
+			(at 162.56 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -980,7 +982,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 104.14 0)
+			(at 162.56 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -992,7 +994,7 @@
 			)
 		)
 		(property "Description" "test pin 1x01 2.54 mm: return shunt, COM side (Kelvin to the RSHR1 pad)"
-			(at 116.84 104.14 0)
+			(at 162.56 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1017,7 +1019,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:ISO_GND")
-		(at 88.9 106.68 0)
+		(at 149.86 96.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1027,7 +1029,7 @@
 		(dnp no)
 		(uuid "5965b7a0-9f95-5b89-a3a9-e979f3c5b2fc")
 		(property "Reference" "#PWR0301"
-			(at 88.9 106.68 0)
+			(at 149.86 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1039,7 +1041,7 @@
 			)
 		)
 		(property "Value" "ISO_GND"
-			(at 88.9 111.506 0)
+			(at 149.86 101.346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1050,7 +1052,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 88.9 106.68 0)
+			(at 149.86 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1062,7 +1064,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 106.68 0)
+			(at 149.86 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1074,7 +1076,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 88.9 106.68 0)
+			(at 149.86 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1097,110 +1099,10 @@
 			)
 		)
 	)
-	(wire
-		(pts
-			(xy 55.88 88.9) (xy 71.12 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fcb50856-8379-59c2-acc9-6d92a31de07b")
-	)
-	(wire
-		(pts
-			(xy 71.12 88.9) (xy 88.9 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ef70e80-fb69-53e3-a2b5-0970e04a51a0")
-	)
-	(wire
-		(pts
-			(xy 88.9 88.9) (xy 88.9 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9a2ead6d-58a0-5c2d-8298-ab903be43c47")
-	)
-	(wire
-		(pts
-			(xy 88.9 88.9) (xy 114.3 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8f0da0d7-258a-5bbf-845f-ab5d1fdb0803")
-	)
-	(wire
-		(pts
-			(xy 88.9 99.06) (xy 88.9 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "80baa3b1-c7ab-55d3-bf15-a7b0584eadd8")
-	)
-	(wire
-		(pts
-			(xy 88.9 104.14) (xy 88.9 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b30c9e88-9d86-59e4-b842-90375b25c118")
-	)
-	(wire
-		(pts
-			(xy 88.9 104.14) (xy 116.84 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96d9751b-7e2b-5449-8834-da35116823e3")
-	)
-	(junction
-		(at 71.12 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f201025c-ed5e-571a-93fa-422c10fdcca6")
-	)
-	(junction
-		(at 88.9 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7c53cfb0-2c61-588b-9ce0-41d22b95457a")
-	)
-	(junction
-		(at 88.9 104.14)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "035f0038-e53e-5d30-a890-1a0356243d3b")
-	)
-	(hierarchical_label "I_RET_SENSE"
-		(shape output)
-		(at 114.3 88.9 0)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0103b765-f799-5a61-8ff8-8a356d862ad7")
-	)
 	(text_box "DESIGN NOTE R1:\n• J6 -> RSHR1 100 Ohm 0.1 % -> COM; never switched (no PhotoMOS, fuse or jumper)\n• Carries the mismatch of the four commands: uA when they sum to zero\n• TP28 to TP31: 1 mV = 10 uA"
 		(exclude_from_sim no)
-		(at 40.64 121.92 0)
-		(size 160.02 11.43)
+		(at 91.44 105.41 0)
+		(size 116.84 13.97)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)
@@ -1222,8 +1124,8 @@
 	)
 	(text_box "LAYOUT NOTE R2:\n• RSHR1's COM pad is the COM star point (to J1 pin 2); TP31 on that pad"
 		(exclude_from_sim no)
-		(at 40.64 147.32 0)
-		(size 160.02 7.62)
+		(at 91.44 121.92 0)
+		(size 116.84 10.16)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)
@@ -1243,5 +1145,147 @@
 			(justify left top)
 		)
 		(uuid "c46d97e0-803c-57e0-8e34-d9bad8684658")
+	)
+	(text "Return Electrode & Shunt"
+		(exclude_from_sim no)
+		(at 148.5 22.86 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 6 6)
+				(thickness 0.9)
+				(bold yes)
+				(color 132 0 0 1)
+			)
+		)
+		(uuid "52f03a1b-452e-5498-a666-96223ece5d75")
+	)
+	(wire
+		(pts
+			(xy 107.95 76.2) (xy 128.27 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "296d762d-ed2d-5b14-a6db-97f66232db66")
+	)
+	(wire
+		(pts
+			(xy 128.27 76.2) (xy 149.86 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "900c7d36-b72d-57ca-b9a1-5eb64c82af8b")
+	)
+	(wire
+		(pts
+			(xy 149.86 76.2) (xy 149.86 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9846e6c-ef4c-5ae7-829b-ea74b25eb7b2")
+	)
+	(wire
+		(pts
+			(xy 149.86 76.2) (xy 175.26 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ab9ae32-3d05-5f04-9e4c-ca82d70eb23b")
+	)
+	(hierarchical_label "I_RET_SENSE"
+		(shape output)
+		(at 175.26 76.2 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fa09f542-ed26-5b21-8f17-caf125fe0290")
+	)
+	(wire
+		(pts
+			(xy 149.86 86.36) (xy 149.86 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa63b149-6961-571c-af17-7dfded59ebec")
+	)
+	(wire
+		(pts
+			(xy 149.86 91.44) (xy 149.86 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e73c27d1-f8b2-5cb7-86e1-73b33fb18512")
+	)
+	(wire
+		(pts
+			(xy 149.86 91.44) (xy 162.56 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d6bacb3-a2c1-5aa3-ad0c-2322777561ad")
+	)
+	(rectangle
+		(start 85.09 60.96)
+		(end 214.63 138.43)
+		(stroke
+			(width 1)
+			(type solid)
+			(color 72 72 72 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "19d29d75-76fd-536f-b441-a1ba5daf2257")
+	)
+	(text "A  Return electrode, shunt and COM star point"
+		(exclude_from_sim no)
+		(at 86.36 59.69 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 2.5 2.5)
+				(thickness 0.375)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "2895f572-3a93-58fc-a218-e9f262b9cd69")
+	)
+	(junction
+		(at 128.27 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ba047a54-3785-5d17-8606-0ed9a567e58b")
+	)
+	(junction
+		(at 149.86 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6afc8d5a-3256-5fb0-86c4-94ef91812ac5")
+	)
+	(junction
+		(at 149.86 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ec97dd9c-c6d4-52b8-b531-3a7751ff6aab")
 	)
 )

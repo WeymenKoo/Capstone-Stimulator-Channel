@@ -94,6 +94,9 @@ bipolar ADC (target ADS8688 class) reading V_MON1-4 (each channel's 20 MOhm / 10
 offset / sense page is removed: with a bipolar ADC the dividers return to COM directly.
 Phase 7 (done): power inputs are keyed Molex Micro-Fit 3.0 headers (J1 HV 43650-0303, the client's part, pin 1 +HV /
 2 COM / 3 -HV; J2 VBAT 43650-0203), so no push-in terminals remain on the board.
+Schematic re-laid out 2026-11-25 (positions and presentation only, netlist proven identical by net membership):
+framed blocks with signal left to right, power trees and rails with decoupling rungs, notes inside their blocks,
+A4 for sparse sheets and A3 for dense ones, a block-diagram cover. 0 diagonal wires, 0 four-way junctions.
 Full specification, sheet list and design rules: [`02_rev1_channel/Kicad Projects/STIM_Rev1/README.md`](02_rev1_channel/Kicad%20Projects/STIM_Rev1/README.md).
 
 ## Repository map

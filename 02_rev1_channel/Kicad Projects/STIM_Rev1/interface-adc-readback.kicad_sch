@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "10.0")
 	(uuid "4b7c7ece-13b3-4546-8c13-c3483238e92d")
-	(paper "A3")
+	(paper "A4")
 	(title_block
 		(title "Interface - ADC (placeholder)")
 		(date "${RELEASE_DATE}")
@@ -940,7 +940,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:ADC_8CH_PLACEHOLDER")
-		(at 152.4 101.6 0)
+		(at 147.32 78.74 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
@@ -950,7 +950,7 @@
 		(dnp yes)
 		(uuid "b442af4d-55c6-581e-806d-aa7290f9d7c4")
 		(property "Reference" "U15"
-			(at 139.7 82.55 0)
+			(at 134.62 59.69 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -962,7 +962,7 @@
 			)
 		)
 		(property "Value" "ADC 8-ch PLACEHOLDER (target ADS8688 class)"
-			(at 139.7 123.19 0)
+			(at 132.08 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -970,11 +970,11 @@
 					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 152.4 101.6 0)
+			(at 147.32 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -986,7 +986,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 101.6 0)
+			(at 147.32 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -998,7 +998,7 @@
 			)
 		)
 		(property "Description" "placeholder: part not chosen; DNP, not on the board, not in the BoM"
-			(at 152.4 101.6 0)
+			(at 147.32 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1010,7 +1010,7 @@
 			)
 		)
 		(property "MPN" "TBD (ADS8688IDBTR candidate, LCSC C527390)"
-			(at 152.4 101.6 0)
+			(at 147.32 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1022,7 +1022,7 @@
 			)
 		)
 		(property "LCSC" "TBD"
-			(at 152.4 101.6 0)
+			(at 147.32 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1092,7 +1092,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 91.44) (xy 127 91.44)
+			(xy 132.08 68.58) (xy 121.92 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1102,7 +1102,7 @@
 	)
 	(hierarchical_label "ISO_SCLK"
 		(shape input)
-		(at 127 91.44 180)
+		(at 121.92 68.58 180)
 		(effects
 			(font
 				(face "JetBrains Mono")
@@ -1114,7 +1114,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 93.98) (xy 127 93.98)
+			(xy 132.08 71.12) (xy 121.92 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1124,7 +1124,7 @@
 	)
 	(hierarchical_label "ISO_MOSI"
 		(shape input)
-		(at 127 93.98 180)
+		(at 121.92 71.12 180)
 		(effects
 			(font
 				(face "JetBrains Mono")
@@ -1136,7 +1136,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 96.52) (xy 127 96.52)
+			(xy 132.08 73.66) (xy 121.92 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1146,7 +1146,7 @@
 	)
 	(hierarchical_label "ISO_MISO"
 		(shape output)
-		(at 127 96.52 180)
+		(at 121.92 73.66 180)
 		(effects
 			(font
 				(face "JetBrains Mono")
@@ -1158,7 +1158,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 99.06) (xy 127 99.06)
+			(xy 132.08 76.2) (xy 121.92 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1168,7 +1168,7 @@
 	)
 	(hierarchical_label "ISO_CS_ADC"
 		(shape input)
-		(at 127 99.06 180)
+		(at 121.92 76.2 180)
 		(effects
 			(font
 				(face "JetBrains Mono")
@@ -1180,7 +1180,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 91.44) (xy 177.8 91.44)
+			(xy 162.56 68.58) (xy 172.72 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1190,7 +1190,7 @@
 	)
 	(hierarchical_label "V_MON1"
 		(shape input)
-		(at 177.8 91.44 0)
+		(at 172.72 68.58 0)
 		(effects
 			(font
 				(face "JetBrains Mono")
@@ -1202,7 +1202,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 93.98) (xy 177.8 93.98)
+			(xy 162.56 71.12) (xy 172.72 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1212,7 +1212,7 @@
 	)
 	(hierarchical_label "V_MON2"
 		(shape input)
-		(at 177.8 93.98 0)
+		(at 172.72 71.12 0)
 		(effects
 			(font
 				(face "JetBrains Mono")
@@ -1224,7 +1224,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 96.52) (xy 177.8 96.52)
+			(xy 162.56 73.66) (xy 172.72 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1234,7 +1234,7 @@
 	)
 	(hierarchical_label "V_MON3"
 		(shape input)
-		(at 177.8 96.52 0)
+		(at 172.72 73.66 0)
 		(effects
 			(font
 				(face "JetBrains Mono")
@@ -1246,7 +1246,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 99.06) (xy 177.8 99.06)
+			(xy 162.56 76.2) (xy 172.72 76.2)
 		)
 		(stroke
 			(width 0)
@@ -1256,7 +1256,7 @@
 	)
 	(hierarchical_label "V_MON4"
 		(shape input)
-		(at 177.8 99.06 0)
+		(at 172.72 76.2 0)
 		(effects
 			(font
 				(face "JetBrains Mono")
@@ -1268,7 +1268,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 101.6) (xy 177.8 101.6)
+			(xy 162.56 78.74) (xy 172.72 78.74)
 		)
 		(stroke
 			(width 0)
@@ -1278,7 +1278,7 @@
 	)
 	(hierarchical_label "I_RET_SENSE"
 		(shape input)
-		(at 177.8 101.6 0)
+		(at 172.72 78.74 0)
 		(effects
 			(font
 				(face "JetBrains Mono")
@@ -1290,7 +1290,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 104.14) (xy 195.58 104.14)
+			(xy 162.56 81.28) (xy 190.5 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1300,7 +1300,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:TestPoint")
-		(at 195.58 104.14 0)
+		(at 190.5 81.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1310,7 +1310,7 @@
 		(dnp no)
 		(uuid "225545c6-736e-5c32-8b61-43b3202c7f3b")
 		(property "Reference" "TP40"
-			(at 198.12 97.536 0)
+			(at 193.04 74.676 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1322,7 +1322,7 @@
 			)
 		)
 		(property "Value" "AIN6"
-			(at 198.12 100.076 0)
+			(at 175.26 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1330,11 +1330,11 @@
 					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "STIM_Rev1:TestPoint_Pad_D1.2mm"
-			(at 195.58 104.14 0)
+			(at 190.5 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1346,7 +1346,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 104.14 0)
+			(at 190.5 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1358,7 +1358,7 @@
 			)
 		)
 		(property "Description" "spare ADC input AIN6 (test pad)"
-			(at 195.58 104.14 0)
+			(at 190.5 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1383,7 +1383,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 106.68) (xy 205.74 106.68)
+			(xy 162.56 83.82) (xy 200.66 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1393,7 +1393,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:TestPoint")
-		(at 205.74 106.68 0)
+		(at 200.66 83.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1403,7 +1403,7 @@
 		(dnp no)
 		(uuid "f80ab2d9-2acc-5d86-8948-9603687554f0")
 		(property "Reference" "TP41"
-			(at 208.28 100.076 0)
+			(at 203.2 77.216 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1415,7 +1415,7 @@
 			)
 		)
 		(property "Value" "AIN7"
-			(at 208.28 102.616 0)
+			(at 185.42 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1423,11 +1423,11 @@
 					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "STIM_Rev1:TestPoint_Pad_D1.2mm"
-			(at 205.74 106.68 0)
+			(at 200.66 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1439,7 +1439,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 106.68 0)
+			(at 200.66 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1451,7 +1451,7 @@
 			)
 		)
 		(property "Description" "spare ADC input AIN7 (test pad)"
-			(at 205.74 106.68 0)
+			(at 200.66 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1476,7 +1476,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 109.22) (xy 215.9 109.22)
+			(xy 162.56 86.36) (xy 210.82 86.36)
 		)
 		(stroke
 			(width 0)
@@ -1486,7 +1486,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:TestPoint")
-		(at 215.9 109.22 0)
+		(at 210.82 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1496,7 +1496,7 @@
 		(dnp no)
 		(uuid "ae12ad1c-4fe6-50c6-be21-c38b3ca5970b")
 		(property "Reference" "TP42"
-			(at 218.44 102.616 0)
+			(at 213.36 79.756 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1508,7 +1508,7 @@
 			)
 		)
 		(property "Value" "AIN8"
-			(at 218.44 105.156 0)
+			(at 195.58 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1516,11 +1516,11 @@
 					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "STIM_Rev1:TestPoint_Pad_D1.2mm"
-			(at 215.9 109.22 0)
+			(at 210.82 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1532,7 +1532,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 215.9 109.22 0)
+			(at 210.82 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1544,7 +1544,7 @@
 			)
 		)
 		(property "Description" "spare ADC input AIN8 (test pad)"
-			(at 215.9 109.22 0)
+			(at 210.82 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1569,7 +1569,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 83.82) (xy 147.32 78.74)
+			(xy 142.24 60.96) (xy 142.24 55.88)
 		)
 		(stroke
 			(width 0)
@@ -1579,7 +1579,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:+5V")
-		(at 147.32 78.74 0)
+		(at 142.24 55.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1589,7 +1589,7 @@
 		(dnp no)
 		(uuid "0b1c1bf5-d1c2-562c-9a78-5146ec94ab30")
 		(property "Reference" "#PWR0511"
-			(at 147.32 78.74 0)
+			(at 142.24 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1601,7 +1601,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 147.32 74.93 0)
+			(at 142.24 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1612,7 +1612,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 147.32 78.74 0)
+			(at 142.24 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1624,7 +1624,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 147.32 78.74 0)
+			(at 142.24 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1636,7 +1636,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 147.32 78.74 0)
+			(at 142.24 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1661,7 +1661,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 83.82) (xy 152.4 78.74)
+			(xy 147.32 60.96) (xy 147.32 55.88)
 		)
 		(stroke
 			(width 0)
@@ -1671,7 +1671,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:+3V3")
-		(at 152.4 78.74 0)
+		(at 147.32 55.88 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1681,7 +1681,7 @@
 		(dnp no)
 		(uuid "6cdfc774-cf3e-5d2d-a8b6-cee06a6d464d")
 		(property "Reference" "#PWR0512"
-			(at 152.4 78.74 0)
+			(at 147.32 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1693,7 +1693,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 152.4 74.93 0)
+			(at 147.32 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1704,7 +1704,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 152.4 78.74 0)
+			(at 147.32 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1716,7 +1716,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 78.74 0)
+			(at 147.32 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1728,7 +1728,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 152.4 78.74 0)
+			(at 147.32 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1753,7 +1753,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 119.38) (xy 152.4 124.46)
+			(xy 147.32 96.52) (xy 147.32 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1763,7 +1763,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:ISO_GND")
-		(at 152.4 124.46 0)
+		(at 147.32 101.6 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1773,7 +1773,7 @@
 		(dnp no)
 		(uuid "09cc7033-1ec0-5f78-9b80-ea010ce4d022")
 		(property "Reference" "#PWR0513"
-			(at 152.4 124.46 0)
+			(at 147.32 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1785,7 +1785,7 @@
 			)
 		)
 		(property "Value" "ISO_GND"
-			(at 152.4 129.286 0)
+			(at 147.32 106.426 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1796,7 +1796,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 152.4 124.46 0)
+			(at 147.32 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1808,7 +1808,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 124.46 0)
+			(at 147.32 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1820,7 +1820,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 152.4 124.46 0)
+			(at 147.32 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1844,13 +1844,13 @@
 		)
 	)
 	(no_connect
-		(at 157.48 119.38)
+		(at 152.4 96.52)
 		(uuid "661edf31-9723-51bf-80a8-981ae9a2012a")
 	)
 	(text_box "DESIGN NOTE P2:\n• Placeholder (DNP, not on the board): 8-input bipolar ADC, target ADS8688 class (LCSC C527390)\n• >= 16 bit, >= 4 kS/s per channel; V_MON = V_elec / 101 (+/-1.09 V), I_RET_SENSE = 100 Ohm x I (+/-1 V at 10 mA)\n• Add series R + clamp per input with the real part"
 		(exclude_from_sim no)
-		(at 101.6 139.7 0)
-		(size 190.5 11.43)
+		(at 96.52 111.76 0)
+		(size 104.14 16.51)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)
@@ -1869,5 +1869,46 @@
 			(justify left top)
 		)
 		(uuid "c719e4a2-5256-5613-bfd5-a9da723147c2")
+	)
+	(text "ADC (placeholder)"
+		(exclude_from_sim no)
+		(at 148.5 22.86 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 6 6)
+				(thickness 0.9)
+				(bold yes)
+				(color 132 0 0 1)
+			)
+		)
+		(uuid "3a3df1a0-b215-5cfe-b3ff-6abe4db7d953")
+	)
+	(rectangle
+		(start 90.17 40.64)
+		(end 207.01 133.35)
+		(stroke
+			(width 1)
+			(type solid)
+			(color 72 72 72 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "496962d1-dace-5dba-9b21-bdf2d100e9b7")
+	)
+	(text "A  8-input bipolar ADC, part not chosen (U15 DNP)"
+		(exclude_from_sim no)
+		(at 91.44 39.37 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 2.5 2.5)
+				(thickness 0.375)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "2464769d-2122-5da6-86f0-797d46213f8c")
 	)
 )

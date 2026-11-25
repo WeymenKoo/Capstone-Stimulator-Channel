@@ -2608,8 +2608,8 @@
 	)
 	(text_box "MISC NOTE M2:\n• Everything here floats up to +/-110 V: differential or isolated probe\n• TP25 + TP26 across R24: 1 V = 1 mA\n• Lift R50 / R51 to take this channel off the rails"
 		(exclude_from_sim no)
-		(at 161.52 152.43 0)
-		(size 62 13.97)
+		(at 129.54 207.01 0)
+		(size 88.9 13.97)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -2632,8 +2632,8 @@
 	)
 	(text_box "MISC NOTE M1:\n• JP2/JP3 bench bias: close only at +/-50 V or below, open at +/-100 V (RB1/RB2 overload)"
 		(exclude_from_sim no)
-		(at 218.44 52.07 0)
-		(size 101.6 7.62)
+		(at 129.54 195.58 0)
+		(size 88.9 10.16)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -2656,8 +2656,8 @@
 	)
 	(text_box "LAYOUT NOTE L2:\n• C28 at U10 pins 7 / 4, C47 at U11 pins 5 / 2"
 		(exclude_from_sim no)
-		(at 87.86 102.25 0)
-		(size 62 7.62)
+		(at 223.52 207.01 0)
+		(size 88.9 10.16)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)
@@ -2680,8 +2680,8 @@
 	)
 	(text_box "LAYOUT NOTE L1:\n• Q1/Q2: >= 300 mm^2 L1 pour per tab, 1.5 mm clearance, no vias into L2; C48/C49 at the tabs"
 		(exclude_from_sim no)
-		(at 301.22 173.355 0)
-		(size 62 10.16)
+		(at 223.52 195.58 0)
+		(size 88.9 10.16)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)
@@ -2704,8 +2704,8 @@
 	)
 	(text_box "DESIGN NOTE D1:\n• 1 mA/V set by R24 1.00k 0.1 % 25 ppm; U10 senses across it, U11 buffers I_SENSE to REF"
 		(exclude_from_sim no)
-		(at 301.22 154.97 0)
-		(size 62 10.16)
+		(at 35.56 195.58 0)
+		(size 88.9 10.16)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -2728,8 +2728,8 @@
 	)
 	(text_box "DESIGN NOTE D2:\n• Q1/Q2 followers bootstrap PUMP_V+/- around PUMP_OUT (span >= 4.5 V)\n• Compliance at 5 mA: 11.8-15.2 kOhm at +/-100 V [H]; net names follow the LTspice model"
 		(exclude_from_sim no)
-		(at 218.44 65.405 0)
-		(size 101.6 10.16)
+		(at 35.56 207.01 0)
+		(size 88.9 11.43)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -2752,8 +2752,8 @@
 	)
 	(text_box "LAYOUT NOTE L3:\n• U10 straddles the HV/LV gap, inputs toward LV"
 		(exclude_from_sim no)
-		(at 87.86 115.57 0)
-		(size 62 7.62)
+		(at 223.52 218.44 0)
+		(size 88.9 10.16)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)
@@ -2774,1444 +2774,9 @@
 		)
 		(uuid "a0e5f6e4-ffec-4da3-8288-a3e1ae04be01")
 	)
-	(text_box "[8] Analog - Howland Current Pump"
-		(exclude_from_sim no)
-		(at 11.43 20.32 0)
-		(size 396.24 10.16)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width -0.0001)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 7 7)
-				(thickness 1.4)
-				(bold yes)
-				(italic yes)
-				(color 162 22 34 1)
-			)
-			(justify top)
-		)
-		(uuid "e3c29488-22df-5879-87a6-0dd5fa2500b1")
-	)
-	(junction
-		(at 229.87 182.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "081591c0-acd6-5f17-b241-56780772ddaf")
-	)
-	(junction
-		(at 238.76 207.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "15173b82-547a-5bec-9468-a55a2ef99818")
-	)
-	(junction
-		(at 205.74 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "181ff5af-11aa-568c-8de8-804661bfc346")
-	)
-	(junction
-		(at 205.74 207.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "24c1cf06-a117-50b6-9161-efc157a1957a")
-	)
-	(junction
-		(at 238.76 127)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "274abfd1-f052-4320-ae8b-a76a2ebbab1b")
-	)
-	(junction
-		(at 205.74 193.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3ba719dd-1e7e-419c-b2a3-76e540b2de4c")
-	)
-	(junction
-		(at 240.03 182.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "44a92b11-d3d4-4992-bd4d-00cf4d229013")
-	)
-	(junction
-		(at 238.76 170.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "619184f7-df0d-4205-a86e-0cd3070855a6")
-	)
-	(junction
-		(at 238.76 100.33)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "63fa6f15-321e-42de-966a-749741ccb6c6")
-	)
-	(junction
-		(at 237.49 111.76)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6484a1ae-2160-4940-901c-25447fcb2806")
-	)
-	(junction
-		(at 240.03 147.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "68455625-c2ee-4279-bb2f-d01548710eb6")
-	)
-	(junction
-		(at 238.76 180.34)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "73b5fb4e-768e-4705-be26-5ee763fc8893")
-	)
-	(junction
-		(at 238.76 196.85)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "74e6298a-b787-4692-b87f-2c028bce6e7f")
-	)
-	(junction
-		(at 154.94 191.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "774645ca-f360-5f97-8da1-e4cd48eb55ce")
-	)
-	(junction
-		(at 87.63 187.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "879b309d-5f7f-5417-a449-8bcaef1e900e")
-	)
-	(junction
-		(at 240.03 111.76)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "908f3970-400e-4624-8557-03c91e0cd831")
-	)
-	(junction
-		(at 238.76 116.84)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9358ddcb-6c33-4b67-8c66-c8f0228d2711")
-	)
-	(junction
-		(at 95.25 187.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9b68788c-a241-5bb3-85ba-8d2b8c84e65f")
-	)
-	(junction
-		(at 190.5 147.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a317c55b-0174-5f9e-8437-16acbeabdedf")
-	)
-	(junction
-		(at 237.49 147.32)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a55ac971-df0f-44b8-97b6-6f2a3e3cf073")
-	)
-	(junction
-		(at 134.62 166.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a69def83-7845-4c8a-b075-5203db4d0946")
-	)
-	(junction
-		(at 205.74 104.14)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a949d204-309a-4c3e-85b1-8e359ce16207")
-	)
-	(junction
-		(at 238.76 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a995c7ba-9dbc-5d8f-8f85-115d583f5d46")
-	)
-	(junction
-		(at 95.25 203.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ad345dde-1961-528d-b5fd-17813c92dd5e")
-	)
-	(junction
-		(at 229.87 111.76)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b4069473-1ebc-5fb8-b622-4316d6a11f2b")
-	)
-	(junction
-		(at 237.49 182.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d4c8b136-4466-4539-aa5e-59868cdd8820")
-	)
-	(junction
-		(at 87.63 203.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "df4494a7-0c8d-5538-99ab-c993d04442d3")
-	)
-	(junction
-		(at 134.62 160.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fecd8a57-f43a-5c0f-a93e-4135d1f32f68")
-	)
-	(no_connect
-		(at 134.62 137.16)
-		(uuid "c50397c4-2b00-5398-aeda-be957a50ee73")
-	)
-	(wire
-		(pts
-			(xy 238.76 146.05) (xy 240.03 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0464b727-b9f2-44c4-a77b-16229814d98d")
-	)
-	(wire
-		(pts
-			(xy 285.75 133.35) (xy 265.43 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "07019e1d-93d4-55e7-872b-f1d9a2dc6499")
-	)
-	(wire
-		(pts
-			(xy 95.25 199.39) (xy 95.25 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0b14da46-a367-56e0-a62f-de2265e9fc12")
-	)
-	(wire
-		(pts
-			(xy 205.74 111.76) (xy 213.36 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0b80e343-c409-5e15-983e-d883ecc93d97")
-	)
-	(wire
-		(pts
-			(xy 129.54 157.48) (xy 129.54 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0d807c16-ece9-45b2-a5a0-ea19878a62ff")
-	)
-	(wire
-		(pts
-			(xy 238.76 177.8) (xy 238.76 181.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0f0a11fa-9110-4119-8cf6-b8c06e28e07f")
-	)
-	(wire
-		(pts
-			(xy 124.46 160.02) (xy 113.03 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "159ac18b-2974-5453-b3b0-517d90620aab")
-	)
-	(wire
-		(pts
-			(xy 205.74 182.88) (xy 213.36 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "175760e6-baa0-5ed2-8433-bd598e23a57b")
-	)
-	(wire
-		(pts
-			(xy 238.76 207.01) (xy 285.75 207.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "18a34d31-a10f-4238-bc84-c9ab6c624a47")
-	)
-	(wire
-		(pts
-			(xy 265.43 121.92) (xy 278.13 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "229e057a-c746-5cf6-9056-9f018610ac48")
-	)
-	(wire
-		(pts
-			(xy 238.76 110.49) (xy 240.03 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2331b982-25b1-45a2-9af5-6011862e82a9")
-	)
-	(wire
-		(pts
-			(xy 95.25 203.2) (xy 100.33 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "241f582d-9115-59c3-9a96-ea91db3a74a5")
-	)
-	(wire
-		(pts
-			(xy 134.62 166.37) (xy 134.62 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "27f0e272-8f01-48d8-902d-f7f347216095")
-	)
-	(wire
-		(pts
-			(xy 205.74 182.88) (xy 205.74 194.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "281144cf-49ee-4142-84d9-8918941330f7")
-	)
-	(wire
-		(pts
-			(xy 238.76 87.63) (xy 238.76 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2841a13d-82da-50e7-b650-ce8f0411674c")
-	)
-	(wire
-		(pts
-			(xy 238.76 204.47) (xy 238.76 207.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2bb1a34f-2791-5275-b1c4-f1aa0e37e9e0")
-	)
-	(wire
-		(pts
-			(xy 238.76 170.18) (xy 241.3 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2cc143c7-9793-4cc1-a3b5-680a658fe661")
-	)
-	(wire
-		(pts
-			(xy 238.76 127) (xy 241.3 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d1b8b3c-f7d5-4e06-a1f7-803d364208ec")
-	)
-	(wire
-		(pts
-			(xy 229.87 133.35) (xy 229.87 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2da06ebb-aa71-5df0-a2ce-9ad6f5529afc")
-	)
-	(wire
-		(pts
-			(xy 139.7 147.32) (xy 190.5 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2fdba434-f85f-54ea-9d29-32e1da65f0cf")
-	)
-	(wire
-		(pts
-			(xy 113.03 134.62) (xy 124.46 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "37131016-da95-4a8d-a190-fe1c0e688ecf")
-	)
-	(wire
-		(pts
-			(xy 240.03 182.88) (xy 265.43 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "37822287-b8aa-4369-a7a9-0c8525dbc02f")
-	)
-	(wire
-		(pts
-			(xy 238.76 184.15) (xy 238.76 186.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3788f8c0-9bfb-486c-9c63-b135cbfdf96e")
-	)
-	(wire
-		(pts
-			(xy 172.72 194.31) (xy 181.61 194.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "38cf3e7a-c952-5745-a8e5-9873243d3ba0")
-	)
-	(wire
-		(pts
-			(xy 238.76 124.46) (xy 238.76 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b4a7ab4-ff6a-4bfb-819a-3ef1d5854360")
-	)
-	(wire
-		(pts
-			(xy 238.76 148.59) (xy 238.76 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3bb69bac-a87f-4784-9dfa-38fca26a1b42")
-	)
-	(wire
-		(pts
-			(xy 238.76 87.63) (xy 285.75 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3de8866f-d7b5-4b35-a6fc-ead2f3708d6e")
-	)
-	(wire
-		(pts
-			(xy 205.74 82.55) (xy 205.74 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3df689cf-afbc-4771-9641-8b4730fc736a")
-	)
-	(wire
-		(pts
-			(xy 250.19 156.21) (xy 250.19 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "400fe2bd-5fdd-4d91-bd0b-78565f83a66f")
-	)
-	(wire
-		(pts
-			(xy 238.76 113.03) (xy 238.76 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "44e4474a-e10e-414c-aeff-5885dc3abbb4")
-	)
-	(wire
-		(pts
-			(xy 154.94 207.01) (xy 154.94 191.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a05ddac-b6cb-51d3-b905-776aaf6a4a17")
-	)
-	(wire
-		(pts
-			(xy 172.72 189.23) (xy 189.23 189.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4adcac1f-9a34-5092-8478-464ea03b674a")
-	)
-	(wire
-		(pts
-			(xy 205.74 101.6) (xy 205.74 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e29f43b-3e44-5ecb-9703-6fd1e63f4346")
-	)
-	(wire
-		(pts
-			(xy 129.54 160.02) (xy 134.62 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f3616b9-c7fe-5fe6-b729-f349b03f6020")
-	)
-	(wire
-		(pts
-			(xy 99.06 149.86) (xy 119.38 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "52a739a4-19a7-49d7-adc8-b7cd302b25e7")
-	)
-	(wire
-		(pts
-			(xy 190.5 147.32) (xy 237.49 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "55dd07da-9265-5486-8305-cd2560decc77")
-	)
-	(wire
-		(pts
-			(xy 180.34 181.61) (xy 167.64 181.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "568f998b-38b0-4fd7-97e0-db70bdddbbf6")
-	)
-	(wire
-		(pts
-			(xy 181.61 207.01) (xy 154.94 207.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5adef21f-0492-5e65-8e69-a0376a7ce70c")
-	)
-	(wire
-		(pts
-			(xy 124.46 134.62) (xy 124.46 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "620e25fb-2c68-4572-8308-cfea61bb6e60")
-	)
-	(wire
-		(pts
-			(xy 237.49 182.88) (xy 240.03 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "66c0c391-46dc-451f-9ee6-902da4180db8")
-	)
-	(wire
-		(pts
-			(xy 238.76 157.48) (xy 238.76 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6eb2c343-56fa-4857-a2a3-8322c42a8191")
-	)
-	(wire
-		(pts
-			(xy 237.49 147.32) (xy 240.03 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "71efc4ca-1542-4304-a406-ee8d4f6f0ae9")
-	)
-	(wire
-		(pts
-			(xy 238.76 180.34) (xy 241.3 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c15f7bd-a8e0-404f-a591-a91b8d0872a8")
-	)
-	(wire
-		(pts
-			(xy 267.97 147.32) (xy 284.48 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d7e3615-4bfe-5c3f-aa20-d21eb7068d96")
-	)
-	(wire
-		(pts
-			(xy 285.75 116.84) (xy 285.75 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7de827b6-c418-58b7-bc6a-df7bc30c3f50")
-	)
-	(wire
-		(pts
-			(xy 205.74 104.14) (xy 208.28 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "801d9059-8203-4715-bd71-ae7d158181dc")
-	)
-	(wire
-		(pts
-			(xy 238.76 134.62) (xy 238.76 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "898c8e2d-087a-41d4-b703-fa362f897867")
-	)
-	(wire
-		(pts
-			(xy 238.76 116.84) (xy 241.3 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8bbd3e8d-36c6-4395-898d-fbb12e638c75")
-	)
-	(wire
-		(pts
-			(xy 238.76 100.33) (xy 241.3 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c191345-d7c6-48ce-873c-a4efa31fac7e")
-	)
-	(wire
-		(pts
-			(xy 181.61 194.31) (xy 181.61 207.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9b57cabc-6089-544d-9f11-6cdd79d0a09f")
-	)
-	(wire
-		(pts
-			(xy 250.19 166.37) (xy 252.73 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9bee4161-c4db-4b52-9dc5-f6924c244b77")
-	)
-	(wire
-		(pts
-			(xy 167.64 199.39) (xy 167.64 201.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9caa4ef5-b387-52a9-9189-811e4a106683")
-	)
-	(wire
-		(pts
-			(xy 250.19 163.83) (xy 250.19 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9f53286a-8f3c-4006-a991-59792a06261b")
-	)
-	(wire
-		(pts
-			(xy 220.98 111.76) (xy 237.49 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9fb40695-ab9c-50ff-8858-040b60a1ee74")
-	)
-	(wire
-		(pts
-			(xy 205.74 212.09) (xy 205.74 207.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a711d6f6-2ca3-4103-80e9-35d153dac8b9")
-	)
-	(wire
-		(pts
-			(xy 167.64 181.61) (xy 167.64 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab8baf68-80f2-4f2f-8f77-4e1c89d1440e")
-	)
-	(wire
-		(pts
-			(xy 238.76 196.85) (xy 241.3 196.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab91daa0-5637-4293-9ac7-40410c4c4914")
-	)
-	(wire
-		(pts
-			(xy 167.64 201.93) (xy 179.07 201.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "adea70fe-83f6-5a60-84de-0b607a0bc884")
-	)
-	(wire
-		(pts
-			(xy 95.25 203.2) (xy 87.63 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae1f7c82-3ec0-5059-a56e-ad0de20fda57")
-	)
-	(wire
-		(pts
-			(xy 265.43 182.88) (xy 265.43 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af4b538b-2c77-45fb-b2ee-8ca1a48a0fa7")
-	)
-	(wire
-		(pts
-			(xy 238.76 107.95) (xy 238.76 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b5eae8bb-2661-4195-a19a-c3003e8b0102")
-	)
-	(wire
-		(pts
-			(xy 238.76 113.03) (xy 237.49 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b771ac24-e7ec-4ac3-829d-13818fdb32ec")
-	)
-	(wire
-		(pts
-			(xy 205.74 87.63) (xy 238.76 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b98af6c2-ba81-5997-a12a-d97250a9c767")
-	)
-	(wire
-		(pts
-			(xy 238.76 148.59) (xy 237.49 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "baca53d4-46c8-4a83-a160-7552ef404bb4")
-	)
-	(wire
-		(pts
-			(xy 285.75 127) (xy 285.75 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bda9966f-dd0c-53b9-b3ea-95c02414299c")
-	)
-	(wire
-		(pts
-			(xy 237.49 111.76) (xy 240.03 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf0faaa6-2d37-4c78-bac1-611e04cf4773")
-	)
-	(wire
-		(pts
-			(xy 205.74 204.47) (xy 205.74 207.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf6d8953-1950-5bcb-aa9c-233fa9213088")
-	)
-	(wire
-		(pts
-			(xy 95.25 191.77) (xy 95.25 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c23531f8-999d-5027-8e35-53d8e0b1dfe0")
-	)
-	(wire
-		(pts
-			(xy 124.46 157.48) (xy 124.46 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c384d4ad-8655-5de9-919a-67ec72d50f2a")
-	)
-	(wire
-		(pts
-			(xy 265.43 172.72) (xy 278.13 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c44b4e8f-9254-5b9d-a5aa-f11c9b2571b6")
-	)
-	(wire
-		(pts
-			(xy 285.75 167.64) (xy 285.75 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c6727d25-2a25-50c0-94b2-b1eeab19eec0")
-	)
-	(wire
-		(pts
-			(xy 285.75 177.8) (xy 285.75 207.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c687bd6e-54fb-503e-a0ae-c3fa231b52f0")
-	)
-	(wire
-		(pts
-			(xy 205.74 91.44) (xy 205.74 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c79f076c-6748-5120-89e8-173a814166f9")
-	)
-	(wire
-		(pts
-			(xy 238.76 184.15) (xy 237.49 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8ddedcd-e855-4dfd-ab1e-89bee2bb6b08")
-	)
-	(wire
-		(pts
-			(xy 95.25 187.96) (xy 87.63 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c940b2e3-49b0-5c5d-852c-d257ef014bb5")
-	)
-	(wire
-		(pts
-			(xy 240.03 111.76) (xy 265.43 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c9b98f49-8dde-41ec-af68-4022fb7a7915")
-	)
-	(wire
-		(pts
-			(xy 134.62 191.77) (xy 154.94 191.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cd657840-bde2-4bcd-87ae-c646fd0a7377")
-	)
-	(wire
-		(pts
-			(xy 285.75 161.29) (xy 265.43 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cda90fd4-293b-569f-ab1a-546c3c34ee95")
-	)
-	(wire
-		(pts
-			(xy 240.03 147.32) (xy 260.35 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d0e21c73-fddc-4a19-ae34-f3472d85190f")
-	)
-	(wire
-		(pts
-			(xy 238.76 181.61) (xy 240.03 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d4ebc9c9-9e24-477c-8826-12094e41d618")
-	)
-	(wire
-		(pts
-			(xy 99.06 144.78) (xy 119.38 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d77556d3-35c4-5c95-bd98-78b90e48682f")
-	)
-	(wire
-		(pts
-			(xy 157.48 191.77) (xy 154.94 191.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dc1bc254-b12b-479f-821e-e747225a393a")
-	)
-	(wire
-		(pts
-			(xy 87.63 187.96) (xy 73.66 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dde2822a-d79e-56a6-af27-40aed5872af3")
-	)
-	(wire
-		(pts
-			(xy 265.43 111.76) (xy 265.43 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df4c85c7-ad67-4590-9906-7ef9139ad52a")
-	)
-	(wire
-		(pts
-			(xy 205.74 193.04) (xy 208.28 193.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e2d02311-bc5c-414e-838f-1c841399d495")
-	)
-	(wire
-		(pts
-			(xy 238.76 97.79) (xy 238.76 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e3a20056-40c9-521f-84b3-c5e5581c0f4a")
-	)
-	(wire
-		(pts
-			(xy 220.98 182.88) (xy 237.49 182.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e5a0e88d-f797-52c4-a4c8-ab89465439c7")
-	)
-	(wire
-		(pts
-			(xy 205.74 207.01) (xy 238.76 207.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e921c33f-1808-5ca3-8ef9-662042694ecf")
-	)
-	(wire
-		(pts
-			(xy 95.25 187.96) (xy 100.33 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e96e425a-69d8-5b9e-9206-dd600479a0ee")
-	)
-	(wire
-		(pts
-			(xy 238.76 194.31) (xy 238.76 196.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef515f71-9a43-4ce8-bada-09f1b64402f5")
-	)
-	(wire
-		(pts
-			(xy 229.87 125.73) (xy 229.87 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f008f663-e845-5243-b54e-6fd6318aaaab")
-	)
-	(wire
-		(pts
-			(xy 87.63 203.2) (xy 73.66 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0858cfd-13b9-5ced-b47b-b08fc2022ee9")
-	)
-	(wire
-		(pts
-			(xy 134.62 191.77) (xy 134.62 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f912f78a-872d-4ea6-b41b-0ff7f7008d00")
-	)
-	(wire
-		(pts
-			(xy 250.19 153.67) (xy 252.73 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f931c465-22fb-4f01-9855-1e96fd2390cb")
-	)
-	(wire
-		(pts
-			(xy 99.06 153.67) (xy 99.06 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "feaed204-8558-4e8e-9e96-246db0fc8e78")
-	)
-	(label "PUMP_REF"
-		(at 138.43 191.77 0)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "02927d59-0486-56cb-b4b0-1f7fd9fdb9db")
-	)
-	(label "Q1_BASE"
-		(at 267.97 172.72 0)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "054d71b9-0223-5ade-bd00-e099c954f8ff")
-	)
-	(label "Q1_BASE"
-		(at 252.73 166.37 0)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1accf19c-8f77-4f52-ad33-c191e348e5a5")
-	)
-	(label "Q2_BASE"
-		(at 241.3 116.84 0)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1c2282f4-7574-5337-ae11-a87d72b315c3")
-	)
-	(label "BIAS_R3_D1"
-		(at 241.3 127 0)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "29c29ef1-ccc4-5a2d-97f6-688f77731f2d")
-	)
-	(label "I_SENSE"
-		(at 270.51 147.32 0)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2d7dbc19-83cd-5c5b-9409-89833d7188b7")
-	)
-	(label "Q2_BASE"
-		(at 267.97 121.92 0)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "2e0005d6-859e-5883-aa0b-7c89f72c3c5d")
-	)
-	(label "PUMP_V-"
-		(at 265.43 161.29 0)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "36a050df-7ea4-528f-aa75-2332b134af49")
-	)
-	(label "PUMP_V-"
-		(at 73.66 203.2 0)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "36ef7465-783c-54c9-a5cf-b4b9e29d8c39")
-	)
-	(label "PUMP_V-"
-		(at 113.03 160.02 0)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "762c59c5-c0af-52d4-8b20-57a82b99e048")
-	)
-	(label "BENCH_BIAS_P"
-		(at 208.28 104.14 0)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "85501bf0-19a2-54bb-bff5-04495f35ba2c")
-	)
-	(label "Q1_BASE"
-		(at 241.3 180.34 0)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8f39f9fd-5c5b-524a-af03-6a85c2ffb1a8")
-	)
-	(label "BENCH_BIAS_N"
-		(at 208.28 193.04 0)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "92061bad-5b60-5471-bf74-9b7bdd80fc76")
-	)
-	(label "BIAS_D2_R4"
-		(at 241.3 170.18 0)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "9809f568-8e8b-5848-b3da-77a3ff52302d")
-	)
-	(label "PUMP_OUT"
-		(at 144.78 147.32 0)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a7cd88f0-5f17-53f3-a8ad-e9118c6c0b35")
-	)
-	(label "BIAS_R1_R2"
-		(at 241.3 100.33 0)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b9e6e840-3c1f-5080-9811-96171c645a8f")
-	)
-	(label "Q2_BASE"
-		(at 252.73 153.67 0)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bc3629ce-03a8-4d12-8d11-d812c391d7b9")
-	)
-	(label "PUMP_V+"
-		(at 113.03 134.62 0)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cc9994fc-e916-5470-8253-e3f2bcd2253e")
-	)
-	(label "BIAS_R5_R6"
-		(at 241.3 196.85 0)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cfd39abb-6552-5cc0-921a-80180601b815")
-	)
-	(label "PUMP_V+"
-		(at 73.66 187.96 0)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d873115c-404b-559f-b081-9a2f38c53cbd")
-	)
-	(label "PUMP_V-"
-		(at 179.07 201.93 180)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "db33e39b-dd17-561d-ae02-9182691aa5d7")
-	)
-	(label "I_SENSE"
-		(at 189.23 189.23 180)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "dea0e384-dd92-5369-8952-ac30ed60ecb3")
-	)
-	(label "PUMP_V+"
-		(at 265.43 133.35 0)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e46ad3ce-934d-593d-b902-53a89e87c7b1")
-	)
-	(label "PUMP_V+"
-		(at 180.34 181.61 180)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "fee012b5-b662-5dd1-900c-88b682b42d92")
-	)
-	(hierarchical_label "DAC_BUF"
-		(shape input)
-		(at 99.06 144.78 180)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5a8b3f0f-f824-54cf-89fa-7d9311107f92")
-	)
-	(hierarchical_label "I_SENSE"
-		(shape output)
-		(at 302.26 147.32 0)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "effc7987-67cf-5443-a3bb-821fca49cedf")
-	)
 	(symbol
 		(lib_id "STIM_Rev1:PWR_FLAG")
-		(at 87.63 203.2 180)
+		(at 78.74 119.38 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4221,7 +2786,7 @@
 		(dnp no)
 		(uuid "03181cea-1636-571e-99cc-c06157b17bae")
 		(property "Reference" "#FLG1010"
-			(at 87.63 203.2 0)
+			(at 78.74 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4233,7 +2798,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 87.63 208.28 0)
+			(at 78.74 124.206 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4244,7 +2809,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 87.63 203.2 0)
+			(at 78.74 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4256,7 +2821,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 203.2 0)
+			(at 78.74 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4268,7 +2833,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 87.63 203.2 0)
+			(at 78.74 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4304,7 +2869,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:R")
-		(at 264.16 147.32 90)
+		(at 365.76 106.68 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4314,7 +2879,7 @@
 		(dnp no)
 		(uuid "1b3e21e5-09a9-5f6b-9a18-5754389b50b1")
 		(property "Reference" "R124"
-			(at 264.16 144.018 90)
+			(at 365.76 104.394 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4325,7 +2890,7 @@
 			)
 		)
 		(property "Value" "1.00k 0.1% 25ppm 0805"
-			(at 264.16 150.622 90)
+			(at 365.76 109.601 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4336,7 +2901,7 @@
 			)
 		)
 		(property "Footprint" "STIM_Rev1:R_0805_2012Metric"
-			(at 264.16 147.32 0)
+			(at 365.76 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4348,7 +2913,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 264.16 147.32 0)
+			(at 365.76 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4360,7 +2925,7 @@
 			)
 		)
 		(property "Description" "resistor"
-			(at 264.16 147.32 0)
+			(at 365.76 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4372,7 +2937,7 @@
 			)
 		)
 		(property "Note" "sets the transconductance (1 mA/V)"
-			(at 264.16 147.32 0)
+			(at 365.76 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4384,7 +2949,7 @@
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 264.16 147.32 0)
+			(at 365.76 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4396,7 +2961,7 @@
 			)
 		)
 		(property "Sim.Params" "r=1000"
-			(at 264.16 147.32 0)
+			(at 365.76 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4408,7 +2973,7 @@
 			)
 		)
 		(property "MPN" "RT0805BRD071KL"
-			(at 264.16 147.32 0)
+			(at 365.76 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4420,7 +2985,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 264.16 147.32 0)
+			(at 365.76 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4432,7 +2997,7 @@
 			)
 		)
 		(property "LCSC" "C110774"
-			(at 264.16 147.32 0)
+			(at 365.76 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4444,7 +3009,7 @@
 			)
 		)
 		(property "JLC" "Extended"
-			(at 264.16 147.32 0)
+			(at 365.76 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4484,7 +3049,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:R")
-		(at 217.17 182.88 90)
+		(at 281.94 137.16 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4494,7 +3059,7 @@
 		(dnp no)
 		(uuid "34b45ae5-b458-5967-bbb3-0beda973c618")
 		(property "Reference" "RB102"
-			(at 217.17 179.578 90)
+			(at 284.48 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4502,10 +3067,11 @@
 					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Value" "41.2k 1% 200V 1206"
-			(at 217.17 186.182 90)
+			(at 284.48 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4513,10 +3079,11 @@
 					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" "STIM_Rev1:R_1206_3216Metric"
-			(at 217.17 182.88 0)
+			(at 281.94 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4528,7 +3095,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 217.17 182.88 0)
+			(at 281.94 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4540,7 +3107,7 @@
 			)
 		)
 		(property "Description" "resistor"
-			(at 217.17 182.88 0)
+			(at 281.94 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4552,7 +3119,7 @@
 			)
 		)
 		(property "Note" "bench bias: parallels R22+R23"
-			(at 217.17 182.88 0)
+			(at 281.94 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4564,7 +3131,7 @@
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 217.17 182.88 0)
+			(at 281.94 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4576,7 +3143,7 @@
 			)
 		)
 		(property "Sim.Params" "r=41200"
-			(at 217.17 182.88 0)
+			(at 281.94 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4588,7 +3155,7 @@
 			)
 		)
 		(property "MPN" "1206W4F4122T5E"
-			(at 217.17 182.88 0)
+			(at 281.94 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4600,7 +3167,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL"
-			(at 217.17 182.88 0)
+			(at 281.94 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4612,7 +3179,7 @@
 			)
 		)
 		(property "LCSC" "C247267"
-			(at 217.17 182.88 0)
+			(at 281.94 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4624,7 +3191,7 @@
 			)
 		)
 		(property "JLC" "Extended"
-			(at 217.17 182.88 0)
+			(at 281.94 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4664,7 +3231,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:BAS16")
-		(at 238.76 130.81 90)
+		(at 226.06 99.06 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
@@ -4674,7 +3241,7 @@
 		(dnp no)
 		(uuid "42cd95f8-4178-53ff-8a6a-3a214e811159")
 		(property "Reference" "D106"
-			(at 242.4938 129.54 90)
+			(at 228.6 97.79 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4682,10 +3249,11 @@
 					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Value" "BAS16"
-			(at 244.2845 132.08 90)
+			(at 228.6 100.33 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4693,10 +3261,11 @@
 					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" "STIM_Rev1:SOT-23"
-			(at 238.76 130.81 0)
+			(at 226.06 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4708,7 +3277,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/BAS16.pdf"
-			(at 238.76 130.81 0)
+			(at 226.06 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4720,7 +3289,7 @@
 			)
 		)
 		(property "Description" "BAS16"
-			(at 238.76 130.81 0)
+			(at 226.06 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4732,7 +3301,7 @@
 			)
 		)
 		(property "MPN" "BAS16 A6"
-			(at 238.76 130.81 0)
+			(at 226.06 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4744,7 +3313,7 @@
 			)
 		)
 		(property "Manufacturer" "JSCJ"
-			(at 238.76 130.81 0)
+			(at 226.06 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4756,7 +3325,7 @@
 			)
 		)
 		(property "LCSC" "C8489"
-			(at 238.76 130.81 0)
+			(at 226.06 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4768,7 +3337,7 @@
 			)
 		)
 		(property "JLC" "Extended"
-			(at 238.76 130.81 0)
+			(at 226.06 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4811,7 +3380,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:BZX84C6V2")
-		(at 250.19 160.02 270)
+		(at 269.24 106.68 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
@@ -4821,7 +3390,7 @@
 		(dnp no)
 		(uuid "4d583f5b-bdd1-474c-b696-1077ab08c667")
 		(property "Reference" "D108"
-			(at 252.73 158.75 90)
+			(at 271.78 105.41 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4833,7 +3402,7 @@
 			)
 		)
 		(property "Value" "BZX84C36"
-			(at 252.73 161.29 90)
+			(at 271.78 107.95 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4845,7 +3414,7 @@
 			)
 		)
 		(property "Footprint" "STIM_Rev1:SOT-23"
-			(at 250.19 160.02 0)
+			(at 269.24 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4857,7 +3426,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds18001.pdf"
-			(at 250.19 160.02 0)
+			(at 269.24 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4869,7 +3438,7 @@
 			)
 		)
 		(property "Description" "BZX84C36"
-			(at 250.19 160.02 0)
+			(at 269.24 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4881,7 +3450,7 @@
 			)
 		)
 		(property "MPN" "BZX84C36LT1G"
-			(at 250.19 160.02 0)
+			(at 269.24 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4893,7 +3462,7 @@
 			)
 		)
 		(property "Manufacturer" "onsemi"
-			(at 250.19 160.02 0)
+			(at 269.24 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4905,7 +3474,7 @@
 			)
 		)
 		(property "LCSC" "C235982"
-			(at 250.19 160.02 0)
+			(at 269.24 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4917,7 +3486,7 @@
 			)
 		)
 		(property "JLC" "Extended"
-			(at 250.19 160.02 0)
+			(at 269.24 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4929,7 +3498,7 @@
 			)
 		)
 		(property "Note" "clamps Q2_BASE - Q1_BASE at ~36 V so U10/U11 stay below 40 V if JP2/JP3 are left closed above +/-50 V (review M5); off in normal use (<= 31 V at +/-110 V)"
-			(at 250.19 160.02 0)
+			(at 269.24 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4972,7 +3541,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:INA149")
-		(at 129.54 147.32 0)
+		(at 91.44 101.6 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4982,7 +3551,7 @@
 		(dnp no)
 		(uuid "631abe86-d9ba-5d33-a990-3503ec85f70c")
 		(property "Reference" "U110"
-			(at 136.652 140.716 0)
+			(at 96.52 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4994,7 +3563,7 @@
 			)
 		)
 		(property "Value" "INA149"
-			(at 136.652 153.924 0)
+			(at 101.6 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5006,7 +3575,7 @@
 			)
 		)
 		(property "Footprint" "STIM_Rev1:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 129.54 147.32 0)
+			(at 91.44 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5018,7 +3587,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina149.pdf"
-			(at 129.54 147.32 0)
+			(at 91.44 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5030,7 +3599,7 @@
 			)
 		)
 		(property "Description" "INA149AIDR"
-			(at 129.54 147.32 0)
+			(at 91.44 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5042,7 +3611,7 @@
 			)
 		)
 		(property "MPN" "INA149AIDR"
-			(at 129.54 147.32 0)
+			(at 91.44 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5054,7 +3623,7 @@
 			)
 		)
 		(property "Manufacturer" "TI"
-			(at 129.54 147.32 0)
+			(at 91.44 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5066,7 +3635,7 @@
 			)
 		)
 		(property "LCSC" "C183089"
-			(at 129.54 147.32 0)
+			(at 91.44 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5078,7 +3647,7 @@
 			)
 		)
 		(property "JLC" "Extended"
-			(at 129.54 147.32 0)
+			(at 91.44 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5090,7 +3659,7 @@
 			)
 		)
 		(property "Alternate" "INA149AID (tube) C1346122"
-			(at 129.54 147.32 0)
+			(at 91.44 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5102,7 +3671,7 @@
 			)
 		)
 		(property "Note" "Howland pump: V(PUMP_OUT) - V(I_SENSE) = V(DAC_BUF)"
-			(at 129.54 147.32 0)
+			(at 91.44 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5160,7 +3729,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:C")
-		(at 95.25 195.58 0)
+		(at 55.88 101.6 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5170,7 +3739,7 @@
 		(dnp no)
 		(uuid "6a5480e2-72a5-5b1b-ba8a-901336308eab")
 		(property "Reference" "C128"
-			(at 97.79 194.31 0)
+			(at 58.42 100.33 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5182,7 +3751,7 @@
 			)
 		)
 		(property "Value" "100n X7R 250V 1206"
-			(at 97.79 196.85 0)
+			(at 58.42 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5194,7 +3763,7 @@
 			)
 		)
 		(property "Footprint" "STIM_Rev1:C_1206_3216Metric"
-			(at 95.25 195.58 0)
+			(at 55.88 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5206,7 +3775,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 95.25 195.58 0)
+			(at 55.88 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5218,7 +3787,7 @@
 			)
 		)
 		(property "Description" "capacitor"
-			(at 95.25 195.58 0)
+			(at 55.88 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5230,7 +3799,7 @@
 			)
 		)
 		(property "MPN" "TCC1206X7R104M251FT"
-			(at 95.25 195.58 0)
+			(at 55.88 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5242,7 +3811,7 @@
 			)
 		)
 		(property "Manufacturer" "CCTC"
-			(at 95.25 195.58 0)
+			(at 55.88 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5254,7 +3823,7 @@
 			)
 		)
 		(property "LCSC" "C282822"
-			(at 95.25 195.58 0)
+			(at 55.88 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5266,7 +3835,7 @@
 			)
 		)
 		(property "JLC" "Extended"
-			(at 95.25 195.58 0)
+			(at 55.88 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5278,7 +3847,7 @@
 			)
 		)
 		(property "Note" "floating-supply decoupling at U10/U11; 250 V part as C29 (review 2026-11-15 S3)"
-			(at 95.25 195.58 0)
+			(at 55.88 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5290,7 +3859,7 @@
 			)
 		)
 		(property "Sim.Device" "C"
-			(at 95.25 195.58 0)
+			(at 55.88 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5302,7 +3871,7 @@
 			)
 		)
 		(property "Sim.Params" "c=1e-07"
-			(at 95.25 195.58 0)
+			(at 55.88 101.6 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5342,7 +3911,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:R")
-		(at 238.76 93.98 0)
+		(at 226.06 63.5 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5352,7 +3921,7 @@
 		(dnp no)
 		(uuid "72b9d598-ae06-5746-99f8-085ba2c24471")
 		(property "Reference" "R118"
-			(at 241.3 92.71 0)
+			(at 228.6 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5364,7 +3933,7 @@
 			)
 		)
 		(property "Value" "44.2k 1% 200V 1206"
-			(at 241.3 95.25 0)
+			(at 228.6 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5376,7 +3945,7 @@
 			)
 		)
 		(property "Footprint" "STIM_Rev1:R_1206_3216Metric"
-			(at 238.76 93.98 0)
+			(at 226.06 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5388,7 +3957,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 238.76 93.98 0)
+			(at 226.06 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5400,7 +3969,7 @@
 			)
 		)
 		(property "Description" "resistor"
-			(at 238.76 93.98 0)
+			(at 226.06 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5412,7 +3981,7 @@
 			)
 		)
 		(property "MPN" "CL1206FN44K2PS"
-			(at 238.76 93.98 0)
+			(at 226.06 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5424,7 +3993,7 @@
 			)
 		)
 		(property "Manufacturer" "CHANGLONG"
-			(at 238.76 93.98 0)
+			(at 226.06 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5436,7 +4005,7 @@
 			)
 		)
 		(property "LCSC" "C53284084"
-			(at 238.76 93.98 0)
+			(at 226.06 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5448,7 +4017,7 @@
 			)
 		)
 		(property "JLC" "Extended"
-			(at 238.76 93.98 0)
+			(at 226.06 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5460,7 +4029,7 @@
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 238.76 93.98 0)
+			(at 226.06 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5472,7 +4041,7 @@
 			)
 		)
 		(property "Sim.Params" "r=44200"
-			(at 238.76 93.98 0)
+			(at 226.06 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5512,7 +4081,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:TestPoint")
-		(at 100.33 187.96 0)
+		(at 63.5 83.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5522,7 +4091,7 @@
 		(dnp no)
 		(uuid "752388db-52a0-5f3d-8b66-01be8fd5fb63")
 		(property "Reference" "TP122"
-			(at 102.87 181.356 0)
+			(at 64.77 78.105 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5534,7 +4103,7 @@
 			)
 		)
 		(property "Value" "PUMP_V+"
-			(at 102.87 183.896 0)
+			(at 64.77 80.645 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5546,7 +4115,7 @@
 			)
 		)
 		(property "Footprint" "STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical"
-			(at 100.33 187.96 0)
+			(at 63.5 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5558,7 +4127,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 187.96 0)
+			(at 63.5 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5570,7 +4139,7 @@
 			)
 		)
 		(property "Description" "test pin 1x01 2.54 mm (HV node, never clip ground here)"
-			(at 100.33 187.96 0)
+			(at 63.5 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5582,7 +4151,7 @@
 			)
 		)
 		(property "Note" "bench probe pin"
-			(at 100.33 187.96 0)
+			(at 63.5 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5619,8 +4188,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:MJD350")
-		(at 283.21 172.72 0)
-		(mirror x)
+		(at 213.36 132.08 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
@@ -5630,7 +4198,7 @@
 		(dnp no)
 		(uuid "81770074-35d5-5fcd-b669-38f01d1f24eb")
 		(property "Reference" "Q102"
-			(at 288.29 171.45 0)
+			(at 207.01 133.35 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5642,7 +4210,7 @@
 			)
 		)
 		(property "Value" "MJD350"
-			(at 288.29 173.99 0)
+			(at 207.01 135.89 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5654,7 +4222,7 @@
 			)
 		)
 		(property "Footprint" "STIM_Rev1:TO-252-2"
-			(at 283.21 172.72 0)
+			(at 213.36 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5666,7 +4234,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/part/view/MJD350"
-			(at 283.21 172.72 0)
+			(at 213.36 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5678,7 +4246,7 @@
 			)
 		)
 		(property "Description" "MJD350 PNP 300 V DPAK"
-			(at 283.21 172.72 0)
+			(at 213.36 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5690,7 +4258,7 @@
 			)
 		)
 		(property "MPN" "MJD350-13"
-			(at 283.21 172.72 0)
+			(at 213.36 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5702,7 +4270,7 @@
 			)
 		)
 		(property "Manufacturer" "DIODES"
-			(at 283.21 172.72 0)
+			(at 213.36 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5714,7 +4282,7 @@
 			)
 		)
 		(property "LCSC" "C460225"
-			(at 283.21 172.72 0)
+			(at 213.36 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5726,7 +4294,7 @@
 			)
 		)
 		(property "JLC" "Extended"
-			(at 283.21 172.72 0)
+			(at 213.36 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5738,7 +4306,7 @@
 			)
 		)
 		(property "Note" "BOTTOM device = PNP; collector pour >= 300 mm^2"
-			(at 283.21 172.72 0)
+			(at 213.36 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5781,7 +4349,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:R")
-		(at 238.76 190.5 0)
+		(at 226.06 139.7 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5791,7 +4359,7 @@
 		(dnp no)
 		(uuid "94d355f1-33d6-54ad-a147-412fce02a00d")
 		(property "Reference" "R122"
-			(at 241.3 189.23 0)
+			(at 228.6 138.43 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5803,7 +4371,7 @@
 			)
 		)
 		(property "Value" "44.2k 1% 200V 1206"
-			(at 241.3 191.77 0)
+			(at 228.6 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5815,7 +4383,7 @@
 			)
 		)
 		(property "Footprint" "STIM_Rev1:R_1206_3216Metric"
-			(at 238.76 190.5 0)
+			(at 226.06 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5827,7 +4395,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 238.76 190.5 0)
+			(at 226.06 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5839,7 +4407,7 @@
 			)
 		)
 		(property "Description" "resistor"
-			(at 238.76 190.5 0)
+			(at 226.06 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5851,7 +4419,7 @@
 			)
 		)
 		(property "MPN" "CL1206FN44K2PS"
-			(at 238.76 190.5 0)
+			(at 226.06 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5863,7 +4431,7 @@
 			)
 		)
 		(property "Manufacturer" "CHANGLONG"
-			(at 238.76 190.5 0)
+			(at 226.06 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5875,7 +4443,7 @@
 			)
 		)
 		(property "LCSC" "C53284084"
-			(at 238.76 190.5 0)
+			(at 226.06 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5887,7 +4455,7 @@
 			)
 		)
 		(property "JLC" "Extended"
-			(at 238.76 190.5 0)
+			(at 226.06 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5899,7 +4467,7 @@
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 238.76 190.5 0)
+			(at 226.06 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5911,7 +4479,7 @@
 			)
 		)
 		(property "Sim.Params" "r=44200"
-			(at 238.76 190.5 0)
+			(at 226.06 139.7 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5951,7 +4519,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:R")
-		(at 238.76 120.65 0)
+		(at 226.06 88.9 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5961,7 +4529,7 @@
 		(dnp no)
 		(uuid "96c6752f-bb81-58c3-bba7-d9219f588638")
 		(property "Reference" "R120"
-			(at 241.3 119.38 0)
+			(at 228.6 87.63 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5973,7 +4541,7 @@
 			)
 		)
 		(property "Value" "14.3k 1% 0805"
-			(at 241.3 121.92 0)
+			(at 228.6 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5985,7 +4553,7 @@
 			)
 		)
 		(property "Footprint" "STIM_Rev1:R_0805_2012Metric"
-			(at 238.76 120.65 0)
+			(at 226.06 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5997,7 +4565,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 238.76 120.65 0)
+			(at 226.06 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6009,7 +4577,7 @@
 			)
 		)
 		(property "Description" "resistor"
-			(at 238.76 120.65 0)
+			(at 226.06 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6021,7 +4589,7 @@
 			)
 		)
 		(property "MPN" "0805W8F1432T5E"
-			(at 238.76 120.65 0)
+			(at 226.06 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6033,7 +4601,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL"
-			(at 238.76 120.65 0)
+			(at 226.06 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6045,7 +4613,7 @@
 			)
 		)
 		(property "LCSC" "C17456"
-			(at 238.76 120.65 0)
+			(at 226.06 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6057,7 +4625,7 @@
 			)
 		)
 		(property "JLC" "Extended"
-			(at 238.76 120.65 0)
+			(at 226.06 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6069,7 +4637,7 @@
 			)
 		)
 		(property "Note" "D-05; 0805 for power: up to ~1.95 mA x 14.3k = 28 V, 54 mW (110 V rail, output at -90 V)"
-			(at 238.76 120.65 0)
+			(at 226.06 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6081,7 +4649,7 @@
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 238.76 120.65 0)
+			(at 226.06 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6093,7 +4661,7 @@
 			)
 		)
 		(property "Sim.Params" "r=14300"
-			(at 238.76 120.65 0)
+			(at 226.06 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6133,7 +4701,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:R")
-		(at 238.76 200.66 0)
+		(at 226.06 149.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6143,7 +4711,7 @@
 		(dnp no)
 		(uuid "9ef4905d-2bb2-5daa-8831-f8f49db1911e")
 		(property "Reference" "R123"
-			(at 241.3 199.39 0)
+			(at 228.6 148.59 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6155,7 +4723,7 @@
 			)
 		)
 		(property "Value" "44.2k 1% 200V 1206"
-			(at 241.3 201.93 0)
+			(at 228.6 151.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6167,7 +4735,7 @@
 			)
 		)
 		(property "Footprint" "STIM_Rev1:R_1206_3216Metric"
-			(at 238.76 200.66 0)
+			(at 226.06 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6179,7 +4747,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 238.76 200.66 0)
+			(at 226.06 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6191,7 +4759,7 @@
 			)
 		)
 		(property "Description" "resistor"
-			(at 238.76 200.66 0)
+			(at 226.06 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6203,7 +4771,7 @@
 			)
 		)
 		(property "MPN" "CL1206FN44K2PS"
-			(at 238.76 200.66 0)
+			(at 226.06 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6215,7 +4783,7 @@
 			)
 		)
 		(property "Manufacturer" "CHANGLONG"
-			(at 238.76 200.66 0)
+			(at 226.06 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6227,7 +4795,7 @@
 			)
 		)
 		(property "LCSC" "C53284084"
-			(at 238.76 200.66 0)
+			(at 226.06 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6239,7 +4807,7 @@
 			)
 		)
 		(property "JLC" "Extended"
-			(at 238.76 200.66 0)
+			(at 226.06 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6251,7 +4819,7 @@
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 238.76 200.66 0)
+			(at 226.06 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6263,7 +4831,7 @@
 			)
 		)
 		(property "Sim.Params" "r=44200"
-			(at 238.76 200.66 0)
+			(at 226.06 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6303,7 +4871,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:BAS16")
-		(at 238.76 153.67 90)
+		(at 226.06 114.3 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
@@ -6313,7 +4881,7 @@
 		(dnp no)
 		(uuid "a395212f-349c-5295-9de3-7e438c58405e")
 		(property "Reference" "D107"
-			(at 242.4938 152.4 90)
+			(at 228.6 113.03 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6321,10 +4889,11 @@
 					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Value" "BAS16"
-			(at 244.2845 154.94 90)
+			(at 228.6 115.57 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6332,10 +4901,11 @@
 					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" "STIM_Rev1:SOT-23"
-			(at 238.76 153.67 0)
+			(at 226.06 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6347,7 +4917,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/BAS16.pdf"
-			(at 238.76 153.67 0)
+			(at 226.06 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6359,7 +4929,7 @@
 			)
 		)
 		(property "Description" "BAS16"
-			(at 238.76 153.67 0)
+			(at 226.06 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6371,7 +4941,7 @@
 			)
 		)
 		(property "MPN" "BAS16 A6"
-			(at 238.76 153.67 0)
+			(at 226.06 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6383,7 +4953,7 @@
 			)
 		)
 		(property "Manufacturer" "JSCJ"
-			(at 238.76 153.67 0)
+			(at 226.06 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6395,7 +4965,7 @@
 			)
 		)
 		(property "LCSC" "C8489"
-			(at 238.76 153.67 0)
+			(at 226.06 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6407,7 +4977,7 @@
 			)
 		)
 		(property "JLC" "Extended"
-			(at 238.76 153.67 0)
+			(at 226.06 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6450,7 +5020,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:+HV")
-		(at 205.74 72.39 0)
+		(at 187.96 53.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6460,7 +5030,7 @@
 		(dnp no)
 		(uuid "a83c234c-0113-5401-b606-5a3410f5e7cd")
 		(property "Reference" "#PWR1105"
-			(at 205.74 72.39 0)
+			(at 187.96 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6472,7 +5042,7 @@
 			)
 		)
 		(property "Value" "+HV"
-			(at 205.74 68.834 0)
+			(at 187.96 49.53 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6483,7 +5053,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 205.74 72.39 0)
+			(at 187.96 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6495,7 +5065,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 72.39 0)
+			(at 187.96 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6507,7 +5077,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 205.74 72.39 0)
+			(at 187.96 53.34 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6543,8 +5113,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:OPA192")
-		(at 165.1 191.77 0)
-		(mirror y)
+		(at 127 127 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6554,7 +5123,7 @@
 		(dnp no)
 		(uuid "baf910ce-6d66-57f9-a647-fe6f69cdcf1d")
 		(property "Reference" "U111"
-			(at 162.052 183.642 0)
+			(at 129.54 116.84 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6562,11 +5131,11 @@
 					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "OPA192"
-			(at 157.226 186.436 0)
+			(at 129.54 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6574,11 +5143,11 @@
 					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" "STIM_Rev1:SOT-23-5"
-			(at 165.1 191.77 0)
+			(at 127 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6590,7 +5159,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa192.pdf"
-			(at 165.1 191.77 0)
+			(at 127 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6602,7 +5171,7 @@
 			)
 		)
 		(property "Description" "OPA192IDBVR"
-			(at 165.1 191.77 0)
+			(at 127 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6614,7 +5183,7 @@
 			)
 		)
 		(property "MPN" "OPA192IDBVR"
-			(at 165.1 191.77 0)
+			(at 127 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6626,7 +5195,7 @@
 			)
 		)
 		(property "Manufacturer" "TI"
-			(at 165.1 191.77 0)
+			(at 127 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6638,7 +5207,7 @@
 			)
 		)
 		(property "LCSC" "C139648"
-			(at 165.1 191.77 0)
+			(at 127 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6650,7 +5219,7 @@
 			)
 		)
 		(property "JLC" "Extended"
-			(at 165.1 191.77 0)
+			(at 127 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6662,7 +5231,7 @@
 			)
 		)
 		(property "Note" "buffers I_SENSE back to the INA149 REF pins (D-05)"
-			(at 165.1 191.77 0)
+			(at 127 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6711,7 +5280,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:R")
-		(at 238.76 104.14 0)
+		(at 226.06 73.66 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6721,7 +5290,7 @@
 		(dnp no)
 		(uuid "c222ca90-dd66-5122-9f7c-5a5ce6edfa8e")
 		(property "Reference" "R119"
-			(at 241.3 102.87 0)
+			(at 228.6 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6733,7 +5302,7 @@
 			)
 		)
 		(property "Value" "44.2k 1% 200V 1206"
-			(at 241.3 105.41 0)
+			(at 228.6 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6745,7 +5314,7 @@
 			)
 		)
 		(property "Footprint" "STIM_Rev1:R_1206_3216Metric"
-			(at 238.76 104.14 0)
+			(at 226.06 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6757,7 +5326,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 238.76 104.14 0)
+			(at 226.06 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6769,7 +5338,7 @@
 			)
 		)
 		(property "Description" "resistor"
-			(at 238.76 104.14 0)
+			(at 226.06 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6781,7 +5350,7 @@
 			)
 		)
 		(property "MPN" "CL1206FN44K2PS"
-			(at 238.76 104.14 0)
+			(at 226.06 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6793,7 +5362,7 @@
 			)
 		)
 		(property "Manufacturer" "CHANGLONG"
-			(at 238.76 104.14 0)
+			(at 226.06 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6805,7 +5374,7 @@
 			)
 		)
 		(property "LCSC" "C53284084"
-			(at 238.76 104.14 0)
+			(at 226.06 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6817,7 +5386,7 @@
 			)
 		)
 		(property "JLC" "Extended"
-			(at 238.76 104.14 0)
+			(at 226.06 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6829,7 +5398,7 @@
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 238.76 104.14 0)
+			(at 226.06 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6841,7 +5410,7 @@
 			)
 		)
 		(property "Sim.Params" "r=44200"
-			(at 238.76 104.14 0)
+			(at 226.06 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6881,7 +5450,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:Jumper")
-		(at 205.74 96.52 270)
+		(at 281.94 64.77 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6891,7 +5460,7 @@
 		(dnp no)
 		(uuid "c3d5bc59-2630-5211-b4ca-cf41b1cb4159")
 		(property "Reference" "JP102"
-			(at 209.55 95.25 90)
+			(at 284.48 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6903,7 +5472,7 @@
 			)
 		)
 		(property "Value" "2x1P post 5.08"
-			(at 209.55 97.79 90)
+			(at 284.48 66.04 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6915,7 +5484,7 @@
 			)
 		)
 		(property "Footprint" "STIM_Rev1:PinPost_2x1Pin_P5.08mm_Vertical"
-			(at 205.74 96.52 0)
+			(at 281.94 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6927,7 +5496,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 96.52 0)
+			(at 281.94 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6939,7 +5508,7 @@
 			)
 		)
 		(property "Description" "two 1-pin 2.54 mm header posts, 5.08 mm apart; link with a female-female jumper wire"
-			(at 205.74 96.52 0)
+			(at 281.94 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6951,7 +5520,7 @@
 			)
 		)
 		(property "Note" "BENCH: close together with JP3 only at rails <= +/-50 V (bench uses +/-30 V); open at +/-100 V. See MISC NOTE M1"
-			(at 205.74 96.52 0)
+			(at 281.94 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6991,7 +5560,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:Jumper")
-		(at 205.74 199.39 270)
+		(at 281.94 148.59 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7001,7 +5570,7 @@
 		(dnp no)
 		(uuid "c67b0a55-d76c-4c78-ae14-d3cd1787be3e")
 		(property "Reference" "JP103"
-			(at 209.55 198.12 90)
+			(at 284.48 147.32 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7013,7 +5582,7 @@
 			)
 		)
 		(property "Value" "2x1P post 5.08"
-			(at 209.55 200.66 90)
+			(at 284.48 149.86 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7025,7 +5594,7 @@
 			)
 		)
 		(property "Footprint" "STIM_Rev1:PinPost_2x1Pin_P5.08mm_Vertical"
-			(at 205.74 199.39 0)
+			(at 281.94 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7037,7 +5606,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 199.39 0)
+			(at 281.94 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7049,7 +5618,7 @@
 			)
 		)
 		(property "Description" "two 1-pin 2.54 mm header posts, 5.08 mm apart; link with a female-female jumper wire"
-			(at 205.74 199.39 0)
+			(at 281.94 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7061,7 +5630,7 @@
 			)
 		)
 		(property "Note" "BENCH: close together with JP2 only at rails <= +/-50 V (bench uses +/-30 V); open at +/-100 V. See MISC NOTE M1"
-			(at 205.74 199.39 0)
+			(at 281.94 148.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7101,7 +5670,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:PWR_FLAG")
-		(at 87.63 187.96 0)
+		(at 78.74 83.82 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7111,7 +5680,7 @@
 		(dnp no)
 		(uuid "c8fb303c-8c2b-59ea-9211-a2ca0b7f8356")
 		(property "Reference" "#FLG1009"
-			(at 87.63 187.96 0)
+			(at 78.74 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7123,7 +5692,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 87.63 182.88 0)
+			(at 78.74 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7134,7 +5703,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 87.63 187.96 0)
+			(at 78.74 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7146,7 +5715,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 187.96 0)
+			(at 78.74 83.82 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7158,7 +5727,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 87.63 187.96 0)
+			(at 78.74 83.82 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7194,7 +5763,8 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:MJD340")
-		(at 283.21 121.92 0)
+		(at 213.36 81.28 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim yes)
@@ -7204,7 +5774,7 @@
 		(dnp no)
 		(uuid "cc610f23-a416-5f6f-aa6a-86d674c11af2")
 		(property "Reference" "Q101"
-			(at 288.29 120.65 0)
+			(at 207.01 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7216,7 +5786,7 @@
 			)
 		)
 		(property "Value" "MJD340"
-			(at 288.29 123.19 0)
+			(at 207.01 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7228,7 +5798,7 @@
 			)
 		)
 		(property "Footprint" "STIM_Rev1:TO-252-2"
-			(at 283.21 121.92 0)
+			(at 213.36 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7240,7 +5810,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/part/view/MJD340"
-			(at 283.21 121.92 0)
+			(at 213.36 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7252,7 +5822,7 @@
 			)
 		)
 		(property "Description" "MJD340 NPN 300 V DPAK"
-			(at 283.21 121.92 0)
+			(at 213.36 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7264,7 +5834,7 @@
 			)
 		)
 		(property "MPN" "MJD340-13"
-			(at 283.21 121.92 0)
+			(at 213.36 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7276,7 +5846,7 @@
 			)
 		)
 		(property "Manufacturer" "DIODES"
-			(at 283.21 121.92 0)
+			(at 213.36 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7288,7 +5858,7 @@
 			)
 		)
 		(property "LCSC" "C443830"
-			(at 283.21 121.92 0)
+			(at 213.36 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7300,7 +5870,7 @@
 			)
 		)
 		(property "JLC" "Extended"
-			(at 283.21 121.92 0)
+			(at 213.36 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7312,7 +5882,7 @@
 			)
 		)
 		(property "Alternate" "MJD340T4G onsemi C140579"
-			(at 283.21 121.92 0)
+			(at 213.36 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7324,7 +5894,7 @@
 			)
 		)
 		(property "Note" "TOP device = NPN (the S01 BOM had Q1/Q2 swapped); collector pour >= 300 mm^2"
-			(at 283.21 121.92 0)
+			(at 213.36 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7367,8 +5937,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:C")
-		(at 229.87 129.54 0)
-		(mirror y)
+		(at 256.54 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7378,7 +5947,7 @@
 		(dnp no)
 		(uuid "cee9ad1d-1fdd-5776-9760-608f04699645")
 		(property "Reference" "C129"
-			(at 226.568 128.27 0)
+			(at 254 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7386,11 +5955,11 @@
 					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "100n X7R 250V 1206"
-			(at 226.568 130.81 0)
+			(at 254 107.95 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7398,11 +5967,11 @@
 					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "STIM_Rev1:C_1206_3216Metric"
-			(at 229.87 129.54 0)
+			(at 256.54 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7414,7 +5983,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 229.87 129.54 0)
+			(at 256.54 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7426,7 +5995,7 @@
 			)
 		)
 		(property "Description" "capacitor"
-			(at 229.87 129.54 0)
+			(at 256.54 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7438,7 +6007,7 @@
 			)
 		)
 		(property "MPN" "TCC1206X7R104M251FT"
-			(at 229.87 129.54 0)
+			(at 256.54 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7450,7 +6019,7 @@
 			)
 		)
 		(property "Manufacturer" "CCTC"
-			(at 229.87 129.54 0)
+			(at 256.54 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7462,7 +6031,7 @@
 			)
 		)
 		(property "LCSC" "C282822"
-			(at 229.87 129.54 0)
+			(at 256.54 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7474,7 +6043,7 @@
 			)
 		)
 		(property "JLC" "Extended"
-			(at 229.87 129.54 0)
+			(at 256.54 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7486,7 +6055,7 @@
 			)
 		)
 		(property "Note" "S01 C1 between the driver bases"
-			(at 229.87 129.54 0)
+			(at 256.54 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7498,7 +6067,7 @@
 			)
 		)
 		(property "Sim.Device" "C"
-			(at 229.87 129.54 0)
+			(at 256.54 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7510,7 +6079,7 @@
 			)
 		)
 		(property "Sim.Params" "c=1e-07"
-			(at 229.87 129.54 0)
+			(at 256.54 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7550,7 +6119,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:R")
-		(at 238.76 173.99 0)
+		(at 226.06 124.46 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7560,7 +6129,7 @@
 		(dnp no)
 		(uuid "dab6a2b6-2729-5f84-a129-7d3c655e6ddb")
 		(property "Reference" "R121"
-			(at 241.3 172.72 0)
+			(at 228.6 123.19 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7572,7 +6141,7 @@
 			)
 		)
 		(property "Value" "14.3k 1% 0805"
-			(at 241.3 175.26 0)
+			(at 228.6 125.73 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7584,7 +6153,7 @@
 			)
 		)
 		(property "Footprint" "STIM_Rev1:R_0805_2012Metric"
-			(at 238.76 173.99 0)
+			(at 226.06 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7596,7 +6165,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 238.76 173.99 0)
+			(at 226.06 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7608,7 +6177,7 @@
 			)
 		)
 		(property "Description" "resistor"
-			(at 238.76 173.99 0)
+			(at 226.06 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7620,7 +6189,7 @@
 			)
 		)
 		(property "MPN" "0805W8F1432T5E"
-			(at 238.76 173.99 0)
+			(at 226.06 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7632,7 +6201,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL"
-			(at 238.76 173.99 0)
+			(at 226.06 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7644,7 +6213,7 @@
 			)
 		)
 		(property "LCSC" "C17456"
-			(at 238.76 173.99 0)
+			(at 226.06 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7656,7 +6225,7 @@
 			)
 		)
 		(property "JLC" "Extended"
-			(at 238.76 173.99 0)
+			(at 226.06 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7668,7 +6237,7 @@
 			)
 		)
 		(property "Note" "D-05; 0805 for power: up to ~1.95 mA x 14.3k = 28 V, 54 mW (110 V rail, output at -90 V)"
-			(at 238.76 173.99 0)
+			(at 226.06 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7680,7 +6249,7 @@
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 238.76 173.99 0)
+			(at 226.06 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7692,7 +6261,7 @@
 			)
 		)
 		(property "Sim.Params" "r=14300"
-			(at 238.76 173.99 0)
+			(at 226.06 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7732,7 +6301,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:TestPoint")
-		(at 100.33 203.2 0)
+		(at 63.5 119.38 180)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -7743,7 +6312,7 @@
 		(dnp no)
 		(uuid "dc121d89-7e10-47f9-a5c7-fca8fa42a5d5")
 		(property "Reference" "TP123"
-			(at 102.87 209.804 0)
+			(at 64.77 123.825 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7751,11 +6320,11 @@
 					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "PUMP_V-"
-			(at 102.87 207.264 0)
+			(at 64.77 126.365 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7763,11 +6332,11 @@
 					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical"
-			(at 100.33 203.2 0)
+			(at 63.5 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7779,7 +6348,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 203.2 0)
+			(at 63.5 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7791,7 +6360,7 @@
 			)
 		)
 		(property "Description" "test pin 1x01 2.54 mm (HV node, never clip ground here)"
-			(at 100.33 203.2 0)
+			(at 63.5 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7803,7 +6372,7 @@
 			)
 		)
 		(property "Note" "bench probe pin"
-			(at 100.33 203.2 0)
+			(at 63.5 119.38 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7840,7 +6409,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:TestPoint")
-		(at 134.62 166.37 270)
+		(at 106.68 142.24 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7850,7 +6419,7 @@
 		(dnp no)
 		(uuid "dc1490a4-d471-5d62-82e2-972738579475")
 		(property "Reference" "TP124"
-			(at 139.954 167.64 90)
+			(at 107.95 146.685 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7858,11 +6427,11 @@
 					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "PUMP_REF"
-			(at 139.954 165.1 90)
+			(at 107.95 149.225 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7870,11 +6439,11 @@
 					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "STIM_Rev1:TestPoint_Pad_D1.2mm"
-			(at 134.62 166.37 0)
+			(at 106.68 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7886,7 +6455,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 134.62 166.37 0)
+			(at 106.68 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7898,7 +6467,7 @@
 			)
 		)
 		(property "Description" "test pad 1.2 mm (bare copper)"
-			(at 134.62 166.37 0)
+			(at 106.68 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7910,7 +6479,7 @@
 			)
 		)
 		(property "Note" "bench probe pad"
-			(at 134.62 166.37 0)
+			(at 106.68 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7947,7 +6516,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:ISO_GND")
-		(at 99.06 153.67 0)
+		(at 76.2 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7957,7 +6526,7 @@
 		(dnp no)
 		(uuid "e0fba575-ab78-5958-ad33-c162aadcac01")
 		(property "Reference" "#PWR1104"
-			(at 99.06 153.67 0)
+			(at 76.2 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7969,7 +6538,7 @@
 			)
 		)
 		(property "Value" "ISO_GND"
-			(at 99.06 158.496 0)
+			(at 76.2 111.506 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7980,7 +6549,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 153.67 0)
+			(at 76.2 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7992,7 +6561,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 153.67 0)
+			(at 76.2 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8004,7 +6573,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 99.06 153.67 0)
+			(at 76.2 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8040,7 +6609,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:R")
-		(at 217.17 111.76 90)
+		(at 281.94 76.2 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8050,7 +6619,7 @@
 		(dnp no)
 		(uuid "f083cdb5-618b-58a2-b907-b41ccab49c92")
 		(property "Reference" "RB101"
-			(at 217.17 108.458 90)
+			(at 284.48 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8058,10 +6627,11 @@
 					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "41.2k 1% 200V 1206"
-			(at 217.17 115.062 90)
+			(at 284.48 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8069,10 +6639,11 @@
 					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "STIM_Rev1:R_1206_3216Metric"
-			(at 217.17 111.76 0)
+			(at 281.94 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8084,7 +6655,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 217.17 111.76 0)
+			(at 281.94 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8096,7 +6667,7 @@
 			)
 		)
 		(property "Description" "resistor"
-			(at 217.17 111.76 0)
+			(at 281.94 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8108,7 +6679,7 @@
 			)
 		)
 		(property "Note" "bench bias: parallels R18+R19 so the string passes ~0.3 mA at +/-15..30 V"
-			(at 217.17 111.76 0)
+			(at 281.94 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8120,7 +6691,7 @@
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 217.17 111.76 0)
+			(at 281.94 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8132,7 +6703,7 @@
 			)
 		)
 		(property "Sim.Params" "r=41200"
-			(at 217.17 111.76 0)
+			(at 281.94 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8144,7 +6715,7 @@
 			)
 		)
 		(property "MPN" "1206W4F4122T5E"
-			(at 217.17 111.76 0)
+			(at 281.94 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8156,7 +6727,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL"
-			(at 217.17 111.76 0)
+			(at 281.94 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8168,7 +6739,7 @@
 			)
 		)
 		(property "LCSC" "C247267"
-			(at 217.17 111.76 0)
+			(at 281.94 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8180,7 +6751,7 @@
 			)
 		)
 		(property "JLC" "Extended"
-			(at 217.17 111.76 0)
+			(at 281.94 76.2 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8220,7 +6791,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:TestPoint")
-		(at 190.5 147.32 0)
+		(at 353.06 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8230,7 +6801,7 @@
 		(dnp no)
 		(uuid "f67dd419-bbe9-5881-be98-9a3349799f2e")
 		(property "Reference" "TP125"
-			(at 193.04 140.716 0)
+			(at 354.33 100.965 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8242,7 +6813,7 @@
 			)
 		)
 		(property "Value" "PUMP_OUT"
-			(at 193.04 143.256 0)
+			(at 354.33 103.505 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8254,7 +6825,7 @@
 			)
 		)
 		(property "Footprint" "STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical"
-			(at 190.5 147.32 0)
+			(at 353.06 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8266,7 +6837,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 147.32 0)
+			(at 353.06 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8278,7 +6849,7 @@
 			)
 		)
 		(property "Description" "test pin 1x01 2.54 mm (HV node, never clip ground here)"
-			(at 190.5 147.32 0)
+			(at 353.06 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8290,7 +6861,7 @@
 			)
 		)
 		(property "Note" "bench probe pin"
-			(at 190.5 147.32 0)
+			(at 353.06 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8327,7 +6898,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:-HV")
-		(at 205.74 222.25 180)
+		(at 187.96 165.1 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8337,7 +6908,7 @@
 		(dnp no)
 		(uuid "fa252bfe-d60e-597c-a4b2-f6135f8bde78")
 		(property "Reference" "#PWR1106"
-			(at 205.74 222.25 0)
+			(at 187.96 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8349,7 +6920,7 @@
 			)
 		)
 		(property "Value" "-HV"
-			(at 205.74 225.806 0)
+			(at 187.96 169.926 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8360,7 +6931,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 205.74 222.25 0)
+			(at 187.96 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8372,7 +6943,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 222.25 0)
+			(at 187.96 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8384,7 +6955,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 205.74 222.25 0)
+			(at 187.96 165.1 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8420,7 +6991,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:C")
-		(at 127 195.58 0)
+		(at 149.86 127 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8430,7 +7001,7 @@
 		(dnp no)
 		(uuid "5af7704a-0a6d-55c1-8cc7-e1cae6017460")
 		(property "Reference" "C147"
-			(at 129.54 194.31 0)
+			(at 152.4 125.73 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8442,7 +7013,7 @@
 			)
 		)
 		(property "Value" "100n X7R 250V 1206"
-			(at 129.54 196.85 0)
+			(at 152.4 128.27 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8454,7 +7025,7 @@
 			)
 		)
 		(property "Footprint" "STIM_Rev1:C_1206_3216Metric"
-			(at 127 195.58 0)
+			(at 149.86 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8466,7 +7037,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 195.58 0)
+			(at 149.86 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8478,7 +7049,7 @@
 			)
 		)
 		(property "Description" "capacitor"
-			(at 127 195.58 0)
+			(at 149.86 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8490,7 +7061,7 @@
 			)
 		)
 		(property "MPN" "TCC1206X7R104M251FT"
-			(at 127 195.58 0)
+			(at 149.86 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8502,7 +7073,7 @@
 			)
 		)
 		(property "Manufacturer" "CCTC"
-			(at 127 195.58 0)
+			(at 149.86 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8514,7 +7085,7 @@
 			)
 		)
 		(property "LCSC" "C282822"
-			(at 127 195.58 0)
+			(at 149.86 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8526,7 +7097,7 @@
 			)
 		)
 		(property "JLC" "Extended"
-			(at 127 195.58 0)
+			(at 149.86 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8538,7 +7109,7 @@
 			)
 		)
 		(property "Note" "floating-supply decoupling at U11 pins 5 / 2 (C28 does U10); 4-ch revamp 2026-11-24"
-			(at 127 195.58 0)
+			(at 149.86 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8550,7 +7121,7 @@
 			)
 		)
 		(property "Sim.Device" "C"
-			(at 127 195.58 0)
+			(at 149.86 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8562,7 +7133,7 @@
 			)
 		)
 		(property "Sim.Params" "c=1e-07"
-			(at 127 195.58 0)
+			(at 149.86 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8600,61 +7171,9 @@
 			)
 		)
 	)
-	(wire
-		(pts
-			(xy 100.33 187.96) (xy 127 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4d964a42-331c-5002-84b0-1ef77116c1a1")
-	)
-	(wire
-		(pts
-			(xy 127 187.96) (xy 127 191.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "90f7c3db-5d95-5172-8c80-1a0f84f9d3e8")
-	)
-	(wire
-		(pts
-			(xy 127 199.39) (xy 127 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5de58e1e-d774-51b3-b23a-c6b29e546cd2")
-	)
-	(wire
-		(pts
-			(xy 100.33 203.2) (xy 127 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ba43e59f-22a3-5656-89f8-749ef56e8a9f")
-	)
-	(junction
-		(at 100.33 187.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0fc35993-cad7-578b-83b6-e6f36dc5d77d")
-	)
-	(junction
-		(at 100.33 203.2)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "af028c70-08ce-556d-8d09-fe2cef6d164f")
-	)
 	(symbol
 		(lib_id "STIM_Rev1:C")
-		(at 302.26 96.52 0)
+		(at 304.8 62.23 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8664,7 +7183,7 @@
 		(dnp no)
 		(uuid "be7e3a88-edd3-59a1-9697-ff59282a31bc")
 		(property "Reference" "C148"
-			(at 304.8 95.25 0)
+			(at 307.34 60.96 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8676,7 +7195,7 @@
 			)
 		)
 		(property "Value" "100n X7R 250V 1206"
-			(at 304.8 97.79 0)
+			(at 307.34 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8688,7 +7207,7 @@
 			)
 		)
 		(property "Footprint" "STIM_Rev1:C_1206_3216Metric"
-			(at 302.26 96.52 0)
+			(at 304.8 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8700,7 +7219,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 302.26 96.52 0)
+			(at 304.8 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8712,7 +7231,7 @@
 			)
 		)
 		(property "Description" "capacitor"
-			(at 302.26 96.52 0)
+			(at 304.8 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8724,7 +7243,7 @@
 			)
 		)
 		(property "MPN" "TCC1206X7R104M251FT"
-			(at 302.26 96.52 0)
+			(at 304.8 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8736,7 +7255,7 @@
 			)
 		)
 		(property "Manufacturer" "CCTC"
-			(at 302.26 96.52 0)
+			(at 304.8 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8748,7 +7267,7 @@
 			)
 		)
 		(property "LCSC" "C282822"
-			(at 302.26 96.52 0)
+			(at 304.8 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8760,7 +7279,7 @@
 			)
 		)
 		(property "JLC" "Extended"
-			(at 302.26 96.52 0)
+			(at 304.8 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8772,7 +7291,7 @@
 			)
 		)
 		(property "Note" "+HV local decoupling at the Q1 collector tab, one per channel on shared rails; 4-ch revamp 2026-11-24"
-			(at 302.26 96.52 0)
+			(at 304.8 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8784,7 +7303,7 @@
 			)
 		)
 		(property "Sim.Device" "C"
-			(at 302.26 96.52 0)
+			(at 304.8 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8796,7 +7315,7 @@
 			)
 		)
 		(property "Sim.Params" "c=1e-07"
-			(at 302.26 96.52 0)
+			(at 304.8 62.23 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8834,45 +7353,9 @@
 			)
 		)
 	)
-	(wire
-		(pts
-			(xy 285.75 87.63) (xy 302.26 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec6c804c-958f-548a-88be-26013e5acf0a")
-	)
-	(wire
-		(pts
-			(xy 302.26 87.63) (xy 302.26 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4637f6d8-b50e-5c36-bea2-7df149f5fdcd")
-	)
-	(wire
-		(pts
-			(xy 302.26 100.33) (xy 302.26 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a31c0d4-b1e4-5f88-b393-439c76613c3b")
-	)
-	(junction
-		(at 285.75 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1c59060a-950e-5823-9177-24632d5c0ff8")
-	)
 	(symbol
 		(lib_id "STIM_Rev1:ISO_GND")
-		(at 302.26 102.87 0)
+		(at 40.64 154.94 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8882,7 +7365,7 @@
 		(dnp no)
 		(uuid "4a3d0239-bb49-5323-aa99-74cead265b28")
 		(property "Reference" "#PWR1201"
-			(at 302.26 102.87 0)
+			(at 40.64 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8894,7 +7377,7 @@
 			)
 		)
 		(property "Value" "ISO_GND"
-			(at 302.26 107.696 0)
+			(at 40.64 159.766 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8905,7 +7388,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 302.26 102.87 0)
+			(at 40.64 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8917,7 +7400,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 302.26 102.87 0)
+			(at 40.64 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8929,7 +7412,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 302.26 102.87 0)
+			(at 40.64 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8965,7 +7448,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:C")
-		(at 302.26 201.93 0)
+		(at 304.8 168.91 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8975,7 +7458,7 @@
 		(dnp no)
 		(uuid "3fba3bc5-6d85-5ea0-a3fa-d8fe43062bd6")
 		(property "Reference" "C149"
-			(at 304.8 200.66 0)
+			(at 307.34 167.64 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8983,11 +7466,11 @@
 					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "100n X7R 250V 1206"
-			(at 304.8 203.2 0)
+			(at 307.34 170.18 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8995,11 +7478,11 @@
 					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "STIM_Rev1:C_1206_3216Metric"
-			(at 302.26 201.93 0)
+			(at 304.8 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9011,7 +7494,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 302.26 201.93 0)
+			(at 304.8 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9023,7 +7506,7 @@
 			)
 		)
 		(property "Description" "capacitor"
-			(at 302.26 201.93 0)
+			(at 304.8 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9035,7 +7518,7 @@
 			)
 		)
 		(property "MPN" "TCC1206X7R104M251FT"
-			(at 302.26 201.93 0)
+			(at 304.8 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9047,7 +7530,7 @@
 			)
 		)
 		(property "Manufacturer" "CCTC"
-			(at 302.26 201.93 0)
+			(at 304.8 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9059,7 +7542,7 @@
 			)
 		)
 		(property "LCSC" "C282822"
-			(at 302.26 201.93 0)
+			(at 304.8 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9071,7 +7554,7 @@
 			)
 		)
 		(property "JLC" "Extended"
-			(at 302.26 201.93 0)
+			(at 304.8 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9083,7 +7566,7 @@
 			)
 		)
 		(property "Note" "-HV local decoupling at the Q2 collector tab, one per channel on shared rails; 4-ch revamp 2026-11-24"
-			(at 302.26 201.93 0)
+			(at 304.8 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9095,7 +7578,7 @@
 			)
 		)
 		(property "Sim.Device" "C"
-			(at 302.26 201.93 0)
+			(at 304.8 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9107,7 +7590,7 @@
 			)
 		)
 		(property "Sim.Params" "c=1e-07"
-			(at 302.26 201.93 0)
+			(at 304.8 168.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9145,45 +7628,9 @@
 			)
 		)
 	)
-	(wire
-		(pts
-			(xy 285.75 207.01) (xy 302.26 207.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f85f7ad0-b0e2-5eaf-922f-26d65493326f")
-	)
-	(wire
-		(pts
-			(xy 302.26 207.01) (xy 302.26 205.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "52213b8f-9cd9-5790-a34e-3cfa9af34fe0")
-	)
-	(wire
-		(pts
-			(xy 302.26 198.12) (xy 302.26 195.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd6e356f-01fe-5640-8f41-112fa62e43d5")
-	)
-	(junction
-		(at 285.75 207.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ae469d99-e21b-59ec-a8f9-17fc9d6b3651")
-	)
 	(symbol
 		(lib_id "STIM_Rev1:ISO_GND")
-		(at 302.26 195.58 180)
+		(at 304.8 68.58 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9193,7 +7640,7 @@
 		(dnp no)
 		(uuid "20da249f-75f8-5a9a-a962-eb9c65a011c2")
 		(property "Reference" "#PWR1202"
-			(at 302.26 195.58 0)
+			(at 304.8 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9205,7 +7652,7 @@
 			)
 		)
 		(property "Value" "ISO_GND"
-			(at 304.8 196.85 0)
+			(at 304.8 73.406 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9213,11 +7660,10 @@
 					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 302.26 195.58 0)
+			(at 304.8 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9229,7 +7675,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 302.26 195.58 0)
+			(at 304.8 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9241,7 +7687,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 302.26 195.58 0)
+			(at 304.8 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9275,19 +7721,9 @@
 			)
 		)
 	)
-	(wire
-		(pts
-			(xy 284.48 147.32) (xy 302.26 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "90c4d2c8-6ce4-53fe-9c69-d57a2d55f2c1")
-	)
 	(symbol
 		(lib_id "STIM_Rev1:TestPoint")
-		(at 284.48 147.32 0)
+		(at 378.46 106.68 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9297,7 +7733,7 @@
 		(dnp no)
 		(uuid "6501c01e-ea16-51a9-8c64-1c6ce5aa9d2a")
 		(property "Reference" "TP126"
-			(at 287.02 140.716 0)
+			(at 379.73 100.965 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9309,7 +7745,7 @@
 			)
 		)
 		(property "Value" "I_SENSE"
-			(at 287.02 143.256 0)
+			(at 379.73 103.505 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9321,7 +7757,7 @@
 			)
 		)
 		(property "Footprint" "STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical"
-			(at 284.48 147.32 0)
+			(at 378.46 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9333,7 +7769,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 284.48 147.32 0)
+			(at 378.46 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9345,7 +7781,7 @@
 			)
 		)
 		(property "Description" "test pin 1x01 2.54 mm (HV node, never clip ground here)"
-			(at 284.48 147.32 0)
+			(at 378.46 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9357,7 +7793,7 @@
 			)
 		)
 		(property "Note" "bench probe pin"
-			(at 284.48 147.32 0)
+			(at 378.46 106.68 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9394,7 +7830,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:R")
-		(at 205.74 78.74 0)
+		(at 195.58 55.88 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9404,7 +7840,7 @@
 		(dnp no)
 		(uuid "01ea227b-a4d9-5ce0-a377-1437c9932783")
 		(property "Reference" "R150"
-			(at 208.28 77.47 0)
+			(at 195.58 53.594 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9412,11 +7848,10 @@
 					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "0R 1206"
-			(at 208.28 80.01 0)
+			(at 195.58 58.801 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9424,11 +7859,10 @@
 					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "STIM_Rev1:R_1206_3216Metric"
-			(at 205.74 78.74 0)
+			(at 195.58 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9440,7 +7874,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 78.74 0)
+			(at 195.58 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9452,7 +7886,7 @@
 			)
 		)
 		(property "Description" "resistor"
-			(at 205.74 78.74 0)
+			(at 195.58 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9464,7 +7898,7 @@
 			)
 		)
 		(property "MPN" "1206W4F0000T5E"
-			(at 205.74 78.74 0)
+			(at 195.58 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9476,7 +7910,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL"
-			(at 205.74 78.74 0)
+			(at 195.58 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9488,7 +7922,7 @@
 			)
 		)
 		(property "LCSC" "C17888"
-			(at 205.74 78.74 0)
+			(at 195.58 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9500,7 +7934,7 @@
 			)
 		)
 		(property "JLC" "Extended"
-			(at 205.74 78.74 0)
+			(at 195.58 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9512,7 +7946,7 @@
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 205.74 78.74 0)
+			(at 195.58 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9524,7 +7958,7 @@
 			)
 		)
 		(property "Sim.Params" "r=0"
-			(at 205.74 78.74 0)
+			(at 195.58 55.88 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9564,7 +7998,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:R")
-		(at 205.74 215.9 0)
+		(at 195.58 162.56 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9574,7 +8008,7 @@
 		(dnp no)
 		(uuid "17da9d8b-1043-55bb-ae94-2e6ead3cef00")
 		(property "Reference" "R151"
-			(at 208.28 214.63 0)
+			(at 195.58 160.274 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9582,11 +8016,10 @@
 					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "0R 1206"
-			(at 208.28 217.17 0)
+			(at 195.58 165.481 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9594,11 +8027,10 @@
 					(face "JetBrains Mono")
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "STIM_Rev1:R_1206_3216Metric"
-			(at 205.74 215.9 0)
+			(at 195.58 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9610,7 +8042,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 215.9 0)
+			(at 195.58 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9622,7 +8054,7 @@
 			)
 		)
 		(property "Description" "resistor"
-			(at 205.74 215.9 0)
+			(at 195.58 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9634,7 +8066,7 @@
 			)
 		)
 		(property "MPN" "1206W4F0000T5E"
-			(at 205.74 215.9 0)
+			(at 195.58 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9646,7 +8078,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL"
-			(at 205.74 215.9 0)
+			(at 195.58 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9658,7 +8090,7 @@
 			)
 		)
 		(property "LCSC" "C17888"
-			(at 205.74 215.9 0)
+			(at 195.58 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9670,7 +8102,7 @@
 			)
 		)
 		(property "JLC" "Extended"
-			(at 205.74 215.9 0)
+			(at 195.58 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9682,7 +8114,7 @@
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 205.74 215.9 0)
+			(at 195.58 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9694,7 +8126,7 @@
 			)
 		)
 		(property "Sim.Params" "r=0"
-			(at 205.74 215.9 0)
+			(at 195.58 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9732,51 +8164,9 @@
 			)
 		)
 	)
-	(wire
-		(pts
-			(xy 205.74 72.39) (xy 205.74 74.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "363e99c7-c2af-5450-a5de-37aac704cb4c")
-	)
-	(wire
-		(pts
-			(xy 205.74 219.71) (xy 205.74 222.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3dfe58a7-f846-57f7-927b-827af8709f84")
-	)
-	(label "+HV_CH"
-		(at 207.01 87.63 0)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "40965323-40f6-5715-b0cf-7b25cfae34cd")
-	)
-	(label "-HV_CH"
-		(at 207.01 207.01 0)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "47d4316d-caa7-540c-8d54-07a783e33c2b")
-	)
 	(symbol
 		(lib_id "STIM_Rev1:TestPoint")
-		(at 78.74 157.48 0)
+		(at 40.64 152.4 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9786,7 +8176,7 @@
 		(dnp no)
 		(uuid "d16d4b1f-0ff4-5ebe-95ca-2c696f331c38")
 		(property "Reference" "TP130"
-			(at 81.28 150.876 0)
+			(at 41.91 146.685 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9798,7 +8188,7 @@
 			)
 		)
 		(property "Value" "ISO_GND"
-			(at 81.28 153.416 0)
+			(at 41.91 149.225 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9810,7 +8200,7 @@
 			)
 		)
 		(property "Footprint" "STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical"
-			(at 78.74 157.48 0)
+			(at 40.64 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9822,7 +8212,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 157.48 0)
+			(at 40.64 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9834,7 +8224,7 @@
 			)
 		)
 		(property "Description" "test pin 1x01 2.54 mm (ISO_GND, scope / DMM ground clip for this channel)"
-			(at 78.74 157.48 0)
+			(at 40.64 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9846,7 +8236,7 @@
 			)
 		)
 		(property "Note" "bench probe pin"
-			(at 78.74 157.48 0)
+			(at 40.64 152.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9883,7 +8273,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:ISO_GND")
-		(at 78.74 160.02 0)
+		(at 304.8 175.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9893,7 +8283,7 @@
 		(dnp no)
 		(uuid "2725866e-1579-5c05-a55f-19a8d440c204")
 		(property "Reference" "#PWR1203"
-			(at 78.74 160.02 0)
+			(at 304.8 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9905,7 +8295,7 @@
 			)
 		)
 		(property "Value" "ISO_GND"
-			(at 78.74 164.846 0)
+			(at 304.8 180.086 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9916,7 +8306,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 78.74 160.02 0)
+			(at 304.8 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9928,7 +8318,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 78.74 160.02 0)
+			(at 304.8 175.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9940,7 +8330,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 78.74 160.02 0)
+			(at 304.8 175.26 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9974,14 +8364,1445 @@
 			)
 		)
 	)
+	(text "Howland Current Pump"
+		(exclude_from_sim no)
+		(at 210 22.86 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 6 6)
+				(thickness 0.9)
+				(bold yes)
+				(color 132 0 0 1)
+			)
+		)
+		(uuid "3a94b85e-4726-5b67-91b9-10f79dbebf67")
+	)
 	(wire
 		(pts
-			(xy 78.74 157.48) (xy 78.74 160.02)
+			(xy 71.12 99.06) (xy 81.28 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "47e9cd45-4631-5ed3-b665-d57dc08c491c")
+		(uuid "91344a88-1ab2-5d59-9460-74ae301ef0c7")
+	)
+	(hierarchical_label "DAC_BUF"
+		(shape input)
+		(at 71.12 99.06 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8896c272-37d8-5e92-b05f-198da1eec77b")
+	)
+	(wire
+		(pts
+			(xy 81.28 104.14) (xy 76.2 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f92482e-ac84-51d8-8276-a902accf8848")
+	)
+	(wire
+		(pts
+			(xy 76.2 104.14) (xy 76.2 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a05fa6b-87c3-5034-b0a3-44782bc494a7")
+	)
+	(wire
+		(pts
+			(xy 101.6 101.6) (xy 109.22 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6b423dc-2c01-5be2-97b9-26ec76d81363")
+	)
+	(label "PUMP_OUT"
+		(at 109.22 101.6 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "317979a1-b7d2-5ab5-88fd-45751226ea53")
+	)
+	(wire
+		(pts
+			(xy 48.26 83.82) (xy 55.88 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b707a109-acba-5775-98ac-3310344a97fd")
+	)
+	(wire
+		(pts
+			(xy 55.88 83.82) (xy 63.5 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71ae6651-93e8-5765-acdd-35392fbf0398")
+	)
+	(wire
+		(pts
+			(xy 63.5 83.82) (xy 78.74 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f991aa9d-50ce-53c8-a8a7-ecfbf47b7402")
+	)
+	(wire
+		(pts
+			(xy 78.74 83.82) (xy 86.36 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24032d67-19b8-58a3-8c8c-25ae37815029")
+	)
+	(wire
+		(pts
+			(xy 86.36 83.82) (xy 86.36 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1d44eb1-4eec-5208-a514-7e1f51dcb023")
+	)
+	(wire
+		(pts
+			(xy 48.26 119.38) (xy 55.88 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2a0d6f5-5606-5bf4-9a18-e8d542f6cfcf")
+	)
+	(wire
+		(pts
+			(xy 55.88 119.38) (xy 63.5 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb26dda4-6384-5e65-b6a7-a4fcbcdb23cb")
+	)
+	(wire
+		(pts
+			(xy 63.5 119.38) (xy 78.74 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edb3f644-40fe-5264-8632-f52a370c8fe1")
+	)
+	(wire
+		(pts
+			(xy 78.74 119.38) (xy 86.36 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b74ed1f-07b8-52c3-b87d-789f24fa7121")
+	)
+	(wire
+		(pts
+			(xy 86.36 119.38) (xy 86.36 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "325818d9-840a-5335-9555-3302d1ea67fb")
+	)
+	(label "PUMP_V+"
+		(at 48.26 83.82 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b2e422d5-b60d-53ce-9114-ebc1336ba387")
+	)
+	(label "PUMP_V-"
+		(at 48.26 119.38 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7eb493da-6c34-5bac-addb-dc94ff165f1c")
+	)
+	(wire
+		(pts
+			(xy 55.88 83.82) (xy 55.88 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "718069cb-e863-5c10-b1bf-40b326902d19")
+	)
+	(wire
+		(pts
+			(xy 55.88 105.41) (xy 55.88 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "684451c7-caff-512a-aa74-9951e341ee49")
+	)
+	(wire
+		(pts
+			(xy 91.44 111.76) (xy 91.44 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b54d2be-5f60-5a72-a1d2-d5d86b03bd59")
+	)
+	(wire
+		(pts
+			(xy 96.52 111.76) (xy 96.52 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f7ae597-2297-599b-bef3-8005a9e2906d")
+	)
+	(wire
+		(pts
+			(xy 91.44 142.24) (xy 96.52 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50f73406-b17f-5c1a-8517-1b216919abd9")
+	)
+	(wire
+		(pts
+			(xy 96.52 142.24) (xy 106.68 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d27ff3b8-46f8-5bd5-b5eb-9335233915ea")
+	)
+	(wire
+		(pts
+			(xy 106.68 142.24) (xy 114.3 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32c7fb3b-63d3-5d5c-a57f-0ff9f334e8b1")
+	)
+	(wire
+		(pts
+			(xy 114.3 142.24) (xy 139.7 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "826ffcd3-6e87-5d90-af33-de45231ca4ac")
+	)
+	(wire
+		(pts
+			(xy 139.7 142.24) (xy 139.7 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37df25d8-b23a-5d0d-8dfc-924399b6e4e7")
+	)
+	(wire
+		(pts
+			(xy 139.7 127) (xy 134.62 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6a524e5-f2fe-52e0-a309-e2293dd83943")
+	)
+	(wire
+		(pts
+			(xy 119.38 129.54) (xy 114.3 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "764e8684-96ae-5c9f-8489-e82925d56f68")
+	)
+	(wire
+		(pts
+			(xy 114.3 129.54) (xy 114.3 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb61db54-d55e-5644-b216-b1aff32875be")
+	)
+	(label "PUMP_REF"
+		(at 116.84 142.24 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "48010f1e-55c4-568b-a4e0-0fd528827692")
+	)
+	(wire
+		(pts
+			(xy 119.38 124.46) (xy 109.22 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aaa8fd9f-cb0b-5f18-8f87-82efb59919e2")
+	)
+	(label "I_SENSE"
+		(at 109.22 124.46 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "821c5f05-06d0-5044-8b2a-f5584cbcba55")
+	)
+	(wire
+		(pts
+			(xy 124.46 119.38) (xy 124.46 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b7c7c94-1ea9-5f52-832c-52a4ed958544")
+	)
+	(wire
+		(pts
+			(xy 124.46 114.3) (xy 149.86 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7b0d48f-0fec-5db5-8a98-646b00e2a692")
+	)
+	(wire
+		(pts
+			(xy 149.86 114.3) (xy 149.86 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b14a5345-a46e-511b-a3f7-7059b4d84c25")
+	)
+	(wire
+		(pts
+			(xy 124.46 134.62) (xy 124.46 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ece25981-4748-592a-8ef6-24c7de140532")
+	)
+	(wire
+		(pts
+			(xy 124.46 137.16) (xy 149.86 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc9a3a07-6868-538e-8966-06b9ae11db56")
+	)
+	(wire
+		(pts
+			(xy 149.86 137.16) (xy 149.86 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12b35fb8-a82b-50c7-9201-29c9314bbce4")
+	)
+	(wire
+		(pts
+			(xy 149.86 114.3) (xy 157.48 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f0e4a03-b88d-5e4f-afb9-3f68387cda1d")
+	)
+	(label "PUMP_V+"
+		(at 157.48 114.3 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "15d85592-bd29-5744-9553-cd5464607ca4")
+	)
+	(wire
+		(pts
+			(xy 149.86 137.16) (xy 157.48 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3737bdd-8d54-5fb4-a39c-9293972eb889")
+	)
+	(label "PUMP_V-"
+		(at 157.48 137.16 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "940f87f2-c0af-568c-b9c9-f0c7c2e0153e")
+	)
+	(wire
+		(pts
+			(xy 40.64 152.4) (xy 40.64 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abc00512-d73a-5bf7-a5b5-3fbed49f6098")
+	)
+	(rectangle
+		(start 30.48 45.72)
+		(end 170.18 182.88)
+		(stroke
+			(width 1)
+			(type solid)
+			(color 72 72 72 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "7562ef77-bf6c-565d-89cc-fe3866fdfe17")
+	)
+	(text "A  Difference amplifier U10 (INA149) and REF buffer U11"
+		(exclude_from_sim no)
+		(at 31.75 44.45 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 2.5 2.5)
+				(thickness 0.375)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "dd5615f0-38a8-5efc-beb1-71bf74cd3dc1")
+	)
+	(wire
+		(pts
+			(xy 226.06 55.88) (xy 226.06 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4db2e536-824c-5aef-8bbc-101f28ca9ebb")
+	)
+	(wire
+		(pts
+			(xy 226.06 67.31) (xy 226.06 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eade5600-b750-54fd-ac90-91100f64735d")
+	)
+	(wire
+		(pts
+			(xy 226.06 77.47) (xy 226.06 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f260eb2b-c4c8-5c0b-ac1f-546ffe820f9a")
+	)
+	(wire
+		(pts
+			(xy 226.06 81.28) (xy 226.06 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23bd10be-54c6-5fd3-a176-9347c79acc18")
+	)
+	(wire
+		(pts
+			(xy 226.06 92.71) (xy 226.06 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38fd280b-f0ca-5f7b-83b3-13f2be1d164f")
+	)
+	(wire
+		(pts
+			(xy 226.06 102.87) (xy 226.06 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4e91678-54ab-59cb-b457-cee4a0182b5e")
+	)
+	(wire
+		(pts
+			(xy 226.06 106.68) (xy 226.06 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d44a9a95-05fa-5d2b-8811-c100e075427a")
+	)
+	(wire
+		(pts
+			(xy 226.06 118.11) (xy 226.06 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98ad4e14-e525-504b-a9d5-3434347f2b8c")
+	)
+	(wire
+		(pts
+			(xy 226.06 128.27) (xy 226.06 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "824c31d6-784b-5065-94d6-15b24c0791f8")
+	)
+	(wire
+		(pts
+			(xy 226.06 132.08) (xy 226.06 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2fde9c64-8d9c-576a-8c18-e839df68ed11")
+	)
+	(wire
+		(pts
+			(xy 226.06 143.51) (xy 226.06 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d08cc377-8763-5838-b2a8-87c5b93ceeea")
+	)
+	(wire
+		(pts
+			(xy 226.06 153.67) (xy 226.06 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfb3d4cb-7fc5-5d91-a608-10cb1fdbdb21")
+	)
+	(label "BIAS_R1_R2"
+		(at 226.06 68.58 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ac3646a1-b430-52a0-92b1-10eeafa574a0")
+	)
+	(label "BIAS_R3_D1"
+		(at 226.06 93.98 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "19eb4cdd-6fa4-56d6-be92-230a1b7adb51")
+	)
+	(label "BIAS_D2_R4"
+		(at 226.06 119.38 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2d4b4733-8e33-565c-a983-d958573a2e7a")
+	)
+	(label "BIAS_R5_R6"
+		(at 226.06 144.78 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2e86444b-97cc-551b-9916-2608e6d94bc6")
+	)
+	(wire
+		(pts
+			(xy 226.06 106.68) (xy 210.82 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0e71e00-9467-56d2-b029-f2eafd3882c0")
+	)
+	(label "PUMP_OUT"
+		(at 210.82 106.68 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8ce24ad1-dc6d-5c49-b92d-c0618400980e")
+	)
+	(wire
+		(pts
+			(xy 218.44 81.28) (xy 226.06 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1337deb2-d959-5765-a471-a2999a52cdb9")
+	)
+	(wire
+		(pts
+			(xy 210.82 76.2) (xy 210.82 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc2c9928-1086-5b9e-9236-a9b4f3e955ae")
+	)
+	(wire
+		(pts
+			(xy 210.82 86.36) (xy 210.82 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5171518-a958-5113-8352-197cc08787b2")
+	)
+	(label "PUMP_V+"
+		(at 210.82 93.98 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "02607b0b-5910-5096-9243-91a5582e31d0")
+	)
+	(wire
+		(pts
+			(xy 218.44 132.08) (xy 226.06 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ceb982c6-eb74-5d86-9974-9fa1787539be")
+	)
+	(wire
+		(pts
+			(xy 210.82 137.16) (xy 210.82 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58528dce-6786-57e0-80b9-ace212181ee7")
+	)
+	(wire
+		(pts
+			(xy 210.82 127) (xy 210.82 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8882dd40-4b86-568e-a5c4-e668a15f6fb2")
+	)
+	(label "PUMP_V-"
+		(at 210.82 119.38 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "791163ab-a55f-5dbd-bc08-44c5fb47354a")
+	)
+	(wire
+		(pts
+			(xy 226.06 80.01) (xy 256.54 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e8ec271-f7c5-5ad6-a17b-fbce2c7680e8")
+	)
+	(wire
+		(pts
+			(xy 256.54 80.01) (xy 269.24 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61ffda3f-97cd-5e96-aae9-8c6b4efd404d")
+	)
+	(wire
+		(pts
+			(xy 269.24 80.01) (xy 281.94 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed18ed2b-72b2-577e-bc3e-0c6ed607a059")
+	)
+	(wire
+		(pts
+			(xy 226.06 133.35) (xy 256.54 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a8e708e-def7-5ae4-baae-82560d218171")
+	)
+	(wire
+		(pts
+			(xy 256.54 133.35) (xy 269.24 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98e40185-a3fd-586c-8be5-5f40da3155a3")
+	)
+	(wire
+		(pts
+			(xy 269.24 133.35) (xy 281.94 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db13b9c6-6e09-51ca-bdf6-7dfcb04494b8")
+	)
+	(wire
+		(pts
+			(xy 256.54 80.01) (xy 256.54 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6c38d51-c3c7-5a46-b55b-586665257b67")
+	)
+	(wire
+		(pts
+			(xy 256.54 110.49) (xy 256.54 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a246722-05be-589f-a8ea-137ad1831052")
+	)
+	(wire
+		(pts
+			(xy 269.24 80.01) (xy 269.24 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae4f9f01-7d77-5878-ae19-f0984dc197ed")
+	)
+	(wire
+		(pts
+			(xy 269.24 110.49) (xy 269.24 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e437991-dce8-598b-a850-d4654af08471")
+	)
+	(label "Q2_BASE"
+		(at 241.3 80.01 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d3a88de9-fc5b-5b45-930c-faee9c3d7313")
+	)
+	(label "Q1_BASE"
+		(at 241.3 133.35 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6ab75a3c-89e6-53ac-bd60-8f4e7dc37b75")
+	)
+	(wire
+		(pts
+			(xy 281.94 55.88) (xy 281.94 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77090d44-33a4-5166-ab6a-ed7aaebd4bea")
+	)
+	(wire
+		(pts
+			(xy 281.94 69.85) (xy 281.94 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd7e161d-e4fa-5064-9c54-25b189619f3b")
+	)
+	(wire
+		(pts
+			(xy 281.94 140.97) (xy 281.94 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b163ecd1-828e-55ba-98c3-aaec04082e75")
+	)
+	(wire
+		(pts
+			(xy 281.94 153.67) (xy 281.94 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ed1027e-83ce-590a-af4a-25ded122321f")
+	)
+	(label "BENCH_BIAS_P"
+		(at 281.94 71.12 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ca524687-79c3-5c52-9f0d-6973fef24568")
+	)
+	(label "BENCH_BIAS_N"
+		(at 281.94 142.24 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cfece413-d52f-5656-8162-c82cdcab93d2")
+	)
+	(wire
+		(pts
+			(xy 187.96 53.34) (xy 187.96 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e15b29cd-f50d-5572-98ee-ecceea3c69ce")
+	)
+	(wire
+		(pts
+			(xy 187.96 55.88) (xy 191.77 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "773c39bf-84f0-5e00-9635-9ee49d9e3c6f")
+	)
+	(wire
+		(pts
+			(xy 187.96 165.1) (xy 187.96 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b0db499-50e1-589d-9d93-b0bc65b7b49e")
+	)
+	(wire
+		(pts
+			(xy 187.96 162.56) (xy 191.77 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48aad8a7-7546-5db6-8077-b8457a26b75b")
+	)
+	(wire
+		(pts
+			(xy 199.39 55.88) (xy 210.82 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b11afe6-4fc1-5632-82c0-cf80a0e0763b")
+	)
+	(wire
+		(pts
+			(xy 210.82 55.88) (xy 226.06 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae3b097c-97ad-5ffa-ad66-85301eaa3377")
+	)
+	(wire
+		(pts
+			(xy 226.06 55.88) (xy 281.94 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74635fee-e08b-59a9-b107-3d0df6c2ac6b")
+	)
+	(wire
+		(pts
+			(xy 281.94 55.88) (xy 304.8 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff60d01f-975d-5c4a-90c6-861dcf5007c4")
+	)
+	(wire
+		(pts
+			(xy 304.8 55.88) (xy 304.8 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2aa9cda-193d-5c4f-baf0-c43d5ed0a702")
+	)
+	(wire
+		(pts
+			(xy 199.39 162.56) (xy 210.82 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "19eb7762-dbc5-559b-a531-ac0463de4dd7")
+	)
+	(wire
+		(pts
+			(xy 210.82 162.56) (xy 226.06 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e226e070-6d0e-53d0-9aed-08e49a74df11")
+	)
+	(wire
+		(pts
+			(xy 226.06 162.56) (xy 281.94 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f85b807-3146-5eaf-abdf-8b42c4ac7cc8")
+	)
+	(wire
+		(pts
+			(xy 281.94 162.56) (xy 304.8 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af6bdba7-56ea-5580-84a9-63d6335ed86d")
+	)
+	(wire
+		(pts
+			(xy 304.8 162.56) (xy 304.8 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e9c498b-0c82-5539-ab72-e089e02d9d3c")
+	)
+	(wire
+		(pts
+			(xy 304.8 66.04) (xy 304.8 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7d48623-fa41-5eb7-acb0-6a135449acc1")
+	)
+	(wire
+		(pts
+			(xy 304.8 172.72) (xy 304.8 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6613983-49f7-5cc6-9035-1219a7893610")
+	)
+	(label "+HV_CH"
+		(at 203.2 55.88 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "762478f0-e110-5722-8881-540ae592817d")
+	)
+	(label "-HV_CH"
+		(at 203.2 162.56 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6a23cb95-e9b8-51f9-877b-9021069b088a")
+	)
+	(rectangle
+		(start 177.8 45.72)
+		(end 330.2 182.88)
+		(stroke
+			(width 1)
+			(type solid)
+			(color 72 72 72 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "13faed17-5b0d-5255-9773-07a269a3bbed")
+	)
+	(text "B  Bootstrap supply and bench bias"
+		(exclude_from_sim no)
+		(at 179.07 44.45 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 2.5 2.5)
+				(thickness 0.375)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "7a15a475-63ca-5f25-ae06-e7d21aded884")
+	)
+	(wire
+		(pts
+			(xy 345.44 106.68) (xy 353.06 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5d0822b-21ab-5df8-87fa-698c689eeb53")
+	)
+	(label "PUMP_OUT"
+		(at 345.44 106.68 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "7bf3cd79-e72a-52df-a43e-5480a7dc4011")
+	)
+	(wire
+		(pts
+			(xy 353.06 106.68) (xy 361.95 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57feb8ad-3c22-5c12-a265-caab2ae2aba5")
+	)
+	(wire
+		(pts
+			(xy 369.57 106.68) (xy 378.46 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "022a33de-e36d-5ff1-b3be-00749aee440e")
+	)
+	(wire
+		(pts
+			(xy 378.46 106.68) (xy 388.62 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "789818a5-186e-528f-9aec-215bebe4887a")
+	)
+	(hierarchical_label "I_SENSE"
+		(shape output)
+		(at 388.62 106.68 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a2a7c0e9-38ef-57cf-a2e4-bd3fe5a4510c")
+	)
+	(rectangle
+		(start 335.28 45.72)
+		(end 403.86 182.88)
+		(stroke
+			(width 1)
+			(type solid)
+			(color 72 72 72 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "de2be0f6-c189-5004-8dc4-4ab03ce545a0")
+	)
+	(text "C  Current sense R24 (1 V = 1 mA)"
+		(exclude_from_sim no)
+		(at 336.55 44.45 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 2.5 2.5)
+				(thickness 0.375)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "85cf5fff-f669-5f94-b201-37540b3e1de3")
+	)
+	(no_connect
+		(at 96.52 91.44)
+		(uuid "a3eb4750-95de-5717-b878-68e33ea56374")
+	)
+	(rectangle
+		(start 30.48 190.5)
+		(end 317.5 233.68)
+		(stroke
+			(width 1)
+			(type solid)
+			(color 72 72 72 1)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "0e3948d6-adda-550a-a748-72b637f96e19")
+	)
+	(text "Notes"
+		(exclude_from_sim no)
+		(at 31.75 189.23 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 2.5 2.5)
+				(thickness 0.375)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "61e27cd1-6b84-5f22-b634-fddb65a7fedd")
+	)
+	(junction
+		(at 55.88 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "31f5275b-b929-51e6-87c9-4dc239e9d1e5")
+	)
+	(junction
+		(at 63.5 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ed0e448e-572a-5253-a787-9f48d05e53fc")
+	)
+	(junction
+		(at 78.74 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "58ce978e-3065-5cc0-9607-dd63eda6e0cd")
+	)
+	(junction
+		(at 55.88 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a43b7f6b-25f2-5ce2-a4d7-a702368990c0")
+	)
+	(junction
+		(at 63.5 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e80d3978-77e4-56eb-ad41-94a116131f62")
+	)
+	(junction
+		(at 78.74 119.38)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "86054896-9d78-5946-b8e9-b9dc0b27267b")
+	)
+	(junction
+		(at 96.52 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1554ee84-0c98-5a04-9894-986fa2fccfad")
+	)
+	(junction
+		(at 106.68 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ff945d52-431a-584a-8158-6320e923191f")
+	)
+	(junction
+		(at 114.3 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "de0426ed-9cfd-5e17-bcc2-9819e054863f")
+	)
+	(junction
+		(at 149.86 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b0e40ec0-abd0-51b8-b7ca-43db207e9f91")
+	)
+	(junction
+		(at 149.86 137.16)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f4dc5127-bc93-50b6-a4f2-ffefb2da437d")
+	)
+	(junction
+		(at 226.06 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c09c93c4-df95-552e-8afc-a59aa215cf05")
+	)
+	(junction
+		(at 226.06 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "70928bd0-5808-58be-885f-0492dd4d8258")
+	)
+	(junction
+		(at 226.06 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2cdfa534-a87e-5229-bacd-b43f0c13f568")
+	)
+	(junction
+		(at 226.06 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "288c4f5b-da8b-5f6d-9213-fc380bd4c42e")
+	)
+	(junction
+		(at 226.06 162.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e950393e-e89c-5670-9d87-f4377374e01d")
+	)
+	(junction
+		(at 210.82 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8319b6fc-9ff2-5edf-9175-0e6be409f9aa")
+	)
+	(junction
+		(at 210.82 162.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0ebebe5b-f93f-5d00-bab0-2b6f932b9fd6")
+	)
+	(junction
+		(at 226.06 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a0a53890-fe2c-5609-b787-4b735bbd1e15")
+	)
+	(junction
+		(at 256.54 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "17f5cb56-9b9d-5ec7-9440-34ce4e3fe8b6")
+	)
+	(junction
+		(at 269.24 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6cd23c4f-6ed3-5651-a6fa-d5f8299e7437")
+	)
+	(junction
+		(at 226.06 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4bb7cddd-e314-5c22-9105-5f4f40d5fbf7")
+	)
+	(junction
+		(at 256.54 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "17ad8690-b98c-50c7-a513-be31f29eaedb")
+	)
+	(junction
+		(at 269.24 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f2da07f1-27b5-5c4a-b085-2c8446076ad2")
+	)
+	(junction
+		(at 281.94 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "701874c7-6603-5498-9245-cdbd710f14aa")
+	)
+	(junction
+		(at 281.94 162.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c1acc2d0-5ead-5c27-b8dc-d5266f7c63e2")
+	)
+	(junction
+		(at 353.06 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cb56511a-ead8-5416-8b62-a00a562b5b4a")
+	)
+	(junction
+		(at 378.46 106.68)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b8aea242-9c83-5c9d-bd9c-3b41a63d029d")
 	)
 )
