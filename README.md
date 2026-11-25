@@ -73,6 +73,8 @@ snapshot: pads, top-layer tracks and pours, silkscreen of the top side). Rev 1 i
 shared rails with one always-connected return electrode. The single-channel design is tagged `rev1-1ch-baseline`.
 Phase 1 (done): the channel pages ([7] clamp and buffer, [8] Howland pump, [9] limiter and PhotoMOS) sit under one
 hierarchical block `channel.kicad_sch` (sheet CH1); no electrical change (same parts, same pin-to-net connections).
+Phase 1 fixes (done): per channel a second floating-rail cap (C47, U11), +HV / -HV collector caps (C48 / C49) and a
+Kelvin test-loop pair across R24 (TP25 + TP26, 1 V = 1 mA, floats at the electrode voltage).
 Full specification, sheet list and design rules: [`02_rev1_channel/Kicad Projects/STIM_Rev1/README.md`](02_rev1_channel/Kicad%20Projects/STIM_Rev1/README.md).
 
 ## Repository map

@@ -2606,10 +2606,10 @@
 			(embedded_fonts no)
 		)
 	)
-	(text_box "MISC NOTE M2:\n• TP25 PUMP_OUT, TP24 PUMP_REF, TP22/TP23 floating rails (span >= 4.5 V), I_SENSE (R24 / R27 pad): all float up to +/-110 V\n• Use a differential or isolated probe"
+	(text_box "MISC NOTE M2:\n• TP25 PUMP_OUT, TP24 PUMP_REF, TP22/TP23 floating rails (span >= 4.5 V), I_SENSE (R24 / R27 pad): all float up to +/-110 V\n• Use a differential or isolated probe\n• TP25 + TP26 straddle R24: 1 V = 1 mA (Kelvin); both float with the electrode (HV)"
 		(exclude_from_sim no)
 		(at 161.52 152.43 0)
-		(size 62 13.335)
+		(size 62 15.875)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -2654,10 +2654,10 @@
 		)
 		(uuid "a0e53f33-fca0-4180-8f6d-919bee708372")
 	)
-	(text_box "LAYOUT NOTE L2:\n• C28 across PUMP_V+ / PUMP_V- right at U10 pins 7 and 4: the floating rails decouple to each other, not to ISO_GND"
+	(text_box "LAYOUT NOTE L2:\n• C28 across PUMP_V+ / PUMP_V- right at U10 pins 7 and 4: the floating rails decouple to each other, not to ISO_GND\n• C47 the same across U11 pins 5 / 2"
 		(exclude_from_sim no)
 		(at 87.86 102.25 0)
-		(size 62 10.795)
+		(size 62 13.335)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)
@@ -2678,10 +2678,10 @@
 		)
 		(uuid "a0e54379-480e-4e7d-8b6d-93aea0e6d0f1")
 	)
-	(text_box "LAYOUT NOTE L1:\n• Q1/Q2 DPAK: >= 300 mm^2 L1 pour on each collector tab (D6; up to 1.1 W in a 10 mA fault), 1.5 mm to everything\n• No thermal vias into L2"
+	(text_box "LAYOUT NOTE L1:\n• Q1/Q2 DPAK: >= 300 mm^2 L1 pour on each collector tab (D6; up to 1.1 W in a 10 mA fault), 1.5 mm to everything\n• No thermal vias into L2\n• C48 / C49 (100 n 250 V): +HV / -HV to ISO_GND at the Q1 / Q2 collector tabs, per channel"
 		(exclude_from_sim no)
 		(at 301.22 173.355 0)
-		(size 62 13.335)
+		(size 62 15.875)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)
@@ -3403,7 +3403,7 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 147.32) (xy 302.26 147.32)
+			(xy 267.97 147.32) (xy 284.48 147.32)
 		)
 		(stroke
 			(width 0)
@@ -8065,6 +8065,908 @@
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/9d0bdb08-6c29-5890-90c8-6fbe493cc345/15416e61-56a0-5b0d-b090-bfa41cf71886"
 					(reference "#PWR0106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "STIM_Rev1:C")
+		(at 127 195.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5af7704a-0a6d-55c1-8cc7-e1cae6017460")
+		(property "Reference" "C47"
+			(at 129.54 194.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n X7R 250V 1206"
+			(at 129.54 196.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "STIM_Rev1:C_1206_3216Metric"
+			(at 127 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "capacitor"
+			(at 127 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TCC1206X7R104M251FT"
+			(at 127 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "CCTC"
+			(at 127 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C282822"
+			(at 127 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLC" "Extended"
+			(at 127 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Note" "floating-supply decoupling at U11 pins 5 / 2 (C28 does U10); 4-ch revamp 2026-11-24"
+			(at 127 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "C"
+			(at 127 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Params" "c=1e-07"
+			(at 127 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ff6de58e-9de6-5978-bce5-0b77b9b2b55b")
+		)
+		(pin "2"
+			(uuid "11782043-b2c1-5e0e-b364-ff23c059086a")
+		)
+		(instances
+			(project "STIM_Rev1"
+				(path "/801725e5-e50b-4629-8dff-f10f88598334/9d0bdb08-6c29-5890-90c8-6fbe493cc345/15416e61-56a0-5b0d-b090-bfa41cf71886"
+					(reference "C47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 100.33 187.96) (xy 127 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d964a42-331c-5002-84b0-1ef77116c1a1")
+	)
+	(wire
+		(pts
+			(xy 127 187.96) (xy 127 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90f7c3db-5d95-5172-8c80-1a0f84f9d3e8")
+	)
+	(wire
+		(pts
+			(xy 127 199.39) (xy 127 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5de58e1e-d774-51b3-b23a-c6b29e546cd2")
+	)
+	(wire
+		(pts
+			(xy 100.33 203.2) (xy 127 203.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba43e59f-22a3-5656-89f8-749ef56e8a9f")
+	)
+	(junction
+		(at 100.33 187.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0fc35993-cad7-578b-83b6-e6f36dc5d77d")
+	)
+	(junction
+		(at 100.33 203.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "af028c70-08ce-556d-8d09-fe2cef6d164f")
+	)
+	(symbol
+		(lib_id "STIM_Rev1:C")
+		(at 302.26 96.52 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "be7e3a88-edd3-59a1-9697-ff59282a31bc")
+		(property "Reference" "C48"
+			(at 304.8 95.25 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n X7R 250V 1206"
+			(at 304.8 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "STIM_Rev1:C_1206_3216Metric"
+			(at 302.26 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 302.26 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "capacitor"
+			(at 302.26 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TCC1206X7R104M251FT"
+			(at 302.26 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "CCTC"
+			(at 302.26 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C282822"
+			(at 302.26 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLC" "Extended"
+			(at 302.26 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Note" "+HV local decoupling at the Q1 collector tab, one per channel on shared rails; 4-ch revamp 2026-11-24"
+			(at 302.26 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "C"
+			(at 302.26 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Params" "c=1e-07"
+			(at 302.26 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b109d090-0fca-58a9-bb77-a936e7970ac1")
+		)
+		(pin "2"
+			(uuid "8bee24c8-c05d-5809-921e-205939a0b88b")
+		)
+		(instances
+			(project "STIM_Rev1"
+				(path "/801725e5-e50b-4629-8dff-f10f88598334/9d0bdb08-6c29-5890-90c8-6fbe493cc345/15416e61-56a0-5b0d-b090-bfa41cf71886"
+					(reference "C48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 285.75 87.63) (xy 302.26 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec6c804c-958f-548a-88be-26013e5acf0a")
+	)
+	(wire
+		(pts
+			(xy 302.26 87.63) (xy 302.26 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4637f6d8-b50e-5c36-bea2-7df149f5fdcd")
+	)
+	(wire
+		(pts
+			(xy 302.26 100.33) (xy 302.26 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a31c0d4-b1e4-5f88-b393-439c76613c3b")
+	)
+	(junction
+		(at 285.75 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1c59060a-950e-5823-9177-24632d5c0ff8")
+	)
+	(symbol
+		(lib_id "STIM_Rev1:ISO_GND")
+		(at 302.26 102.87 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4a3d0239-bb49-5323-aa99-74cead265b28")
+		(property "Reference" "#PWR0201"
+			(at 302.26 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ISO_GND"
+			(at 302.26 107.696 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 302.26 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 302.26 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 302.26 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dbb10742-9392-5f96-9c8f-19ed93dfc8cb")
+		)
+		(instances
+			(project "STIM_Rev1"
+				(path "/801725e5-e50b-4629-8dff-f10f88598334/9d0bdb08-6c29-5890-90c8-6fbe493cc345/15416e61-56a0-5b0d-b090-bfa41cf71886"
+					(reference "#PWR0201")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "STIM_Rev1:C")
+		(at 302.26 201.93 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3fba3bc5-6d85-5ea0-a3fa-d8fe43062bd6")
+		(property "Reference" "C49"
+			(at 304.8 200.66 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n X7R 250V 1206"
+			(at 304.8 203.2 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "STIM_Rev1:C_1206_3216Metric"
+			(at 302.26 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 302.26 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "capacitor"
+			(at 302.26 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TCC1206X7R104M251FT"
+			(at 302.26 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "CCTC"
+			(at 302.26 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C282822"
+			(at 302.26 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLC" "Extended"
+			(at 302.26 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Note" "-HV local decoupling at the Q2 collector tab, one per channel on shared rails; 4-ch revamp 2026-11-24"
+			(at 302.26 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "C"
+			(at 302.26 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Params" "c=1e-07"
+			(at 302.26 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0f5d4823-5bab-5632-b895-6d87d67f8423")
+		)
+		(pin "2"
+			(uuid "5e8426a0-1978-5242-b7a5-5514eb4d860d")
+		)
+		(instances
+			(project "STIM_Rev1"
+				(path "/801725e5-e50b-4629-8dff-f10f88598334/9d0bdb08-6c29-5890-90c8-6fbe493cc345/15416e61-56a0-5b0d-b090-bfa41cf71886"
+					(reference "C49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 285.75 207.01) (xy 302.26 207.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f85f7ad0-b0e2-5eaf-922f-26d65493326f")
+	)
+	(wire
+		(pts
+			(xy 302.26 207.01) (xy 302.26 205.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52213b8f-9cd9-5790-a34e-3cfa9af34fe0")
+	)
+	(wire
+		(pts
+			(xy 302.26 198.12) (xy 302.26 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd6e356f-01fe-5640-8f41-112fa62e43d5")
+	)
+	(junction
+		(at 285.75 207.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ae469d99-e21b-59ec-a8f9-17fc9d6b3651")
+	)
+	(symbol
+		(lib_id "STIM_Rev1:ISO_GND")
+		(at 302.26 195.58 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "20da249f-75f8-5a9a-a962-eb9c65a011c2")
+		(property "Reference" "#PWR0202"
+			(at 302.26 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ISO_GND"
+			(at 304.8 196.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 302.26 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 302.26 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 302.26 195.58 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "19c671d4-c6c1-5c9a-87a5-ec19128a3ca0")
+		)
+		(instances
+			(project "STIM_Rev1"
+				(path "/801725e5-e50b-4629-8dff-f10f88598334/9d0bdb08-6c29-5890-90c8-6fbe493cc345/15416e61-56a0-5b0d-b090-bfa41cf71886"
+					(reference "#PWR0202")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 284.48 147.32) (xy 302.26 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90c4d2c8-6ce4-53fe-9c69-d57a2d55f2c1")
+	)
+	(symbol
+		(lib_id "STIM_Rev1:TestPoint")
+		(at 284.48 147.32 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "6501c01e-ea16-51a9-8c64-1c6ce5aa9d2a")
+		(property "Reference" "TP26"
+			(at 287.02 140.716 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "I_SENSE"
+			(at 287.02 143.256 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical"
+			(at 284.48 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 284.48 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test pin 1x01 2.54 mm (HV node, never clip ground here)"
+			(at 284.48 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Note" "bench probe pin"
+			(at 284.48 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e9ab12a2-9cf1-5f4b-a11e-e0b117c5726d")
+		)
+		(instances
+			(project "STIM_Rev1"
+				(path "/801725e5-e50b-4629-8dff-f10f88598334/9d0bdb08-6c29-5890-90c8-6fbe493cc345/15416e61-56a0-5b0d-b090-bfa41cf71886"
+					(reference "TP26")
 					(unit 1)
 				)
 			)
