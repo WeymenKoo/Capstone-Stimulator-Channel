@@ -1,0 +1,87 @@
+LTspice 26.0.2 for MacOS
+Circuit: <project>/01_client_board/tests/A2-accuracy-vs-command/A2-accuracy-vs-command.net
+Start Time: Tue Oct 27 18:39:02 2026
+
+.step vrail=30 icmd=-0.005
+solver = Normal
+Maximum thread count: 10
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step vrail=100 icmd=-0.005
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping failed to find operating point. Use".option gminsteps=0" to skip all Gmin stepping.
+Starting source stepping with srcstepmethod=0
+Source stepping succeeded in finding the operating point.
+
+
+.step vrail=30 icmd=-0.002
+Direct Newton iteration succeeded in finding operating point.
+
+.step vrail=100 icmd=-0.002
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping failed to find operating point. Use".option gminsteps=0" to skip all Gmin stepping.
+Starting source stepping with srcstepmethod=0
+Source stepping succeeded in finding the operating point.
+
+
+.step vrail=30 icmd=0.0005
+Direct Newton iteration succeeded in finding operating point.
+
+.step vrail=100 icmd=0.0005
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step vrail=30 icmd=0.001
+Direct Newton iteration succeeded in finding operating point.
+
+.step vrail=100 icmd=0.001
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step vrail=30 icmd=0.002
+Direct Newton iteration succeeded in finding operating point.
+
+.step vrail=100 icmd=0.002
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping failed to find operating point. Use".option gminsteps=0" to skip all Gmin stepping.
+Starting source stepping with srcstepmethod=0
+Source stepping succeeded in finding the operating point.
+
+
+.step vrail=30 icmd=0.005
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step vrail=100 icmd=0.005
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping failed to find operating point. Use".option gminsteps=0" to skip all Gmin stepping.
+Starting source stepping with srcstepmethod=0
+Source stepping succeeded in finding the operating point.
+
+Total elapsed time: 1.745 seconds.
+
+Files loaded:
+<project>/01_client_board/tests/A2-accuracy-vs-command/A2-accuracy-vs-command.net
+~/Library/Application Support/LTspice/Bottles/ltspice/drive_c/users/crossover/AppData/Local/LTspice/lib/cmp/standard.dio
+~/Library/Application Support/LTspice/Bottles/ltspice/drive_c/users/crossover/AppData/Local/LTspice/lib/cmp/standard.bjt
+<project>/01_client_board/model/client-board-models.lib
+
+Measurement "iload" FAIL'ed
+Measurement "err_pct" FAIL'ed
+Measurement "vload" FAIL'ed

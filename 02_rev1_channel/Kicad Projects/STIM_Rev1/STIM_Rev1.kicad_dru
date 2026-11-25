@@ -1,147 +1,70 @@
 (version 1)
-# STIM Rev 1 custom DRC rules, rewritten 2026-11-18 (hv-insulation method: TI SLUAAR5 steps on IEC 60664-1, IPC-2221B cross-check,
-# JLCPCB capabilities page read 2026-11-18). KiCad applies the LAST matching rule first: per-package exceptions are at the end.
+# STIM Rev 1 design rules. One rule per voltage band; KiCad applies the LAST matching rule, so the order below goes from
+# general to specific. Everything not named here uses the net-class clearance (0.2 mm). Fab limits are in Board Setup.
 #
-# FAB (JLCPCB 4-layer FR-4, 1 oz outer / 0.5 oz inner, 1.6 mm, HASL): the fab minimums live in Board Setup > Constraints
-# (.kicad_pro): track / space 0.127 mm (JLC 0.09), via 0.6 / 0.3 mm with 0.15 mm ring (JLC min ring 0.15, hole 0.15), hole to
-# copper 0.3 mm (JLC PTH-to-track 0.28, inner PTH hole-to-copper 0.3), hole to hole 0.5 mm (JLC 0.45), copper to edge 0.5 mm
-# (JLC 0.2 routed), silk 0.15 mm line / 1.0 mm text / 0.15 mm to pads, mask web 0.1 mm (green). NPTH slot >= 1.0 mm.
+# Basis: functional insulation, bench prototype. IPC-2221B Table 6-1 (B2 outer conductors, A6 component leads) x1.2 for
+# etch tolerance. Rails +/-110 V max to ISO_GND. Not a safety rating (a patient-connected product needs IEC 60601-1).
 #
-# HV, board as used in Rev 1: bench, dummy loads, nobody touches it powered -> FUNCTIONAL insulation only. No safety grade claimed.
-#   Inputs: +/-110 V DC rails, not mains-exposed (impulse estimate = peak + 1200 V [VERIFY, SLUP419 p. 8]); pollution degree 2;
-#   laminate CTI not confirmed by the fab -> material group IIIb (no printed-wiring column); altitude <= 2000 m.
-#   pair                      V DC   IEC CL   IEC CR (F.4, PD2 IIIb)   IPC-2221B B2   rule (x1.2 fab tolerance on the larger)
-#   +HV to -HV, rail to OUT   220    0.5      2.2                      1.25           clearance 1.5, creepage 2.7
-#   HV / OUT to ISO_GND, LV   110    0.5      1.44                     0.6            clearance 1.5 (kept), creepage 1.8
-#   same rail side, net-net   <1 (110 if a fuse or shunt opens)        0.6            clearance 0.8, creepage 1.8
-#   inner layers              220    solid insulation                  B1 0.2         0.5 (JLC inner hole-to-copper 0.3)
-#   If the fab confirms CTI >= 175 (group IIIa) the 60664-1 printed-wiring column gives 0.78 / 0.25 mm and IPC governs again
-#   (1.5 / 0.8 mm). A patient-connected version is a different architecture: IEC 60601-1 2 MOPP, 8 mm / 5 mm [VERIFY].
-# Net classes: HV_POS (+rail side), HV_NEG (-rail side), HV_OUT (floats with the output), FPGA_ISO (FPGA side of the barrier).
+# Net classes (worst case to ISO_GND): HV_POS / HV_NEG rails and their bias nodes (+/-110 V); HV_OUT pump output side
+# (+/-110 V); HV_FLT_P / HV_FLT_N pump floating rails (output +/-14 V, <= 19 V from the output); HV_ELEC electrodes;
+# everything else <= 12 V. FPGA_ISO is the FPGA side of the barrier.
 #
-# DESIGNATOR-DEPENDENT ENTRIES (re-annotated 2026-11-18; check these after every re-annotation, they fail silently):
-#   this file:   "intra-package U10", "fine-pitch LDO pads" (U2-U5), "U1 module barrier" (nets unconnected-(U1-...)),
-#                and the comments on the Q1 / Q2 / R19 / R22 / RB1 / RB2 rules (those match net names, not designators)
-#   .kicad_pro:  net-class patterns unconnected-(D6-NC-Pad2), (D7-NC-Pad2), (D8-NC-Pad2), (U10-NC-Pad8) -> HV_OUT;
-#                unconnected-(U6-EN1-Pad7), (U7-EN1-Pad7), (U1-CTRL-Pad3) -> FPGA_ISO
-# Net names on [8] keep the LTspice S01 names: Q2_BASE is the base of Q1 (MJD340, top), Q1_BASE the base of Q2 (MJD350).
+#   band                                         worst V    rule
+#   any HV net to any LV net                     122        1.0 mm   (A6 0.8 x1.2)
+#   HV to HV, up to 150 V                        <=150      0.75 mm  (B2 0.6 x1.2): same rail side, + floating rail to -,
+#                                                                    electrodes to the pump nets
+#   HV to HV, 150-250 V                          220        1.5 mm   (B2 1.25 x1.2): +HV side to -HV side, a rail to the
+#                                                                    floating / electrode nets, an open JP2 / JP3 link
+#   floating rail to output side, LV to LV       <=24       0.2 mm   net class
+#   inner layers, any HV pair                    220        0.3 mm   (B1 0.2 x1.2)
+#   FPGA barrier                                             7.0 mm
+#   inside the INA149 (U10) and D8 courtyards                0.6 mm   their own pin pitch; TI rates U10 for +/-275 V
+#   inside the VSSOP-8 LDO (U2-U5) courtyards                0.15 mm  package pitch (pads, teardrops, escapes)
+# Designator-dependent: the U10 / D8 / U2-U5 / U1 entries. Check them after any re-annotation.
 
-(rule "HV to LV clearance"
-    (constraint clearance (min 1.5mm))
-    (condition "(A.hasNetclass('HV_POS') || A.hasNetclass('HV_NEG') || A.hasNetclass('HV_OUT')) && !(B.hasNetclass('HV_POS') || B.hasNetclass('HV_NEG') || B.hasNetclass('HV_OUT'))"))
+(rule "track width"
+    (constraint track_width (min 0.2mm) (opt 0.3mm) (max 1.0mm))
+    (condition "A.Type == 'Track'"))
 
-# creepage is a surface path: outer layers only (the inner-layer rule below covers plane antipads)
-(rule "HV to LV creepage"
+(rule "HV to LV"
     (layer outer)
-    (constraint creepage (min 1.8mm))
-    (condition "(A.hasNetclass('HV_POS') || A.hasNetclass('HV_NEG') || A.hasNetclass('HV_OUT')) && !(B.hasNetclass('HV_POS') || B.hasNetclass('HV_NEG') || B.hasNetclass('HV_OUT'))"))
+    (constraint clearance (min 1.0mm))
+    (condition "(A.hasNetclass('HV_POS') || A.hasNetclass('HV_NEG') || A.hasNetclass('HV_OUT') || A.hasNetclass('HV_FLT_P') || A.hasNetclass('HV_FLT_N') || A.hasNetclass('HV_ELEC')) && !(B.hasNetclass('HV_POS') || B.hasNetclass('HV_NEG') || B.hasNetclass('HV_OUT') || B.hasNetclass('HV_FLT_P') || B.hasNetclass('HV_FLT_N') || B.hasNetclass('HV_ELEC')) && !B.hasNetclass('FPGA_ISO')"))
 
-(rule "HV_POS to HV_NEG (220 V)"
+(rule "HV to HV up to 150 V"
+    (layer outer)
+    (constraint clearance (min 0.75mm))
+    (condition "A.Net != B.Net && ((((A.hasNetclass('HV_POS')) && (B.hasNetclass('HV_POS'))) || ((A.hasNetclass('HV_POS')) && (B.hasNetclass('HV_POS')))) || (((A.hasNetclass('HV_NEG')) && (B.hasNetclass('HV_NEG'))) || ((A.hasNetclass('HV_NEG')) && (B.hasNetclass('HV_NEG')))) || (((A.hasNetclass('HV_FLT_P')) && (B.hasNetclass('HV_FLT_N'))) || ((A.hasNetclass('HV_FLT_N')) && (B.hasNetclass('HV_FLT_P')))) || (((A.hasNetclass('HV_ELEC')) && (B.hasNetclass('HV_OUT') || B.hasNetclass('HV_FLT_P') || B.hasNetclass('HV_FLT_N') || B.hasNetclass('HV_ELEC'))) || ((A.hasNetclass('HV_OUT') || A.hasNetclass('HV_FLT_P') || A.hasNetclass('HV_FLT_N') || A.hasNetclass('HV_ELEC')) && (B.hasNetclass('HV_ELEC')))))"))
+
+(rule "HV to HV 150-250 V"
+    (layer outer)
     (constraint clearance (min 1.5mm))
-    (constraint creepage (min 2.7mm))
-    (condition "A.hasNetclass('HV_POS') && B.hasNetclass('HV_NEG')"))
+    (condition "(((A.hasNetclass('HV_POS')) && (B.hasNetclass('HV_NEG'))) || ((A.hasNetclass('HV_NEG')) && (B.hasNetclass('HV_POS')))) || (((A.hasNetclass('HV_POS') || A.hasNetclass('HV_NEG')) && (B.hasNetclass('HV_OUT') || B.hasNetclass('HV_FLT_P') || B.hasNetclass('HV_FLT_N') || B.hasNetclass('HV_ELEC'))) || ((A.hasNetclass('HV_OUT') || A.hasNetclass('HV_FLT_P') || A.hasNetclass('HV_FLT_N') || A.hasNetclass('HV_ELEC')) && (B.hasNetclass('HV_POS') || B.hasNetclass('HV_NEG')))) || (A.NetName == '+HV' && B.NetName == '/[8] Analog - Howland Current Pump/BENCH_BIAS_P') || (A.NetName == '-HV' && B.NetName == '/[8] Analog - Howland Current Pump/BENCH_BIAS_N')"))
 
-(rule "HV rails to HV_OUT (up to 220 V)"
-    (constraint clearance (min 1.5mm))
-    (constraint creepage (min 2.7mm))
-    (condition "(A.hasNetclass('HV_POS') || A.hasNetclass('HV_NEG')) && B.hasNetclass('HV_OUT')"))
-
-(rule "HV_POS net to net"
-    (constraint clearance (min 0.8mm))
-    (condition "A.hasNetclass('HV_POS') && B.hasNetclass('HV_POS') && A.Net != B.Net"))
-
-(rule "HV_NEG net to net"
-    (constraint clearance (min 0.8mm))
-    (condition "A.hasNetclass('HV_NEG') && B.hasNetclass('HV_NEG') && A.Net != B.Net"))
-
-(rule "HV inner-layer clearance"
+(rule "HV inner layers"
     (layer inner)
-    (constraint clearance (min 0.5mm))
-    (condition "(A.hasNetclass('HV_POS') || A.hasNetclass('HV_NEG') || A.hasNetclass('HV_OUT')) && A.Net != B.Net"))
+    (constraint clearance (min 0.3mm))
+    (condition "(A.hasNetclass('HV_POS') || A.hasNetclass('HV_NEG') || A.hasNetclass('HV_OUT') || A.hasNetclass('HV_FLT_P') || A.hasNetclass('HV_FLT_N') || A.hasNetclass('HV_ELEC')) && A.Net != B.Net"))
 
-(rule "HV tracks width"
-    (constraint track_width (min 0.3mm))
-    (condition "A.hasNetclass('HV_POS') || A.hasNetclass('HV_NEG') || A.hasNetclass('HV_OUT')"))
-
-# Isolation slots: draw a rule area named ISOLATION_SLOT where a routed slot adds creepage. A slot counts at PD2 only if it is
-# >= 1.0 mm wide (60664-1 6.2), which is also the JLCPCB minimum NPTH slot.
-(rule "isolation slot width"
-    (constraint edge_clearance (min 0.3mm))
-    (condition "A.intersectsArea('ISOLATION_SLOT')"))
-
-# Isolation barrier, FPGA side (net class FPGA_ISO) to everything else. 60664-1 for 220 V working, PD2, IIIb: basic 2.2 mm,
-# reinforced 4.4 mm creepage; 60601-1 2 MOPP would be 8 mm [VERIFY]. 7.0 mm is what the SOIC-16W land pattern of the two
-# isolators leaves between its pad rows (7.25 mm); the ISO774x DW body is 8 mm [DS]. A layout number, not a safety rating.
-# The rule area ISOLATION_BARRIER (the FPGA island grown by 7.0 mm, all copper layers, drawn 2026-11-18) keeps tracks, vias and
-# fills out of the gap; pads are allowed in it (U1 pins 3 / 5, isolator bodies). Inner-layer zones: GND_FPGA_L2_L3, ISO_GND_L2_L3.
-(rule "Isolation barrier FPGA to board"
+# FPGA side to everything else. The rule area ISOLATION_BARRIER keeps tracks, vias and fills out of the gap.
+(rule "FPGA barrier"
     (constraint clearance (min 7.0mm))
     (constraint creepage (min 7.0mm))
     (condition "A.hasNetclass('FPGA_ISO') && !B.hasNetclass('FPGA_ISO')"))
 
-# ---------------------------------------------------------------- net-pair creepage set by one part
-# KiCad tests creepage per net pair, so a footprint test cannot be used for it. Each pair below is held apart by one part
-# only; the value is what that part's land pattern gives and what the pair needs.
-# Q1 MJD340: collector tab to base / emitter leads is 2.0 mm on the DPAK land pattern; up to 220 V, part rated 300 V [DS]
-(rule "Q1 DPAK lead spacing"
-    (layer outer)
-    (constraint creepage (min 2.0mm))
-    (condition "(A.NetName == '+HV' && B.NetName == '/[8] Analog - Howland Current Pump/PUMP_V+') || (B.NetName == '+HV' && A.NetName == '/[8] Analog - Howland Current Pump/PUMP_V+') || (A.NetName == '+HV' && B.NetName == '/[8] Analog - Howland Current Pump/Q2_BASE') || (B.NetName == '+HV' && A.NetName == '/[8] Analog - Howland Current Pump/Q2_BASE')"))
-
-# Q2 MJD350: as Q1
-(rule "Q2 DPAK lead spacing"
-    (layer outer)
-    (constraint creepage (min 2.0mm))
-    (condition "(A.NetName == '-HV' && B.NetName == '/[8] Analog - Howland Current Pump/PUMP_V-') || (B.NetName == '-HV' && A.NetName == '/[8] Analog - Howland Current Pump/PUMP_V-') || (A.NetName == '-HV' && B.NetName == '/[8] Analog - Howland Current Pump/Q1_BASE') || (B.NetName == '-HV' && A.NetName == '/[8] Analog - Howland Current Pump/Q1_BASE')"))
-
-# R19 44.2k 1206 carries half of +HV to Q2_BASE (the base of Q1): <= 105 V [H], the 110 V row
-(rule "R19 bias string"
-    (layer outer)
-    (constraint creepage (min 1.8mm))
-    (condition "(A.NetName == '/[8] Analog - Howland Current Pump/BIAS_R1_R2' && B.NetName == '/[8] Analog - Howland Current Pump/Q2_BASE') || (B.NetName == '/[8] Analog - Howland Current Pump/BIAS_R1_R2' && A.NetName == '/[8] Analog - Howland Current Pump/Q2_BASE')"))
-
-# R22: as R19 on the negative side
-(rule "R22 bias string"
-    (layer outer)
-    (constraint creepage (min 1.8mm))
-    (condition "(A.NetName == '/[8] Analog - Howland Current Pump/BIAS_R5_R6' && B.NetName == '/[8] Analog - Howland Current Pump/Q1_BASE') || (B.NetName == '/[8] Analog - Howland Current Pump/BIAS_R5_R6' && A.NetName == '/[8] Analog - Howland Current Pump/Q1_BASE')"))
-
-# RB1 41.2k 1206: 0 V with JP2 open; JP2 is closed only at <= +/-50 V rails ([8] note M1)
-(rule "RB1 bench bias"
-    (layer outer)
-    (constraint creepage (min 1.8mm))
-    (condition "(A.NetName == '/[8] Analog - Howland Current Pump/BENCH_BIAS_P' && B.NetName == '/[8] Analog - Howland Current Pump/Q2_BASE') || (B.NetName == '/[8] Analog - Howland Current Pump/BENCH_BIAS_P' && A.NetName == '/[8] Analog - Howland Current Pump/Q2_BASE')"))
-
-# RB2: as RB1 with JP3
-(rule "RB2 bench bias"
-    (layer outer)
-    (constraint creepage (min 1.8mm))
-    (condition "(A.NetName == '/[8] Analog - Howland Current Pump/BENCH_BIAS_N' && B.NetName == '/[8] Analog - Howland Current Pump/Q1_BASE') || (B.NetName == '/[8] Analog - Howland Current Pump/BENCH_BIAS_N' && A.NetName == '/[8] Analog - Howland Current Pump/Q1_BASE')"))
-
-# Known and accepted: mark as exclusions in the DRC dialog once U10 is placed. INA149 pins 1-2 (PUMP_REF / ISO_GND) and
-# 3-4 (DAC_BUF / PUMP_V-) are 0.67 mm apart at up to 110 V: that is the SOIC-8 package (IPC-2221B B2 101-150 V = 0.6 mm;
-# part rated +/-275 V common mode [DS]). Tracks and pads away from the package still get 1.8 mm.
-
-# ---------------------------------------------------------------- pad-to-pad CLEARANCE inside one footprint (rated packages)
-# U10: INA149 SOIC-8, pins 1-2 and 3-4: <= 110 V across 0.67 mm
-(rule "intra-package U10"
-    (severity ignore)
-    (constraint clearance (min 0.15mm))
-    (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U10') && B.memberOfFootprint('U10')"))
-
-# 0.65 mm pitch VSSOP-8 LDOs U2-U5: 0.15 mm between pads is the package (JLCPCB minimum 0.09 mm)
-(rule "fine-pitch LDO pads"
-    (constraint clearance (min 0.15mm))
-    (condition "A.Type == 'Pad' && B.Type == 'Pad' && ((A.memberOfFootprint('U2') && B.memberOfFootprint('U2')) || (A.memberOfFootprint('U3') && B.memberOfFootprint('U3')) || (A.memberOfFootprint('U4') && B.memberOfFootprint('U4')) || (A.memberOfFootprint('U5') && B.memberOfFootprint('U5')))"))
-
-# ---------------------------------------------------------------- barrier exception at the LV module (2026-11-18 d)
-# U1 RECOM RS3-1212D straddles the FPGA barrier: VBAT / GND on pins 1-3, ISO_GND / +/-12 V on pins 5-8 (no pin 4).
-# Pad 2 (VBAT) to pad 6 (+12V) and pad 1 (GND) to pad 5 are 8.36 mm and pass the 7.0 mm rule. The two unconnected pads
-# in the strip set the gap: pad 3 (CTRL, input side) to pad 5 (NC, output side) 3.28 mm, pad 3 to pad 6 and pad 2 to
-# pad 5 5.82 mm. Their nets exist only on those pads, so a rule on the two net names relaxes nothing else on the board.
-# The module itself is rated 1 kVDC / 500 VAC 1 min, basic per 60950-1 [DS]. A layout number, not a safety rating.
-# A 1 mm routed slot between pads 3 and 5 under the body would add creepage (not drawn).
-(rule "U1 module barrier, unconnected pads 3 and 5"
+# U1 RECOM module straddles the barrier; its two unconnected pads 3 / 5 sit 3.28 mm apart (module rated 1 kVDC).
+(rule "U1 module pads"
     (constraint clearance (min 3.2mm))
     (constraint creepage (min 3.2mm))
     (condition "(A.NetName == 'unconnected-(U1-CTRL-Pad3)' && B.NetName == 'unconnected-(U1-NC-Pad5)') || (A.NetName == 'unconnected-(U1-NC-Pad5)' && B.NetName == 'unconnected-(U1-CTRL-Pad3)') || (A.NetName == 'unconnected-(U1-CTRL-Pad3)' && B.NetName == '+12V') || (A.NetName == '+12V' && B.NetName == 'unconnected-(U1-CTRL-Pad3)') || (A.NetName == 'unconnected-(U1-NC-Pad5)' && B.NetName == 'VBAT') || (A.NetName == 'VBAT' && B.NetName == 'unconnected-(U1-NC-Pad5)')"))
+
+# Fine-pitch parts whose own pins sit closer than the band rules. Inside U10 (INA149) and D8 (BZX84C36) courtyards
+# everything, pads and the tracks leaving them, may be 0.6 mm apart (outer layers): that is their pin spacing.
+(rule "HV package pin spacing"
+    (layer outer)
+    (constraint clearance (min 0.6mm))
+    (condition "A.Net != B.Net && ((A.intersectsCourtyard('U10') && B.intersectsCourtyard('U10')) || (A.intersectsCourtyard('D8') && B.intersectsCourtyard('D8')))"))
+
+(rule "VSSOP LDO pin spacing"
+    (constraint clearance (min 0.15mm))
+    (condition "A.Net != B.Net && ((A.intersectsCourtyard('U2') && B.intersectsCourtyard('U2')) || (A.intersectsCourtyard('U3') && B.intersectsCourtyard('U3')) || (A.intersectsCourtyard('U4') && B.intersectsCourtyard('U4')) || (A.intersectsCourtyard('U5') && B.intersectsCourtyard('U5')))"))

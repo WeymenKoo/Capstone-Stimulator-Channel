@@ -1,0 +1,113 @@
+(footprint "TestPoint_PinHeader_1x01_P2.54mm_Vertical"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Test point: single 2.54 mm header pin (hook a scope probe or clip a ground lead on it). 3D: Amphenol 77311-802-02LF cut to one pin")
+	(tags "test point pin header single")
+	(property "Reference" "REF**"
+		(at 0 -2.3 0)
+		(layer "F.SilkS")
+		(uuid "ac157a4f-72ea-44cf-a441-e9088b616b20")
+		(effects
+			(font
+				(face "JetBrains Mono ExtraBold")
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TestPoint_PinHeader_1x01"
+		(at 0 2.4 0)
+		(layer "F.Fab")
+		(uuid "ae9a564e-88a3-4c40-a9db-577ec4c221af")
+		(effects
+			(font
+				(face "JetBrains Mono ExtraBold")
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "256c1ae9-ed1b-46fa-9dad-083b54c611df")
+		(effects
+			(font
+				(face "JetBrains Mono ExtraBold")
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0b6d5293-9e9c-4fb1-a0c8-895bbb36791e")
+		(effects
+			(font
+				(face "JetBrains Mono ExtraBold")
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.38 -1.38)
+		(end 1.38 1.38)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "5d649285-f579-4b04-9c39-ddc76d9098e2")
+	)
+	(fp_rect
+		(start -1.27 -1.27)
+		(end 1.27 1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "6aba15ac-3c0e-425d-992b-58f7420d0176")
+	)
+	(fp_rect
+		(start -1.77 -1.77)
+		(end 1.77 1.77)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "e9b97b8c-91aa-4100-91f9-1fabc88d8699")
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f7825423-82b0-4402-a09b-cc7799572cd8")
+	)
+	(model "${KIPRJMOD}/lib/3d_models/PinHeader_1x01_P2.54mm_77311-802-02LF_half.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(embedded_fonts no)
+)

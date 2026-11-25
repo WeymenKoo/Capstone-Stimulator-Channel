@@ -1318,7 +1318,7 @@
 					)
 				)
 			)
-			(property "Footprint" "STIM_Rev1:TestPoint_Keystone_5000-5004_Miniature"
+			(property "Footprint" "STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical"
 				(at 5.08 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1826,6 +1826,16 @@
 	)
 	(wire
 		(pts
+			(xy 229.87 67.31) (xy 229.87 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "07bd398c-6e48-475a-ac8f-f1f23baca22e")
+	)
+	(wire
+		(pts
 			(xy 128.27 80.01) (xy 128.27 77.47)
 		)
 		(stroke
@@ -1843,6 +1853,16 @@
 			(type default)
 		)
 		(uuid "0c95be23-e12f-4368-98b0-f6768d00cb40")
+	)
+	(wire
+		(pts
+			(xy 246.38 67.31) (xy 246.38 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1043dea1-3dbd-42c6-be5d-04890b218286")
 	)
 	(wire
 		(pts
@@ -1896,7 +1916,7 @@
 	)
 	(wire
 		(pts
-			(xy 236.22 85.09) (xy 236.22 90.17)
+			(xy 236.22 87.63) (xy 236.22 92.71)
 		)
 		(stroke
 			(width 0)
@@ -1906,7 +1926,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 85.09) (xy 223.52 90.17)
+			(xy 223.52 87.63) (xy 223.52 92.71)
 		)
 		(stroke
 			(width 0)
@@ -1916,7 +1936,7 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 85.09) (xy 248.92 90.17)
+			(xy 248.92 87.63) (xy 248.92 92.71)
 		)
 		(stroke
 			(width 0)
@@ -2168,7 +2188,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:ISO_GND")
-		(at 248.92 90.17 0)
+		(at 248.92 92.71 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2178,7 +2198,7 @@
 		(dnp no)
 		(uuid "290d9b0f-84af-5714-9453-8cca0747c2ef")
 		(property "Reference" "#PWR024"
-			(at 248.92 90.17 0)
+			(at 248.92 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2190,7 +2210,7 @@
 			)
 		)
 		(property "Value" "ISO_GND"
-			(at 248.92 94.996 0)
+			(at 248.92 97.536 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2201,7 +2221,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 248.92 90.17 0)
+			(at 248.92 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2213,7 +2233,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 248.92 90.17 0)
+			(at 248.92 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2225,7 +2245,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 248.92 90.17 0)
+			(at 248.92 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2329,6 +2349,87 @@
 		)
 	)
 	(symbol
+		(lib_id "STIM_Rev1:ISO_GND")
+		(at 246.38 72.39 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "528671f5-2ca8-4bbe-aae5-5b01860eca75")
+		(property "Reference" "#PWR0152"
+			(at 246.38 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ISO_GND"
+			(at 246.38 77.216 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 246.38 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 246.38 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 246.38 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "02410c3b-d436-4f23-9e82-6522b26ddc52")
+		)
+		(instances
+			(project "STIM_Rev1"
+				(path "/801725e5-e50b-4629-8dff-f10f88598334/72ffb2f1-ae13-5145-9887-f498a8b07bfc"
+					(reference "#PWR0152")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "STIM_Rev1:GND")
 		(at 128.27 90.17 0)
 		(unit 1)
@@ -2409,7 +2510,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:ISO_GND")
-		(at 223.52 90.17 0)
+		(at 223.52 92.71 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2419,7 +2520,7 @@
 		(dnp no)
 		(uuid "6cfbd440-2052-5d20-aabf-e2eb2aee7088")
 		(property "Reference" "#PWR022"
-			(at 223.52 90.17 0)
+			(at 223.52 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2431,7 +2532,7 @@
 			)
 		)
 		(property "Value" "ISO_GND"
-			(at 223.52 94.996 0)
+			(at 223.52 97.536 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2442,7 +2543,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 223.52 90.17 0)
+			(at 223.52 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2454,7 +2555,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 223.52 90.17 0)
+			(at 223.52 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2466,7 +2567,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 223.52 90.17 0)
+			(at 223.52 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2490,7 +2591,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:ISO_GND")
-		(at 236.22 90.17 0)
+		(at 229.87 72.39 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2498,9 +2599,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "81b188de-ecb7-53fb-af5e-a7ecaa0e6c47")
-		(property "Reference" "#PWR023"
-			(at 236.22 90.17 0)
+		(uuid "7b536458-7e39-4c97-9e24-7b5f21e78d79")
+		(property "Reference" "#PWR0151"
+			(at 229.87 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2512,7 +2613,7 @@
 			)
 		)
 		(property "Value" "ISO_GND"
-			(at 236.22 94.996 0)
+			(at 229.87 77.216 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2523,7 +2624,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 236.22 90.17 0)
+			(at 229.87 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2535,7 +2636,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 236.22 90.17 0)
+			(at 229.87 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2547,7 +2648,183 @@
 			)
 		)
 		(property "Description" ""
-			(at 236.22 90.17 0)
+			(at 229.87 72.39 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a75bcddd-493b-45bc-938d-c990a12f2392")
+		)
+		(instances
+			(project "STIM_Rev1"
+				(path "/801725e5-e50b-4629-8dff-f10f88598334/72ffb2f1-ae13-5145-9887-f498a8b07bfc"
+					(reference "#PWR0151")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "STIM_Rev1:TestPoint")
+		(at 229.87 67.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8038b5f1-8f19-4b29-8c09-0c48c31f6205")
+		(property "Reference" "TP3"
+			(at 232.41 60.706 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ISO_GND"
+			(at 232.41 63.246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "STIM_Rev1:GND_ClipSlot_2x8mm_Plated"
+			(at 229.87 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ground clip slot: plated 2 x 8 mm slot, 1.5 mm ring, via stitched (PCB feature, no part)"
+			(at 229.87 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Note" "scope / DMM ground clip point, takes two alligator clips"
+			(at 229.87 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "cdf8058d-fa4d-421e-9999-46d91937d372")
+		)
+		(instances
+			(project "STIM_Rev1"
+				(path "/801725e5-e50b-4629-8dff-f10f88598334/72ffb2f1-ae13-5145-9887-f498a8b07bfc"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "STIM_Rev1:ISO_GND")
+		(at 236.22 92.71 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "81b188de-ecb7-53fb-af5e-a7ecaa0e6c47")
+		(property "Reference" "#PWR023"
+			(at 236.22 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ISO_GND"
+			(at 236.22 97.536 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 236.22 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 236.22 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 236.22 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2806,7 +3083,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:TestPoint")
-		(at 223.52 85.09 0)
+		(at 223.52 87.63 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2816,18 +3093,6 @@
 		(dnp no)
 		(uuid "b9bb245c-b966-5ba6-a023-14737cb9fb55")
 		(property "Reference" "TP6"
-			(at 226.06 78.486 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ISO_GND"
 			(at 226.06 81.026 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2839,8 +3104,20 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "STIM_Rev1:TestPoint_Keystone_5000-5004_Miniature"
-			(at 223.52 85.09 0)
+		(property "Value" "ISO_GND"
+			(at 226.06 83.566 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical"
+			(at 223.52 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2852,7 +3129,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 223.52 85.09 0)
+			(at 223.52 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2863,8 +3140,8 @@
 				)
 			)
 		)
-		(property "Description" "test loop Keystone 5001"
-			(at 223.52 85.09 0)
+		(property "Description" "test pin 1x01 2.54 mm (ISO_GND, scope / DMM ground clip)"
+			(at 223.52 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2875,8 +3152,8 @@
 				)
 			)
 		)
-		(property "Note" "bench probe loop"
-			(at 223.52 85.09 0)
+		(property "Note" "bench probe pin"
+			(at 223.52 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2980,7 +3257,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:TestPoint")
-		(at 236.22 85.09 0)
+		(at 236.22 87.63 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2990,18 +3267,6 @@
 		(dnp no)
 		(uuid "d652204c-378a-5ee0-a98b-a2f2fac98e18")
 		(property "Reference" "TP7"
-			(at 238.76 78.486 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ISO_GND"
 			(at 238.76 81.026 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3013,8 +3278,20 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "STIM_Rev1:TestPoint_Keystone_5000-5004_Miniature"
-			(at 236.22 85.09 0)
+		(property "Value" "ISO_GND"
+			(at 238.76 83.566 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical"
+			(at 236.22 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3026,7 +3303,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 236.22 85.09 0)
+			(at 236.22 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3037,8 +3314,8 @@
 				)
 			)
 		)
-		(property "Description" "test loop Keystone 5001"
-			(at 236.22 85.09 0)
+		(property "Description" "test pin 1x01 2.54 mm (ISO_GND, scope / DMM ground clip)"
+			(at 236.22 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3049,8 +3326,8 @@
 				)
 			)
 		)
-		(property "Note" "bench probe loop"
-			(at 236.22 85.09 0)
+		(property "Note" "bench probe pin"
+			(at 236.22 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3075,7 +3352,7 @@
 	)
 	(symbol
 		(lib_id "STIM_Rev1:TestPoint")
-		(at 248.92 85.09 0)
+		(at 248.92 87.63 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3085,18 +3362,6 @@
 		(dnp no)
 		(uuid "e043b512-8d39-505d-acb2-cffc6419c011")
 		(property "Reference" "TP8"
-			(at 251.46 78.486 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ISO_GND"
 			(at 251.46 81.026 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3108,8 +3373,20 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "STIM_Rev1:TestPoint_Keystone_5000-5004_Miniature"
-			(at 248.92 85.09 0)
+		(property "Value" "ISO_GND"
+			(at 251.46 83.566 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical"
+			(at 248.92 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3121,7 +3398,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 248.92 85.09 0)
+			(at 248.92 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3132,8 +3409,8 @@
 				)
 			)
 		)
-		(property "Description" "test loop Keystone 5001"
-			(at 248.92 85.09 0)
+		(property "Description" "test pin 1x01 2.54 mm (ISO_GND, scope / DMM ground clip)"
+			(at 248.92 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3144,8 +3421,8 @@
 				)
 			)
 		)
-		(property "Note" "bench probe loop"
-			(at 248.92 85.09 0)
+		(property "Note" "bench probe pin"
+			(at 248.92 87.63 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3505,6 +3782,101 @@
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/72ffb2f1-ae13-5145-9887-f498a8b07bfc"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "STIM_Rev1:TestPoint")
+		(at 246.38 67.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "eb898710-bc9c-46b8-b99e-7731f1e5cbbc")
+		(property "Reference" "TP4"
+			(at 248.92 60.706 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ISO_GND"
+			(at 248.92 63.246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "STIM_Rev1:GND_ClipSlot_2x8mm_Plated"
+			(at 246.38 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 246.38 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "ground clip slot: plated 2 x 8 mm slot, 1.5 mm ring, via stitched (PCB feature, no part)"
+			(at 246.38 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Note" "scope / DMM ground clip point, takes two alligator clips"
+			(at 246.38 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "690dfe61-a2fc-4d3f-8ba3-e648722cf324")
+		)
+		(instances
+			(project "STIM_Rev1"
+				(path "/801725e5-e50b-4629-8dff-f10f88598334/72ffb2f1-ae13-5145-9887-f498a8b07bfc"
+					(reference "TP4")
 					(unit 1)
 				)
 			)

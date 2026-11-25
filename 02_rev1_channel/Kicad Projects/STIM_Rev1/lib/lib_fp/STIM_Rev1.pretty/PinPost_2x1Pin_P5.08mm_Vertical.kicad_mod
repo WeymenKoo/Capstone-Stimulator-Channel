@@ -1,0 +1,174 @@
+(footprint "PinPost_2x1Pin_P5.08mm_Vertical"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "Two single-pin 2.54 mm header posts 5.08 mm apart (link wire or clip between them). 3D: Amphenol 77311-802-02LF cut to one pin. Pad gap 3.38 mm for up to 220 V across an open link")
+	(tags "pin post jumper HV single pin header")
+	(property "Reference" "REF**"
+		(at 0 -2.4 0)
+		(layer "F.SilkS")
+		(uuid "97a9a461-e93f-4f60-890c-f087c931eaa0")
+		(effects
+			(font
+				(face "JetBrains Mono ExtraBold")
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "PinPost_2x1Pin_P5.08mm_Vertical"
+		(at 0 7.5 0)
+		(layer "F.Fab")
+		(uuid "69a6544f-720f-4459-a65e-bca720d93231")
+		(effects
+			(font
+				(face "JetBrains Mono ExtraBold")
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5b7e8549-848b-4937-aadc-df60ca0aa9b3")
+		(effects
+			(font
+				(face "JetBrains Mono ExtraBold")
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "48ac75d6-e81a-4e17-9cd6-40b218f2c371")
+		(effects
+			(font
+				(face "JetBrains Mono ExtraBold")
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_rect
+		(start -1.38 -1.38)
+		(end 1.38 1.38)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "32141cbe-c767-4b79-8504-3413ff3446cd")
+	)
+	(fp_rect
+		(start -1.38 3.7)
+		(end 1.38 6.46)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "40c46d58-7883-491e-bba9-f24820aa0f01")
+	)
+	(fp_line
+		(start -1.9 -1.38)
+		(end -1.9 0.4)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "73943b06-9fa9-4afb-b5f8-09ad1f06a78a")
+	)
+	(fp_line
+		(start 0 1.6)
+		(end 0 3.48)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ffe246fe-4909-4266-a453-ae3ea34d99de")
+	)
+	(fp_rect
+		(start -1.27 -1.27)
+		(end 1.27 1.27)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "2813a5b6-f1fb-4ef5-bced-0fd12e98df78")
+	)
+	(fp_rect
+		(start -1.27 3.81)
+		(end 1.27 6.35)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "1eebefe1-8ff9-43c4-9622-2332bc6667aa")
+	)
+	(fp_rect
+		(start -1.77 -1.77)
+		(end 1.77 6.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "f08435b4-3540-4267-b9f2-9e2ccfb8fedb")
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "4a7561b5-a687-4a98-bc6d-a10d56b785bd")
+	)
+	(pad "2" thru_hole circle
+		(at 0 5.08)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a5220ff3-fb01-4ff4-a94f-9da1ffa51fff")
+	)
+	(model "${KIPRJMOD}/lib/3d_models/PinHeader_1x01_P2.54mm_77311-802-02LF_half.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(model "${KIPRJMOD}/lib/3d_models/PinHeader_1x01_P2.54mm_77311-802-02LF_half.step"
+		(offset
+			(xyz 0 -5.08 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+	(embedded_fonts no)
+)

@@ -2512,7 +2512,7 @@
 					)
 				)
 			)
-			(property "Footprint" "STIM_Rev1:TestPoint_Keystone_5000-5004_Miniature"
+			(property "Footprint" "STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical"
 				(at 5.08 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -5449,7 +5449,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "STIM_Rev1:TestPoint_Keystone_5000-5004_Miniature"
+		(property "Footprint" "STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical"
 			(at 100.33 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -5473,7 +5473,7 @@
 				)
 			)
 		)
-		(property "Description" "test loop Keystone 5001"
+		(property "Description" "test pin 1x01 2.54 mm (HV node, never clip ground here)"
 			(at 100.33 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -5485,7 +5485,7 @@
 				)
 			)
 		)
-		(property "Note" "bench probe loop"
+		(property "Note" "bench probe pin"
 			(at 100.33 187.96 0)
 			(hide yes)
 			(show_name no)
@@ -6698,7 +6698,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "JP 1x2 5.08mm"
+		(property "Value" "2x1P post 5.08"
 			(at 209.55 97.79 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6710,7 +6710,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "STIM_Rev1:PinHeader_1x02_P5.08mm_Vertical"
+		(property "Footprint" "STIM_Rev1:PinPost_2x1Pin_P5.08mm_Vertical"
 			(at 205.74 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -6734,7 +6734,7 @@
 				)
 			)
 		)
-		(property "Description" "pin header 1x2 + jumper"
+		(property "Description" "two 1-pin 2.54 mm header posts, 5.08 mm apart; link with a female-female jumper wire"
 			(at 205.74 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -6796,7 +6796,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "JP 1x2 5.08mm"
+		(property "Value" "2x1P post 5.08"
 			(at 209.55 200.66 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6808,7 +6808,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "STIM_Rev1:PinHeader_1x02_P5.08mm_Vertical"
+		(property "Footprint" "STIM_Rev1:PinPost_2x1Pin_P5.08mm_Vertical"
 			(at 205.74 199.39 0)
 			(hide yes)
 			(show_name no)
@@ -6832,7 +6832,7 @@
 				)
 			)
 		)
-		(property "Description" "pin header 1x2 + jumper"
+		(property "Description" "two 1-pin 2.54 mm header posts, 5.08 mm apart; link with a female-female jumper wire"
 			(at 205.74 199.39 0)
 			(hide yes)
 			(show_name no)
@@ -7490,7 +7490,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "STIM_Rev1:TestPoint_Keystone_5000-5004_Miniature"
+		(property "Footprint" "STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical"
 			(at 100.33 203.2 0)
 			(hide yes)
 			(show_name no)
@@ -7514,7 +7514,7 @@
 				)
 			)
 		)
-		(property "Description" "test loop Keystone 5001"
+		(property "Description" "test pin 1x01 2.54 mm (HV node, never clip ground here)"
 			(at 100.33 203.2 0)
 			(hide yes)
 			(show_name no)
@@ -7526,7 +7526,7 @@
 				)
 			)
 		)
-		(property "Note" "bench probe loop"
+		(property "Note" "bench probe pin"
 			(at 100.33 203.2 0)
 			(hide yes)
 			(show_name no)
@@ -7929,7 +7929,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "STIM_Rev1:TestPoint_Keystone_5000-5004_Miniature"
+		(property "Footprint" "STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical"
 			(at 190.5 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -7953,7 +7953,7 @@
 				)
 			)
 		)
-		(property "Description" "test loop Keystone 5001"
+		(property "Description" "test pin 1x01 2.54 mm (HV node, never clip ground here)"
 			(at 190.5 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -7965,7 +7965,7 @@
 				)
 			)
 		)
-		(property "Note" "bench probe loop"
+		(property "Note" "bench probe pin"
 			(at 190.5 147.32 0)
 			(hide yes)
 			(show_name no)

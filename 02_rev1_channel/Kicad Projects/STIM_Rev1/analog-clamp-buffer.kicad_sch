@@ -1301,7 +1301,7 @@
 					)
 				)
 			)
-			(property "Footprint" "STIM_Rev1:TestPoint_Keystone_5000-5004_Miniature"
+			(property "Footprint" "STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical"
 				(at 5.08 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2912,7 +2912,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "STIM_Rev1:TestPoint_Keystone_5000-5004_Miniature"
+		(property "Footprint" "STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical"
 			(at 224.79 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -2936,7 +2936,7 @@
 				)
 			)
 		)
-		(property "Description" "test loop Keystone 5001"
+		(property "Description" "test pin 1x01 2.54 mm (LV signal)"
 			(at 224.79 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -2948,7 +2948,7 @@
 				)
 			)
 		)
-		(property "Note" "bench probe loop"
+		(property "Note" "bench probe pin"
 			(at 224.79 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -3551,10 +3551,10 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "b17e0501-4a28-412c-b4b5-138bb12afb0f")
 		(property "Reference" "TP18"
 			(at 73.66 75.946 0)
@@ -3580,7 +3580,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "STIM_Rev1:TestPoint_Keystone_5000-5004_Miniature"
+		(property "Footprint" "STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical"
 			(at 71.12 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -3604,7 +3604,7 @@
 				)
 			)
 		)
-		(property "Description" "test loop Keystone 5001"
+		(property "Description" "test pin 1x01 2.54 mm (ISO_GND, scope / DMM ground clip)"
 			(at 71.12 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -3675,7 +3675,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "STIM_Rev1:TestPoint_Keystone_5000-5004_Miniature"
+		(property "Footprint" "STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical"
 			(at 81.28 90.17 0)
 			(hide yes)
 			(show_name no)
@@ -3699,7 +3699,7 @@
 				)
 			)
 		)
-		(property "Description" "test loop Keystone 5001"
+		(property "Description" "test pin 1x01 2.54 mm (LV signal)"
 			(at 81.28 90.17 0)
 			(hide yes)
 			(show_name no)

@@ -4152,55 +4152,6 @@
 		)
 	)
 	(sheet
-		(at 24.13 248.92)
-		(size 39.37 25.4)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 215 215 215 1)
-		)
-		(uuid "93675b37-d993-5d12-97fc-a317c191ef9c")
-		(property "Sheetname" "[12] Doc - Revision History"
-			(at 24.13 248.0814 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.524 1.524)
-					(italic yes)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "revision-history.kicad_sch"
-			(at 24.13 274.7966 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1 1)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "STIM_Rev1"
-				(path "/801725e5-e50b-4629-8dff-f10f88598334"
-					(page "12")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 34.29 83.82)
 		(size 45.72 25.4)
 		(exclude_from_sim no)

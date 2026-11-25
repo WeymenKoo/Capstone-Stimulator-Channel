@@ -1,0 +1,76 @@
+LTspice 26.0.2 for MacOS
+Circuit: <project>/01_client_board/tests/A3-step-settling/A3-step-settling.net
+Start Time: Tue Oct 27 18:39:16 2026
+
+.step vrail=30 istep=0.002
+solver = Normal
+Maximum thread count: 10
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+
+.step vrail=100 istep=0.002
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+
+.step vrail=30 istep=0.005
+Direct Newton iteration succeeded in finding operating point.
+
+.step vrail=100 istep=0.005
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping succeeded in finding the operating point.
+
+Total elapsed time: 4.733 seconds.
+
+Files loaded:
+<project>/01_client_board/tests/A3-step-settling/A3-step-settling.net
+~/Library/Application Support/LTspice/Bottles/ltspice/drive_c/users/crossover/AppData/Local/LTspice/lib/cmp/standard.dio
+~/Library/Application Support/LTspice/Bottles/ltspice/drive_c/users/crossover/AppData/Local/LTspice/lib/cmp/standard.bjt
+<project>/01_client_board/model/client-board-models.lib
+
+
+Measurement: ifin
+  step	AVG(I(RLOAD) )	FROM	TO
+     1	0.00199999216481	0.0003	0.0005
+     2	0.00199999287724	0.0003	0.0005
+     3	0.0042998523863	0.0003	0.0005
+     4	0.00499549414961	0.0003	0.0005
+
+Measurement: ipk
+  step	MAX(I(RLOAD) )	FROM	TO
+     1	0.00236830068752	0.0001	0.0003
+     2	0.00221486855298	0.0001	0.0003
+     3	0.00439330702648	0.0001	0.0003
+     4	0.0055105118081	0.0001	0.0003
+
+Measurement: os_pct
+  step	(Ipk-Ifin)/Ifin*100
+     1	18.4154982802
+     2	10.7438220497
+     3	2.17343833644
+     4	10.3096439124
+
+Measurement: t_enter_1pct
+  step	time 	at
+     1	0.000101002085261	0.000101002085261
+     2	0.000101001333901	0.000101001333901
+     3	failed	0
+     4	0.000101002216652	0.000101002216652
+
+Measurement: t_last_above
+  step	time 	at
+     1	0.00010175663911	0.00010175663911
+     2	0.000101578886557	0.000101578886557
+     3	failed	0
+     4	0.000101567966507	0.000101567966507
+
+Measurement: tset_us_approx
+  step	(t_last_above-101u)*1e6
+     1	0.756639110029
+     2	0.578886557231
+     3	failed
+     4	0.567966506842

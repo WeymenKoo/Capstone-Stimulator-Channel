@@ -1,0 +1,63 @@
+LTspice 26.0.2 for MacOS
+Circuit: <project>/01_client_board/tests/A5a-output-impedance-ac/A5a-output-impedance-ac.net
+Start Time: Tue Oct 27 18:39:51 2026
+
+.step vrail=30 rs=50
+solver = Normal
+Maximum thread count: 10
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+
+.step vrail=100 rs=50
+Direct Newton iteration succeeded in finding operating point.
+
+.step vrail=30 rs=1e-06
+Direct Newton iteration succeeded in finding operating point.
+
+.step vrail=100 rs=1e-06
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.664 seconds.
+
+Files loaded:
+<project>/01_client_board/tests/A5a-output-impedance-ac/A5a-output-impedance-ac.net
+~/Library/Application Support/LTspice/Bottles/ltspice/drive_c/users/crossover/AppData/Local/LTspice/lib/cmp/standard.dio
+~/Library/Application Support/LTspice/Bottles/ltspice/drive_c/users/crossover/AppData/Local/LTspice/lib/cmp/standard.bjt
+<project>/01_client_board/model/client-board-models.lib
+
+
+Measurement: z_1hz
+  step	mag(V(LOAD)) 	at
+     1	(138.274521304dB,0°)	1
+     2	(138.272205905dB,0°)	1
+     3	(169.555562774dB,0°)	1
+     4	(169.641957672dB,0°)	1
+
+Measurement: z_100hz
+  step	mag(V(LOAD)) 	at
+     1	(138.12357983dB,0°)	100
+     2	(138.125721596dB,0°)	100
+     3	(152.720898875dB,0°)	100
+     4	(152.843700959dB,0°)	100
+
+Measurement: z_1khz
+  step	mag(V(LOAD)) 	at
+     1	(131.706682397dB,0°)	1000
+     2	(131.807339705dB,0°)	1000
+     3	(132.810424111dB,0°)	1000
+     4	(132.934047782dB,0°)	1000
+
+Measurement: z_10khz
+  step	mag(V(LOAD)) 	at
+     1	(112.766371956dB,0°)	10000
+     2	(112.902001443dB,0°)	10000
+     3	(112.801931792dB,0°)	10000
+     4	(112.93139978dB,0°)	10000
+
+Measurement: c_out_pf_at_10k
+  step	1e12/(2*pi*10k*Z_10kHz)
+     1	(31.2700306765dB,0°)
+     2	(31.1344011895dB,0°)
+     3	(31.2344708403dB,0°)
+     4	(31.105002853dB,0°)
