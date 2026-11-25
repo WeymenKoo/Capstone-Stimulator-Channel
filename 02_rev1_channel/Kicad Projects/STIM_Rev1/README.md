@@ -43,12 +43,13 @@ Tags: [N] ngspice, [L] LTspice, [H] hand calc, [DS] datasheet, [B] bench (none y
 4. Power - LDO Rails (`power-converter-rails.kicad_sch`) - U2 / U3 +/-9 V, U4 +5V, U5 +3V3
 5. Interface - FPGA J3 & SPI Isolator (`interface-spi-isolator.kicad_sch`) - J3, U6 / U7 ISO7741, J4 bypass header (1x10 pin row), JP1
 6. Interface - DAC Command (`interface-dac-command.kicad_sch`) - U8 AD5761R
-7. Analog - Input Clamp & Buffer (`analog-clamp-buffer.kicad_sch`)
-8. Analog - Howland Current Pump (`analog-current-pump.kicad_sch`)
-9. Output - Limiter & PhotoMOS (`output-limiter-photomos.kicad_sch`)
-10. Interface - ADC Read-back (`interface-adc-readback.kicad_sch`) - U15 / U16 ADS8689 (I and V)
-11. Sense - Feedback to ADC (`sense-feedback-adc.kicad_sch`)
-12. Doc - Revision History (`revision-history.kicad_sch`)
+7. Channel CH1 (`channel.kicad_sch`) - hierarchical block holding pages 8-10; pins CMD_IN, EN, V_MON, RET_SHUNT, VMID (2026-11-24, 4-channel revamp phase 1)
+8. Analog - Input Clamp & Buffer (`analog-clamp-buffer.kicad_sch`)
+9. Analog - Howland Current Pump (`analog-current-pump.kicad_sch`)
+10. Output - Limiter & PhotoMOS (`output-limiter-photomos.kicad_sch`)
+11. Interface - ADC Read-back (`interface-adc-readback.kicad_sch`) - U15 / U16 ADS8689 (I and V)
+12. Sense - Feedback to ADC (`sense-feedback-adc.kicad_sch`)
+13. Doc - Revision History (`revision-history.kicad_sch`)
 
 ## Directory structure
 

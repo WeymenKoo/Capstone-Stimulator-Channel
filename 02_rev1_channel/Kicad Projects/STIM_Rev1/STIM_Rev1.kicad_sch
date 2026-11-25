@@ -1665,7 +1665,7 @@
 	)
 	(wire
 		(pts
-			(xy 340.36 148.59) (xy 340.36 203.2)
+			(xy 340.36 137.16) (xy 340.36 203.2)
 		)
 		(stroke
 			(width 0)
@@ -1705,7 +1705,7 @@
 	)
 	(wire
 		(pts
-			(xy 336.55 144.78) (xy 344.17 144.78)
+			(xy 323.85 140.97) (xy 336.55 140.97)
 		)
 		(stroke
 			(width 0)
@@ -1726,7 +1726,7 @@
 	)
 	(wire
 		(pts
-			(xy 332.74 140.97) (xy 332.74 173.99)
+			(xy 332.74 144.78) (xy 332.74 173.99)
 		)
 		(stroke
 			(width 0)
@@ -1736,7 +1736,7 @@
 	)
 	(wire
 		(pts
-			(xy 332.74 140.97) (xy 344.17 140.97)
+			(xy 323.85 144.78) (xy 332.74 144.78)
 		)
 		(stroke
 			(width 0)
@@ -1827,16 +1827,6 @@
 	)
 	(wire
 		(pts
-			(xy 323.85 133.35) (xy 344.17 133.35)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6165b361-417f-463e-aed7-c55bdc95db43")
-	)
-	(wire
-		(pts
 			(xy 209.55 138.43) (xy 220.98 138.43)
 		)
 		(stroke
@@ -1847,17 +1837,7 @@
 	)
 	(wire
 		(pts
-			(xy 266.7 138.43) (xy 278.13 138.43)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "66f37ef8-75e0-4f2c-891c-2ceb2fe2c9e5")
-	)
-	(wire
-		(pts
-			(xy 344.17 148.59) (xy 340.36 148.59)
+			(xy 323.85 137.16) (xy 340.36 137.16)
 		)
 		(stroke
 			(width 0)
@@ -2047,7 +2027,7 @@
 	)
 	(wire
 		(pts
-			(xy 328.93 137.16) (xy 344.17 137.16)
+			(xy 323.85 148.59) (xy 328.93 148.59)
 		)
 		(stroke
 			(width 0)
@@ -2087,7 +2067,7 @@
 	)
 	(wire
 		(pts
-			(xy 336.55 144.78) (xy 336.55 177.8)
+			(xy 336.55 140.97) (xy 336.55 177.8)
 		)
 		(stroke
 			(width 0)
@@ -2097,7 +2077,7 @@
 	)
 	(wire
 		(pts
-			(xy 328.93 137.16) (xy 328.93 170.18)
+			(xy 328.93 148.59) (xy 328.93 170.18)
 		)
 		(stroke
 			(width 0)
@@ -2155,17 +2135,6 @@
 			(color 255 0 0 1)
 		)
 		(uuid "f977bfc8-4b67-4261-9715-e19ee025ef7b")
-	)
-	(label "I_SENSE"
-		(at 332.74 133.35 180)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0520e7ed-43b5-45db-a870-eefc73c3f41c")
 	)
 	(label "ISO_MOSI"
 		(at 152.4 137.16 180)
@@ -2298,17 +2267,6 @@
 			(justify right bottom)
 		)
 		(uuid "d6725836-6506-4fe2-a237-4b1766665c94")
-	)
-	(label "DAC_BUF"
-		(at 276.86 138.43 180)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "da9fa372-8193-4675-848f-3a25440eecd3")
 	)
 	(label "V_ELEC_DIV"
 		(at 313.69 177.8 180)
@@ -3490,86 +3448,6 @@
 		)
 	)
 	(sheet
-		(at 278.13 128.27)
-		(size 45.72 21.59)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.254)
-			(type solid)
-			(color 132 0 0 1)
-		)
-		(fill
-			(color 255 255 194 1)
-		)
-		(uuid "15416e61-56a0-5b0d-b090-bfa41cf71886")
-		(property "Sheetname" "[8] Analog - Howland Current Pump"
-			(at 278.13 127.1901 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.905 1.905)
-					(thickness 0.381)
-					(bold yes)
-					(italic yes)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "analog-current-pump.kicad_sch"
-			(at 278.13 150.3874 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1 1)
-				)
-				(justify left top)
-			)
-		)
-		(pin "DAC_BUF" input
-			(at 278.13 138.43 180)
-			(uuid "e20430cb-d7a7-422c-9802-18df274191b0")
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-					(thickness 0.3048)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-				(justify left)
-			)
-		)
-		(pin "I_SENSE" output
-			(at 323.85 133.35 0)
-			(uuid "02ac65f5-040a-4110-88d1-6b8414f98b8f")
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-					(thickness 0.3048)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "STIM_Rev1"
-				(path "/801725e5-e50b-4629-8dff-f10f88598334"
-					(page "8")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 251.46 165.1)
 		(size 49.53 17.78)
 		(exclude_from_sim no)
@@ -3686,7 +3564,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334"
-					(page "11")
+					(page "12")
 				)
 			)
 		)
@@ -3836,7 +3714,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334"
-					(page "10")
+					(page "11")
 				)
 			)
 		)
@@ -4233,7 +4111,7 @@
 	)
 	(sheet
 		(at 220.98 128.27)
-		(size 45.72 21.59)
+		(size 102.87 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -4247,8 +4125,8 @@
 		(fill
 			(color 255 255 194 1)
 		)
-		(uuid "c696ab63-6e27-5310-bf58-acd9f38b7949")
-		(property "Sheetname" "[7] Analog - Input Clamp & Buffer"
+		(uuid "9d0bdb08-6c29-5890-90c8-6fbe493cc345")
+		(property "Sheetname" "[7-9] Channel CH1"
 			(at 220.98 127.1901 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4263,8 +4141,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "analog-clamp-buffer.kicad_sch"
-			(at 220.98 150.3874 0)
+		(property "Sheetfile" "channel.kicad_sch"
+			(at 220.98 154.2574 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4275,9 +4153,9 @@
 				(justify left top)
 			)
 		)
-		(pin "DAC_CMD" input
+		(pin "CMD_IN" input
 			(at 220.98 138.43 180)
-			(uuid "a36aae07-49be-4678-95ea-85dc113d86f6")
+			(uuid "085b9320-4c26-5e03-8d56-c655d8bbc72c")
 			(effects
 				(font
 					(face "JetBrains Mono")
@@ -4289,9 +4167,51 @@
 				(justify left)
 			)
 		)
-		(pin "DAC_BUF" output
-			(at 266.7 138.43 0)
-			(uuid "6227557e-1025-4448-8473-9ff9fe5a633d")
+		(pin "EN" input
+			(at 323.85 137.16 0)
+			(uuid "6e8b7b96-6deb-5455-a660-730adef2628d")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify right)
+			)
+		)
+		(pin "V_MON" output
+			(at 323.85 140.97 0)
+			(uuid "2022e839-0602-5bd1-a153-2fa65661f7ba")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify right)
+			)
+		)
+		(pin "RET_SHUNT" output
+			(at 323.85 144.78 0)
+			(uuid "b8ce9ac1-1ba1-5b9b-bb83-065cf7c5fc76")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify right)
+			)
+		)
+		(pin "VMID" input
+			(at 323.85 148.59 0)
+			(uuid "a26d63e8-ed4f-5462-9f81-d7a670a7a313")
 			(effects
 				(font
 					(face "JetBrains Mono")
@@ -4307,128 +4227,6 @@
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334"
 					(page "7")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 344.17 128.27)
-		(size 44.45 25.4)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.254)
-			(type solid)
-			(color 132 0 0 1)
-		)
-		(fill
-			(color 255 255 194 1)
-		)
-		(uuid "f069f885-88b4-57b7-9482-f6ec165967cf")
-		(property "Sheetname" "[9] Output - Limiter & PhotoMOS"
-			(at 344.17 127.1901 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.905 1.905)
-					(thickness 0.381)
-					(bold yes)
-					(italic yes)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "output-limiter-photomos.kicad_sch"
-			(at 344.17 154.1974 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1 1)
-				)
-				(justify left top)
-			)
-		)
-		(pin "I_SENSE" input
-			(at 344.17 133.35 180)
-			(uuid "17b7393b-d9b7-42dc-9fc8-d432daeed2b1")
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-					(thickness 0.3048)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-				(justify left)
-			)
-		)
-		(pin "ENABLE" input
-			(at 344.17 148.59 180)
-			(uuid "391ed2de-f12d-4708-8326-f0d3be7d8f33")
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-					(thickness 0.3048)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-				(justify left)
-			)
-		)
-		(pin "RET_SHUNT" output
-			(at 344.17 140.97 180)
-			(uuid "1061266e-c885-47e0-a3cb-920c0df91c14")
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-					(thickness 0.3048)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-				(justify left)
-			)
-		)
-		(pin "V_ELEC_DIV" output
-			(at 344.17 144.78 180)
-			(uuid "60d7706a-6ca8-435e-8d4e-9b9698a72f27")
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-					(thickness 0.3048)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-				(justify left)
-			)
-		)
-		(pin "VMID" input
-			(at 344.17 137.16 180)
-			(uuid "0705d637-d9ce-4fc3-9292-28df88257d79")
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-					(thickness 0.3048)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "STIM_Rev1"
-				(path "/801725e5-e50b-4629-8dff-f10f88598334"
-					(page "9")
 				)
 			)
 		)

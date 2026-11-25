@@ -1,0 +1,442 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "9d0bdb08-6c29-5890-90c8-6fbe493cc345")
+	(paper "A3")
+	(title_block
+		(title "Channel (one stimulating electrode)")
+		(date "${RELEASE_DATE}")
+		(rev "${REVISION}")
+		(company "${COMPANY}")
+		(comment 1 "PRELIMINARY: not for fabrication")
+		(comment 4 "Not a safety sign-off; dummy loads")
+		(comment 9 "${REVIEWER}")
+	)
+	(lib_symbols)
+	(sheet
+		(at 63.5 101.6)
+		(size 45.72 21.59)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 132 0 0 1)
+		)
+		(fill
+			(color 255 255 194 1)
+		)
+		(uuid "c696ab63-6e27-5310-bf58-acd9f38b7949")
+		(property "Sheetname" "[7] Analog - Input Clamp & Buffer"
+			(at 63.5 100.5201 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.905 1.905)
+					(thickness 0.381)
+					(bold yes)
+					(italic yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "analog-clamp-buffer.kicad_sch"
+			(at 63.5 123.7174 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DAC_CMD" input
+			(at 63.5 111.76 180)
+			(uuid "a36aae07-49be-4678-95ea-85dc113d86f6")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "DAC_BUF" output
+			(at 109.22 111.76 0)
+			(uuid "6227557e-1025-4448-8473-9ff9fe5a633d")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "STIM_Rev1"
+				(path "/801725e5-e50b-4629-8dff-f10f88598334/9d0bdb08-6c29-5890-90c8-6fbe493cc345"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 127 101.6)
+		(size 45.72 21.59)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 132 0 0 1)
+		)
+		(fill
+			(color 255 255 194 1)
+		)
+		(uuid "15416e61-56a0-5b0d-b090-bfa41cf71886")
+		(property "Sheetname" "[8] Analog - Howland Current Pump"
+			(at 127 100.5201 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.905 1.905)
+					(thickness 0.381)
+					(bold yes)
+					(italic yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "analog-current-pump.kicad_sch"
+			(at 127 123.7174 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(pin "DAC_BUF" input
+			(at 127 111.76 180)
+			(uuid "e20430cb-d7a7-422c-9802-18df274191b0")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "I_SENSE" output
+			(at 172.72 106.68 0)
+			(uuid "02ac65f5-040a-4110-88d1-6b8414f98b8f")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "STIM_Rev1"
+				(path "/801725e5-e50b-4629-8dff-f10f88598334/9d0bdb08-6c29-5890-90c8-6fbe493cc345"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 215.9 101.6)
+		(size 44.45 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 132 0 0 1)
+		)
+		(fill
+			(color 255 255 194 1)
+		)
+		(uuid "f069f885-88b4-57b7-9482-f6ec165967cf")
+		(property "Sheetname" "[9] Output - Limiter & PhotoMOS"
+			(at 215.9 100.5201 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.905 1.905)
+					(thickness 0.381)
+					(bold yes)
+					(italic yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "output-limiter-photomos.kicad_sch"
+			(at 215.9 127.5274 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(pin "I_SENSE" input
+			(at 215.9 106.68 180)
+			(uuid "17b7393b-d9b7-42dc-9fc8-d432daeed2b1")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "ENABLE" input
+			(at 215.9 121.92 180)
+			(uuid "391ed2de-f12d-4708-8326-f0d3be7d8f33")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "RET_SHUNT" output
+			(at 215.9 114.3 180)
+			(uuid "1061266e-c885-47e0-a3cb-920c0df91c14")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "V_ELEC_DIV" output
+			(at 215.9 118.11 180)
+			(uuid "60d7706a-6ca8-435e-8d4e-9b9698a72f27")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "VMID" input
+			(at 215.9 110.49 180)
+			(uuid "0705d637-d9ce-4fc3-9292-28df88257d79")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "STIM_Rev1"
+				(path "/801725e5-e50b-4629-8dff-f10f88598334/9d0bdb08-6c29-5890-90c8-6fbe493cc345"
+					(page "10")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 50.8 111.76) (xy 63.5 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e713aad-a89b-55d3-856e-0c4736e6d095")
+	)
+	(hierarchical_label "CMD_IN"
+		(shape input)
+		(at 50.8 111.76 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "35560881-ae23-5802-a7c1-aff578698d25")
+	)
+	(wire
+		(pts
+			(xy 109.22 111.76) (xy 127 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2ed86db-38e9-592d-9c36-ff367cd32902")
+	)
+	(wire
+		(pts
+			(xy 172.72 106.68) (xy 215.9 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27e6d6ed-6085-5aa9-89d7-649e307e3a17")
+	)
+	(wire
+		(pts
+			(xy 193.04 110.49) (xy 215.9 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0fb084a-7436-5e1c-aacd-fe0014e317d9")
+	)
+	(hierarchical_label "VMID"
+		(shape input)
+		(at 193.04 110.49 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3a45c8b5-03cb-531f-ae6b-90e716f9453a")
+	)
+	(wire
+		(pts
+			(xy 193.04 114.3) (xy 215.9 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ec27730-f354-5c57-8142-5e42b95c1c76")
+	)
+	(hierarchical_label "RET_SHUNT"
+		(shape output)
+		(at 193.04 114.3 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "35218a2e-c549-5835-95b4-5124088c17a2")
+	)
+	(wire
+		(pts
+			(xy 193.04 118.11) (xy 215.9 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "204e0479-1c1a-59c1-b125-e6e4c7cdca26")
+	)
+	(hierarchical_label "V_MON"
+		(shape output)
+		(at 193.04 118.11 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e22aa838-e399-501f-9763-fa767f5a86cc")
+	)
+	(wire
+		(pts
+			(xy 193.04 121.92) (xy 215.9 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f849ab37-d498-5270-a67c-a44ba8759abc")
+	)
+	(hierarchical_label "EN"
+		(shape input)
+		(at 193.04 121.92 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "45e43d8c-eb66-5816-95be-72973194d360")
+	)
+	(text "One stimulating channel: [7] clamp + buffer -> [8] Howland pump -> [9] limiter link + PhotoMOS.\nThe three pages are the single-channel Rev 1 sheets, unchanged (nested 2026-11-24).\nStill on [9] and to move to a shared return sheet before this channel is placed 4 times:\nU13 (return PhotoMOS), U14 (park), RSHR1 (return shunt), J5 pin 2 (RET), TP28."
+		(exclude_from_sim no)
+		(at 50.8 146.05 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "af2fd002-90d3-5514-9153-60505a981d3e")
+	)
+	(embedded_fonts no)
+)

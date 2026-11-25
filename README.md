@@ -69,6 +69,10 @@ flowchart LR
 **Work in progress.** Schematic rev 2.1.0-dev (PRELIMINARY) is complete; the 100 × 100 mm, 4-layer board is placed and
 routing is in progress. The image is rendered from `STIM_Rev1.kicad_pcb` as committed in this repository (2026-11-24
 snapshot: pads, top-layer tracks and pours, silkscreen of the top side). Rev 1 is a bench prototype for dummy loads only, not a safety sign-off.
+**4-channel revamp (started 2026-11-24).** The board is being reorganised into four identical stimulating channels on
+shared rails with one always-connected return electrode. The single-channel design is tagged `rev1-1ch-baseline`.
+Phase 1 (done): the channel pages ([7] clamp and buffer, [8] Howland pump, [9] limiter and PhotoMOS) sit under one
+hierarchical block `channel.kicad_sch` (sheet CH1); no electrical change (same parts, same pin-to-net connections).
 Full specification, sheet list and design rules: [`02_rev1_channel/Kicad Projects/STIM_Rev1/README.md`](02_rev1_channel/Kicad%20Projects/STIM_Rev1/README.md).
 
 ## Repository map

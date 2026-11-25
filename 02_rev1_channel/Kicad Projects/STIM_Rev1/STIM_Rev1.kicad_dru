@@ -39,7 +39,7 @@
 (rule "HV to HV 150-250 V"
     (layer outer)
     (constraint clearance (min 1.5mm))
-    (condition "(((A.hasNetclass('HV_POS')) && (B.hasNetclass('HV_NEG'))) || ((A.hasNetclass('HV_NEG')) && (B.hasNetclass('HV_POS')))) || (((A.hasNetclass('HV_POS') || A.hasNetclass('HV_NEG')) && (B.hasNetclass('HV_OUT') || B.hasNetclass('HV_FLT_P') || B.hasNetclass('HV_FLT_N') || B.hasNetclass('HV_ELEC'))) || ((A.hasNetclass('HV_OUT') || A.hasNetclass('HV_FLT_P') || A.hasNetclass('HV_FLT_N') || A.hasNetclass('HV_ELEC')) && (B.hasNetclass('HV_POS') || B.hasNetclass('HV_NEG')))) || (A.NetName == '+HV' && B.NetName == '/[8] Analog - Howland Current Pump/BENCH_BIAS_P') || (A.NetName == '-HV' && B.NetName == '/[8] Analog - Howland Current Pump/BENCH_BIAS_N')"))
+    (condition "(((A.hasNetclass('HV_POS')) && (B.hasNetclass('HV_NEG'))) || ((A.hasNetclass('HV_NEG')) && (B.hasNetclass('HV_POS')))) || (((A.hasNetclass('HV_POS') || A.hasNetclass('HV_NEG')) && (B.hasNetclass('HV_OUT') || B.hasNetclass('HV_FLT_P') || B.hasNetclass('HV_FLT_N') || B.hasNetclass('HV_ELEC'))) || ((A.hasNetclass('HV_OUT') || A.hasNetclass('HV_FLT_P') || A.hasNetclass('HV_FLT_N') || A.hasNetclass('HV_ELEC')) && (B.hasNetclass('HV_POS') || B.hasNetclass('HV_NEG')))) || (A.NetName == '+HV' && B.NetName == '/[7-9] Channel CH1/[8] Analog - Howland Current Pump/BENCH_BIAS_P') || (A.NetName == '-HV' && B.NetName == '/[7-9] Channel CH1/[8] Analog - Howland Current Pump/BENCH_BIAS_N')"))
 
 (rule "HV inner layers"
     (layer inner)
