@@ -1122,6 +1122,22 @@
       {
         "netclass": "HV_OUT",
         "pattern": "unconnected-(D8-NC-Pad2)"
+      },
+      {
+        "netclass": "SPI_ISO",
+        "pattern": "/ISO_EN_CH*"
+      },
+      {
+        "netclass": "SPI_ISO",
+        "pattern": "/ISO_LDAC"
+      },
+      {
+        "netclass": "SPI_ISO",
+        "pattern": "/ISO_CLR"
+      },
+      {
+        "netclass": "FPGA_ISO",
+        "pattern": "*/EN_CH*"
       }
     ]
   },

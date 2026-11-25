@@ -41,7 +41,7 @@ Tags: [N] ngspice, [L] LTspice, [H] hand calc, [DS] datasheet, [B] bench (none y
 2. Power - HV Input & Fusing (`power-hv-input.kicad_sch`)
 3. Power - Aux Input & +/-12 V Module (`power-aux-input.kicad_sch`) - J2 VBAT, U1 RS3-1212D across the barrier
 4. Power - LDO Rails (`power-converter-rails.kicad_sch`) - U2 / U3 +/-9 V, U4 +5V, U5 +3V3
-5. Interface - FPGA J3 & SPI Isolator (`interface-spi-isolator.kicad_sch`) - J3, U6 / U7 ISO7741, J4 bypass header (1x10 pin row), JP1
+5. Interface - FPGA J3 & SPI Isolator (`interface-spi-isolator.kicad_sch`) - J3, U6 / U7 ISO7741, U19 ISO7740F (EN_CH2-4, CLR; 2026-11-25), J4 (1x10) and J7 (1x5) bypass headers, JP1, R42 CLR pull-down, R43 LDAC pull-up
 6. Interface - DAC Command (`interface-dac-command.kicad_sch`) - U8 AD5761R
 7. CH1 (`channel.kicad_sch`) - hierarchical channel block, placed 4 times (CH1-CH4 on pages 7, 11, 15, 19), each holding:
    Input Clamp & Buffer (`analog-clamp-buffer.kicad_sch`), Howland Current Pump (`analog-current-pump.kicad_sch`),

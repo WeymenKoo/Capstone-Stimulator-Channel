@@ -1797,7 +1797,7 @@
 	)
 	(wire
 		(pts
-			(xy 138.43 185.42) (xy 185.42 185.42)
+			(xy 138.43 185.42) (xy 139.7 185.42)
 		)
 		(stroke
 			(width 0)
@@ -2158,17 +2158,6 @@
 			(justify right bottom)
 		)
 		(uuid "6dcd42b4-4b29-4973-9d4f-1e8a0e12683d")
-	)
-	(label "ISO_CS_ADC2"
-		(at 153.67 185.42 180)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "723a4a5d-6964-4eb8-bd15-256046202408")
 	)
 	(label "V_ELEC_ADC"
 		(at 247.65 173.99 180)
@@ -3415,9 +3404,65 @@
 				(justify right)
 			)
 		)
-		(pin "ISO_CS_ADC2" output
+		(pin "ISO_LDAC" output
 			(at 138.43 185.42 0)
 			(uuid "4b335b1b-45b7-47ec-8e5b-2a12dec3414d")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify right)
+			)
+		)
+		(pin "ISO_EN_CH2" output
+			(at 138.43 152.4 0)
+			(uuid "c15a8022-8ec3-5ffb-b71e-b570b12d1069")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify right)
+			)
+		)
+		(pin "ISO_EN_CH3" output
+			(at 138.43 156.21 0)
+			(uuid "4765d1c8-c2fa-515b-b7e9-35eb0d0dfeec")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify right)
+			)
+		)
+		(pin "ISO_EN_CH4" output
+			(at 138.43 160.02 0)
+			(uuid "27e6b643-3664-5a3f-97cc-facdc8204261")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify right)
+			)
+		)
+		(pin "ISO_CLR" output
+			(at 138.43 163.83 0)
+			(uuid "0fc97bb4-2154-5e56-b6b0-b98ed2d27f55")
 			(effects
 				(font
 					(face "JetBrains Mono")
@@ -4346,7 +4391,7 @@
 		)
 		(uuid "378e7ca2-e016-5b70-b0da-da5d5c414a2d")
 	)
-	(label "ISO_EN2"
+	(label "ISO_EN_CH2"
 		(at 355.6 135.89 180)
 		(effects
 			(font
@@ -4538,7 +4583,7 @@
 		)
 		(uuid "dc5e8a39-d8d3-52f0-92cc-934cd2b7f94b")
 	)
-	(label "ISO_EN3"
+	(label "ISO_EN_CH3"
 		(at 355.6 166.37 180)
 		(effects
 			(font
@@ -4730,7 +4775,7 @@
 		)
 		(uuid "2334630f-21b9-53a6-bcf3-7953a11e14d5")
 	)
-	(label "ISO_EN4"
+	(label "ISO_EN_CH4"
 		(at 355.6 196.85 180)
 		(effects
 			(font
@@ -4858,6 +4903,105 @@
 			(type default)
 		)
 		(uuid "db2e8865-53b7-58c4-bee1-f0b9e76ba1c1")
+	)
+	(wire
+		(pts
+			(xy 138.43 152.4) (xy 139.7 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "251eab20-474e-5c18-ad41-546d5965bfdd")
+	)
+	(label "ISO_EN_CH2"
+		(at 139.7 152.4 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3cff80f7-50ad-5c46-beaa-d41abfb15ec5")
+	)
+	(wire
+		(pts
+			(xy 138.43 156.21) (xy 139.7 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86569016-d401-53d9-9294-23dc5a8c5674")
+	)
+	(label "ISO_EN_CH3"
+		(at 139.7 156.21 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3565928b-9527-5210-872a-1b558fd06822")
+	)
+	(wire
+		(pts
+			(xy 138.43 160.02) (xy 139.7 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fc5c7e5-abfd-52a7-8341-ff867b690dd2")
+	)
+	(label "ISO_EN_CH4"
+		(at 139.7 160.02 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "77c2dd75-fc43-5fca-a3d1-b686c40291d2")
+	)
+	(wire
+		(pts
+			(xy 138.43 163.83) (xy 139.7 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "462d6c4e-9bd8-538b-a2b0-f2d35a31b8f4")
+	)
+	(label "ISO_CLR"
+		(at 139.7 163.83 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2a92e0eb-5210-5fc8-b4ba-2363f4f15d7a")
+	)
+	(label "ISO_LDAC"
+		(at 139.7 185.42 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bce1bb80-b3d3-583a-a299-f3b7bbbaa849")
+	)
+	(no_connect
+		(at 185.42 185.42)
+		(uuid "3aeb9a5e-f663-5784-9ad8-753687880a66")
 	)
 	(sheet_instances
 		(path "/"

@@ -6,6 +6,12 @@ no longer exists: the DAC and ADC are on the board behind digital isolators.
 
 **Pin-out changed 2026-11-18: J3 is 2 x 13 on the Red Pitaya E1 pin-out, one SPI bus with three chip selects (D-J), pin order set by the PCB placement. The 2 x 8 pin-out of 2026-11-07 is void.**
 
+**Extended 2026-11-25 for the 4-channel board:** pin 9 is now SPI_LDAC (was SPI_CS_ADC2); new pins 10 SPI_CLR,
+16 EN_CH2, 18 EN_CH3, 14 EN_CH4; pin 17 ENABLE is EN_CH1. The DAC and the ADC are being replaced by placeholders (one
+quad / 8-channel DAC on CS_DAC with a shared LDAC and CLR, one multi-channel ADC on CS_ADC): the device and read-back
+sections below still describe the single-channel parts (AD5761R, two ADS8689) and will be rewritten when the parts
+are chosen. Pin order for the new lines is provisional until the PCB placement is redone.
+
 ## Connector
 J3, 2 x 13 shrouded IDC header, 2.54 mm (On Shore 302-S261, DigiKey ED10526-ND; LCSC C9040).
 **Pin for pin the Red Pitaya extension connector E1** (STEMlab 125-14 hardware page, read 2026-11-18): a straight 26-way
@@ -20,17 +26,21 @@ external trigger input and the trigger output.
 
 | Pin | E1 name | Signal | Direction | Board side (Rev 1) |
 |---|---|---|---|---|
-| 1, 2 | +3V3 | +3V3_FPGA | FPGA -> board | VCC1 of U6 / U7 only, ~8 mA [ASSUME: two ISO7741 side-1 supplies, low toggle rate; E1 limit 0.5 A]; never connected to the board's +3V3 |
+| 1, 2 | +3V3 | +3V3_FPGA | FPGA -> board | VCC1 of U6 / U7 / U19 only, ~12 mA [ASSUME: three isolator side-1 supplies, low toggle rate; E1 limit 0.5 A]; never connected to the board's +3V3 |
 | 3, 4 | DIO0_P (EXT TRIG in), DIO0_N (TRIG OUT) | not connected | | left free for the Red Pitaya trigger |
 | 5 | DIO1_P | SPI_MISO | board -> FPGA | U8 SDO and U15 / U16 SDO-0 (tri-state while deselected) -> U7 D; R13 100k pull-up on the board side |
 | 7 | DIO2_P | SPI_CS_DAC | FPGA -> board, active low | U7 C -> ISO_CS_DAC -> U8 SYNC |
-| 9 | DIO3_P | SPI_CS_ADC2 | FPGA -> board, active low | U7 B -> ISO_CS_ADC2 -> U16 CS/CONVST (ADC 2, V_ELEC) |
+| 9 | DIO3_P | SPI_LDAC | FPGA -> board, active low pulse | U7 B (default HIGH) -> ISO_LDAC -> DAC LDAC (all outputs update together); R43 100k pull-up |
+| 10 | DIO3_N | SPI_CLR | FPGA -> board, active low | U19 D (default-LOW part) -> ISO_CLR -> DAC CLR; R42 100k pull-down: DAC cleared unless the FPGA holds CLR high |
 | 11 | DIO4_P | SPI_CS_ADC | FPGA -> board, active low | U7 A -> ISO_CS_ADC -> U15 CS/CONVST (ADC 1, I_RETURN) |
 | 12 | DIO4_N | FAULT_N | board -> FPGA, active low | U6 D. ISO_FAULT_N is pulled up by R12 (idle = no fault); nothing drives it in Rev 1 (TP15). Board unpowered: the FPGA reads LOW = fault |
 | 13 | DIO5_P | SPI_SCLK | FPGA -> board | U6 C -> ISO_SCLK -> U8, U15, U16 SCLK |
+| 14 | DIO5_N | EN_CH4 | FPGA -> board, high = CH4 electrode connected | U19 C -> ISO_EN_CH4 -> CH4 Q3 / PhotoMOS; R426 100k pull-down |
 | 15 | DIO6_P | SPI_MOSI | FPGA -> board | U6 B -> ISO_MOSI -> U8 SDI, U15 / U16 SDI |
-| 17 | DIO7_P | ENABLE | FPGA -> board, high = electrodes connected | U6 A (default-LOW part) -> ISO_ENABLE -> Q3 / PhotoMOS [9]; R26 100k pull-down |
-| 6, 8, 10, 14, 16, 18 | DIO1_N, DIO2_N, DIO3_N, DIO5_N, DIO6_N, DIO7_N | not connected | | free (question 3) |
+| 16 | DIO6_N | EN_CH2 | FPGA -> board, high = CH2 electrode connected | U19 A -> ISO_EN_CH2 -> CH2 Q3 / PhotoMOS; R226 100k pull-down |
+| 17 | DIO7_P | ENABLE (EN_CH1) | FPGA -> board, high = CH1 electrode connected | U6 A (default-LOW part) -> ISO_ENABLE -> CH1 Q3 / PhotoMOS; R126 100k pull-down |
+| 18 | DIO7_N | EN_CH3 | FPGA -> board, high = CH3 electrode connected | U19 B -> ISO_EN_CH3 -> CH3 Q3 / PhotoMOS; R326 100k pull-down |
+| 6, 8 | DIO1_N, DIO2_N | not connected | | free |
 | 19 ... 24 | NC on E1 | not connected | | |
 | 25, 26 | GND | GND | common | FPGA ground = isolator side-1 ground. Not board ISO_GND |
 
@@ -38,9 +48,9 @@ In the ribbon every signal has an unused conductor beside it, except FAULT_N (dr
 and CS_ADC and shields one from the other. DIO6 / DIO7 can be switched to CAN on the Red Pitaya (housekeeping register
 0x34): keep them GPIO. If they were switched, ENABLE would float and U6 would hold ISO_ENABLE low (safe).
 
-Default states with J3 unplugged or the FPGA unpowered [DS ISO7741 / ISO7741F]: ISO_SCLK, ISO_MOSI, ISO_ENABLE LOW
-(U6 is the default-low F part: PhotoMOS open), ISO_CS_DAC / ISO_CS_ADC / ISO_CS_ADC2 HIGH (U7 default high: all
-three converters deselected, nothing drives MISO).
+Default states with J3 unplugged or the FPGA unpowered [DS ISO7741 / ISO7741F / ISO7740F]: ISO_SCLK, ISO_MOSI,
+ISO_ENABLE, ISO_EN_CH2-4 and ISO_CLR LOW (U6 and U19 are the default-low F parts: every PhotoMOS open, DAC cleared),
+ISO_CS_DAC / ISO_CS_ADC / ISO_LDAC HIGH (U7 default high: converters deselected, nothing drives MISO, no DAC update).
 
 ## Devices on the bus (one SPI bus, three chip selects)
 
