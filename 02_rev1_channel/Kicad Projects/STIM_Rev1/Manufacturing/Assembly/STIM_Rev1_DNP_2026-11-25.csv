@@ -1,0 +1,5 @@
+# Do-not-populate at assembly (limiter pair and RLIM fitted at bring-up; RG1; DAC / ADC placeholders not on the board).
+Qty,Refs,Value,Footprint,MPN,Manufacturer,LCSC,JLC
+8,"M101,M102,M201,M202,M301,M302,M401,M402",DN2540N8,STIM_Rev1:SOT-89-3,DN2540N8-G,MICROCHIP,C145573,Extended
+4,"RG101,RG201,RG301,RG401",10.0k 0.1% 25ppm 0603,STIM_Rev1:R_0603_1608Metric,RT0603BRD0710KL,YAGEO,C95204,Extended
+4,"RLIM101,RLIM201,RLIM301,RLIM401",SOT 165-432 1% 0805,STIM_Rev1:R_0805_2012Metric,E96 kit 165-432 Ohm 0805 1 %,,,

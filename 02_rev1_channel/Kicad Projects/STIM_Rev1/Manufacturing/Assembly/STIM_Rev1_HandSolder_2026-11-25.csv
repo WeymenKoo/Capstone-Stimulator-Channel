@@ -1,0 +1,24 @@
+# Hand-soldered parts: connectors, jacks, test loops, headers, posts. Not for JLC PCBA.
+Qty,Refs,Value,Footprint,MPN,Manufacturer,LCSC,JLC
+4,H1-H4,M3 3.4mm NPTH,STIM_Rev1:MountingHole_3.4mm_M3_Keepout6.5mm,,,,
+1,J1,HV_IN Micro-Fit 3P,STIM_Rev1:Molex_Micro-Fit_3.0_43650-0300_1x03_P3.00mm_Horizontal,43650-0303,Molex,,"THT, hand-solder"
+1,J2,VBAT_IN Micro-Fit 2P,STIM_Rev1:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal,43650-0203,Molex,,"THT, hand-solder"
+1,J3,FPGA_IF 2x13 2.54mm (Red Pitaya E1),STIM_Rev1:IDC-Header_2x13_P2.54mm_Vertical,302-S261,On Shore Technology,C9040,Extended
+1,J4,ISO_BYPASS 1x10 2.54mm,STIM_Rev1:PinHeader_1x10_P2.54mm_Vertical,TBD,TBD,TBD,
+1,J6,RET 4 mm banana (black),STIM_Rev1:CalTest_CT3151,CT3151SP-0,Cal Test Electronics,,
+1,J7,ISO_BYPASS2 1x5,STIM_Rev1:PinHeader_1x05_P2.54mm_Vertical,TBD,TBD,TBD,
+4,"J105,J205,J305,J405",E 4 mm banana (red),STIM_Rev1:CalTest_CT3151,CT3151SP-2,Cal Test Electronics,,"THT, hand-solder"
+1,JP1,JP 1x2,STIM_Rev1:PinHeader_1x02_P2.54mm_Vertical,,,,
+8,"JP102,JP103,JP202,JP203,JP302,JP303,JP402,JP403",2x1P post 5.08,STIM_Rev1:PinPost_2x1Pin_P5.08mm_Vertical,,,,
+7,"TP6-TP8,TP130,TP230,TP330,TP430",ISO_GND,STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical,,,,
+1,TP28,I_RET_SENSE,STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical,,,,
+1,TP31,COM (shunt),STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical,,,,
+4,"TP119,TP219,TP319,TP419",DAC_CMD,STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical,,,,
+4,"TP121,TP221,TP321,TP421",DAC_BUF,STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical,,,,
+4,"TP122,TP222,TP322,TP422",PUMP_V+,STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical,,,,
+4,"TP123,TP223,TP323,TP423",PUMP_V-,STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical,,,,
+4,"TP125,TP225,TP325,TP425",PUMP_OUT,STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical,,,,
+4,"TP126,TP226,TP326,TP426",I_SENSE,STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical,,,,
+4,"TP129,TP229,TP329,TP429",ENABLE,STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical,,,,
+4,"TP132,TP232,TP332,TP432",ELECTRODE_STIM,STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical,,,,
+1,U1,RS3-1212D,STIM_Rev1:Converter_DCDC_RECOM_RS3_SIP-8_P2.54mm,RS3-1212D,RECOM,TBD,"THT, hand-solder"
