@@ -42,15 +42,14 @@ Tags: [N] ngspice, [L] LTspice, [H] hand calc, [DS] datasheet, [B] bench (none y
 3. Power - Aux Input & +/-12 V Module (`power-aux-input.kicad_sch`) - J2 VBAT, U1 RS3-1212D across the barrier
 4. Power - LDO Rails (`power-converter-rails.kicad_sch`) - U2 / U3 +/-9 V, U4 +5V, U5 +3V3
 5. Interface - FPGA J3 & SPI Isolator (`interface-spi-isolator.kicad_sch`) - J3, U6 / U7 ISO7741, U19 ISO7740F (EN_CH2-4, CLR; 2026-11-25), J4 (1x10) and J7 (1x5) bypass headers, JP1, R42 CLR pull-down, R43 LDAC pull-up
-6. Interface - DAC Command (`interface-dac-command.kicad_sch`) - U8 AD5761R
+6. Interface - DAC (placeholder) (`interface-dac-command.kicad_sch`) - U8 8-output bipolar DAC placeholder (target DAC81404), DAC_CMD1-4, LDAC, CLR (2026-11-25)
 7. CH1 (`channel.kicad_sch`) - hierarchical channel block, placed 4 times (CH1-CH4 on pages 7, 11, 15, 19), each holding:
    Input Clamp & Buffer (`analog-clamp-buffer.kicad_sch`), Howland Current Pump (`analog-current-pump.kicad_sch`),
    Limiter & PhotoMOS (`output-limiter-photomos.kicad_sch`). Designators by channel: CHn part k = k + 100 n (R24 -> R124 / R224 / R324 / R424)
 8-22. the three channel pages for CH1-CH4
 23. Return Electrode & Shunt (`return.kicad_sch`) - J6 RET banana jack, RSHR1 100 ohm 0.1 % to COM, TP28 / TP31; never switched
-24. Interface - ADC Read-back (`interface-adc-readback.kicad_sch`) - U15 / U16 ADS8689 (I and V)
-25. Sense - Feedback to ADC (`sense-feedback-adc.kicad_sch`) - still scaled for a 10 ohm shunt until phase 6
-26. Doc - Revision History (`revision-history.kicad_sch`)
+24. Interface - ADC (placeholder) (`interface-adc-readback.kicad_sch`) - U15 8-input bipolar ADC placeholder (target ADS8688 class): V_MON1-4, I_RET_SENSE, spares on TP40-TP42
+25. Doc - Revision History (`revision-history.kicad_sch`)
 
 ## Directory structure
 

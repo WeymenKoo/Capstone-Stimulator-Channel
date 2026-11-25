@@ -1308,7 +1308,7 @@
     ],
     [
       "7c14932f-2e34-4ecb-ac99-994f2f04620f",
-      "[6] Interface - DAC Command"
+      "[6] Interface - DAC (placeholder)"
     ],
     [
       "9d0bdb08-6c29-5890-90c8-6fbe493cc345",
@@ -1332,11 +1332,7 @@
     ],
     [
       "4b7c7ece-13b3-4546-8c13-c3483238e92d",
-      "[10] Interface - ADC Read-back"
-    ],
-    [
-      "2096539e-cd7e-52a8-ab60-27cf0fbcd4d3",
-      "[11] Sense - Feedback to ADC"
+      "[24] Interface - ADC (placeholder)"
     ]
   ],
   "text_variables": {

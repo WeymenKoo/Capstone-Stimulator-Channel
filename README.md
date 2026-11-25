@@ -88,6 +88,10 @@ Phase 5 (done): isolation barrier for 4 channels: U6 (ENABLE = EN_CH1, MOSI, SCL
 CS_DAC, MISO back) and a new U19 ISO7740FDWR (EN_CH2-4, CLR), default states chosen so an unpowered or unplugged FPGA
 leaves every PhotoMOS open and the DAC cleared. J3 gains pins 10 / 14 / 16 / 18 and pin 9 becomes LDAC
 (`02_rev1_channel/ICD_J3.md`, still a proposal for the FPGA team).
+Phase 6 (done): the DAC and ADC pages hold placeholders (DNP, no footprint, not in the BoM) with frozen net names and
+the requirements written on the sheet: an 8-output bipolar DAC (target DAC81404) driving DAC_CMD1-4, and an 8-input
+bipolar ADC (target ADS8688 class) reading V_MON1-4 (each channel's 20 MOhm / 101 divider) and I_RET_SENSE. The old
+offset / sense page is removed: with a bipolar ADC the dividers return to COM directly.
 Full specification, sheet list and design rules: [`02_rev1_channel/Kicad Projects/STIM_Rev1/README.md`](02_rev1_channel/Kicad%20Projects/STIM_Rev1/README.md).
 
 ## Repository map

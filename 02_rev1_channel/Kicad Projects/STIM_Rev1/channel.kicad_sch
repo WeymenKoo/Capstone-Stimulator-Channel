@@ -278,20 +278,6 @@
 				(justify left)
 			)
 		)
-		(pin "VMID" input
-			(at 215.9 110.49 180)
-			(uuid "0705d637-d9ce-4fc3-9292-28df88257d79")
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-					(thickness 0.3048)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-				(justify left)
-			)
-		)
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/9d0bdb08-6c29-5890-90c8-6fbe493cc345"
@@ -350,28 +336,6 @@
 			(type default)
 		)
 		(uuid "27e6d6ed-6085-5aa9-89d7-649e307e3a17")
-	)
-	(wire
-		(pts
-			(xy 193.04 110.49) (xy 215.9 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c0fb084a-7436-5e1c-aacd-fe0014e317d9")
-	)
-	(hierarchical_label "VMID"
-		(shape input)
-		(at 193.04 110.49 180)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3a45c8b5-03cb-531f-ae6b-90e716f9453a")
 	)
 	(wire
 		(pts

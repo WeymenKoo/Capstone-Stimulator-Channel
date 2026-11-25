@@ -14367,4 +14367,882 @@
 		)
 		(embedded_fonts no)
 	)
+	(symbol "DAC_8CH_PLACEHOLDER"
+		(pin_names
+			(offset 0.762)
+		)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at -12.7 19.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DAC_8CH_PLACEHOLDER"
+			(at -12.7 -21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "8-channel bipolar SPI DAC placeholder: part not chosen (target DAC81404 class)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(symbol "DAC_8CH_PLACEHOLDER_0_1"
+			(rectangle
+				(start -12.7 15.24)
+				(end 12.7 -15.24)
+				(stroke
+					(width 0.254)
+					(type dash)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "DAC_8CH_PLACEHOLDER_1_1"
+			(pin input line
+				(at -15.24 10.16 0)
+				(length 2.54)
+				(name "SCLK"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "1"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin input line
+				(at -15.24 7.62 0)
+				(length 2.54)
+				(name "SDI"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "2"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin tri_state line
+				(at -15.24 5.08 0)
+				(length 2.54)
+				(name "SDO"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "3"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin input line
+				(at -15.24 2.54 0)
+				(length 2.54)
+				(name "~{CS}"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "4"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin input line
+				(at -15.24 0 0)
+				(length 2.54)
+				(name "~{LDAC}"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "5"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin input line
+				(at -15.24 -2.54 0)
+				(length 2.54)
+				(name "~{CLR}"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "6"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin output line
+				(at 15.24 10.16 180)
+				(length 2.54)
+				(name "OUT1"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "7"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin output line
+				(at 15.24 7.62 180)
+				(length 2.54)
+				(name "OUT2"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "8"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin output line
+				(at 15.24 5.08 180)
+				(length 2.54)
+				(name "OUT3"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "9"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin output line
+				(at 15.24 2.54 180)
+				(length 2.54)
+				(name "OUT4"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "10"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin output line
+				(at 15.24 0 180)
+				(length 2.54)
+				(name "OUT5"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "11"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin output line
+				(at 15.24 -2.54 180)
+				(length 2.54)
+				(name "OUT6"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "12"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin output line
+				(at 15.24 -5.08 180)
+				(length 2.54)
+				(name "OUT7"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "13"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin output line
+				(at 15.24 -7.62 180)
+				(length 2.54)
+				(name "OUT8"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "14"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin power_in line
+				(at -5.08 17.78 270)
+				(length 2.54)
+				(name "AVDD"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "15"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin power_in line
+				(at 0 17.78 270)
+				(length 2.54)
+				(name "DVDD"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "16"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin power_in line
+				(at -5.08 -17.78 90)
+				(length 2.54)
+				(name "AVSS"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "17"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin power_in line
+				(at 0 -17.78 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "18"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin passive line
+				(at 5.08 -17.78 90)
+				(length 2.54)
+				(name "VREF"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "19"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+	(symbol "ADC_8CH_PLACEHOLDER"
+		(pin_names
+			(offset 0.762)
+		)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(in_pos_files no)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at -12.7 19.05 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ADC_8CH_PLACEHOLDER"
+			(at -12.7 -21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Description" "8-input bipolar SPI ADC placeholder: part not chosen (target ADS8688 class)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(symbol "ADC_8CH_PLACEHOLDER_0_1"
+			(rectangle
+				(start -12.7 15.24)
+				(end 12.7 -15.24)
+				(stroke
+					(width 0.254)
+					(type dash)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "ADC_8CH_PLACEHOLDER_1_1"
+			(pin input line
+				(at -15.24 10.16 0)
+				(length 2.54)
+				(name "SCLK"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "1"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin input line
+				(at -15.24 7.62 0)
+				(length 2.54)
+				(name "SDI"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "2"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin tri_state line
+				(at -15.24 5.08 0)
+				(length 2.54)
+				(name "SDO"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "3"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin input line
+				(at -15.24 2.54 0)
+				(length 2.54)
+				(name "~{CS}"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "4"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin input line
+				(at 15.24 10.16 180)
+				(length 2.54)
+				(name "AIN1"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "5"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin input line
+				(at 15.24 7.62 180)
+				(length 2.54)
+				(name "AIN2"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "6"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin input line
+				(at 15.24 5.08 180)
+				(length 2.54)
+				(name "AIN3"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "7"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin input line
+				(at 15.24 2.54 180)
+				(length 2.54)
+				(name "AIN4"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "8"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin input line
+				(at 15.24 0 180)
+				(length 2.54)
+				(name "AIN5"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "9"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin input line
+				(at 15.24 -2.54 180)
+				(length 2.54)
+				(name "AIN6"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "10"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin input line
+				(at 15.24 -5.08 180)
+				(length 2.54)
+				(name "AIN7"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "11"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin input line
+				(at 15.24 -7.62 180)
+				(length 2.54)
+				(name "AIN8"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "12"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin power_in line
+				(at -5.08 17.78 270)
+				(length 2.54)
+				(name "AVDD"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "13"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin power_in line
+				(at 0 17.78 270)
+				(length 2.54)
+				(name "DVDD"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "14"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin power_in line
+				(at 0 -17.78 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "15"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+			(pin passive line
+				(at 5.08 -17.78 90)
+				(length 2.54)
+				(name "REF"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+				(number "16"
+					(effects
+					(font
+						(face "JetBrains Mono")
+						(size 1.27 1.27)
+					)
+				)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 )

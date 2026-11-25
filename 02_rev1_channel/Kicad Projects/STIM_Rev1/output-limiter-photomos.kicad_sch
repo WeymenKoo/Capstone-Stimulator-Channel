@@ -4083,18 +4083,6 @@
 		)
 		(uuid "1ca0e74e-8bcf-526d-97e6-4c7dbfe785b7")
 	)
-	(hierarchical_label "VMID"
-		(shape input)
-		(at 265.43 135.89 180)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "6cdb000f-355f-56bd-a54c-2592211df924")
-	)
 	(hierarchical_label "I_SENSE"
 		(shape input)
 		(at 67.31 85.09 180)
@@ -7693,6 +7681,99 @@
 				)
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/99dc508b-ab7b-52f8-bd3b-576ba43e7cd9/f069f885-88b4-57b7-9482-f6ec165967cf"
 					(reference "#PWR4109")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "STIM_Rev1:ISO_GND")
+		(at 265.43 135.89 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7b00d9bb-5011-5ece-a3e0-339f5629c922")
+		(property "Reference" "#PWR1113"
+			(at 265.43 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ISO_GND"
+			(at 265.43 140.716 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 265.43 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 265.43 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 265.43 135.89 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1e0247a3-0388-5bc2-9a8e-101b7cbd90c4")
+		)
+		(instances
+			(project "STIM_Rev1"
+				(path "/801725e5-e50b-4629-8dff-f10f88598334/9d0bdb08-6c29-5890-90c8-6fbe493cc345/f069f885-88b4-57b7-9482-f6ec165967cf"
+					(reference "#PWR1113")
+					(unit 1)
+				)
+				(path "/801725e5-e50b-4629-8dff-f10f88598334/ecbc1c2c-07dc-54da-af77-4f697fa6928c/f069f885-88b4-57b7-9482-f6ec165967cf"
+					(reference "#PWR2113")
+					(unit 1)
+				)
+				(path "/801725e5-e50b-4629-8dff-f10f88598334/61a93ef7-2241-5e8c-bfe7-6ac30ddfbd28/f069f885-88b4-57b7-9482-f6ec165967cf"
+					(reference "#PWR3113")
+					(unit 1)
+				)
+				(path "/801725e5-e50b-4629-8dff-f10f88598334/99dc508b-ab7b-52f8-bd3b-576ba43e7cd9/f069f885-88b4-57b7-9482-f6ec165967cf"
+					(reference "#PWR4113")
 					(unit 1)
 				)
 			)

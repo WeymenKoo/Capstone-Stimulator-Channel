@@ -1465,7 +1465,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "SIGNAL: FPGA J3 and isolator [5] -> DAC [6] -> clamp [7] -> pump [8] -> limiter [9] -> sense [11] -> ADCs [10] -> back over ISO_MISO; \nVMID_REF is read once on TP37. Same-name labels join nets."
+	(text "SIGNAL: FPGA J3 and isolators [5] -> DAC [6] -> CH1-CH4 (clamp, pump, PhotoMOS, electrode jack) -> head -> return [23]; \nV_MON1-4 and I_RET_SENSE -> ADC [24] -> back over ISO_MISO. DAC and ADC are placeholders. Same-name labels join nets."
 		(exclude_from_sim no)
 		(at 92.964 230.632 0)
 		(effects
@@ -1675,16 +1675,6 @@
 	)
 	(wire
 		(pts
-			(xy 300.99 173.99) (xy 332.74 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "080111b4-de71-44d3-a389-64a7579aa6b2")
-	)
-	(wire
-		(pts
 			(xy 156.21 173.99) (xy 185.42 173.99)
 		)
 		(stroke
@@ -1703,16 +1693,6 @@
 		)
 		(uuid "1b620fed-9947-4534-8e04-44da3b4505eb")
 	)
-	(wire
-		(pts
-			(xy 323.85 140.97) (xy 336.55 140.97)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1bdb11a0-b4ac-4355-8b97-124d8027c67a")
-	)
 	(polyline
 		(pts
 			(xy 115.57 210.82) (xy 115.57 218.44)
@@ -1726,16 +1706,6 @@
 	)
 	(wire
 		(pts
-			(xy 332.74 173.99) (xy 332.74 191.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "24da7ed9-577b-494c-b1a5-d5f8a942dd22")
-	)
-	(wire
-		(pts
 			(xy 224.79 87.63) (xy 224.79 92.71)
 		)
 		(stroke
@@ -1743,16 +1713,6 @@
 			(type default)
 		)
 		(uuid "2a4a0826-8ec1-41d7-833b-ac4144f5ff19")
-	)
-	(wire
-		(pts
-			(xy 300.99 170.18) (xy 328.93 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "328b6556-fac8-44a4-b040-d355bc594d1e")
 	)
 	(polyline
 		(pts
@@ -1897,16 +1857,6 @@
 	)
 	(wire
 		(pts
-			(xy 300.99 177.8) (xy 336.55 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a261d5e1-1d7d-439e-bee8-272168df5172")
-	)
-	(wire
-		(pts
 			(xy 86.36 102.87) (xy 80.01 102.87)
 		)
 		(stroke
@@ -1924,16 +1874,6 @@
 			(type default)
 		)
 		(uuid "ad18fbef-a7ce-40fa-b922-6cdc92befb98")
-	)
-	(wire
-		(pts
-			(xy 231.14 170.18) (xy 251.46 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b18eb063-979d-4108-8d65-30dfe8cc1d57")
 	)
 	(wire
 		(pts
@@ -2007,26 +1947,6 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 173.99) (xy 251.46 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c8ef97c4-8bc3-4143-ac93-ad98f03f47fd")
-	)
-	(wire
-		(pts
-			(xy 323.85 148.59) (xy 328.93 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c916399b-1c76-4fe1-845f-74aa812115eb")
-	)
-	(wire
-		(pts
 			(xy 138.43 102.87) (xy 144.78 102.87)
 		)
 		(stroke
@@ -2054,26 +1974,6 @@
 			(type default)
 		)
 		(uuid "d27c48cc-65f4-4ee1-a90c-889a06a994e1")
-	)
-	(wire
-		(pts
-			(xy 336.55 140.97) (xy 336.55 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d62b37b5-0399-4609-b790-68f9af3a200a")
-	)
-	(wire
-		(pts
-			(xy 328.93 148.59) (xy 328.93 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d6bf000a-1545-4500-afa7-43c3b5c1cfc5")
 	)
 	(wire
 		(pts
@@ -2148,28 +2048,6 @@
 		)
 		(uuid "4e4bbc4d-5640-4585-b732-383364d4be1d")
 	)
-	(label "VMID"
-		(at 313.69 170.18 180)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6dcd42b4-4b29-4973-9d4f-1e8a0e12683d")
-	)
-	(label "V_ELEC_ADC"
-		(at 247.65 173.99 180)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8b99b843-741e-47bd-b6d3-68dde3899b1a")
-	)
 	(label "ISO_ENABLE"
 		(at 154.94 203.2 180)
 		(effects
@@ -2181,18 +2059,7 @@
 		)
 		(uuid "a7f7b1cd-546d-4d3e-901d-e59efb9409e3")
 	)
-	(label "I_RET_SENSE"
-		(at 303.53 173.99 0)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "adb1767b-3b7b-4d6b-8d5b-636240c074bd")
-	)
-	(label "DAC_CMD"
+	(label "DAC_CMD1"
 		(at 219.71 138.43 180)
 		(effects
 			(font
@@ -2235,28 +2102,6 @@
 			(justify right bottom)
 		)
 		(uuid "cc436e00-cf28-4b4d-9ec3-0b2c1bc79f92")
-	)
-	(label "I_RETURN_ADC"
-		(at 247.65 170.18 180)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "d6725836-6506-4fe2-a237-4b1766665c94")
-	)
-	(label "V_ELEC_DIV"
-		(at 313.69 177.8 180)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e17ffa8e-28bc-4ee1-b80e-5a13a5847525")
 	)
 	(symbol
 		(lib_id "STIM_Rev1:+9V")
@@ -3483,128 +3328,6 @@
 		)
 	)
 	(sheet
-		(at 251.46 165.1)
-		(size 49.53 17.78)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.254)
-			(type solid)
-			(color 132 0 0 1)
-		)
-		(fill
-			(color 255 255 194 1)
-		)
-		(uuid "2096539e-cd7e-52a8-ab60-27cf0fbcd4d3")
-		(property "Sheetname" "[11] Sense - Feedback to ADC"
-			(at 251.46 164.0201 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.905 1.905)
-					(thickness 0.381)
-					(bold yes)
-					(italic yes)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "sense-feedback-adc.kicad_sch"
-			(at 251.46 183.4074 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1 1)
-				)
-				(justify left top)
-			)
-		)
-		(pin "V_ELEC_DIV" input
-			(at 300.99 177.8 0)
-			(uuid "3b2224a8-0cf9-4001-a7e2-0ca13235c286")
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-					(thickness 0.3048)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-				(justify right)
-			)
-		)
-		(pin "VMID" output
-			(at 300.99 170.18 0)
-			(uuid "1818c4f1-1673-446c-831f-679aaa4ba594")
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-					(thickness 0.3048)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-				(justify right)
-			)
-		)
-		(pin "I_RETURN_ADC" output
-			(at 251.46 170.18 180)
-			(uuid "161c5dac-fe8b-4d6e-b3e5-7f0e3f7e131a")
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-					(thickness 0.3048)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-				(justify left)
-			)
-		)
-		(pin "V_ELEC_ADC" output
-			(at 251.46 173.99 180)
-			(uuid "b0e2d0b6-11d8-4eef-8f45-ec6e3ccaf8b3")
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-					(thickness 0.3048)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-				(justify left)
-			)
-		)
-		(pin "RET_SHUNT" input
-			(at 300.99 173.99 0)
-			(uuid "4b82e7d4-6b49-4e1f-850f-781a4fa59673")
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-					(thickness 0.3048)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-				(justify right)
-			)
-		)
-		(instances
-			(project "STIM_Rev1"
-				(path "/801725e5-e50b-4629-8dff-f10f88598334"
-					(page "25")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 185.42 165.1)
 		(size 45.72 25.4)
 		(exclude_from_sim no)
@@ -3621,7 +3344,7 @@
 			(color 255 255 194 1)
 		)
 		(uuid "4b7c7ece-13b3-4546-8c13-c3483238e92d")
-		(property "Sheetname" "[10] Interface - ADC Read-back"
+		(property "Sheetname" "[24] Interface - ADC (placeholder)"
 			(at 185.42 164.0201 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3646,34 +3369,6 @@
 					(size 1 1)
 				)
 				(justify left top)
-			)
-		)
-		(pin "I_RETURN_ADC" input
-			(at 231.14 170.18 0)
-			(uuid "07fb2a4a-1646-468d-960c-30fac71977c0")
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-					(thickness 0.3048)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-				(justify right)
-			)
-		)
-		(pin "V_ELEC_ADC" input
-			(at 231.14 173.99 0)
-			(uuid "30c6dcda-27ce-4f38-bfeb-8947c5599372")
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-					(thickness 0.3048)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-				(justify right)
 			)
 		)
 		(pin "ISO_SCLK" input
@@ -3718,20 +3413,6 @@
 				(justify left)
 			)
 		)
-		(pin "ISO_CS_ADC2" input
-			(at 185.42 185.42 180)
-			(uuid "60ee6a7c-08df-4ee3-86cf-539f24f110ff")
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-					(thickness 0.3048)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-				(justify left)
-			)
-		)
 		(pin "ISO_MISO" output
 			(at 185.42 177.8 180)
 			(uuid "ef25e8fd-ee13-4dec-886c-9b61dd43ac21")
@@ -3744,6 +3425,76 @@
 					(color 0 0 0 1)
 				)
 				(justify left)
+			)
+		)
+		(pin "V_MON1" input
+			(at 231.14 170.18 0)
+			(uuid "f38f54d3-92c0-5460-887a-8e1e09db0d3d")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify right)
+			)
+		)
+		(pin "V_MON2" input
+			(at 231.14 173.99 0)
+			(uuid "dfb446a2-0aea-5445-a5b8-d21f4a552360")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify right)
+			)
+		)
+		(pin "V_MON3" input
+			(at 231.14 177.8 0)
+			(uuid "86fc357a-7ecc-5d44-b141-9a5d23ec5e1f")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify right)
+			)
+		)
+		(pin "V_MON4" input
+			(at 231.14 181.61 0)
+			(uuid "986f3be2-8838-5ea2-ae17-220a8727aaa7")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify right)
+			)
+		)
+		(pin "I_RET_SENSE" input
+			(at 231.14 185.42 0)
+			(uuid "3fd558c0-4afb-5e2f-98a4-e23952affbfe")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -3944,7 +3695,7 @@
 	)
 	(sheet
 		(at 163.83 128.27)
-		(size 45.72 21.59)
+		(size 45.72 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -3959,7 +3710,7 @@
 			(color 255 255 194 1)
 		)
 		(uuid "7c14932f-2e34-4ecb-ac99-994f2f04620f")
-		(property "Sheetname" "[6] Interface - DAC Command"
+		(property "Sheetname" "[6] Interface - DAC (placeholder)"
 			(at 163.83 127.1901 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3975,7 +3726,7 @@
 			)
 		)
 		(property "Sheetfile" "interface-dac-command.kicad_sch"
-			(at 163.83 150.3874 0)
+			(at 163.83 154.2574 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4028,7 +3779,7 @@
 				(justify left)
 			)
 		)
-		(pin "DAC_CMD" output
+		(pin "DAC_CMD1" output
 			(at 209.55 138.43 0)
 			(uuid "3727f3f2-3ce8-416d-877b-88bcfd84e42d")
 			(effects
@@ -4054,6 +3805,76 @@
 					(color 0 0 0 1)
 				)
 				(justify left)
+			)
+		)
+		(pin "DAC_CMD2" output
+			(at 209.55 140.97 0)
+			(uuid "e6e358de-2a36-510d-9fff-c46b48510f28")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify right)
+			)
+		)
+		(pin "DAC_CMD3" output
+			(at 209.55 143.51 0)
+			(uuid "355c925f-05ff-51ea-8986-e6e0f124cc31")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify right)
+			)
+		)
+		(pin "DAC_CMD4" output
+			(at 209.55 146.05 0)
+			(uuid "15cb3b13-dc69-5506-a288-2313574131b8")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify right)
+			)
+		)
+		(pin "ISO_LDAC" input
+			(at 209.55 148.59 0)
+			(uuid "eec2bc52-fa34-5181-a8b3-4ebeb19526c9")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify right)
+			)
+		)
+		(pin "ISO_CLR" input
+			(at 209.55 151.13 0)
+			(uuid "dea45fe6-2198-5606-a421-b5afe6ee5557")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -4230,20 +4051,6 @@
 				(justify right)
 			)
 		)
-		(pin "VMID" input
-			(at 323.85 148.59 0)
-			(uuid "a26d63e8-ed4f-5462-9f81-d7a670a7a313")
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-					(thickness 0.3048)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-				(justify right)
-			)
-		)
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334"
@@ -4338,20 +4145,6 @@
 				(justify left)
 			)
 		)
-		(pin "VMID" input
-			(at 368.3 139.7 180)
-			(uuid "63417637-910a-5ac6-953c-b5bca96f80d2")
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-					(thickness 0.3048)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-				(justify left)
-			)
-		)
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334"
@@ -4401,27 +4194,6 @@
 			(justify right bottom)
 		)
 		(uuid "81cfa379-58e4-5294-bbac-273436b3d7d7")
-	)
-	(wire
-		(pts
-			(xy 355.6 139.7) (xy 368.3 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce2fdf64-abc7-5052-9660-b44568c36606")
-	)
-	(label "VMID"
-		(at 355.6 139.7 180)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "300f8659-bbe6-58ab-9161-7819d982ec1d")
 	)
 	(wire
 		(pts
@@ -4530,20 +4302,6 @@
 				(justify left)
 			)
 		)
-		(pin "VMID" input
-			(at 368.3 170.18 180)
-			(uuid "541e0f18-d34b-541b-aa37-07a16e01a811")
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-					(thickness 0.3048)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-				(justify left)
-			)
-		)
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334"
@@ -4593,27 +4351,6 @@
 			(justify right bottom)
 		)
 		(uuid "ee2c7a3e-7b3d-5627-aaa2-24c1b298757b")
-	)
-	(wire
-		(pts
-			(xy 355.6 170.18) (xy 368.3 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e30b7ebd-c07c-5e00-be17-2247719d9497")
-	)
-	(label "VMID"
-		(at 355.6 170.18 180)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "91dd6b4d-3381-5887-98cc-3b7047d68206")
 	)
 	(wire
 		(pts
@@ -4722,20 +4459,6 @@
 				(justify left)
 			)
 		)
-		(pin "VMID" input
-			(at 368.3 200.66 180)
-			(uuid "f84db2e9-2cbb-5890-b389-ae75c785fdcd")
-			(effects
-				(font
-					(face "JetBrains Mono")
-					(size 1.27 1.27)
-					(thickness 0.3048)
-					(bold yes)
-					(color 0 0 0 1)
-				)
-				(justify left)
-			)
-		)
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334"
@@ -4785,27 +4508,6 @@
 			(justify right bottom)
 		)
 		(uuid "33d6e29e-9fdd-59b0-8791-16e704d19f99")
-	)
-	(wire
-		(pts
-			(xy 355.6 200.66) (xy 368.3 200.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "713f90f0-daef-579a-af48-91a73bfb12a8")
-	)
-	(label "VMID"
-		(at 355.6 200.66 180)
-		(effects
-			(font
-				(face "JetBrains Mono")
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "5fd5dfa9-9984-540f-b1de-031563dd4426")
 	)
 	(wire
 		(pts
@@ -4896,7 +4598,7 @@
 	)
 	(wire
 		(pts
-			(xy 300.99 191.77) (xy 332.74 191.77)
+			(xy 300.99 191.77) (xy 302.26 191.77)
 		)
 		(stroke
 			(width 0)
@@ -4999,9 +4701,247 @@
 		)
 		(uuid "bce1bb80-b3d3-583a-a299-f3b7bbbaa849")
 	)
-	(no_connect
-		(at 185.42 185.42)
-		(uuid "3aeb9a5e-f663-5784-9ad8-753687880a66")
+	(wire
+		(pts
+			(xy 323.85 140.97) (xy 325.12 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa10a594-06d4-519b-b52e-3b0b94a7d703")
+	)
+	(label "V_MON1"
+		(at 325.12 140.97 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8ff2851e-00b4-5835-aa35-e1b27533b610")
+	)
+	(label "I_RET_SENSE"
+		(at 302.26 191.77 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bad95a42-b98c-58e4-ac75-08cafca5127a")
+	)
+	(wire
+		(pts
+			(xy 231.14 170.18) (xy 232.41 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b1778ce-5bcb-545d-8174-07a7a0784c0c")
+	)
+	(label "V_MON1"
+		(at 232.41 170.18 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ff5962ce-140d-5218-9705-638034b3622c")
+	)
+	(wire
+		(pts
+			(xy 231.14 173.99) (xy 232.41 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eefe1aeb-fbe5-58eb-bb80-935427b0fbcd")
+	)
+	(label "V_MON2"
+		(at 232.41 173.99 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5305fb0a-51e1-5e08-adf7-9a8fc587f9c8")
+	)
+	(wire
+		(pts
+			(xy 231.14 177.8) (xy 232.41 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30bb799e-fb35-5999-adb4-b8cf155974f5")
+	)
+	(label "V_MON3"
+		(at 232.41 177.8 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "87568582-23e7-50cf-88c0-46f639fa156b")
+	)
+	(wire
+		(pts
+			(xy 231.14 181.61) (xy 232.41 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d6b3fe9-9282-54cb-8c13-7f9509bc6306")
+	)
+	(label "V_MON4"
+		(at 232.41 181.61 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dc2ab0b6-7ff5-56f7-ab6b-71e8e44a8392")
+	)
+	(wire
+		(pts
+			(xy 231.14 185.42) (xy 232.41 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f875a0c-7807-54f2-b15f-971139001443")
+	)
+	(label "I_RET_SENSE"
+		(at 232.41 185.42 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "50855b7d-6341-58af-9063-4e9c09627447")
+	)
+	(wire
+		(pts
+			(xy 209.55 140.97) (xy 210.82 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71815b3f-4e41-5e63-a5a9-9d142023772f")
+	)
+	(label "DAC_CMD2"
+		(at 210.82 140.97 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a65e7d30-dd72-5118-8fd1-861daf0312e6")
+	)
+	(wire
+		(pts
+			(xy 209.55 143.51) (xy 210.82 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05ada2b0-2fb3-5b99-a383-5f448ca10ff9")
+	)
+	(label "DAC_CMD3"
+		(at 210.82 143.51 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "63675ec2-9bb4-517d-8689-3887585a4aa8")
+	)
+	(wire
+		(pts
+			(xy 209.55 146.05) (xy 210.82 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5fbbb19-8e6b-5bad-ab1f-b696de27c431")
+	)
+	(label "DAC_CMD4"
+		(at 210.82 146.05 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2d035dda-8c47-5e39-909a-16a12cb87272")
+	)
+	(wire
+		(pts
+			(xy 209.55 148.59) (xy 210.82 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "251f73c1-d4e3-5acd-bb07-e467481940de")
+	)
+	(label "ISO_LDAC"
+		(at 210.82 148.59 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6d71bc7c-7927-5160-8783-91dcacdefcc3")
+	)
+	(wire
+		(pts
+			(xy 209.55 151.13) (xy 210.82 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fc66baa-ed2c-507e-8179-b57a8b2514e5")
+	)
+	(label "ISO_CLR"
+		(at 210.82 151.13 0)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "737b1d55-ca78-53a1-8b8b-092043a0549d")
 	)
 	(sheet_instances
 		(path "/"
