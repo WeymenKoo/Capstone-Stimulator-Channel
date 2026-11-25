@@ -7,7 +7,7 @@ no longer exists: the DAC and ADC are on the board behind digital isolators.
 **Pin-out changed 2026-11-18: J3 is 2 x 13 on the Red Pitaya E1 pin-out, one SPI bus with three chip selects (D-J), pin order set by the PCB placement. The 2 x 8 pin-out of 2026-11-07 is void.**
 
 ## Connector
-J3, 2 x 13 shrouded IDC header, 2.54 mm (On Shore 302-S261, DigiKey ED10526-ND; LCSC C9040; J4 is the same part).
+J3, 2 x 13 shrouded IDC header, 2.54 mm (On Shore 302-S261, DigiKey ED10526-ND; LCSC C9040).
 **Pin for pin the Red Pitaya extension connector E1** (STEMlab 125-14 hardware page, read 2026-11-18): a straight 26-way
 ribbon with an IDC socket at each end is the whole harness. Every DIO line is single-ended LVCMOS33, drive < 8 mA
 [Red Pitaya]. **J3 is the isolation barrier:** everything on it is referenced to the FPGA ground, nothing on it touches
@@ -79,9 +79,11 @@ low-range budget. Bench tests without firmware: lift R17 and drive DAC_CMD at TP
    are common through the return electrode (D-C). The isolators carry the difference.
 
 ## Bypass (bench only)
-JP1 closed + ribbon moved from J3 to J4 on the board side: the FPGA drives the converters directly, 3.3 V logic on both
-sides, and GND = board ISO_GND through the cable (no isolation, J4 pins 25-26). J4 has the J3 pin numbers; its pins
-1-2 are not connected (the board makes its own 3.3 V). Never plug J3 and J4 at the same time with JP1 open.
+JP1 closed + dupont jumpers from the Red Pitaya E1 header to J4 on the board side: the FPGA drives the converters
+directly, 3.3 V logic on both sides, and GND = board ISO_GND (no isolation). J4 is a 1 x 10 2.54 mm pin row:
+1 MISO, 2 CS_DAC, 3 CS_ADC2, 4 CS_ADC, 5 SCLK, 6 MOSI, 7 ENABLE, 8 FAULT_N, 9-10 ISO_GND. There is no 3.3 V pin on
+purpose (the board makes its own 3.3 V; do not back-feed the Red Pitaya). Never connect J3 and J4 at the same time
+with JP1 open.
 
 ## Questions for CPEN
 1. E1 supplies the 3.3 V on pins 1-2 (~8 mA of 0.5 A). Are DIO1_P ... DIO7_P and DIO4_N free in the FPGA image as
@@ -99,13 +101,13 @@ sides, and GND = board ISO_GND through the cable (no isolation, J4 pins 25-26). 
 ## CPEN review 2026-11-09 (answers)
 
 Written for the 2 x 8 pin-out of 2026-11-07. The bus is the same; only the J3 pin numbers moved on 2026-11-18 (MISO is
-now J3 / J4 pin 5). The "J3 2x10" idea in answer 3 is overtaken by the 2 x 13 header, but a hardware LDAC_N or RESET_N
+now J3 pin 5 / J4 pin 1). The "J3 2x10" idea in answer 3 is overtaken by the 2 x 13 header, but a hardware LDAC_N or RESET_N
 still needs a forward isolator channel that Rev 1 does not have.
 
 1. **Pull-up on MISO:** added, R13 100k from ISO_MISO to +3V3 on sheet [5] (board side of U7). Between frames all three
    SDOs are high-Z (AD5761R SDO leakage +/-1 uA; ADS8689 "SDO-x pins go to tri-state when CS is high" [DS]). The ISO7741
    reads an open input as its default state, high for U7 [DS function table], so the FPGA-side MISO was already defined;
-   R13 is belt and braces and fixes the level on J4 pin 7 in bypass. No pull-up on the FPGA side: U7 OUTD drives
+   R13 is belt and braces and fixes the level on J4 pin 1 (ISO_MISO) in bypass. No pull-up on the FPGA side: U7 OUTD drives
    SPI_MISO push-pull whenever +3V3_FPGA is present.
 2. **RESET:** no RESET line on J3 in Rev 1. The AD5761R RESET, CLEAR and LDAC pins have internal pull-ups [DS]; R15 / R14
    10k keep them probe-able. The ADS8689 RST "can be tied to DVDD" in the standard SPI configuration [DS Figure 7-25];
@@ -116,8 +118,8 @@ still needs a forward isolator channel that Rev 1 does not have.
 3. **LDAC:** one DAC per board, LDAC tied low: "the DAC register is updated when the input register is updated" [DS pin
    11], i.e. on SYNC rising. A shared LDAC only matters when several DACs (four boards) must update in the same
    instant; with sequential SPI writes the skew is one 24-bit frame per board (2.4 us at 10 MHz). That is a Rev 2
-   interface-board item (shared LDAC_N and RESET_N through a third isolator, J3 2x10).
+   interface-board item (shared LDAC_N and RESET_N through a third isolator, J3 2x10): `03_safety_plan/parking-lot.md`.
 
 ## Change control
-Changing a pin, a range or a scale here changes sheets [5], [6], [10] or RG1 / R31 / R32. Agree the change with
-CPEN before editing the schematic.
+Changing a pin, a range or a scale here changes sheets [5], [6], [10] or RG1 / R31 / R32. File the change in
+`DECISIONS.md` and the KiCad `CHANGELOG.md`.

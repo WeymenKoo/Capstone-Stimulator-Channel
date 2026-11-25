@@ -1,0 +1,84 @@
+LTspice 26.0.2 for MacOS
+Circuit: <project>/01_client_board/tests/A7-rail-loss/A7-rail-loss.net
+Start Time: Tue Oct 27 18:29:31 2026
+
+.step vrail=30 seq=1
+solver = Normal
+Maximum thread count: 10
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+
+.step vrail=100 seq=1
+Direct Newton iteration succeeded in finding operating point.
+
+.step vrail=30 seq=2
+Direct Newton iteration succeeded in finding operating point.
+
+.step vrail=100 seq=2
+Direct Newton iteration failed to find operating point.
+Starting Gmin stepping
+Gmin stepping failed to find operating point. Use".option gminsteps=0" to skip all Gmin stepping.
+Starting source stepping with srcstepmethod=0
+Source stepping succeeded in finding the operating point.
+
+
+.step vrail=30 seq=3
+Direct Newton iteration succeeded in finding operating point.
+
+.step vrail=100 seq=3
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 4.322 seconds.
+
+Files loaded:
+<project>/01_client_board/tests/A7-rail-loss/A7-rail-loss.net
+~/Library/Application Support/LTspice/Bottles/ltspice/drive_c/users/crossover/AppData/Local/LTspice/lib/cmp/standard.dio
+~/Library/Application Support/LTspice/Bottles/ltspice/drive_c/users/crossover/AppData/Local/LTspice/lib/cmp/standard.bjt
+<project>/01_client_board/model/client-board-models.lib
+
+
+Measurement: i_max_ma
+  step	MAX(1000*I(RLOAD))	FROM	TO
+     1	6.58421963453	0	0.06
+     2	23.4336387366	0	0.06
+     3	1.99999241158	0	0.06
+     4	1.99999380857	0	0.06
+     5	2.01882072724	0	0.06
+     6	2.06582085229	0	0.06
+
+Measurement: i_min_ma
+  step	MIN(1000*I(RLOAD))	FROM	TO
+     1	0.00633298486719	0	0.06
+     2	0.00633298486719	0	0.06
+     3	-5.90044772252	0	0.06
+     4	-9.73098818213	0	0.06
+     5	0.00617839623374	0	0.06
+     6	0.00612239273323	0	0.06
+
+Measurement: i_end_ma
+  step	AVG(1000*I(RLOAD) )	FROM	TO
+     1	1.99999241159	0.04	0.06
+     2	1.99999311009	0.04	0.06
+     3	-5.90044772253	0.04	0.06
+     4	-9.73098512721	0.04	0.06
+     5	1.99999241159	0.04	0.06
+     6	1.99999311009	0.04	0.06
+
+Measurement: vload_max
+  step	MAX(V(LOAD))	FROM	TO
+     1	6.58421945572	0	0.06
+     2	23.433637619	0	0.06
+     3	1.99999237061	0	0.06
+     4	1.99999380112	0	0.06
+     5	2.01882076263	0	0.06
+     6	2.06582093239	0	0.06
+
+Measurement: vload_min
+  step	MIN(V(LOAD))	FROM	TO
+     1	0.00633298465982	0	0.06
+     2	0.00633298465982	0	0.06
+     3	-5.90044784546	0	0.06
+     4	-9.73098754883	0	0.06
+     5	0.00617839628831	0	0.06
+     6	0.00612239260226	0	0.06

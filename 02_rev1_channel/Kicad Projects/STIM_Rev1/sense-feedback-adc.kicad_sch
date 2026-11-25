@@ -1451,7 +1451,7 @@
 					)
 				)
 			)
-			(property "Footprint" "STIM_Rev1:TestPoint_Keystone_5000-5004_Miniature"
+			(property "Footprint" "STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical"
 				(at 5.08 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -4124,7 +4124,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "STIM_Rev1:TestPoint_Keystone_5000-5004_Miniature"
+		(property "Footprint" "STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical"
 			(at 293.37 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -4148,7 +4148,7 @@
 				)
 			)
 		)
-		(property "Description" "test loop Keystone 5001"
+		(property "Description" "test pin 1x01 2.54 mm (LV signal)"
 			(at 293.37 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -4160,7 +4160,7 @@
 				)
 			)
 		)
-		(property "Note" "bench probe loop"
+		(property "Note" "bench probe pin"
 			(at 293.37 139.7 0)
 			(hide yes)
 			(show_name no)
@@ -4559,7 +4559,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "STIM_Rev1:TestPoint_Keystone_5000-5004_Miniature"
+		(property "Footprint" "STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical"
 			(at 322.58 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -4583,7 +4583,7 @@
 				)
 			)
 		)
-		(property "Description" "test loop Keystone 5001"
+		(property "Description" "test pin 1x01 2.54 mm (LV signal)"
 			(at 322.58 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -4595,7 +4595,7 @@
 				)
 			)
 		)
-		(property "Note" "bench probe loop"
+		(property "Note" "bench probe pin"
 			(at 322.58 76.2 0)
 			(hide yes)
 			(show_name no)

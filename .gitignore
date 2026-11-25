@@ -6,6 +6,9 @@
 *.fft
 *.mout
 *.tmp
+# ...except the acceptance-test results, kept as raw data
+!01_client_board/tests/**/*.raw
+!01_client_board/tests/**/*.log
 
 # macOS / editor clutter
 .DS_Store

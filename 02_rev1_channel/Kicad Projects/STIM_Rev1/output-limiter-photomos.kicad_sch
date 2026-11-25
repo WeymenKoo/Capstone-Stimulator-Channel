@@ -2434,7 +2434,7 @@
 					)
 				)
 			)
-			(property "Footprint" "STIM_Rev1:TestPoint_Keystone_5000-5004_Miniature"
+			(property "Footprint" "STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical"
 				(at 5.08 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6143,7 +6143,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "STIM_Rev1:TestPoint_Keystone_5000-5004_Miniature"
+		(property "Footprint" "STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical"
 			(at 226.06 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -6167,7 +6167,7 @@
 				)
 			)
 		)
-		(property "Description" "test loop Keystone 5001"
+		(property "Description" "test pin 1x01 2.54 mm (LV signal)"
 			(at 226.06 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -6179,7 +6179,7 @@
 				)
 			)
 		)
-		(property "Note" "bench probe loop"
+		(property "Note" "bench probe pin"
 			(at 226.06 194.31 0)
 			(hide yes)
 			(show_name no)
@@ -6489,7 +6489,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "STIM_Rev1:TestPoint_Keystone_5000-5004_Miniature"
+		(property "Footprint" "STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical"
 			(at 205.74 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -6513,7 +6513,7 @@
 				)
 			)
 		)
-		(property "Description" "test loop Keystone 5001"
+		(property "Description" "test pin 1x01 2.54 mm (LV signal)"
 			(at 205.74 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -6525,7 +6525,7 @@
 				)
 			)
 		)
-		(property "Note" "bench probe loop"
+		(property "Note" "bench probe pin"
 			(at 205.74 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -7799,7 +7799,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "STIM_Rev1:TestPoint_Keystone_5000-5004_Miniature"
+		(property "Footprint" "STIM_Rev1:TestPoint_PinHeader_1x01_P2.54mm_Vertical"
 			(at 285.75 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -7823,7 +7823,7 @@
 				)
 			)
 		)
-		(property "Description" "test loop Keystone 5001"
+		(property "Description" "test pin 1x01 2.54 mm (HV node, never clip ground here)"
 			(at 285.75 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -7835,7 +7835,7 @@
 				)
 			)
 		)
-		(property "Note" "bench probe loop"
+		(property "Note" "bench probe pin"
 			(at 285.75 85.09 0)
 			(hide yes)
 			(show_name no)
