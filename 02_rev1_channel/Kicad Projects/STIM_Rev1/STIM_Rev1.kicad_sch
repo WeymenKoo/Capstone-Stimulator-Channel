@@ -3564,7 +3564,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334"
-					(page "12")
+					(page "24")
 				)
 			)
 		)
@@ -3714,7 +3714,7 @@
 		(instances
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334"
-					(page "11")
+					(page "23")
 				)
 			)
 		)
@@ -4126,7 +4126,7 @@
 			(color 255 255 194 1)
 		)
 		(uuid "9d0bdb08-6c29-5890-90c8-6fbe493cc345")
-		(property "Sheetname" "[7-9] Channel CH1"
+		(property "Sheetname" "CH1"
 			(at 220.98 127.1901 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4230,6 +4230,687 @@
 				)
 			)
 		)
+	)
+	(sheet
+		(at 368.3 128.27)
+		(size 35.56 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 132 0 0 1)
+		)
+		(fill
+			(color 255 255 194 1)
+		)
+		(uuid "ecbc1c2c-07dc-54da-af77-4f697fa6928c")
+		(property "Sheetname" "CH2"
+			(at 368.3 127.1901 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.905 1.905)
+					(thickness 0.381)
+					(bold yes)
+					(italic yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "channel.kicad_sch"
+			(at 368.3 151.7174 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(pin "CMD_IN" input
+			(at 368.3 132.08 180)
+			(uuid "615964bf-f8be-54cc-b85f-ea3df9c07455")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "EN" input
+			(at 368.3 135.89 180)
+			(uuid "181a97ec-cdcc-51c9-a644-67ce054bcd96")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "V_MON" output
+			(at 368.3 143.51 180)
+			(uuid "65e1d97d-eea4-59c4-bb92-71ce794d0fa8")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "RET_SHUNT" output
+			(at 368.3 147.32 180)
+			(uuid "23d92f7a-cdde-5c3e-b1aa-380a491a59b1")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "VMID" input
+			(at 368.3 139.7 180)
+			(uuid "63417637-910a-5ac6-953c-b5bca96f80d2")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "STIM_Rev1"
+				(path "/801725e5-e50b-4629-8dff-f10f88598334"
+					(page "11")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 355.6 132.08) (xy 368.3 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a839c49f-c7f6-599a-8006-dbc2a026e944")
+	)
+	(label "DAC_CMD2"
+		(at 355.6 132.08 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "936be136-1eba-5b13-b8fa-604e0f2bb34c")
+	)
+	(wire
+		(pts
+			(xy 355.6 135.89) (xy 368.3 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "378e7ca2-e016-5b70-b0da-da5d5c414a2d")
+	)
+	(label "ISO_ENABLE"
+		(at 355.6 135.89 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "81cfa379-58e4-5294-bbac-273436b3d7d7")
+	)
+	(wire
+		(pts
+			(xy 355.6 139.7) (xy 368.3 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce2fdf64-abc7-5052-9660-b44568c36606")
+	)
+	(label "VMID"
+		(at 355.6 139.7 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "300f8659-bbe6-58ab-9161-7819d982ec1d")
+	)
+	(wire
+		(pts
+			(xy 355.6 143.51) (xy 368.3 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d8adead-510f-53e9-bdc4-5f09ae1c1a1a")
+	)
+	(label "V_MON2"
+		(at 355.6 143.51 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5aea7071-2d35-55b5-89a3-87908a2a3f13")
+	)
+	(wire
+		(pts
+			(xy 355.6 147.32) (xy 368.3 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c0637ab-cd66-5b07-a99b-8e0b73415902")
+	)
+	(label "RET_SHUNT2"
+		(at 355.6 147.32 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "90705e6b-eff5-54f1-871f-6a41b0d805e0")
+	)
+	(sheet
+		(at 368.3 158.75)
+		(size 35.56 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 132 0 0 1)
+		)
+		(fill
+			(color 255 255 194 1)
+		)
+		(uuid "61a93ef7-2241-5e8c-bfe7-6ac30ddfbd28")
+		(property "Sheetname" "CH3"
+			(at 368.3 157.6701 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.905 1.905)
+					(thickness 0.381)
+					(bold yes)
+					(italic yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "channel.kicad_sch"
+			(at 368.3 182.1974 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(pin "CMD_IN" input
+			(at 368.3 162.56 180)
+			(uuid "c10f0653-dc89-59e7-bf80-ba71df015957")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "EN" input
+			(at 368.3 166.37 180)
+			(uuid "199668fb-c3c7-55ab-b7d3-c09837f5040c")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "V_MON" output
+			(at 368.3 173.99 180)
+			(uuid "4f9a1066-0f5d-565a-8220-88ef6199412d")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "RET_SHUNT" output
+			(at 368.3 177.8 180)
+			(uuid "460958d8-944c-55f0-ad83-575525975a85")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "VMID" input
+			(at 368.3 170.18 180)
+			(uuid "541e0f18-d34b-541b-aa37-07a16e01a811")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "STIM_Rev1"
+				(path "/801725e5-e50b-4629-8dff-f10f88598334"
+					(page "15")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 355.6 162.56) (xy 368.3 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0e03b54-fd6b-51f0-9779-2492348d3714")
+	)
+	(label "DAC_CMD3"
+		(at 355.6 162.56 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c2f35c1b-5427-540e-a280-e9ba5c8c1f46")
+	)
+	(wire
+		(pts
+			(xy 355.6 166.37) (xy 368.3 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc5e8a39-d8d3-52f0-92cc-934cd2b7f94b")
+	)
+	(label "ISO_ENABLE"
+		(at 355.6 166.37 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ee2c7a3e-7b3d-5627-aaa2-24c1b298757b")
+	)
+	(wire
+		(pts
+			(xy 355.6 170.18) (xy 368.3 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e30b7ebd-c07c-5e00-be17-2247719d9497")
+	)
+	(label "VMID"
+		(at 355.6 170.18 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "91dd6b4d-3381-5887-98cc-3b7047d68206")
+	)
+	(wire
+		(pts
+			(xy 355.6 173.99) (xy 368.3 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0cc44b81-f84b-5165-a842-41e44f3b9e35")
+	)
+	(label "V_MON3"
+		(at 355.6 173.99 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "65fed1f0-c860-50ca-82aa-be83836047c1")
+	)
+	(wire
+		(pts
+			(xy 355.6 177.8) (xy 368.3 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d9af9d4-ca09-571d-8db5-8b72a3fc4397")
+	)
+	(label "RET_SHUNT3"
+		(at 355.6 177.8 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d282d8f6-1857-56f9-95b1-e73f661fbfe3")
+	)
+	(sheet
+		(at 368.3 189.23)
+		(size 35.56 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.254)
+			(type solid)
+			(color 132 0 0 1)
+		)
+		(fill
+			(color 255 255 194 1)
+		)
+		(uuid "99dc508b-ab7b-52f8-bd3b-576ba43e7cd9")
+		(property "Sheetname" "CH4"
+			(at 368.3 188.1501 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.905 1.905)
+					(thickness 0.381)
+					(bold yes)
+					(italic yes)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "channel.kicad_sch"
+			(at 368.3 212.6774 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1 1)
+				)
+				(justify left top)
+			)
+		)
+		(pin "CMD_IN" input
+			(at 368.3 193.04 180)
+			(uuid "0f4d59de-525e-5836-aeaf-39312f91f76a")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "EN" input
+			(at 368.3 196.85 180)
+			(uuid "4e4d020b-8381-5411-967e-6a10c79c1ed0")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "V_MON" output
+			(at 368.3 204.47 180)
+			(uuid "57c2fbc8-dc94-5d23-a5e7-5831ffac873d")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "RET_SHUNT" output
+			(at 368.3 208.28 180)
+			(uuid "4bc772a9-234f-59b0-b1a5-1b503a517208")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "VMID" input
+			(at 368.3 200.66 180)
+			(uuid "f84db2e9-2cbb-5890-b389-ae75c785fdcd")
+			(effects
+				(font
+					(face "JetBrains Mono")
+					(size 1.27 1.27)
+					(thickness 0.3048)
+					(bold yes)
+					(color 0 0 0 1)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "STIM_Rev1"
+				(path "/801725e5-e50b-4629-8dff-f10f88598334"
+					(page "19")
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 355.6 193.04) (xy 368.3 193.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cc419b8-ed93-5f33-91b0-006cfca7cb40")
+	)
+	(label "DAC_CMD4"
+		(at 355.6 193.04 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6aee7ce5-003e-5f26-a7a5-e5298e9e1ad9")
+	)
+	(wire
+		(pts
+			(xy 355.6 196.85) (xy 368.3 196.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2334630f-21b9-53a6-bcf3-7953a11e14d5")
+	)
+	(label "ISO_ENABLE"
+		(at 355.6 196.85 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "33d6e29e-9fdd-59b0-8791-16e704d19f99")
+	)
+	(wire
+		(pts
+			(xy 355.6 200.66) (xy 368.3 200.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "713f90f0-daef-579a-af48-91a73bfb12a8")
+	)
+	(label "VMID"
+		(at 355.6 200.66 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5fd5dfa9-9984-540f-b1de-031563dd4426")
+	)
+	(wire
+		(pts
+			(xy 355.6 204.47) (xy 368.3 204.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04ff83c6-df54-5061-885c-ed571e195169")
+	)
+	(label "V_MON4"
+		(at 355.6 204.47 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e52deccf-6d81-5af3-a4cf-e03853195fe7")
+	)
+	(wire
+		(pts
+			(xy 355.6 208.28) (xy 368.3 208.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "daf752ec-098c-5b5a-9770-f7b0dfc522a0")
+	)
+	(label "RET_SHUNT4"
+		(at 355.6 208.28 180)
+		(effects
+			(font
+				(face "JetBrains Mono")
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3d1837fa-7483-576b-9b5c-ecce79385c20")
 	)
 	(sheet_instances
 		(path "/"

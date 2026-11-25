@@ -15,12 +15,13 @@
 #                                                                    electrodes to the pump nets
 #   HV to HV, 150-250 V                          220        1.5 mm   (B2 1.25 x1.2): +HV side to -HV side, a rail to the
 #                                                                    floating / electrode nets, an open JP2 / JP3 link
+#   channel to channel, any HV pair          220        1.5 mm   (as above; /CHn/ net paths, rule "HV channel to channel")
 #   floating rail to output side, LV to LV       <=24       0.2 mm   net class
 #   inner layers, any HV pair                    220        0.3 mm   (B1 0.2 x1.2)
 #   FPGA barrier                                             7.0 mm
-#   inside the INA149 (U10) and D8 courtyards                0.6 mm   their own pin pitch; TI rates U10 for +/-275 V
+#   inside the INA149 (U110-U410) and D108-D408 courtyards                0.6 mm   their own pin pitch; TI rates U10 for +/-275 V
 #   inside the VSSOP-8 LDO (U2-U5) courtyards                0.15 mm  package pitch (pads, teardrops, escapes)
-# Designator-dependent: the U10 / D8 / U2-U5 / U1 entries. Check them after any re-annotation.
+# Designator-dependent: the U110-U410 / D108-D408 / U2-U5 / U1 entries. Check them after any re-annotation.
 
 (rule "track width"
     (constraint track_width (min 0.2mm) (opt 0.3mm) (max 1.0mm))
@@ -39,7 +40,14 @@
 (rule "HV to HV 150-250 V"
     (layer outer)
     (constraint clearance (min 1.5mm))
-    (condition "(((A.hasNetclass('HV_POS')) && (B.hasNetclass('HV_NEG'))) || ((A.hasNetclass('HV_NEG')) && (B.hasNetclass('HV_POS')))) || (((A.hasNetclass('HV_POS') || A.hasNetclass('HV_NEG')) && (B.hasNetclass('HV_OUT') || B.hasNetclass('HV_FLT_P') || B.hasNetclass('HV_FLT_N') || B.hasNetclass('HV_ELEC'))) || ((A.hasNetclass('HV_OUT') || A.hasNetclass('HV_FLT_P') || A.hasNetclass('HV_FLT_N') || A.hasNetclass('HV_ELEC')) && (B.hasNetclass('HV_POS') || B.hasNetclass('HV_NEG')))) || (A.NetName == '+HV' && B.NetName == '/[7-9] Channel CH1/[8] Analog - Howland Current Pump/BENCH_BIAS_P') || (A.NetName == '-HV' && B.NetName == '/[7-9] Channel CH1/[8] Analog - Howland Current Pump/BENCH_BIAS_N')"))
+    (condition "(((A.hasNetclass('HV_POS')) && (B.hasNetclass('HV_NEG'))) || ((A.hasNetclass('HV_NEG')) && (B.hasNetclass('HV_POS')))) || (((A.hasNetclass('HV_POS') || A.hasNetclass('HV_NEG')) && (B.hasNetclass('HV_OUT') || B.hasNetclass('HV_FLT_P') || B.hasNetclass('HV_FLT_N') || B.hasNetclass('HV_ELEC'))) || ((A.hasNetclass('HV_OUT') || A.hasNetclass('HV_FLT_P') || A.hasNetclass('HV_FLT_N') || A.hasNetclass('HV_ELEC')) && (B.hasNetclass('HV_POS') || B.hasNetclass('HV_NEG')))) || (A.NetName == '/CH*/+HV_CH' && B.NetName == '/CH*/BENCH_BIAS_P') || (A.NetName == '/CH*/-HV_CH' && B.NetName == '/CH*/BENCH_BIAS_N')"))
+
+# Two channels' floating islands and outputs can sit up to ~220 V apart (CH1 at +110 V, CH2 at -110 V): the 150-250 V
+# band, 1.5 mm, even where both nets are HV_OUT / HV_FLT / HV_ELEC (which alone would get 0.75 mm).
+(rule "HV channel to channel"
+    (layer outer)
+    (constraint clearance (min 1.5mm))
+    (condition "A.Net != B.Net && (A.hasNetclass('HV_OUT') || A.hasNetclass('HV_FLT_P') || A.hasNetclass('HV_FLT_N') || A.hasNetclass('HV_ELEC')) && (B.hasNetclass('HV_OUT') || B.hasNetclass('HV_FLT_P') || B.hasNetclass('HV_FLT_N') || B.hasNetclass('HV_ELEC')) && ((A.NetName == '/CH1/*' && B.NetName != '/CH1/*') || (A.NetName == '/CH2/*' && B.NetName != '/CH2/*') || (A.NetName == '/CH3/*' && B.NetName != '/CH3/*') || (A.NetName == '/CH4/*' && B.NetName != '/CH4/*'))"))
 
 (rule "HV inner layers"
     (layer inner)
@@ -58,12 +66,12 @@
     (constraint creepage (min 3.2mm))
     (condition "(A.NetName == 'unconnected-(U1-CTRL-Pad3)' && B.NetName == 'unconnected-(U1-NC-Pad5)') || (A.NetName == 'unconnected-(U1-NC-Pad5)' && B.NetName == 'unconnected-(U1-CTRL-Pad3)') || (A.NetName == 'unconnected-(U1-CTRL-Pad3)' && B.NetName == '+12V') || (A.NetName == '+12V' && B.NetName == 'unconnected-(U1-CTRL-Pad3)') || (A.NetName == 'unconnected-(U1-NC-Pad5)' && B.NetName == 'VBAT') || (A.NetName == 'VBAT' && B.NetName == 'unconnected-(U1-NC-Pad5)')"))
 
-# Fine-pitch parts whose own pins sit closer than the band rules. Inside U10 (INA149) and D8 (BZX84C36) courtyards
+# Fine-pitch parts whose own pins sit closer than the band rules. Inside U110-U410 (INA149) and D108-D408 (BZX84C36) courtyards
 # everything, pads and the tracks leaving them, may be 0.6 mm apart (outer layers): that is their pin spacing.
 (rule "HV package pin spacing"
     (layer outer)
     (constraint clearance (min 0.6mm))
-    (condition "A.Net != B.Net && ((A.intersectsCourtyard('U10') && B.intersectsCourtyard('U10')) || (A.intersectsCourtyard('D8') && B.intersectsCourtyard('D8')))"))
+    (condition "A.Net != B.Net && ((A.intersectsCourtyard('U110') && B.intersectsCourtyard('U110')) || (A.intersectsCourtyard('D108') && B.intersectsCourtyard('D108')) || (A.intersectsCourtyard('U210') && B.intersectsCourtyard('U210')) || (A.intersectsCourtyard('D208') && B.intersectsCourtyard('D208')) || (A.intersectsCourtyard('U310') && B.intersectsCourtyard('U310')) || (A.intersectsCourtyard('D308') && B.intersectsCourtyard('D308')) || (A.intersectsCourtyard('U410') && B.intersectsCourtyard('U410')) || (A.intersectsCourtyard('D408') && B.intersectsCourtyard('D408')))"))
 
 (rule "VSSOP LDO pin spacing"
     (constraint clearance (min 0.15mm))

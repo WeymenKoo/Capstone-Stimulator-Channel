@@ -75,6 +75,10 @@ Phase 1 (done): the channel pages ([7] clamp and buffer, [8] Howland pump, [9] l
 hierarchical block `channel.kicad_sch` (sheet CH1); no electrical change (same parts, same pin-to-net connections).
 Phase 1 fixes (done): per channel a second floating-rail cap (C47, U11), +HV / -HV collector caps (C48 / C49) and a
 Kelvin test-loop pair across R24 (TP25 + TP26, 1 V = 1 mA, floats at the electrode voltage).
+Phase 2 (done): the channel is placed four times (CH1-CH4, designators R1xx / R2xx / R3xx / R4xx and so on), each
+fed from the shared +/-HV through its own 0 ohm links (R150 / R151 ...) and with its own ISO_GND test loop; design
+rule "HV channel to channel" keeps 1.5 mm between the floating / output nets of different channels. Until phase 3
+each copy still carries the old return-path parts.
 Full specification, sheet list and design rules: [`02_rev1_channel/Kicad Projects/STIM_Rev1/README.md`](02_rev1_channel/Kicad%20Projects/STIM_Rev1/README.md).
 
 ## Repository map

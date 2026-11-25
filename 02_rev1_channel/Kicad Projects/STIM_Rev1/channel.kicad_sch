@@ -31,7 +31,7 @@
 			(color 255 255 194 1)
 		)
 		(uuid "c696ab63-6e27-5310-bf58-acd9f38b7949")
-		(property "Sheetname" "[7] Analog - Input Clamp & Buffer"
+		(property "Sheetname" "Input Clamp & Buffer"
 			(at 63.5 100.5201 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -91,6 +91,15 @@
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/9d0bdb08-6c29-5890-90c8-6fbe493cc345"
 					(page "8")
 				)
+				(path "/801725e5-e50b-4629-8dff-f10f88598334/ecbc1c2c-07dc-54da-af77-4f697fa6928c"
+					(page "12")
+				)
+				(path "/801725e5-e50b-4629-8dff-f10f88598334/61a93ef7-2241-5e8c-bfe7-6ac30ddfbd28"
+					(page "16")
+				)
+				(path "/801725e5-e50b-4629-8dff-f10f88598334/99dc508b-ab7b-52f8-bd3b-576ba43e7cd9"
+					(page "20")
+				)
 			)
 		)
 	)
@@ -111,7 +120,7 @@
 			(color 255 255 194 1)
 		)
 		(uuid "15416e61-56a0-5b0d-b090-bfa41cf71886")
-		(property "Sheetname" "[8] Analog - Howland Current Pump"
+		(property "Sheetname" "Howland Current Pump"
 			(at 127 100.5201 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -171,6 +180,15 @@
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/9d0bdb08-6c29-5890-90c8-6fbe493cc345"
 					(page "9")
 				)
+				(path "/801725e5-e50b-4629-8dff-f10f88598334/ecbc1c2c-07dc-54da-af77-4f697fa6928c"
+					(page "13")
+				)
+				(path "/801725e5-e50b-4629-8dff-f10f88598334/61a93ef7-2241-5e8c-bfe7-6ac30ddfbd28"
+					(page "17")
+				)
+				(path "/801725e5-e50b-4629-8dff-f10f88598334/99dc508b-ab7b-52f8-bd3b-576ba43e7cd9"
+					(page "21")
+				)
 			)
 		)
 	)
@@ -191,7 +209,7 @@
 			(color 255 255 194 1)
 		)
 		(uuid "f069f885-88b4-57b7-9482-f6ec165967cf")
-		(property "Sheetname" "[9] Output - Limiter & PhotoMOS"
+		(property "Sheetname" "Limiter & PhotoMOS"
 			(at 215.9 100.5201 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -292,6 +310,15 @@
 			(project "STIM_Rev1"
 				(path "/801725e5-e50b-4629-8dff-f10f88598334/9d0bdb08-6c29-5890-90c8-6fbe493cc345"
 					(page "10")
+				)
+				(path "/801725e5-e50b-4629-8dff-f10f88598334/ecbc1c2c-07dc-54da-af77-4f697fa6928c"
+					(page "14")
+				)
+				(path "/801725e5-e50b-4629-8dff-f10f88598334/61a93ef7-2241-5e8c-bfe7-6ac30ddfbd28"
+					(page "18")
+				)
+				(path "/801725e5-e50b-4629-8dff-f10f88598334/99dc508b-ab7b-52f8-bd3b-576ba43e7cd9"
+					(page "22")
 				)
 			)
 		)
@@ -426,7 +453,7 @@
 		)
 		(uuid "45e43d8c-eb66-5816-95be-72973194d360")
 	)
-	(text "One stimulating channel: [7] clamp + buffer -> [8] Howland pump -> [9] limiter link + PhotoMOS.\nThe three pages are the single-channel Rev 1 sheets, unchanged (nested 2026-11-24).\nStill on [9] and to move to a shared return sheet before this channel is placed 4 times:\nU13 (return PhotoMOS), U14 (park), RSHR1 (return shunt), J5 pin 2 (RET), TP28."
+	(text "One stimulating channel: [7] clamp + buffer -> [8] Howland pump -> [9] limiter link + PhotoMOS.\nThe three pages are the single-channel Rev 1 sheets, unchanged (nested 2026-11-24).\nPlaced 4 times (CH1-CH4). Until the return sheet exists (phase 3) each copy still carries the return parts:\nU13 (return PhotoMOS), U14 (park), RSHR1 (return shunt), J5 pin 2 (RET), TP28."
 		(exclude_from_sim no)
 		(at 50.8 146.05 0)
 		(effects
