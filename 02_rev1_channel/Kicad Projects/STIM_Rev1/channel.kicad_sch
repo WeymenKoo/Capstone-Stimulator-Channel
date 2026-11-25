@@ -381,7 +381,7 @@
 		)
 		(uuid "45e43d8c-eb66-5816-95be-72973194d360")
 	)
-	(text "One stimulating channel: [7] clamp + buffer -> [8] Howland pump -> [9] limiter link + PhotoMOS.\nThe three pages are the single-channel Rev 1 sheets, unchanged (nested 2026-11-24).\nPlaced 4 times (CH1-CH4). The return electrode and its shunt are on the shared Return sheet (never switched)."
+	(text "One stimulating channel, placed 4 times (CH1-CH4): clamp + buffer -> Howland pump -> limiter link + PhotoMOS -> electrode jack.\nThe return electrode is shared and never switched (Return sheet)."
 		(exclude_from_sim no)
 		(at 50.8 146.05 0)
 		(effects

@@ -1909,10 +1909,10 @@
 		)
 		(uuid "4a1639e5-d11c-5cd5-b666-114ed39b41d2")
 	)
-	(text_box "DESIGN NOTE D3:\n• J1 Molex Micro-Fit 3.0 43650-0303, the client's HV connector: 3-pin right-angle header, 3.0 mm pitch, keyed and latched housing, so the cable cannot be plugged reversed\n• Rating 600 V, about 8.5 A per contact [VERIFY DS]\n• Here: 110 V pin to COM, 220 V +HV to -HV (outer pins, 6 mm apart) [H]\n• Footprint is KiCad's 43650-0300: check the -0303 peg / lock layout against the Molex drawing\n• Hand-solder (not on LCSC). No push-in terminals on this board: the client wants no accidental short or reversal"
+	(text_box "DESIGN NOTE D3:\n• J1 Micro-Fit 3.0 43650-0303 (client part), keyed: 1 +HV, 2 COM, 3 -HV\n• 600 V [VERIFY DS]; check the -0303 pegs against the 43650-0300 footprint; hand-solder"
 		(exclude_from_sim no)
 		(at 38.1 127.635 0)
-		(size 52 38.1)
+		(size 52 13.97)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -1933,10 +1933,10 @@
 		)
 		(uuid "75ad42d0-0438-4673-ac75-2b0256163e5f")
 	)
-	(text_box "DESIGN NOTE D1:\n• F1/F2 Littelfuse 0451.500MRL (NANO2, 500 mA fast, 125 VAC/VDC, LCSC C142836)\n• Covers a rail-to-ISO_GND fault (<= 110 V)\n• A +HV to -HV short puts up to 220 V across the first fuse to open: fine at +/-30 V bench rails\n• For +/-100 V find a >= 250 VDC part or accept the risk (open item)\n• R1/R2 bleed C1/C2 (tau 0.2 s)"
+	(text_box "DESIGN NOTE D1:\n• F1/F2 0451.500MRL 500 mA 125 V cover a rail-to-COM fault\n• A +HV to -HV short (220 V) exceeds the fuse rating: fine at the +/-30 V bench, open item at +/-100 V\n• R1/R2 bleed C1/C2 (tau 0.2 s)"
 		(exclude_from_sim no)
 		(at 125.8 115.6 0)
-		(size 52 23.495)
+		(size 52 16.51)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -1957,10 +1957,10 @@
 		)
 		(uuid "a0e5069f-9125-4296-a270-d7a755970f73")
 	)
-	(text_box "DESIGN NOTE D2:\n• RSP1/RSN1 10 Ohm 1 W: rail current = V across its pads / 10 Ohm (10 mV per mA)\n• 2512 so a board short, limited by the fuse, does not open them"
+	(text_box "DESIGN NOTE D2:\n• RSP1/RSN1 10 Ohm 1 W 2512: rail current, 10 mV per mA"
 		(exclude_from_sim no)
 		(at 125.8 140.335 0)
-		(size 52 13.335)
+		(size 52 10.16)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -1981,10 +1981,10 @@
 		)
 		(uuid "a0e57633-3e54-42b1-890f-2789f77d4de5")
 	)
-	(text_box "LAYOUT NOTE L1:\n• HV island: 1.5 mm clearance and creepage from +/-HV to everything else and between +HV and -HV (L1/L4)\n• 0.6 mm within one rail side\n• HV tracks >= 0.3 mm\n• 0.5 mm antipads on L2/L3"
+	(text_box "LAYOUT NOTE L1:\n• 1.5 mm from +/-HV to everything else and +HV to -HV; 0.6 mm within one rail\n• HV tracks >= 0.3 mm"
 		(exclude_from_sim no)
 		(at 38.1 80.01 0)
-		(size 52 17.145)
+		(size 52 11.43)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)
@@ -2005,10 +2005,10 @@
 		)
 		(uuid "a0e58c83-89f3-4700-b75d-3f9215d8f815")
 	)
-	(text_box "LAYOUT NOTE L3:\n• C1/C2 at the rail entry\n• ISO_GND pad straight to L2 through a via at the pad"
+	(text_box "LAYOUT NOTE L3:\n• C1/C2 at the rail entry; COM pad via straight to L2"
 		(exclude_from_sim no)
 		(at 188.03 130.47 0)
-		(size 52 10.795)
+		(size 52 7.62)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)
@@ -2029,10 +2029,10 @@
 		)
 		(uuid "a0e59056-4624-418e-a789-d0acf2644e7a")
 	)
-	(text_box "LAYOUT NOTE L2:\n• Kelvin (four-wire) sense traces from the RSP/RSN pads to the test loops"
+	(text_box "LAYOUT NOTE L2:\n• Kelvin traces from the RSP/RSN pads to the test loops"
 		(exclude_from_sim no)
 		(at 138.5 45.41 0)
-		(size 52 8.89)
+		(size 52 10.16)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)
@@ -2053,10 +2053,10 @@
 		)
 		(uuid "a0e5e0c9-0c75-46fd-b03f-d319e3112584")
 	)
-	(text_box "MISC NOTE M1:\n• J1: 1 = +HV_IN, 2 = COM (ISO_GND), 3 = -HV_IN\n• Bench: two 30 V supplies in series, midpoint to COM, JP2/JP3 closed, through a Micro-Fit 43645-0300 cable\n• One supply with -HV tied to ISO_GND does not work\n• J1 is keyed; D1 / D2 still conduct if a cable is wired wrong (the bench supply limits, or F1 / F2 open)"
+	(text_box "MISC NOTE M1:\n• Bench: two 30 V supplies in series, midpoint to COM, JP2/JP3 closed"
 		(exclude_from_sim no)
 		(at 38.17 97.82 0)
-		(size 52 25.4)
+		(size 52 10.16)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)

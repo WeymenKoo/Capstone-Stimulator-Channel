@@ -1997,10 +1997,10 @@
 		)
 		(uuid "8108aac7-2782-4a96-88a0-5b9009b3782e")
 	)
-	(text_box "LAYOUT NOTE L1:\n• U2, U3, U4, U5: thermal pad (pin 9) to ISO_GND with vias\n• CIN, COUT and the NR/SS cap beside their pins; the four LDOs use the U2 pattern, clustered next to U1\n• 0.65 mm pitch: 0.15 mm pad gaps (rule \"fine-pitch LDO pads\"), mask bridges allowed"
+	(text_box "LAYOUT NOTE L1:\n• LDO thermal pads to ISO_GND with vias; CIN, COUT and NR/SS beside their pins"
 		(exclude_from_sim no)
 		(at 218.67 186.055 0)
-		(size 62 17.145)
+		(size 62 10.16)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)
@@ -2096,10 +2096,10 @@
 		)
 		(uuid "a0e5d193-9ed6-40f9-8aaa-5e3759009809")
 	)
-	(text_box "MISC NOTE M1:\n• PWR LED (D3) lights only when VBAT, U1 and both +/-9 V LDOs (U2, U3) are up: the first check at power-up"
+	(text_box "MISC NOTE M1:\n• D3 PWR LED on = VBAT, U1 and both +/-9 V LDOs are up"
 		(exclude_from_sim no)
 		(at 330.84 212.725 0)
-		(size 40 13.335)
+		(size 40 10.16)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -2120,10 +2120,10 @@
 		)
 		(uuid "a0e5ea5f-8afa-4d8a-9e65-ee86df25c41b")
 	)
-	(text_box "DESIGN NOTE D2:\n• +/-9 V sets the buffer ceiling (D-01): 1.188 V x (1 + 66.5k / 10k) = 9.09 V (9.00-9.27 V)\n• Changing R3-R6 changes the zener-open current ceiling (9.15 mA): re-check D-01 first"
+	(text_box "DESIGN NOTE D2:\n• +/-9 V = 1.188 V x (1 + 66.5k / 10k) = 9.09 V; it sets the clamp ceiling (D-01)"
 		(exclude_from_sim no)
 		(at 284.48 208.28 0)
-		(size 40 17.145)
+		(size 40 10.16)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -2194,10 +2194,10 @@
 		)
 		(uuid "c3d5fd27-1011-4a34-ae1e-6e9a2ba227e9")
 	)
-	(text_box "MISC NOTE M2:\n• Bring-up order: these rails before anything digital (R5 in the acceptance table)\n• +5V at C14 = 5.04 +/- 0.1 V, +3V3 at C15 = 3.30 +/- 0.07 V with J3 unplugged\n• U1 +12V now also carries U4 / U5 (~40 mA) and the LED string (~9 mA): check +12V at C4 under load"
+	(text_box "MISC NOTE M2:\n• Bring these rails up first: +5V 5.04 +/- 0.1 V, +3V3 3.30 +/- 0.07 V (J3 unplugged)"
 		(exclude_from_sim no)
 		(at 330.43 189.23 0)
-		(size 55.88 19.685)
+		(size 55.88 10.16)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -2268,10 +2268,10 @@
 		)
 		(uuid "ee9523a4-e624-4631-a67e-1fc04d00d8a3")
 	)
-	(text_box "DESIGN NOTE D1:\n• +5V (U4, ADC AVDD) and +3V3 (U5, isolator side 2, ADC / DAC logic) are TPS7A4901 as U2\n• Fed from U1 +12V since 2026-11-18 (VBAT is now on the FPGA-side GND): dissipation 0.11 / 0.22 W at 12.24 V [H]\n• FB: R7/R8 and R9/R10 by the D-01 method; 10 nF NR/SS, 10 uF X5R in and out as for U2 / U3\n• LCSC numbers for 32.4k / 17.8k 0603 to confirm (TBD in the fields)"
+	(text_box "DESIGN NOTE D1:\n• +5V (U4) and +3V3 (U5): TPS7A4901 from +12V, 0.11 / 0.22 W [H]\n• LCSC numbers for the 32.4k / 17.8k feedback resistors TBD"
 		(exclude_from_sim no)
 		(at 218.44 208.28 0)
-		(size 62 23.495)
+		(size 62 10.16)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)

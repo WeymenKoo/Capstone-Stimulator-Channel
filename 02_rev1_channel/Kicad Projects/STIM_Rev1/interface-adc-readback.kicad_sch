@@ -1847,10 +1847,10 @@
 		(at 157.48 119.38)
 		(uuid "661edf31-9723-51bf-80a8-981ae9a2012a")
 	)
-	(text_box "DESIGN NOTE P2 (ADC placeholder, part not chosen):\n• Target: ADS8688 class (8-input 16-bit SAR, bipolar input ranges +/-10.24 / +/-5.12 / +/-2.56 V, single 5 V supply; ADS8688IDBTR LCSC C527390) [VERIFY DS]\n• Requirements: >= 16 bit; 8 inputs; bipolar input range (no offset stage); >= 4 kS/s per channel (>= 32 kS/s total if multiplexed); SPI on the shared bus with CS_ADC\n• AIN1-4 = V_MON1-4 = V_elec / 101 from each channel divider (20 MOhm, 200 V parts): +/-1.09 V at +/-110 V\n• AIN5 = I_RET_SENSE = 100 Ohm x I_return: +/-1 V at 10 mA, +/-2 V at a 20 mA fault (+/-2.56 V range fits)\n• AIN6-8 spare on test pads TP40-TP42\n• Input protection to add with the real part: series R + clamp at each AIN (I_RET_SENSE sees the electrode voltage if RSHR1 opens)\n• U15 is DNP, has no footprint and is excluded from the BoM until the part is chosen"
+	(text_box "DESIGN NOTE P2:\n• Placeholder (DNP, not on the board): 8-input bipolar ADC, target ADS8688 class (LCSC C527390)\n• >= 16 bit, >= 4 kS/s per channel; V_MON = V_elec / 101 (+/-1.09 V), I_RET_SENSE = 100 Ohm x I (+/-1 V at 10 mA)\n• Add series R + clamp per input with the real part"
 		(exclude_from_sim no)
 		(at 101.6 139.7 0)
-		(size 190.5 27.94)
+		(size 190.5 11.43)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)

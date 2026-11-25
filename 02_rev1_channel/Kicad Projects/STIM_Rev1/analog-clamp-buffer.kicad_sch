@@ -1420,10 +1420,10 @@
 		)
 		(uuid "3293a77f-07e9-5dda-b759-62e9588cc9cd")
 	)
-	(text_box "LAYOUT NOTE L1:\n• C26/C27 100 nF beside the U9 supply pins, via at the pad to L2 (D4)"
+	(text_box "LAYOUT NOTE L1:\n• C26/C27 at the U9 supply pins, via at the pad"
 		(exclude_from_sim no)
 		(at 170.25 64.46 0)
-		(size 52 8.89)
+		(size 52 7.62)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)
@@ -1444,10 +1444,10 @@
 		)
 		(uuid "a0e542b9-27bc-4043-aa1b-95a53ff79a1c")
 	)
-	(text_box "DESIGN NOTE D1:\n• Clamp: RS1 and two BZX84C7V5 in series to ISO_GND limit DAC_CLAMP to about +/-7.5-8.7 V, so a runaway DAC is held to ~7.5-8.7 mA at G = 1 (RG1 DNP)\n• The 5 V full scale stays below the zener knee (IR <= 1 uA at 5 V [DS])\n• If RG1 is fitted (G = 5) U9 saturates first (~+/-9 V, ~9 mA) and the DN2540 limiter is the bound"
+	(text_box "DESIGN NOTE D1:\n• RS1 + two BZX84C7V5 clamp DAC_CLAMP at ~+/-8 V: a runaway DAC gives at most ~8.7 mA (G = 1)"
 		(exclude_from_sim no)
 		(at 54.68 101.63 0)
-		(size 52 23.495)
+		(size 52 10.16)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -1468,10 +1468,10 @@
 		)
 		(uuid "a0e58358-abb1-43ee-8f9c-5c937f8275b8")
 	)
-	(text_box "MISC NOTE M1:\n• TP19 DAC_CMD -> TP21 DAC_BUF: probe both to see the clamp (DAC_CLAMP itself: U9 pin 3 / RS1) act\n• Generator input: lift R17 on [6], drive TP19 against TP18 (ISO_GND)"
+	(text_box "MISC NOTE M1:\n• TP19 (DAC_CMD) against TP21 (DAC_BUF) shows the clamp acting"
 		(exclude_from_sim no)
 		(at 82.55 38.1 0)
-		(size 82.55 10.795)
+		(size 82.55 7.62)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -1492,10 +1492,10 @@
 		)
 		(uuid "a0e592a3-0d4a-4829-a48c-06ccd52845bf")
 	)
-	(text_box "DESIGN NOTE D2:\n• U9 OPA192 on +/-9 V, non-inverting G = 1 + RF1/RG1 = 1 with RG1 DNP (AD5761R +/-5 V range -> +/-5 mA, ICD_J3)\n• Its rails bound DAC_BUF to ~+/-9 V\n• The DAC zero error (+/-5 mV [DS]) sets the offset: calibrate each board (review 2026-11-15 sec. 6)"
+	(text_box "DESIGN NOTE D2:\n• U9 OPA192, G = 1 (RG1 DNP): +/-5 V in = +/-5 mA out\n• Calibrate the DAC zero (+/-5 mV) per board"
 		(exclude_from_sim no)
 		(at 82.55 49.53 0)
-		(size 82.55 15.24)
+		(size 82.55 10.16)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)

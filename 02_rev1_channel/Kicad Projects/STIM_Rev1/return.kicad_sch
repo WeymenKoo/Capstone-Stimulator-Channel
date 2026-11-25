@@ -1197,10 +1197,10 @@
 		)
 		(uuid "0103b765-f799-5a61-8ff8-8a356d862ad7")
 	)
-	(text_box "DESIGN NOTE R1:\n• Return electrode J6 -> RSHR1 -> COM (ISO_GND). Always connected: NO PhotoMOS, relay, fuse or jumper in series with the return\n• It carries the mismatch of the four channel commands (each +/-1 %): uA when they sum to zero, -sum(I) when they do not (up to 4 x 5 mA = 20 mA if software lets it; FR-08)\n• RSHR1 100 Ohm 0.1 %: 1 mV = 10 uA on a DMM (TP28 to TP31); 10 mA costs 1 V of compliance and 10 mW\n• Page 25 (sense) is still scaled for the old 10 Ohm shunt (0.2 V/mA): with 100 Ohm it reads 2 V/mA and clips above ~1.3 mA until the ADC placeholder (phase 6) replaces it"
+	(text_box "DESIGN NOTE R1:\n• J6 -> RSHR1 100 Ohm 0.1 % -> COM; never switched (no PhotoMOS, fuse or jumper)\n• Carries the mismatch of the four commands: uA when they sum to zero\n• TP28 to TP31: 1 mV = 10 uA"
 		(exclude_from_sim no)
 		(at 40.64 121.92 0)
-		(size 160.02 22.86)
+		(size 160.02 11.43)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)
@@ -1220,10 +1220,10 @@
 		)
 		(uuid "a484749a-491b-57da-a0e6-745abbc71d71")
 	)
-	(text_box "LAYOUT NOTE R2:\n• RSHR1's COM pad is the COM star point: route it straight to J1 pin 2 (COM) and the ISO_GND planes; TP31 lands on that pad (Kelvin)\n• J6 near the electrode jacks; black jack, RET silk"
+	(text_box "LAYOUT NOTE R2:\n• RSHR1's COM pad is the COM star point (to J1 pin 2); TP31 on that pad"
 		(exclude_from_sim no)
 		(at 40.64 147.32 0)
-		(size 160.02 12.7)
+		(size 160.02 7.62)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)

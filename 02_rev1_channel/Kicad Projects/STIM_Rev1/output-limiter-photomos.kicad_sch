@@ -2827,10 +2827,10 @@
 		)
 		(uuid "d9837ea3-9466-48f0-9273-931f4c81d3aa")
 	)
-	(text_box "DESIGN NOTE D5:\n• J5 = this channel's electrode jack (E1-E4 = J105-J405): Cal Test CT3151SP-2, 4 mm sheathed safety jack, right angle, red; RET is J6 (black) on the Return sheet\n• 1000 V CAT III, 25 A [VERIFY DS]; hand-solder (no LCSC). Keystone 575-4 (bare metal) for bench phantoms only\n• Each electrode up to +/-110 V to ISO_GND (D10 VBR 111 V min); 5 mA operating, 10 mA limit [H]\n• U12 AQY214S in the load path: 400 V off-state [DS] = 1.8 x the 220 V worst case; Ciso 1.5 pF [DS]; Ron [VERIFY] costs only Ron x I of compliance (R24 senses before it)\n• No PhotoMOS bypass jumper (it would be a live +/-110 V contact)"
+	(text_box "DESIGN NOTE D5:\n• J5 = electrode jack E1-E4: CT3151SP-2, red 4 mm sheathed, hand-solder\n• U12 AQY214S 400 V [DS] = 1.8 x the 220 V worst case; Ron [VERIFY] costs compliance only"
 		(exclude_from_sim no)
 		(at 85.32 226.06 0)
-		(size 62 36.83)
+		(size 62 13.97)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -2976,10 +2976,10 @@
 		)
 		(uuid "a0e51c86-4bbc-497c-b9f5-e229f01f7148")
 	)
-	(text_box "MISC NOTE M1:\n• Buy ~10 DN2540N8 per channel\n• Pair them within 100 mV of Vgs at 7.6 mA\n• RLIM1 is 0805 for hand rework"
+	(text_box "MISC NOTE M1:\n• Limiter: buy ~10 DN2540N8 per channel, pair within 100 mV of Vgs"
 		(exclude_from_sim no)
 		(at 85.32 213.995 0)
-		(size 62 10.795)
+		(size 62 10.16)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -3000,10 +3000,10 @@
 		)
 		(uuid "a0e524f4-ce55-4410-955a-2c2129211549")
 	)
-	(text_box "DESIGN NOTE D4:\n• D10 SMBJ100CA: VRWM 100 V, VBR 111 V min, above the 110 V rail"
+	(text_box "DESIGN NOTE D4:\n• D10 SMBJ100CA: VBR 111 V min, above the 110 V rail"
 		(exclude_from_sim no)
 		(at 85.32 164.465 0)
-		(size 62 8.89)
+		(size 62 7.62)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -3024,10 +3024,10 @@
 		)
 		(uuid "a0e52e29-98f8-4552-86b6-65e864e2f512")
 	)
-	(text_box "DESIGN NOTE D1:\n• Limiter (D-02): matched DN2540 pair, one shared RLIM selected on test for 7.6 mA: R = (|Vgs at 7.6 mA| + 10 mV) / 7.6 mA, nearest E96. Limit 6.4-8.8 mA over spread and 0-50 C"
+	(text_box "DESIGN NOTE D1:\n• Limiter DNP (R25 link fitted): matched DN2540 pair + RLIM set for 7.6 mA (6.4-8.8 mA)"
 		(exclude_from_sim no)
 		(at 85.32 115.6 0)
-		(size 62 13.335)
+		(size 62 10.16)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -3048,10 +3048,10 @@
 		)
 		(uuid "a0e544b8-e091-4ffc-98a3-335324d7b631")
 	)
-	(text_box "DESIGN NOTE D2:\n• U12 (stimulating) and U14 (Form-B park) share one LED string; the return electrode is on the shared Return sheet and is never switched (4-ch revamp)\n• D9 OUT EN lights only while this electrode is live\n• RLED1 750 Ohm from +12V: D9 + two PhotoMOS LEDs, ~10 mA [H] (AQY operate <= 3 mA [DS])"
+	(text_box "DESIGN NOTE D2:\n• U12 (switch) and U14 (park) share one LED string with D9, ~10 mA from +12V [H]\n• The return electrode is never switched (Return sheet)"
 		(exclude_from_sim no)
 		(at 85.32 131.445 0)
-		(size 62 19.685)
+		(size 62 11.43)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -3097,10 +3097,10 @@
 		)
 		(uuid "a0e5515f-3a3a-42f9-aae3-2b792b42a907")
 	)
-	(text_box "DESIGN NOTE D3:\n• ENABLE low or open (R26 pull-down) = LED string off = U12 open and U14 closed: R27 parks I_SENSE near 0 V, so the next enable does not dump a charged output (G3)"
+	(text_box "DESIGN NOTE D3:\n• EN low (R26) = U12 open, U14 parks I_SENSE at 0 V through R27 (G3)"
 		(exclude_from_sim no)
 		(at 85.32 152.4 0)
-		(size 62 10.795)
+		(size 62 10.16)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -3121,10 +3121,10 @@
 		)
 		(uuid "a0e58f6e-72a2-4041-8a68-631e0f500952")
 	)
-	(text_box "LAYOUT NOTE L1:\n• Divider: R20A1 in the HV island, R20B1 straddles the gap (V_ELEC_DIV pad on the LV side), R28/C30 on the LV side next to it"
+	(text_box "LAYOUT NOTE L1:\n• Divider: R20A in the HV zone, R20B across the gap, R28/C30 on the LV side"
 		(exclude_from_sim no)
 		(at 85.32 175.895 0)
-		(size 62 10.795)
+		(size 62 10.16)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)
@@ -3145,10 +3145,10 @@
 		)
 		(uuid "a0e59067-71ec-412f-986f-e036cce32177")
 	)
-	(text_box "LAYOUT NOTE L2:\n• Return shunt and return electrode: shared Return sheet (RSHR1, J6)\n• J5 pin 2 (old RET) unused until the electrode jack replaces J5 (phase 4)"
+	(text_box "LAYOUT NOTE L2:\n• J5 at the board edge, next to the other electrode jacks and J6"
 		(exclude_from_sim no)
 		(at 85.32 189.23 0)
-		(size 62 12.7)
+		(size 62 7.62)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)
@@ -3294,10 +3294,10 @@
 		)
 		(uuid "a0e5c4cc-af57-433f-937c-69461dbf8d8f")
 	)
-	(text_box "LAYOUT NOTE L3:\n• PhotoMOS straddle the gap: LED pins (1, 2) toward the LV zone, switch pins (3, 4) toward HV"
+	(text_box "LAYOUT NOTE L3:\n• PhotoMOS straddle the gap: LED pins LV, switch pins HV"
 		(exclude_from_sim no)
 		(at 85.32 202.565 0)
-		(size 62 8.89)
+		(size 62 7.62)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)

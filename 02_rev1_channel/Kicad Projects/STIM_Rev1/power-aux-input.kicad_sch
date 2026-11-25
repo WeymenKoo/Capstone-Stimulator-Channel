@@ -1828,10 +1828,10 @@
 		)
 		(uuid "a0e5abb8-b462-465a-91ad-f70f45f0d3d4")
 	)
-	(text_box "LAYOUT NOTE L1:\n• J2 and C3 in the FPGA island (top left); U1 straddles the barrier, pins 1-3 left, 5-8 right\n• Pads 3 / 5 are 3.28 mm apart: rule \"U1 module barrier pads 3-5\" in the .kicad_dru"
+	(text_box "LAYOUT NOTE L1:\n• J2 and C3 on the FPGA island; U1 straddles the barrier (pins 1-3 FPGA side, 5-8 board side)\n• Pads 3 / 5 are 3.28 mm apart: own rule in the .kicad_dru"
 		(exclude_from_sim no)
 		(at 205.74 110.49 0)
-		(size 58.42 13.335)
+		(size 58.42 11.43)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)
@@ -1852,10 +1852,10 @@
 		)
 		(uuid "a0e5c2cb-729c-47e2-9dea-d21fac8fefa8")
 	)
-	(text_box "DESIGN NOTE D1:\n• U1 RECOM RS3-1212D (DigiKey.ca 945-1563-5-ND): 9-18 V in covers 3S 9.0-12.6 V; regulated +/-12 V, 125 mA per rail, 3 W, 1 kVDC [DS]\n• Pin-out from the RS3 drawing: 1 -Vin, 2 +Vin, 3 CTRL, 5 NC, 6 +Vout, 7 Com, 8 -Vout, no pin 4 [DS] (closes review M1)\n• VBAT and its return are on the FPGA-side GND (D-L, 2026-11-18): U1 is the LV crossing of the barrier, the ISO7741s are the signal crossing\n• CTRL (pin 3) open = on; never drive it low [DS note 8]\n• Min load 10 % = 12.5 mA per rail: -12 V carries ~9 mA via U3, below it the specs may not be met but no harm [DS note 4]\n• +12V feeds U2, U4, U5 and the PhotoMOS LED string ([4], [9]); -12V feeds U3; about 65 mA of 125 mA on +12V [H]\n• Input fuse required [DS note 6]: the power board fuses VBAT (PWR_Rev1 row P6); no local fuse\n• C3 10 uF at the input pins is the EMC class A input cap [DS]; class B adds 5.6 uH + 10 uF (not fitted)"
+	(text_box "DESIGN NOTE D1:\n• U1 RECOM RS3-1212D: 9-18 V in (3S pack), +/-12 V 125 mA, 1 kVDC; it is the supply crossing of the FPGA barrier\n• CTRL open = on; the input fuse is on the power board (P6)\n• +12V load ~90 mA of 125 mA with four LED strings [H]"
 		(exclude_from_sim no)
 		(at 90.17 110.49 0)
-		(size 111.76 34.29)
+		(size 111.76 11.43)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -1926,10 +1926,10 @@
 		)
 		(uuid "e27d5baf-f64c-49f1-a93c-f8c942b78550")
 	)
-	(text_box "DESIGN NOTE D2:\n• J2 Molex Micro-Fit 3.0 43650-0203: 2-pin right-angle header, same family and crimp tool as J1; keyed, so VBAT cannot be reverse-plugged\n• A 2-pin plug does not mate with J1's 3-pin header in the normal orientation; whether it can be forced in offset is [VERIFY] against the drawing\n• Rating 600 V [VERIFY DS]; here VBAT 9.0-12.6 V, ~0.13 A at 9 V (PWR_Rev1 P6) [H]\n• Footprint is KiCad's 43650-0200: check the -0203 pegs / locks; hand-solder"
+	(text_box "DESIGN NOTE D2:\n• J2 Micro-Fit 3.0 43650-0203, keyed (VBAT 9-12.6 V); check the -0203 pegs against the 43650-0200 footprint"
 		(exclude_from_sim no)
 		(at 25.4 110.49 0)
-		(size 62 25.4)
+		(size 62 10.16)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)

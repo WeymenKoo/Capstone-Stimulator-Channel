@@ -1771,10 +1771,10 @@
 		(at 157.48 119.38)
 		(uuid "6ee582bb-416e-5d12-a9d2-adef6c253220")
 	)
-	(text_box "DESIGN NOTE P1 (DAC placeholder, part not chosen):\n• Target: TI DAC81404 class (4-channel 16-bit, bipolar outputs, internal 2.5 V reference, LDAC and CLR pins) [VERIFY DS]; not on LCSC, DigiKey TBD\n• Requirements: >= 16 bit; DAC_CMD1-4 used, up to 8 outputs allowed (OUT5-8 spare, no-connect); bipolar +/-5 V straight into each channel clamp (1 mA/V), no level-shift stage; output impedance <= ~5 Ohm after its buffer; output = 0 V at power-on and while CLR is low; hardware CLR and LDAC; SPI on the shared bus with CS_DAC\n• Supplies drawn as +9V / -9V (analog), +3V3 (logic), ISO_GND: check the chosen part's headroom, a +/-5 V output may need wider rails\n• Net names are frozen (ISO_SCLK, ISO_MOSI, ISO_MISO, ISO_CS_DAC, ISO_LDAC, ISO_CLR, DAC_CMD1-4): fitting the real part is a change on this page only\n• U8 is DNP, has no footprint and is excluded from the BoM until the part is chosen"
+	(text_box "DESIGN NOTE P1:\n• Placeholder (DNP, not on the board): 8-output bipolar DAC, target DAC81404 [VERIFY]\n• >= 16 bit, +/-5 V straight into each clamp, 0 V at power-up and while CLR is low, LDAC + CLR pins\n• Check supply headroom; net names are frozen"
 		(exclude_from_sim no)
 		(at 101.6 139.7 0)
-		(size 190.5 25.4)
+		(size 190.5 11.43)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)

@@ -2606,10 +2606,10 @@
 			(embedded_fonts no)
 		)
 	)
-	(text_box "MISC NOTE M2:\n• TP25 PUMP_OUT, TP24 PUMP_REF, TP22/TP23 floating rails (span >= 4.5 V), I_SENSE (R24 / R27 pad): all float up to +/-110 V\n• Use a differential or isolated probe\n• TP25 + TP26 straddle R24: 1 V = 1 mA (Kelvin); both float with the electrode (HV)\n• TP30: ISO_GND clip for this channel\n• R50 / R51 (0R 1206): this channel's +/-HV links from the shared rails (+HV_CH / -HV_CH); lift both to take the channel off"
+	(text_box "MISC NOTE M2:\n• Everything here floats up to +/-110 V: differential or isolated probe\n• TP25 + TP26 across R24: 1 V = 1 mA\n• Lift R50 / R51 to take this channel off the rails"
 		(exclude_from_sim no)
 		(at 161.52 152.43 0)
-		(size 62 23.49)
+		(size 62 13.97)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -2630,10 +2630,10 @@
 		)
 		(uuid "a0e51174-7c56-4f5b-b53d-c70012cb052c")
 	)
-	(text_box "MISC NOTE M1:\n• JP2/JP3 bench bias: CLOSE only at +/-50 V or below (window <= 33 V [H]; bench uses +/-30 V)\n• OPEN at +/-100 V\n• If left closed at +/-100 V, D8 holds U10/U11 below 40 V but RB1/RB2 see up to ~190 V (~0.9 W in a 0.25 W part)"
+	(text_box "MISC NOTE M1:\n• JP2/JP3 bench bias: close only at +/-50 V or below, open at +/-100 V (RB1/RB2 overload)"
 		(exclude_from_sim no)
 		(at 218.44 52.07 0)
-		(size 101.6 13.34)
+		(size 101.6 7.62)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -2654,10 +2654,10 @@
 		)
 		(uuid "a0e53f33-fca0-4180-8f6d-919bee708372")
 	)
-	(text_box "LAYOUT NOTE L2:\n• C28 across PUMP_V+ / PUMP_V- right at U10 pins 7 and 4: the floating rails decouple to each other, not to ISO_GND\n• C47 the same across U11 pins 5 / 2"
+	(text_box "LAYOUT NOTE L2:\n• C28 at U10 pins 7 / 4, C47 at U11 pins 5 / 2"
 		(exclude_from_sim no)
 		(at 87.86 102.25 0)
-		(size 62 13.335)
+		(size 62 7.62)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)
@@ -2678,10 +2678,10 @@
 		)
 		(uuid "a0e54379-480e-4e7d-8b6d-93aea0e6d0f1")
 	)
-	(text_box "LAYOUT NOTE L1:\n• Q1/Q2 DPAK: >= 300 mm^2 L1 pour on each collector tab (D6; up to 1.1 W in a 10 mA fault), 1.5 mm to everything\n• No thermal vias into L2\n• C48 / C49 (100 n 250 V): +HV / -HV to ISO_GND at the Q1 / Q2 collector tabs, per channel"
+	(text_box "LAYOUT NOTE L1:\n• Q1/Q2: >= 300 mm^2 L1 pour per tab, 1.5 mm clearance, no vias into L2; C48/C49 at the tabs"
 		(exclude_from_sim no)
 		(at 301.22 173.355 0)
-		(size 62 15.875)
+		(size 62 10.16)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)
@@ -2702,10 +2702,10 @@
 		)
 		(uuid "a0e55e2c-e169-4e4a-a728-da403abba147")
 	)
-	(text_box "DESIGN NOTE D1:\n• 1 mA/V set by R24 = 1.00 k 0.1 % 25 ppm (0805 for self-heating)\n• U10 INA149 senses across R24\n• U11 OPA192 buffers I_SENSE back to the REF pins (D-05)"
+	(text_box "DESIGN NOTE D1:\n• 1 mA/V set by R24 1.00k 0.1 % 25 ppm; U10 senses across it, U11 buffers I_SENSE to REF"
 		(exclude_from_sim no)
 		(at 301.22 154.97 0)
-		(size 62 13.335)
+		(size 62 10.16)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -2726,10 +2726,10 @@
 		)
 		(uuid "a0e5cc14-497b-4f82-8912-b99e326390f1")
 	)
-	(text_box "DESIGN NOTE D2:\n• Bias string and emitter followers Q1/Q2 (one BAS16 VBE each): PUMP_V+ / PUMP_V- float with PUMP_OUT\n• The INA149 needs >= 4.5 V across them\n• Reach at 5 mA (total R after R24), hFE 30-100: 11.8-15.2 kOhm at 100 V, 9.9-13.2 kOhm at 90 V [H]\n• Net names keep the LTspice S01 names, not the designators: Q2_BASE = base of Q1 (NPN, top), Q1_BASE = base of Q2; BIAS_R1_R2 = R18/R19, BIAS_R3_D1 = R20/D6, BIAS_D2_R4 = D7/R21, BIAS_R5_R6 = R22/R23"
+	(text_box "DESIGN NOTE D2:\n• Q1/Q2 followers bootstrap PUMP_V+/- around PUMP_OUT (span >= 4.5 V)\n• Compliance at 5 mA: 11.8-15.2 kOhm at +/-100 V [H]; net names follow the LTspice model"
 		(exclude_from_sim no)
 		(at 218.44 65.405 0)
-		(size 101.6 21.59)
+		(size 101.6 10.16)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -2750,10 +2750,10 @@
 		)
 		(uuid "a0e5e609-bcb2-4774-842b-da2419fd5c96")
 	)
-	(text_box "LAYOUT NOTE L3:\n• U10 straddles the HV/LV gap: inputs (pins 2, 3) face the LV zone\n• pin-to-pin creepage inside the package is excluded"
+	(text_box "LAYOUT NOTE L3:\n• U10 straddles the HV/LV gap, inputs toward LV"
 		(exclude_from_sim no)
 		(at 87.86 115.57 0)
-		(size 62 10.795)
+		(size 62 7.62)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)

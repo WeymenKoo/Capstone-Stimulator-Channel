@@ -3713,10 +3713,10 @@
 		)
 		(uuid "060629fb-09bb-4290-93b1-725f48f2a0c0")
 	)
-	(text_box "LAYOUT NOTE L1:\n• Isolation barrier under the two isolators and U1 ([3]): no copper on any layer across the gap except those bodies\n• GND pour under J3, side 1, J2 and the U1 input side only\n• Spacing per the Isolation barrier rule in STIM_Rev1.kicad_dru; the DW body gives 8 mm creepage, U1 3.28 mm (pads 3-5)\n• C16-C19 at the VCC pins, via at the pad"
+	(text_box "LAYOUT NOTE L1:\n• Barrier under the isolators and U1: no copper across the gap (DW body 8 mm creepage)\n• GND pour on the FPGA side only"
 		(exclude_from_sim no)
 		(at 210.82 193.04 0)
-		(size 69.85 19.685)
+		(size 69.85 11.43)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)
@@ -3762,10 +3762,10 @@
 		)
 		(uuid "18764424-294b-4cae-befe-874917636232")
 	)
-	(text_box "DESIGN NOTE D1:\n• TI ISO7741 x2 (3 fwd + 1 rev) and ISO7740 x1 (4 fwd), 5 kVrms reinforced, SOIC-16 DW, enables EN1 / EN2\n• U6 = ISO7741F (default LOW): A ENABLE (CH1), B MOSI, C SCLK, D FAULT_N back\n• U7 = ISO7741 (default HIGH): A CS_ADC, B LDAC, C CS_DAC, D MISO back\n• U19 = ISO7740F (default LOW): A EN_CH2, B EN_CH3, C EN_CH4, D CLR\n• The CS lines sit on the default-HIGH part, so nothing is selected and nothing drives MISO when the FPGA side is unpowered\n• Side 1 runs from +3V3_FPGA (J3 pins 1-2), side 2 from +3V3 [4] (2.25-5.5 V)\n• One 100 nF at each VCC pin (C16-C19, C50 / C51)"
+	(text_box "DESIGN NOTE D1:\n• U6 ISO7741F (default LOW): EN_CH1, MOSI, SCLK; FAULT_N back\n• U7 ISO7741 (default HIGH): CS_ADC, LDAC, CS_DAC; MISO back\n• U19 ISO7740F (default LOW): EN_CH2-4, CLR\n• Side 1 from +3V3_FPGA, side 2 from +3V3; 100 nF at every VCC pin"
 		(exclude_from_sim no)
 		(at 66.04 193.04 0)
-		(size 69.85 34.29)
+		(size 69.85 13.97)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -3856,10 +3856,10 @@
 		)
 		(uuid "33fc761a-d097-4f27-8dac-7a84be78d9c5")
 	)
-	(text_box "LAYOUT NOTE L2:\n• J4 next to the isolators on the board side\n• 1x10 row, pin 1 = ISO_MISO; pins 1-7 sit where the 2x13 pins 5-17 were\n• J3 and J4 must not be plugged at the same time with JP1 open\n• J7 (1x5, U19 lines) beside U19, same rule; the new J3 pins 10-18 even need the placement redone"
+	(text_box "LAYOUT NOTE L2:\n• J4 / J7 beside the isolators; never plug J3 and J4 with JP1 open"
 		(exclude_from_sim no)
 		(at 210.82 215.265 0)
-		(size 69.85 18.415)
+		(size 69.85 7.62)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)
@@ -3880,10 +3880,10 @@
 		)
 		(uuid "3f744a89-801c-4449-911c-ddc30fca5038")
 	)
-	(text_box "DESIGN NOTE D4:\n• J3 2x13 IDC = Red Pitaya E1 pin for pin: 1-2 +3V3_FPGA, 25-26 GND\n  5 SPI_MISO (DIO1_P), 7 SPI_CS_DAC (DIO2_P), 9 SPI_LDAC (DIO3_P), 10 SPI_CLR (DIO3_N)\n  11 SPI_CS_ADC (DIO4_P), 12 FAULT_N (DIO4_N), 13 SPI_SCLK (DIO5_P), 14 EN_CH4 (DIO5_N)\n  15 SPI_MOSI (DIO6_P), 16 EN_CH2 (DIO6_N), 17 ENABLE = EN_CH1 (DIO7_P), 18 EN_CH3 (DIO7_N); EN high = electrode connected\n• Free: 3 / 4 (Red Pitaya trigger in / out), 6, 8\n• J4 1x10: 1 MISO, 2 CS_DAC, 3 LDAC, 4 CS_ADC, 5 FAULT_N, 6 SCLK, 7 MOSI, 8 ENABLE, 9-10 ISO_GND; J7 1x5: EN_CH2-4, CLR, ISO_GND"
+	(text_box "DESIGN NOTE D4:\n• J3 = Red Pitaya E1, pin for pin: 5 MISO, 7 CS_DAC, 9 LDAC, 10 CLR, 11 CS_ADC, 12 FAULT_N, 13 SCLK, 14 EN_CH4, 15 MOSI, 16 EN_CH2, 17 EN_CH1, 18 EN_CH3\n• Free: 3 / 4 (trigger), 6, 8. Contract: ICD_J3.md"
 		(exclude_from_sim no)
 		(at 138.43 217.17 0)
-		(size 69.85 32.385)
+		(size 69.85 13.97)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -3929,10 +3929,10 @@
 		)
 		(uuid "72db2d66-6151-4a01-bcf9-55bf66baeed1")
 	)
-	(text_box "MISC NOTE M2:\n• FPGA: hold the DAC at 0 for 3 ms after ENABLE (D-08; the AQY214S closes in 0.5 ms, so this can shorten)\n• Clear the DAC when ENABLE drops\n• One SPI bus, CS_DAC + CS_ADC, never both low; an LDAC pulse updates all DAC outputs together\n• MISO is shared and tri-state between frames\n• Subtract the once-measured VMID_REF (TP37) from both read-back channels in software"
+	(text_box "MISC NOTE M2:\n• FPGA: DAC at 0 for 3 ms after EN (D-08), cleared when EN drops\n• CS_DAC and CS_ADC never both low; one LDAC pulse updates all DAC outputs"
 		(exclude_from_sim no)
 		(at 283.21 219.075 0)
-		(size 69.85 21.59)
+		(size 69.85 11.43)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -4053,10 +4053,10 @@
 		)
 		(uuid "93ca3ca0-410d-461a-95bd-86389621b32c")
 	)
-	(text_box "DESIGN NOTE D3:\n• FAULT_N (board -> FPGA, active low) on U6 channel D: ISO_FAULT_N is pulled up by R12 (idle = not faulted)\n• The FPGA side goes to J3 pin 12 and TP15. With the board off the FPGA reads LOW = asserted\n• Nothing drives it in Rev 1. R13 100k on ISO_MISO (CPEN, 2026-11-09): all SDOs are high-Z between frames and the ISO7741 reads an open input as default high [DS], so R13 is belt and braces"
+	(text_box "DESIGN NOTE D3:\n• FAULT_N: R12 pull-up, not driven in Rev 1 (the FPGA reads LOW while the board is off)\n• R13 holds MISO high between frames"
 		(exclude_from_sim no)
 		(at 138.43 193.04 0)
-		(size 69.85 21.59)
+		(size 69.85 11.43)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -4077,10 +4077,10 @@
 		)
 		(uuid "98d89652-0ed1-428b-8c4d-d72750018015")
 	)
-	(text_box "DESIGN NOTE D2:\n• Default states with J3 unplugged or the FPGA unpowered [DS]: ISO_SCLK / ISO_MOSI / ISO_ENABLE / ISO_EN_CH2-4 / ISO_CLR LOW (every PhotoMOS open, DAC cleared), ISO_CS_DAC / ISO_CS_ADC / ISO_LDAC HIGH\n• EN1 / EN2 open = outputs enabled (internal pull-up, DS pin table)\n• JP1 pulls EN2 of U6 / U7 / U19 low for the J4 / J7 bypass; outputs then float: R42 holds CLR low, R43 LDAC high, R26 (per channel) each EN low\n• The side-1 outputs (MISO, FAULT_N) stay enabled, which is fine because J3 is then unplugged"
+	(text_box "DESIGN NOTE D2:\n• FPGA off or J3 unplugged: every EN and CLR low (PhotoMOS open, DAC cleared), CS and LDAC high\n• Bypass (JP1 closed, outputs float): R42 holds CLR low, R43 LDAC high, each R26 its EN low"
 		(exclude_from_sim no)
 		(at 66.04 229.87 0)
-		(size 69.85 29.210)
+		(size 69.85 13.97)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -4199,10 +4199,10 @@
 		)
 		(uuid "c33ac90a-3238-4aac-a54f-bc277fc83e03")
 	)
-	(text_box "MISC NOTE M1:\n• Bring-up: with JP1 OPEN and J3 unplugged, check ISO_ENABLE LOW (TP29 on [9]) and ISO_CS_* HIGH on J4. Then plug J3: the FPGA toggles ENABLE and ISO_ENABLE follows (DS 11 ns)\n• Fallback if the SPI link misbehaves: JP1 CLOSED, dupont jumpers from the E1 header to J4, the FPGA drives the converters directly (3.3 V logic on both sides, no isolation)\n• Sourcing: ISO7741FDWR is LCSC / JLCPCB only today (DigiKey.ca 0)\n• ISO7742F does not fit U6 (three forward channels used)"
+	(text_box "MISC NOTE M1:\n• Bring-up: JP1 open, J3 unplugged: EN low and CS high on J4 / J7, then plug J3\n• Fallback: JP1 closed, jumpers from E1 to J4 / J7 (no isolation)"
 		(exclude_from_sim no)
 		(at 283.21 193.04 0)
-		(size 69.85 23.495)
+		(size 69.85 11.43)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -4296,10 +4296,10 @@
 		)
 		(uuid "dae3b507-e87b-4cd5-b9c3-458ab8b6008e")
 	)
-	(text_box "LAYOUT NOTE L3:\n• Pin order set by the placement (2026-11-18): J3 sits pin 1 down on the left edge, so its signal pins 17 ... 5 run top to bottom like U6 A-D then U7 A-D and the FPGA side routes on F.Cu with no via and no crossing (FAULT_N leaves the back row between pins 11 and 13)\n• J4 order follows the old 2x13 rows so the existing traces still land\n• +3V3_FPGA (pins 1-2) crosses the signals on another layer\n• GND is its own pour under J3 and side 1, not ISO_GND"
+	(text_box "LAYOUT NOTE L3:\n• J3 pin 1 down on the left edge, FPGA side on F.Cu without vias; redo the order for pins 10-18"
 		(exclude_from_sim no)
 		(at 138.43 251.46 0)
-		(size 69.85 23.495)
+		(size 69.85 10.16)
 		(margins 1 1 1 1)
 		(stroke
 			(width 1)
