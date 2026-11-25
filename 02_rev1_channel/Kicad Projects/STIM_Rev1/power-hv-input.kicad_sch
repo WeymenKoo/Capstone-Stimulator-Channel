@@ -16,6 +16,193 @@
 		(comment 9 "${REVIEWER}")
 	)
 	(lib_symbols
+		(symbol "STIM_Rev1:Conn_01x03"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x03_1_1"
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "STIM_Rev1:+HV"
 			(power global)
 			(pin_numbers
@@ -1722,10 +1909,10 @@
 		)
 		(uuid "4a1639e5-d11c-5cd5-b666-114ed39b41d2")
 	)
-	(text_box "DESIGN NOTE D3:\n• J1 WAGO 2606-1103: push-in CAGE CLAMP, one lever per pole, 7.5 mm pitch [DS]\n• IEC 60664-1: 630 V (OVC III, PD2), 500 V (III, PD3), 1000 V (II, PD2); 6 kV impulse; 41 A [DS]\n• UL 1059: 300 V use group B, 600 V group D (5 A); CSA 600 V group D [DS]\n• Here: 110 V pole to COM, 220 V +HV to -HV (outer poles, 15 mm apart) [H]: 630 V rating >= 2.8x\n• Wire: solid or fine-stranded 0.2-10 mm2 (24-8 AWG), no ferrule; strip 11-13 mm [DS]\n• Housing material group I (CTI >= 600), -60 to +105 C [DS]; PCB pad gap 4.3 mm (rule 2.7 mm)"
+	(text_box "DESIGN NOTE D3:\n• J1 Molex Micro-Fit 3.0 43650-0303, the client's HV connector: 3-pin right-angle header, 3.0 mm pitch, keyed and latched housing, so the cable cannot be plugged reversed\n• Rating 600 V, about 8.5 A per contact [VERIFY DS]\n• Here: 110 V pin to COM, 220 V +HV to -HV (outer pins, 6 mm apart) [H]\n• Footprint is KiCad's 43650-0300: check the -0303 peg / lock layout against the Molex drawing\n• Hand-solder (not on LCSC). No push-in terminals on this board: the client wants no accidental short or reversal"
 		(exclude_from_sim no)
 		(at 38.1 127.635 0)
-		(size 52 36.195)
+		(size 52 38.1)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -1866,10 +2053,10 @@
 		)
 		(uuid "a0e5e0c9-0c75-46fd-b03f-d319e3112584")
 	)
-	(text_box "MISC NOTE M1:\n• J1: 1 = +HV_IN, 2 = ISO_GND, 3 = -HV_IN\n• Bench: two 30 V supplies in series, midpoint to ISO_GND, JP2/JP3 closed\n• One supply with -HV tied to ISO_GND does not work\n• J1 is not keyed: D1/D2 conduct on a reversed lead (the bench supply limits, or F1/F2 open)\n• J1 WAGO 2606-1103: open the lever, push in bare stranded wire stripped 11-13 mm (no ferrule, no tool), close the lever"
+	(text_box "MISC NOTE M1:\n• J1: 1 = +HV_IN, 2 = COM (ISO_GND), 3 = -HV_IN\n• Bench: two 30 V supplies in series, midpoint to COM, JP2/JP3 closed, through a Micro-Fit 43645-0300 cable\n• One supply with -HV tied to ISO_GND does not work\n• J1 is keyed; D1 / D2 still conduct if a cable is wired wrong (the bench supply limits, or F1 / F2 open)"
 		(exclude_from_sim no)
 		(at 38.17 97.82 0)
-		(size 52 27.94)
+		(size 52 25.4)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -2980,7 +3167,7 @@
 		)
 	)
 	(symbol
-		(lib_id "STIM_Rev1:Terminal_PushIn_01x03")
+		(lib_id "STIM_Rev1:Conn_01x03")
 		(at 88.9 68.58 0)
 		(mirror y)
 		(unit 1)
@@ -3002,7 +3189,7 @@
 				)
 			)
 		)
-		(property "Value" "HV_IN 3P 7.5mm push-in"
+		(property "Value" "HV_IN Micro-Fit 3P"
 			(at 86.36 65.786 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3014,7 +3201,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "STIM_Rev1:TerminalBlock_WAGO_2606-1103_1x03_P7.50mm_Horizontal"
+		(property "Footprint" "STIM_Rev1:Molex_Micro-Fit_3.0_43650-0300_1x03_P3.00mm_Horizontal"
 			(at 88.9 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -3026,7 +3213,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.wago.com/2606-1103"
+		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail/436500303"
 			(at 88.9 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -3038,7 +3225,7 @@
 				)
 			)
 		)
-		(property "Description" "push-in lever terminal block 3P 7.5 mm, 630 V IEC / 600 V UL, bare stranded wire 24-8 AWG"
+		(property "Description" "Molex Micro-Fit 3.0 header, 3 circuits, right angle, 3.0 mm pitch, keyed (the client board J3 part)"
 			(at 88.9 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -3050,7 +3237,7 @@
 				)
 			)
 		)
-		(property "MPN" "2606-1103"
+		(property "MPN" "43650-0303"
 			(at 86.36 68.326 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3062,7 +3249,7 @@
 				(justify left)
 			)
 		)
-		(property "Manufacturer" "WAGO"
+		(property "Manufacturer" "Molex"
 			(at 88.9 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -3074,7 +3261,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C3817916"
+		(property "LCSC" ""
 			(at 88.9 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -3098,7 +3285,7 @@
 				)
 			)
 		)
-		(property "Note" "from the power board: +/-100 V nominal (90-110 V); bench: two 30 V supplies in series. Lever per pole, no tool, no ferrule: strip 11-13 mm. DigiKey.ca 2946-2606-1103-ND, 707 in stock 2026-11-18"
+		(property "Note" "1 = +HV_IN, 2 = COM (ISO_GND), 3 = -HV_IN, as on the client board; cable: 43645-0300 receptacle + 43030 crimps"
 			(at 88.9 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -3110,7 +3297,7 @@
 				)
 			)
 		)
-		(property "Alternate" "LCSC C3817916 is the 2606-1103/020-000 variant (80 pcs 2026-11-18); DigiKey.ca also stocks /010-000 and /020-000. Phoenix SPT 5/3-H-7,5-ZB (1719202) push-button, same pitch, own footprint"
+		(property "Alternate" "43650-0300 (KiCad footprint used; check the -0303 pegs / locks against the Molex drawing)"
 			(at 88.9 68.58 0)
 			(hide yes)
 			(show_name no)

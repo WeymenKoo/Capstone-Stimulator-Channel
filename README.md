@@ -92,6 +92,8 @@ Phase 6 (done): the DAC and ADC pages hold placeholders (DNP, no footprint, not 
 the requirements written on the sheet: an 8-output bipolar DAC (target DAC81404) driving DAC_CMD1-4, and an 8-input
 bipolar ADC (target ADS8688 class) reading V_MON1-4 (each channel's 20 MOhm / 101 divider) and I_RET_SENSE. The old
 offset / sense page is removed: with a bipolar ADC the dividers return to COM directly.
+Phase 7 (done): power inputs are keyed Molex Micro-Fit 3.0 headers (J1 HV 43650-0303, the client's part, pin 1 +HV /
+2 COM / 3 -HV; J2 VBAT 43650-0203), so no push-in terminals remain on the board.
 Full specification, sheet list and design rules: [`02_rev1_channel/Kicad Projects/STIM_Rev1/README.md`](02_rev1_channel/Kicad%20Projects/STIM_Rev1/README.md).
 
 ## Repository map

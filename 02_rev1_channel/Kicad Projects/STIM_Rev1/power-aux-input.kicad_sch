@@ -16,6 +16,164 @@
 		(comment 9 "${REVIEWER}")
 	)
 	(lib_symbols
+		(symbol "STIM_Rev1:Conn_01x02"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "STIM_Rev1:+12V"
 			(power global)
 			(pin_numbers
@@ -1622,7 +1780,7 @@
 	)
 	(text_box "L1"
 		(exclude_from_sim no)
-		(at 104.14 88.9 0)
+		(at 104.14 93.98 0)
 		(size 4.6 3.4)
 		(margins 0.3 0.3 0.3 0.3)
 		(stroke
@@ -1768,10 +1926,10 @@
 		)
 		(uuid "e27d5baf-f64c-49f1-a93c-f8c942b78550")
 	)
-	(text_box "DESIGN NOTE D2:\n• J2 WAGO 2606-1102, the same part as J5 on [9] (one 2-pole type on the board): push-in CAGE CLAMP, one lever per pole, 7.5 mm pitch [DS]\n• IEC 60664-1: 630 V (OVC III, PD2), 500 V (III, PD3), 1000 V (II, PD2); 6 kV impulse; 41 A [DS]\n• UL 1059: 300 V groups B and D (base part); CSA 600 V [DS]\n• Here: VBAT 9.0-12.6 V, ~0.13 A at 9 V (PWR_Rev1 P6) [H]: the rating is not the limit\n• Wire: solid or fine-stranded 0.2-10 mm2 (24-8 AWG), no ferrule; strip 11-13 mm [DS]"
+	(text_box "DESIGN NOTE D2:\n• J2 Molex Micro-Fit 3.0 43650-0203: 2-pin right-angle header, same family and crimp tool as J1; keyed, so VBAT cannot be reverse-plugged\n• A 2-pin plug does not mate with J1's 3-pin header in the normal orientation; whether it can be forced in offset is [VERIFY] against the drawing\n• Rating 600 V [VERIFY DS]; here VBAT 9.0-12.6 V, ~0.13 A at 9 V (PWR_Rev1 P6) [H]\n• Footprint is KiCad's 43650-0200: check the -0203 pegs / locks; hand-solder"
 		(exclude_from_sim no)
 		(at 25.4 110.49 0)
-		(size 62 27.94)
+		(size 62 25.4)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -2847,7 +3005,7 @@
 		)
 	)
 	(symbol
-		(lib_id "STIM_Rev1:Terminal_PushIn_01x02")
+		(lib_id "STIM_Rev1:Conn_01x02")
 		(at 119.38 80.01 0)
 		(mirror y)
 		(unit 1)
@@ -2869,7 +3027,7 @@
 				)
 			)
 		)
-		(property "Value" "VBAT_IN 2P 7.5mm push-in"
+		(property "Value" "VBAT_IN Micro-Fit 2P"
 			(at 114.68 86.614 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2880,7 +3038,7 @@
 				)
 			)
 		)
-		(property "Footprint" "STIM_Rev1:TerminalBlock_WAGO_2606-1102_1x02_P7.50mm_Horizontal"
+		(property "Footprint" "STIM_Rev1:Molex_Micro-Fit_3.0_43650-0200_1x02_P3.00mm_Horizontal"
 			(at 119.38 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -2892,7 +3050,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.wago.com/2606-1102"
+		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail/436500203"
 			(at 119.38 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -2904,7 +3062,7 @@
 				)
 			)
 		)
-		(property "Description" "push-in lever terminal block 2P 7.5 mm, 630 V IEC / 300 V UL, bare stranded wire 24-8 AWG"
+		(property "Description" "Molex Micro-Fit 3.0 header, 2 circuits, right angle, 3.0 mm pitch, keyed"
 			(at 119.38 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -2916,7 +3074,7 @@
 				)
 			)
 		)
-		(property "MPN" "2606-1102"
+		(property "MPN" "43650-0203"
 			(at 121.412 89.154 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2927,7 +3085,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "WAGO"
+		(property "Manufacturer" "Molex"
 			(at 119.38 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -2939,7 +3097,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C3817152"
+		(property "LCSC" ""
 			(at 119.38 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -2963,7 +3121,7 @@
 				)
 			)
 		)
-		(property "Note" "1 VBAT (+, 3S pack 9.0-12.6 V), 2 GND (FPGA side). Same part as J5 on [9]: one 2-pole type on the board. Lever per pole, no tool, no ferrule: strip 11-13 mm. DigiKey.ca 2606-1102, 6063 in stock 2026-11-18"
+		(property "Note" "1 VBAT (+, 3S pack 9.0-12.6 V), 2 GND (FPGA side); cable: 43645-0200 receptacle + 43030 crimps"
 			(at 119.38 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -2975,7 +3133,7 @@
 				)
 			)
 		)
-		(property "Alternate" "WAGO 2606-1102/020-000 (600 V UL, DigiKey.ca 540); LCSC stock not checked"
+		(property "Alternate" "43650-0200 (KiCad footprint used; check the -0203 pegs / locks against the Molex drawing)"
 			(at 119.38 80.01 0)
 			(hide yes)
 			(show_name no)
