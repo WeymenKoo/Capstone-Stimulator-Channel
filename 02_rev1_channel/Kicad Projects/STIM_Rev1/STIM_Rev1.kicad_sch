@@ -4346,7 +4346,7 @@
 		)
 		(uuid "378e7ca2-e016-5b70-b0da-da5d5c414a2d")
 	)
-	(label "ISO_ENABLE"
+	(label "ISO_EN2"
 		(at 355.6 135.89 180)
 		(effects
 			(font
@@ -4538,7 +4538,7 @@
 		)
 		(uuid "dc5e8a39-d8d3-52f0-92cc-934cd2b7f94b")
 	)
-	(label "ISO_ENABLE"
+	(label "ISO_EN3"
 		(at 355.6 166.37 180)
 		(effects
 			(font
@@ -4730,7 +4730,7 @@
 		)
 		(uuid "2334630f-21b9-53a6-bcf3-7953a11e14d5")
 	)
-	(label "ISO_ENABLE"
+	(label "ISO_EN4"
 		(at 355.6 196.85 180)
 		(effects
 			(font

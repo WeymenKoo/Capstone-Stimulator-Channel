@@ -16,6 +16,147 @@
 		(comment 9 "${REVIEWER}")
 	)
 	(lib_symbols
+		(symbol "STIM_Rev1:Conn_01x01_Socket"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01_Socket"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x01, script generated"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x01_Socket_1_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -0.508)
+					(mid -0.5058 0)
+					(end 0 0.508)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "STIM_Rev1:+12V"
 			(power global)
 			(pin_numbers
@@ -2686,10 +2827,10 @@
 		)
 		(uuid "d9837ea3-9466-48f0-9273-931f4c81d3aa")
 	)
-	(text_box "DESIGN NOTE D5:\n• J5 WAGO 2606-1102: push-in CAGE CLAMP, one lever per pole, 7.5 mm pitch [DS]\n• IEC 60664-1: 630 V (OVC III, PD2), 500 V (III, PD3), 1000 V (II, PD2); 6 kV impulse; 41 A [DS]\n• UL 1059: 300 V groups B and D (base part); 2606-1102/020-000 is the 600 V UL variant; CSA 600 V [DS]\n• Here: each electrode up to +/-110 V to ISO_GND (D10 VBR 111 V min), 5 mA operating, 10 mA limit [H]\n• Wire: solid or fine-stranded 0.2-10 mm2 (24-8 AWG), no ferrule; strip 11-13 mm [DS]"
+	(text_box "DESIGN NOTE D5:\n• J5 = this channel's electrode jack (E1-E4 = J105-J405): Cal Test CT3151SP-2, 4 mm sheathed safety jack, right angle, red; RET is J6 (black) on the Return sheet\n• 1000 V CAT III, 25 A [VERIFY DS]; hand-solder (no LCSC). Keystone 575-4 (bare metal) for bench phantoms only\n• Each electrode up to +/-110 V to ISO_GND (D10 VBR 111 V min); 5 mA operating, 10 mA limit [H]\n• U12 AQY214S in the load path: 400 V off-state [DS] = 1.8 x the 220 V worst case; Ciso 1.5 pF [DS]; Ron [VERIFY] costs only Ron x I of compliance (R24 senses before it)\n• No PhotoMOS bypass jumper (it would be a live +/-110 V contact)"
 		(exclude_from_sim no)
 		(at 85.32 226.06 0)
-		(size 62 27.94)
+		(size 62 36.83)
 		(margins 1 1 1 1)
 		(stroke
 			(width 0.8)
@@ -6131,7 +6272,7 @@
 		)
 	)
 	(symbol
-		(lib_id "STIM_Rev1:Terminal_PushIn_01x02")
+		(lib_id "STIM_Rev1:Conn_01x01_Socket")
 		(at 342.9 85.09 0)
 		(unit 1)
 		(body_style 1)
@@ -6152,7 +6293,7 @@
 				)
 			)
 		)
-		(property "Value" "ELECTRODES 2P 7.5mm push-in"
+		(property "Value" "E 4 mm banana (red)"
 			(at 342.9 91.694 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6163,7 +6304,7 @@
 				)
 			)
 		)
-		(property "Footprint" "STIM_Rev1:TerminalBlock_WAGO_2606-1102_1x02_P7.50mm_Horizontal"
+		(property "Footprint" "STIM_Rev1:CalTest_CT3151"
 			(at 342.9 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -6175,7 +6316,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.wago.com/2606-1102"
+		(property "Datasheet" "http://www.caltestelectronics.com/images/attachments/P315100rH_drawing.pdf"
 			(at 342.9 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -6187,7 +6328,7 @@
 				)
 			)
 		)
-		(property "Description" "push-in lever terminal block 2P 7.5 mm, 630 V IEC / 300 V UL, bare stranded wire 24-8 AWG"
+		(property "Description" "stimulating electrode: sheathed 4 mm safety jack, right angle, hand-solder"
 			(at 342.9 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -6199,7 +6340,7 @@
 				)
 			)
 		)
-		(property "MPN" "2606-1102"
+		(property "MPN" "CT3151SP-2"
 			(at 340.868 94.234 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6210,7 +6351,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "WAGO"
+		(property "Manufacturer" "Cal Test Electronics"
 			(at 342.9 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -6222,7 +6363,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C3817152"
+		(property "LCSC" ""
 			(at 342.9 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -6246,7 +6387,7 @@
 				)
 			)
 		)
-		(property "Note" "1 stimulating electrode, 2 return electrode. Lever per pole, no tool, no ferrule: strip 11-13 mm. DigiKey.ca 2606-1102, 6063 in stock 2026-11-18"
+		(property "Note" "this channel's electrode (silk E1-E4 = J105-J405); RET is J6 (black) on the Return sheet"
 			(at 342.9 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -6258,7 +6399,7 @@
 				)
 			)
 		)
-		(property "Alternate" "WAGO 2606-1102/020-000 (600 V UL, DigiKey.ca 540); LCSC stock not checked"
+		(property "Alternate" "Keystone 575-4 (bare metal: bench phantom only)"
 			(at 342.9 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -6272,9 +6413,6 @@
 		)
 		(pin "1"
 			(uuid "e4002f4b-98c3-554f-b9ab-d9dec2367ede")
-		)
-		(pin "2"
-			(uuid "20d6fe01-0d99-5024-b21f-7c9427d84ebd")
 		)
 		(instances
 			(project "STIM_Rev1"
@@ -7559,9 +7697,5 @@
 				)
 			)
 		)
-	)
-	(no_connect
-		(at 337.82 87.63)
-		(uuid "63eeba04-2882-5d34-91fc-4ef8ecb4e015")
 	)
 )

@@ -81,6 +81,9 @@ rule "HV channel to channel" keeps 1.5 mm between the floating / output nets of 
 Phase 3 (done): one shared return electrode, never switched: J6 (4 mm banana) -> RSHR1 100 ohm 0.1 % -> COM, test
 loops TP28 / TP31 across the shunt (1 mV = 10 uA). The per-channel return PhotoMOS (U13) and shunt are gone; each
 channel keeps its stimulating PhotoMOS (U12) and its park (U14 + R27).
+Phase 4 (done): each channel's electrode is a 4 mm sheathed banana jack (J105-J405, Cal Test CT3151SP-2, red; RET
+J6 black) and has its own enable (CH1 on ISO_ENABLE, CH2-CH4 on ISO_EN2-ISO_EN4, isolator channels in phase 5), each
+held off by its own pull-down. No PhotoMOS bypass jumper.
 Full specification, sheet list and design rules: [`02_rev1_channel/Kicad Projects/STIM_Rev1/README.md`](02_rev1_channel/Kicad%20Projects/STIM_Rev1/README.md).
 
 ## Repository map
